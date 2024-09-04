@@ -1,4 +1,3 @@
-/* eslint-disable no-template-curly-in-string */
 import Pagination from 'rc-pagination/lib/locale/it_IT';
 
 import Calendar from '../calendar/locale/it_IT';

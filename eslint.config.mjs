@@ -41,4 +41,9 @@ export default antfu({
     'react-refresh/only-export-components': 'off', // TODO: remove this
     'react-dom/no-dangerously-set-inner-html': 'off', // TODO: remove this
   }
+}, {
+  files: ['components/locale/*.ts'],
+  rules: {
+    'no-template-curly-in-string': 'off',
+  }
 });
