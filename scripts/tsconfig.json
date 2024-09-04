@@ -12,10 +12,10 @@
     "importHelpers": false,
     "noEmitOnError": false,
     "sourceMap": false,
-    "skipDefaultLibCheck": true,
-    "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true
   },
   "include": ["./"],
   "exclude": ["**/node_modules"]

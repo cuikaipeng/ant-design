@@ -27,10 +27,12 @@ export default antfu({
     'react-hooks/exhaustive-deps': 'off',
     'ts/ban-ts-comment': 'off', // TODO: remove this
     'react/prefer-destructuring-assignment': 'off', // TODO: remove this
+    'react-refresh/only-export-components': 'off', // TODO: remove this
+    'react/no-clone-element': 'off',
   },
 }, {
   // tests
-  files: ['**/*.test.ts', 'tests/**/*', '**/*.test.tsx'],
+  files: ['**/*.test.ts', 'tests/**/*', '**/__tests__/**/*', '**/*.test.tsx'],
   rules: {
     'react/no-create-ref': 'off',
     'no-console': 'off',
@@ -54,7 +56,7 @@ export default antfu({
   }
 }, {
   // locales
-  files: ['components/locale/*.ts'],
+  files: ['components/locale/*.ts', 'components/form/demo/*.tsx'],
   rules: {
     'no-template-curly-in-string': 'off',
   }
