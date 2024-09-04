@@ -25,7 +25,7 @@ const getWidth = (index: number, props: SkeletonParagraphProps) => {
 
 const Paragraph: React.FC<SkeletonParagraphProps> = (props) => {
   const { prefixCls, className, style, rows } = props;
-  const rowList = [...new Array(rows)].map((_, index) => (
+  const rowList = [...Array.from({ length: rows || 0 })].map((_, index) => (
     // eslint-disable-next-line react/no-array-index-key
     <li key={index} style={{ width: getWidth(index, props) }} />
   ));

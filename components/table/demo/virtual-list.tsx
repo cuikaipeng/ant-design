@@ -94,7 +94,7 @@ const columns: TableProps<RecordType>['columns'] = [
 ];
 
 const getData = (count: number) => {
-  const data: RecordType[] = new Array(count).fill(null).map((_, index) => ({
+  const data: RecordType[] = Array.from({ length: count }).map((_, index) => ({
     id: index,
     firstName: `First_${index.toString(16)}`,
     lastName: `Last_${index.toString(16)}`,
