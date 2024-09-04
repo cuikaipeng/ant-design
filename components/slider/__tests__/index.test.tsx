@@ -11,7 +11,7 @@ import type { TooltipProps, TooltipRef } from '../../tooltip';
 import SliderTooltip from '../SliderTooltip';
 
 function tooltipProps(): TooltipProps {
-  return (global as any).tooltipProps;
+  return (globalThis as any).tooltipProps;
 }
 
 jest.mock('../../tooltip', () => {
@@ -19,7 +19,7 @@ jest.mock('../../tooltip', () => {
   const Tooltip = jest.requireActual('../../tooltip');
   const TooltipComponent = Tooltip.default;
   return ReactReal.forwardRef<TooltipRef, TooltipProps>((props, ref) => {
-    (global as any).tooltipProps = props;
+    (globalThis as any).tooltipProps = props;
     return <TooltipComponent {...props} ref={ref} />;
   });
 });

@@ -7,7 +7,7 @@ import { render } from '../../../tests/utils';
 describe('Table.IE', () => {
   beforeAll(() => {
     window.Proxy = undefined as any;
-    global.Proxy = undefined as any;
+    globalThis.Proxy = undefined as any;
   });
 
   it('support reference', () => {

@@ -13,21 +13,21 @@ dayjs.extend(customParseFormat);
 jest.mock('rc-util/lib/Portal');
 
 function triggerProps(): TriggerProps {
-  return (global as any).triggerProps;
+  return (globalThis as any).triggerProps;
 }
 
 jest.mock('@rc-component/trigger', () => {
   const R: typeof React = jest.requireActual('react');
   const Trigger = jest.requireActual('@rc-component/trigger').default;
   return R.forwardRef<TriggerRef, TriggerProps>((props, ref) => {
-    (global as any).triggerProps = props;
+    (globalThis as any).triggerProps = props;
     return <Trigger {...props} ref={ref} />;
   });
 });
 
 describe('ConfigProvider.Popup', () => {
   beforeEach(() => {
-    (global as any).triggerProps = null;
+    (globalThis as any).triggerProps = null;
   });
 
   const selectLikeNodes = (

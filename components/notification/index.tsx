@@ -102,14 +102,14 @@ const GlobalHolderWrapper = React.forwardRef<GlobalHolderRef, unknown>((_, ref) 
   React.useEffect(sync, []);
 
   const global = globalConfig();
-  const rootPrefixCls = global.getRootPrefixCls();
-  const rootIconPrefixCls = global.getIconPrefixCls();
-  const theme = global.getTheme();
+  const rootPrefixCls = globalThis.getRootPrefixCls();
+  const rootIconPrefixCls = globalThis.getIconPrefixCls();
+  const theme = globalThis.getTheme();
 
   const dom = <GlobalHolder ref={ref} sync={sync} notificationConfig={notificationConfig} />;
   return (
     <ConfigProvider prefixCls={rootPrefixCls} iconPrefixCls={rootIconPrefixCls} theme={theme}>
-      {global.holderRender ? global.holderRender(dom) : dom}
+      {globalThis.holderRender ? globalThis.holderRender(dom) : dom}
     </ConfigProvider>
   );
 });
@@ -196,7 +196,7 @@ function setNotificationGlobalConfig(config: GlobalConfigProps) {
 function open(config: ArgsProps) {
   const global = globalConfig();
 
-  if (process.env.NODE_ENV !== 'production' && !global.holderRender) {
+  if (process.env.NODE_ENV !== 'production' && !globalThis.holderRender) {
     warnContext('notification');
   }
 

@@ -5,9 +5,9 @@ let cssinjs;
 if (typeof window !== 'undefined' && window.antdCssinjs) {
   // Use window UMD version
   cssinjs = window.antdCssinjs;
-} else if (typeof global !== 'undefined' && global.antdCssinjs) {
+} else if (typeof global !== 'undefined' && globalThis.antdCssinjs) {
   // Use global UMD version
-  cssinjs = global.antdCssinjs;
+  cssinjs = globalThis.antdCssinjs;
 } else {
   // Use local version.
   // Use relative path since webpack will also replace module here.

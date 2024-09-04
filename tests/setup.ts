@@ -57,5 +57,5 @@ if (typeof window !== 'undefined') {
   fillWindowEnv(window);
 }
 
-global.requestAnimationFrame = global.requestAnimationFrame || global.setTimeout;
-global.cancelAnimationFrame = global.cancelAnimationFrame || global.clearTimeout;
+globalThis.requestAnimationFrame = globalThis.requestAnimationFrame || globalThis.setTimeout;
+globalThis.cancelAnimationFrame = globalThis.cancelAnimationFrame || globalThis.clearTimeout;

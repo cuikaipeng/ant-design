@@ -19,7 +19,7 @@ export function resetMockDate() {
   MockDate.reset();
 }
 
-const globalTimeout = global.setTimeout;
+const globalTimeout = globalThis.setTimeout;
 
 export const sleep = async (timeout = 0) => {
   await act(async () => {

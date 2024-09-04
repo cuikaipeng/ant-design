@@ -63,7 +63,7 @@ const ConfirmDialogWrapper: React.FC<ConfirmDialogProps> = (props) => {
 export default function confirm(config: ModalFuncProps) {
   const global = globalConfig();
 
-  if (process.env.NODE_ENV !== 'production' && !global.holderRender) {
+  if (process.env.NODE_ENV !== 'production' && !globalThis.holderRender) {
     warnContext('Modal');
   }
 
@@ -98,15 +98,15 @@ export default function confirm(config: ModalFuncProps) {
      * Sync render blocks React event. Let's make this async.
      */
     timeoutId = setTimeout(() => {
-      const rootPrefixCls = global.getPrefixCls(undefined, getRootPrefixCls());
-      const iconPrefixCls = global.getIconPrefixCls();
-      const theme = global.getTheme();
+      const rootPrefixCls = globalThis.getPrefixCls(undefined, getRootPrefixCls());
+      const iconPrefixCls = globalThis.getIconPrefixCls();
+      const theme = globalThis.getTheme();
 
       const dom = <ConfirmDialogWrapper {...props} />;
 
       reactRender(
         <ConfigProvider prefixCls={rootPrefixCls} iconPrefixCls={iconPrefixCls} theme={theme}>
-          {global.holderRender ? global.holderRender(dom) : dom}
+          {globalThis.holderRender ? globalThis.holderRender(dom) : dom}
         </ConfigProvider>,
         container,
       );

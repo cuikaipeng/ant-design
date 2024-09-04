@@ -308,13 +308,13 @@ describe('Typography.Ellipsis', () => {
 
     // https://github.com/ant-design/ant-design/issues/36786
     it('Tooltip should recheck on parent visible change', () => {
-      const originIntersectionObserver = global.IntersectionObserver;
+      const originIntersectionObserver = globalThis.IntersectionObserver;
 
       let elementChangeCallback: () => void;
       const observeFn = jest.fn();
       const disconnectFn = jest.fn();
 
-      (global as any).IntersectionObserver = class MockIntersectionObserver {
+      (globalThis as any).IntersectionObserver = class MockIntersectionObserver {
         constructor(callback: () => IntersectionObserverCallback) {
           elementChangeCallback = callback;
         }
@@ -350,7 +350,7 @@ describe('Typography.Ellipsis', () => {
       unmount();
       expect(disconnectFn).toHaveBeenCalled();
 
-      global.IntersectionObserver = originIntersectionObserver;
+      globalThis.IntersectionObserver = originIntersectionObserver;
     });
 
     it('should calculate padding', () => {

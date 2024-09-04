@@ -213,7 +213,7 @@ export default () => (
 
 ### TailwindCSS Arrange `@layer`
 
-In global.css, adjust `@layer` to control the order of style override. Place `tailwind-base` before `antd`:
+In globalThis.css, adjust `@layer` to control the order of style override. Place `tailwind-base` before `antd`:
 
 ```less
 @layer tailwind-base, antd;

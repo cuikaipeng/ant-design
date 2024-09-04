@@ -13,7 +13,7 @@ const { JSDOM } = jsdom;
 const { window } = new JSDOM();
 const { document } = new JSDOM('').window;
 
-global.document = document;
+globalThis.document = document;
 
 const $ = jQuery<jsdom.DOMWindow>(window) as unknown as JQueryStatic;
 

@@ -7,10 +7,10 @@ import Checkbox from '../../checkbox';
 import Wave from '../wave';
 import { TARGET_CLS } from '../wave/interface';
 
-(global as any).isVisible = true;
+(globalThis as any).isVisible = true;
 
 jest.mock('rc-util/lib/Dom/isVisible', () => {
-  const mockFn = () => (global as any).isVisible;
+  const mockFn = () => (globalThis as any).isVisible;
   return mockFn;
 });
 
@@ -42,7 +42,7 @@ describe('Wave component', () => {
 
   beforeEach(() => {
     jest.useFakeTimers();
-    (global as any).isVisible = true;
+    (globalThis as any).isVisible = true;
     document.body.innerHTML = '';
   });
 
@@ -101,7 +101,7 @@ describe('Wave component', () => {
   });
 
   it('invisible in screen', () => {
-    (global as any).isVisible = false;
+    (globalThis as any).isVisible = false;
     const { container, unmount } = render(
       <Wave>
         <button type="button">button</button>
@@ -233,7 +233,7 @@ describe('Wave component', () => {
   });
 
   it('not show when hidden', () => {
-    (global as any).isVisible = false;
+    (globalThis as any).isVisible = false;
 
     const { container } = render(
       <Wave>

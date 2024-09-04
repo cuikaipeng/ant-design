@@ -18,15 +18,15 @@ const { confirm } = Modal;
 
 jest.mock('rc-motion');
 
-(global as any).injectPromise = false;
-(global as any).rejectPromise = null;
+(globalThis as any).injectPromise = false;
+(globalThis as any).rejectPromise = null;
 
 jest.mock('../../_util/ActionButton', () => {
   const ActionButton = jest.requireActual('../../_util/ActionButton').default;
   return (props: any) => {
     const { actionFn } = props;
     let mockActionFn: any = actionFn;
-    if (actionFn && (global as any).injectPromise) {
+    if (actionFn && (globalThis as any).injectPromise) {
       mockActionFn = (...args: any) => {
         let ret = actionFn(...args);
 
@@ -40,7 +40,7 @@ jest.mock('../../_util/ActionButton', () => {
             },
             (e: any) => {
               rejectFn?.(e)?.catch((err: Error) => {
-                (global as any).rejectPromise = err;
+                (globalThis as any).rejectPromise = err;
               });
             },
           );
@@ -95,8 +95,8 @@ describe('Modal.confirm triggers callbacks correctly', () => {
 
   beforeEach(() => {
     jest.useFakeTimers();
-    (global as any).injectPromise = false;
-    (global as any).rejectPromise = null;
+    (globalThis as any).injectPromise = false;
+    (globalThis as any).rejectPromise = null;
   });
 
   afterEach(async () => {
@@ -239,7 +239,7 @@ describe('Modal.confirm triggers callbacks correctly', () => {
   });
 
   it('should emit error when onOk return Promise.reject', async () => {
-    (global as any).injectPromise = true;
+    (globalThis as any).injectPromise = true;
 
     const error = new Error('something wrong');
     await open({
@@ -251,7 +251,7 @@ describe('Modal.confirm triggers callbacks correctly', () => {
     // wait promise
     await waitFakeTimer();
 
-    expect((global as any).rejectPromise instanceof Error).toBeTruthy();
+    expect((globalThis as any).rejectPromise instanceof Error).toBeTruthy();
   });
 
   it('shows animation when close', async () => {

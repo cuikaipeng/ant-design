@@ -7,7 +7,7 @@ import { render } from '../../../tests/utils';
 
 describe('ConfigProvider.button', () => {
   beforeEach(() => {
-    (global as any).triggerProps = null;
+    (globalThis as any).triggerProps = null;
   });
 
   it('ConfigProvider button style', () => {

@@ -4,11 +4,11 @@ import { renderToString } from 'react-dom/server';
 
 import type { Options } from '../../tests/shared/demoTest';
 
-(global as any).testConfig = {};
+(globalThis as any).testConfig = {};
 
 jest.mock('../../tests/shared/demoTest', () => {
   function fakeDemoTest(name: string, option: Options = {}) {
-    (global as any).testConfig[name] = option;
+    (globalThis as any).testConfig[name] = option;
   }
 
   fakeDemoTest.rootPropsTest = () => {};
@@ -35,7 +35,7 @@ describe('node', () => {
 
       // Use mock to get config
       require(`../../${componentTestFile}`);
-      const option = (global as any).testConfig?.[componentName];
+      const option = (globalThis as any).testConfig?.[componentName];
 
       demoList.forEach((demoFile) => {
         const skip: string[] = option?.skip || [];

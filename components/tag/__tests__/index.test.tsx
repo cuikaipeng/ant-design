@@ -7,10 +7,10 @@ import mountTest from '../../../tests/shared/mountTest';
 import rtlTest from '../../../tests/shared/rtlTest';
 import { act, fireEvent, render } from '../../../tests/utils';
 
-(global as any).isVisible = true;
+(globalThis as any).isVisible = true;
 
 jest.mock('rc-util/lib/Dom/isVisible', () => {
-  const mockFn = () => (global as any).isVisible;
+  const mockFn = () => (globalThis as any).isVisible;
   return mockFn;
 });
 

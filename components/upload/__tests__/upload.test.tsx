@@ -944,7 +944,7 @@ describe('Upload', () => {
       throw new TypeError("Object doesn't support this action");
     };
 
-    const spyIE = jest.spyOn(global, 'File').mockImplementationOnce(fileConstructor);
+    const spyIE = jest.spyOn(globalThis, 'File').mockImplementationOnce(fileConstructor);
     fireEvent.change(container.querySelector('input')!, {
       target: { files: [{ file: 'foo.png' }] },
     });
