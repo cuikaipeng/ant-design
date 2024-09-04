@@ -1,6 +1,7 @@
 // eslint.config.mjs
 import antfu from '@antfu/eslint-config';
 import compat from "eslint-plugin-compat";
+import jest from "eslint-plugin-jest";
 
 export default antfu({
   ignores: [
@@ -34,7 +35,7 @@ export default antfu({
     'react-refresh/only-export-components': 'off', // TODO: remove this
     'react/no-clone-element': 'off',
   },
-}, compat.configs["flat/recommended"], {
+}, compat.configs["flat/recommended"], jest.configs["flat/recommended"], {
   // tests
   files: ['**/*.test.ts', 'tests/**/*', '**/__tests__/**/*', '**/*.test.tsx'],
   rules: {
@@ -43,6 +44,12 @@ export default antfu({
     'unicorn/consistent-function-scoping': 'off',
     'ts/no-non-null-asserted-optional-chain': 'off',
     'compat/compat': 'off',
+    'jest/no-test-callback': 'off',
+    'jest/expect-expect': 'off',
+    'jest/no-done-callback': 'off',
+    'jest/valid-title': 'off',
+    'jest/no-conditional-expect': 'off',
+    'jest/no-standalone-expect': 'off',
   },
 }, {
   // demos

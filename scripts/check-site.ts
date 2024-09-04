@@ -1,3 +1,4 @@
+/// <reference types="jest" />
 import type http from 'node:http';
 import type https from 'node:https';
 import { join } from 'node:path';
@@ -100,9 +101,11 @@ describe('site test', () => {
   for (const component of components) {
     if (component.split('/').length < 3) {
       it(`Component ${component} zh Page`, async () => {
+        expect(component).toBeTruthy();
         await expectComponent(`${component}-cn`);
       });
       it(`Component ${component} en Page`, async () => {
+        expect(component).toBeTruthy();
         await expectComponent(component);
       });
     }
