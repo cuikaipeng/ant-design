@@ -1,6 +1,5 @@
-/* eslint-disable no-loop-func, no-console */
 // Collect from `changelog.md` to get all components changelog
-import path from 'path';
+import path from 'node:path';
 import fs from 'fs-extra';
 import { globSync } from 'glob';
 
@@ -146,7 +145,7 @@ const miscKeys = [
 
       let changelogLine = line.trim().replace('- ', '');
       changelogLine = changelogLine
-        .replace(/\[([^\]]+)]\(([^)]+)\)/g, (...match) => {
+        .replace(/\[([^\]]+)\]\(([^)]+)\)/g, (...match) => {
           const [, title, ref] = match;
           if (ref.includes('/pull/')) {
             refs.push(ref);

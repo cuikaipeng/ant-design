@@ -7,9 +7,9 @@ import { genCollapseMotion, zoomIn } from '../../style/motion';
 import type {
   AliasToken,
   FullToken,
+  GenStyleFn,
   GenerateStyle,
   GetDefaultToken,
-  GenStyleFn,
 } from '../../theme/internal';
 import { genStyleHooks, mergeToken } from '../../theme/internal';
 import genFormValidateMotionStyle from './explain';

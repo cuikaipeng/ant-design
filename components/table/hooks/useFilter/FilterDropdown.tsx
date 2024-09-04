@@ -5,7 +5,6 @@ import classNames from 'classnames';
 import type { FieldDataNode } from 'rc-tree';
 import isEqual from 'rc-util/lib/isEqual';
 
-import type { FilterState } from '.';
 import useSyncState from '../../../_util/hooks/useSyncState';
 import { devUseWarning } from '../../../_util/warning';
 import Button from '../../../button';
@@ -33,6 +32,7 @@ import type {
 } from '../../interface';
 import FilterSearch from './FilterSearch';
 import FilterDropdownMenuWrapper from './FilterWrapper';
+import type { FilterState } from '.';
 
 type FilterTreeDataNode = FieldDataNode<{ title: React.ReactNode; key: string }>;
 

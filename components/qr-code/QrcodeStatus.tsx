@@ -6,13 +6,13 @@ import type { Locale } from '../locale';
 import Spin from '../spin';
 import type { QRCodeProps, StatusRenderInfo } from './interface';
 
-export type QRcodeStatusProps = {
+export interface QRcodeStatusProps {
   prefixCls: string;
   locale?: Locale['QRCode'];
   onRefresh?: QRCodeProps['onRefresh'];
   statusRender?: QRCodeProps['statusRender'];
   status: StatusRenderInfo['status'];
-};
+}
 
 const defaultSpin = <Spin />;
 

@@ -114,7 +114,9 @@ export interface SliderRangeProps extends SliderBaseProps {
 
 type SliderRange = Exclude<GetProp<RcSliderProps, 'range'>, boolean>;
 
-export type Opens = { [index: number]: boolean };
+export interface Opens {
+  [index: number]: boolean;
+}
 
 function getTipFormatter(tipFormatter?: Formatter, legacyTipFormatter?: Formatter) {
   if (tipFormatter || tipFormatter === null) {

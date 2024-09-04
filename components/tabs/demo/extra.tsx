@@ -14,14 +14,16 @@ const options = ['left', 'right'];
 
 type PositionType = 'left' | 'right';
 
-const items = new Array(3).fill(null).map((_, i) => {
-  const id = String(i + 1);
-  return {
-    label: `Tab ${id}`,
-    key: id,
-    children: `Content of tab ${id}`,
-  };
-});
+const items = Array.from({ length: 3 })
+  .fill(null)
+  .map((_, i) => {
+    const id = String(i + 1);
+    return {
+      label: `Tab ${id}`,
+      key: id,
+      children: `Content of tab ${id}`,
+    };
+  });
 
 const App: React.FC = () => {
   const [position, setPosition] = useState<PositionType[]>(['left', 'right']);

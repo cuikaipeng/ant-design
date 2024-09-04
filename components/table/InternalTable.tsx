@@ -33,18 +33,18 @@ import type { SortState } from './hooks/useSorter';
 import useSorter, { getSortData } from './hooks/useSorter';
 import useTitleColumns from './hooks/useTitleColumns';
 import type {
-  ColumnsType,
   ColumnTitleProps,
   ColumnType,
-  ExpandableConfig,
+  ColumnsType,
   ExpandType,
+  ExpandableConfig,
   FilterValue,
   GetPopupContainer,
   GetRowKey,
   RefInternalTable,
+  SortOrder,
   SorterResult,
   SorterTooltipProps,
-  SortOrder,
   TableAction,
   TableCurrentDataSource,
   TableLocale,

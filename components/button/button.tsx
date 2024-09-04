@@ -54,10 +54,10 @@ export interface ButtonProps extends BaseButtonProps, MergedHTMLAttributes {
   autoInsertSpace?: boolean;
 }
 
-type LoadingConfigType = {
+interface LoadingConfigType {
   loading: boolean;
   delay: number;
-};
+}
 
 function getLoadingConfig(loading: BaseButtonProps['loading']): LoadingConfigType {
   if (typeof loading === 'object' && loading) {

@@ -1,9 +1,9 @@
 import * as React from 'react';
 
-import type { InternalDescriptionsItemType } from '.';
 import Cell from './Cell';
 import type { DescriptionsContextProps } from './DescriptionsContext';
 import DescriptionsContext from './DescriptionsContext';
+import type { InternalDescriptionsItemType } from '.';
 
 interface CellConfig {
   component: string | [string, string];

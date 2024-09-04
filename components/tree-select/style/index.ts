@@ -3,10 +3,10 @@ import { unit } from '@ant-design/cssinjs';
 import { getStyle as getCheckboxStyle } from '../../checkbox/style';
 import type {
   AliasToken,
+  CSSUtil,
   FullToken,
   GenerateStyle,
   GetDefaultToken,
-  CSSUtil,
 } from '../../theme/internal';
 import { genStyleHooks, mergeToken } from '../../theme/internal';
 import type { TreeSharedToken } from '../../tree/style';

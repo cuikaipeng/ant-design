@@ -1,5 +1,3 @@
-/* eslint-disable global-require, import/no-unresolved */
-
 // This is a alias proxy, which will use global `@ant-design/cssinjs` first.
 // Use local if global not found.
 let cssinjs;

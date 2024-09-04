@@ -4,7 +4,7 @@ import { useCacheToken } from '@ant-design/cssinjs';
 
 import version from '../version';
 import type { DesignTokenProviderProps } from './context';
-import { defaultTheme, DesignTokenContext } from './context';
+import { DesignTokenContext, defaultTheme } from './context';
 import type { AliasToken, GlobalToken, SeedToken } from './interface';
 import defaultSeedToken from './themes/seed';
 import formatToken from './util/alias';

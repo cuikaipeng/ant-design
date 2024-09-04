@@ -10,7 +10,7 @@ import {
 import type { SharedComponentToken, SharedInputToken } from '../../input/style/token';
 import { genBaseOutlinedStyle, genDisabledStyle } from '../../input/style/variants';
 import { genFocusOutline, genFocusStyle, resetComponent } from '../../style';
-import type { FullToken, GenerateStyle, GenStyleFn, GetDefaultToken } from '../../theme/internal';
+import type { FullToken, GenStyleFn, GenerateStyle, GetDefaultToken } from '../../theme/internal';
 import { genStyleHooks, mergeToken } from '../../theme/internal';
 
 export interface ComponentToken {

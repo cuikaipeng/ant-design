@@ -1,6 +1,6 @@
+const fs = require('node:fs');
 const $ = require('dekko');
 const chalk = require('chalk');
-const fs = require('fs');
 
 const includeUseClient = (filename) =>
   fs.readFileSync(filename).toString().includes('"use client"');
@@ -25,5 +25,4 @@ $('{es,lib}/typography/Base/*.js')
   .filter((filename) => !filename.endsWith('/util.js'))
   .assert('contain use client', (filename) => includeUseClient(filename));
 
-// eslint-disable-next-line no-console
 console.log(chalk.green('✨ use client passed!'));

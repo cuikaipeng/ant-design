@@ -34,15 +34,21 @@ describe('ConfigProvider.Popup', () => {
     <>
       <Select
         open
-        options={new Array(20).fill(null).map((_, index) => ({ value: index, label: index }))}
+        options={Array.from({ length: 20 })
+          .fill(null)
+          .map((_, index) => ({ value: index, label: index }))}
       />
       <TreeSelect
         open
-        treeData={new Array(20).fill(null).map((_, index) => ({ value: index, title: index }))}
+        treeData={Array.from({ length: 20 })
+          .fill(null)
+          .map((_, index) => ({ value: index, title: index }))}
       />
       <Cascader
         open
-        options={new Array(20).fill(null).map((_, index) => ({ value: index, label: index }))}
+        options={Array.from({ length: 20 })
+          .fill(null)
+          .map((_, index) => ({ value: index, label: index }))}
       />
     </>
   );

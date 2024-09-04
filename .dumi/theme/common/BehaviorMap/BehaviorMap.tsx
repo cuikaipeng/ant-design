@@ -206,13 +206,13 @@ const dataTransform = (data: BehaviorMapItem) => {
   return changeData(data);
 };
 
-type BehaviorMapItem = {
+interface BehaviorMapItem {
   id: string;
   label: string;
   targetType?: 'mvp' | 'extension';
   children?: BehaviorMapItem[];
   link?: string;
-};
+}
 
 const useStyle = createStyles(({ token }) => ({
   container: css`
@@ -265,9 +265,9 @@ const useStyle = createStyles(({ token }) => ({
   `,
 }));
 
-export type BehaviorMapProps = {
+export interface BehaviorMapProps {
   data: BehaviorMapItem;
-};
+}
 
 const BehaviorMap: React.FC<BehaviorMapProps> = ({ data }) => {
   const ref = useRef<HTMLDivElement>(null);

@@ -1,5 +1,5 @@
 import React from 'react';
-import { createCache, StyleProvider } from '@ant-design/cssinjs';
+import { StyleProvider, createCache } from '@ant-design/cssinjs';
 import { SmileOutlined } from '@ant-design/icons';
 import IconContext from '@ant-design/icons/lib/components/Context';
 

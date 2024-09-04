@@ -21,14 +21,14 @@ export type PickerLocale = {
   timePickerLocale: TimePickerLocale;
 } & AdditionalPickerLocaleProps;
 
-export type AdditionalPickerLocaleProps = {
+export interface AdditionalPickerLocaleProps {
   dateFormat?: string;
   dateTimeFormat?: string;
   weekFormat?: string;
   monthFormat?: string;
-};
+}
 
-export type AdditionalPickerLocaleLangProps = {
+export interface AdditionalPickerLocaleLangProps {
   placeholder: string;
   yearPlaceholder?: string;
   quarterPlaceholder?: string;
@@ -39,7 +39,7 @@ export type AdditionalPickerLocaleLangProps = {
   rangeMonthPlaceholder?: [string, string];
   rangeWeekPlaceholder?: [string, string];
   rangePlaceholder?: [string, string];
-};
+}
 
 type InjectDefaultProps<Props> = Omit<Props, 'locale' | 'generateConfig' | 'hideHeader'> & {
   locale?: PickerLocale;

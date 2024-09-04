@@ -14,13 +14,15 @@ const items2: MenuProps['items'] = [UserOutlined, LaptopOutlined, NotificationOu
       icon: React.createElement(icon),
       label: `subnav ${key}`,
 
-      children: new Array(4).fill(null).map((_, j) => {
-        const subKey = index * 4 + j + 1;
-        return {
-          key: subKey,
-          label: `option${subKey}`,
-        };
-      }),
+      children: Array.from({ length: 4 })
+        .fill(null)
+        .map((_, j) => {
+          const subKey = index * 4 + j + 1;
+          return {
+            key: subKey,
+            label: `option${subKey}`,
+          };
+        }),
     };
   },
 );

@@ -2,7 +2,6 @@ import * as React from 'react';
 import ExclamationCircleFilled from '@ant-design/icons/ExclamationCircleFilled';
 import classNames from 'classnames';
 
-import type { PopconfirmProps } from '.';
 import ActionButton from '../_util/ActionButton';
 import { getRenderPropValue } from '../_util/getRenderPropValue';
 import Button from '../button';
@@ -12,6 +11,7 @@ import { useLocale } from '../locale';
 import defaultLocale from '../locale/en_US';
 import PopoverPurePanel from '../popover/PurePanel';
 import useStyle from './style';
+import type { PopconfirmProps } from '.';
 
 export interface PopconfirmLocale {
   okText: string;

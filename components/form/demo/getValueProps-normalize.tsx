@@ -5,9 +5,9 @@ import dayjs from 'dayjs';
 
 const dateTimestamp = dayjs('2024-01-01').valueOf();
 
-type FieldType = {
+interface FieldType {
   date?: string;
-};
+}
 
 const onFinish: FormProps<FieldType>['onFinish'] = (values) => {
   console.log('Success:', values);

@@ -1,4 +1,3 @@
-/* eslint-disable camelcase, no-async-promise-executor */
 import fs from 'node:fs';
 import runScript from '@npmcli/run-script';
 import { Octokit } from '@octokit/rest';
@@ -153,7 +152,7 @@ const runPrePublish = async () => {
   showMessage(`远程分支 CI 状态(${check_runs.length})：`, 'succeed');
   check_runs.forEach((run) => {
     showMessage(`  ${run.name.padEnd(36)} ${emojify(run.status)} ${emojify(run.conclusion || '')}`);
-    if (blockStatus.some((status) => run.conclusion === status)) {
+    if (blockStatus.includes(run.conclusion)) {
       failureUrlList.push(run.html_url!);
     }
   });

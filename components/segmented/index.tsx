@@ -1,8 +1,8 @@
 import * as React from 'react';
 import classNames from 'classnames';
 import type {
-  SegmentedLabeledOption as RcSegmentedLabeledOption,
   SegmentedProps as RCSegmentedProps,
+  SegmentedLabeledOption as RcSegmentedLabeledOption,
   SegmentedValue as RcSegmentedValue,
   SegmentedRawOption,
 } from 'rc-segmented';

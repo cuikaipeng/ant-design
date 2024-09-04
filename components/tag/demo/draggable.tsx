@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { closestCenter, DndContext, PointerSensor, useSensor, useSensors } from '@dnd-kit/core';
+import { DndContext, PointerSensor, closestCenter, useSensor, useSensors } from '@dnd-kit/core';
 import type { DragEndEvent } from '@dnd-kit/core';
 import {
+  SortableContext,
   arrayMove,
   horizontalListSortingStrategy,
-  SortableContext,
   useSortable,
 } from '@dnd-kit/sortable';
 import { Flex, Tag } from 'antd';

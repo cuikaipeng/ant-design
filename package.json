@@ -2,6 +2,19 @@
   "name": "antd",
   "version": "5.20.5",
   "description": "An enterprise-class UI design language and React components implementation",
+  "license": "MIT",
+  "funding": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/ant-design"
+  },
+  "homepage": "https://ant.design",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ant-design/ant-design"
+  },
+  "bugs": {
+    "url": "https://github.com/ant-design/ant-design/issues"
+  },
   "keywords": [
     "ant",
     "component",
@@ -13,30 +26,17 @@
     "react-component",
     "ui"
   ],
-  "homepage": "https://ant.design",
-  "bugs": {
-    "url": "https://github.com/ant-design/ant-design/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ant-design/ant-design"
-  },
-  "funding": {
-    "type": "opencollective",
-    "url": "https://opencollective.com/ant-design"
-  },
-  "license": "MIT",
   "sideEffects": false,
   "main": "lib/index.js",
-  "unpkg": "dist/antd.min.js",
   "module": "es/index.js",
+  "unpkg": "dist/antd.min.js",
   "typings": "es/index.d.ts",
   "files": [
+    "BUG_VERSIONS.json",
     "dist",
     "es",
     "lib",
-    "locale",
-    "BUG_VERSIONS.json"
+    "locale"
   ],
   "scripts": {
     "api-collection": "antd-tools run api-collection",
@@ -102,6 +102,10 @@
     "Firefox ESR",
     "not dead"
   ],
+  "peerDependencies": {
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
+  },
   "dependencies": {
     "@ant-design/colors": "^7.1.0",
     "@ant-design/cssinjs": "^1.21.0",
@@ -320,10 +324,6 @@
     "webpack": "^5.93.0",
     "webpack-bundle-analyzer": "^4.10.2",
     "xhr-mock": "^2.5.1"
-  },
-  "peerDependencies": {
-    "react": ">=16.9.0",
-    "react-dom": ">=16.9.0"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"

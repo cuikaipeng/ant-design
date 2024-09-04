@@ -17,10 +17,10 @@ const components = {
   slider: ColorSlider,
 };
 
-type Info = {
+interface Info {
   type?: 'hue' | 'alpha';
   value?: number;
-};
+}
 
 const PanelPicker: FC = () => {
   const panelPickerContext = useContext(PanelPickerContext);

@@ -84,13 +84,13 @@ const IconNode: React.FC<IconNodeProps> = (props) => {
   return React.createElement(iconType, { className: `${prefixCls}-icon` });
 };
 
-type CloseIconProps = {
+interface CloseIconProps {
   isClosable: boolean;
   prefixCls: AlertProps['prefixCls'];
   closeIcon: AlertProps['closeIcon'];
   handleClose: AlertProps['onClose'];
   ariaProps: React.AriaAttributes;
-};
+}
 
 const CloseIconNode: React.FC<CloseIconProps> = (props) => {
   const { isClosable, prefixCls, closeIcon, handleClose, ariaProps } = props;

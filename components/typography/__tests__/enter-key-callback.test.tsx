@@ -4,7 +4,7 @@ import KeyCode from 'rc-util/lib/KeyCode';
 import { fireEvent, render } from '../../../tests/utils';
 import Paragraph from '../Paragraph';
 
-test('Callback on enter key is triggered', () => {
+it('Callback on enter key is triggered', () => {
   const onEditStart = jest.fn();
   const onCopy = jest.fn();
 

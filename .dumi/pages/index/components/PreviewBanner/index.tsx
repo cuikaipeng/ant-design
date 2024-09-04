@@ -69,7 +69,7 @@ const useStyle = () => {
         position: relative;
         z-index: 1;
         padding-inline: ${token.paddingXL}px;
-        text-shadow: ${new Array(5)
+        text-shadow: ${Array.from({ length: 5 })
           .fill(null)
           .map(() => textShadow)
           .join(', ')};

@@ -9,17 +9,17 @@ import tokenMeta from 'antd/es/version/token-meta.json';
 import useLocale from '../../../hooks/useLocale';
 import ColorChunk from '../ColorChunk';
 
-type TokenTableProps = {
+interface TokenTableProps {
   type: 'seed' | 'map' | 'alias';
   lang: 'zh' | 'en';
-};
+}
 
-type TokenData = {
+interface TokenData {
   name: string;
   desc: string;
   type: string;
   value: any;
-};
+}
 
 const defaultToken = getDesignToken();
 

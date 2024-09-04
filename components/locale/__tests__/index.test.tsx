@@ -73,6 +73,7 @@ import MockDate from 'mockdate';
 
 import type { Locale } from '..';
 import LocaleProvider from '..';
+import type { TableProps } from '../..';
 import {
   Calendar,
   DatePicker,
@@ -81,7 +82,6 @@ import {
   Popconfirm,
   Select,
   Table,
-  TableProps,
   TimePicker,
   Transfer,
 } from '../..';

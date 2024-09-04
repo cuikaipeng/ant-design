@@ -2,11 +2,11 @@ import React from 'react';
 import type { FormProps } from 'antd';
 import { Button, Checkbox, Form, Input } from 'antd';
 
-type FieldType = {
+interface FieldType {
   username?: string;
   password?: string;
   remember?: string;
-};
+}
 
 const onFinish: FormProps<FieldType>['onFinish'] = (values) => {
   console.log('Success:', values);

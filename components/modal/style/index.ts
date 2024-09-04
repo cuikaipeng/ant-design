@@ -6,8 +6,8 @@ import { initFadeMotion, initZoomMotion } from '../../style/motion';
 import type {
   AliasToken,
   FullToken,
-  GenerateStyle,
   GenStyleFn,
+  GenerateStyle,
   GlobalToken,
   TokenWithCommonCls,
 } from '../../theme/internal';

@@ -5,9 +5,9 @@ import Statistic from './Statistic';
 
 export type { CountdownProps, StatisticProps };
 
-type CompoundedComponent = {
+interface CompoundedComponent {
   Countdown: typeof Countdown;
-};
+}
 
 export type CompoundedStatistic = typeof Statistic & CompoundedComponent;
 

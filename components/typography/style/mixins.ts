@@ -11,11 +11,10 @@ import { gold } from '@ant-design/colors';
 import { unit } from '@ant-design/cssinjs';
 import type { CSSObject } from '@ant-design/cssinjs';
 
-import type { TypographyToken } from '.';
 import { operationUnit } from '../../style';
 import type { GenerateStyle } from '../../theme/internal';
+import type { TypographyToken } from '.';
 
-// eslint-disable-next-line import/prefer-default-export
 const getTitleStyle = (
   fontSize: number,
   lineHeight: number,
@@ -33,7 +32,6 @@ const getTitleStyle = (
   };
 };
 
-// eslint-disable-next-line import/prefer-default-export
 export const getTitleStyles: GenerateStyle<TypographyToken, CSSObject> = (token) => {
   const headings = [1, 2, 3, 4, 5] as const;
 

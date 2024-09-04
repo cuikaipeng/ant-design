@@ -10,7 +10,7 @@ import type {
   GetDefaultToken,
   PresetColorType,
 } from '../../theme/internal';
-import { genStyleHooks, mergeToken, PresetColors } from '../../theme/internal';
+import { PresetColors, genStyleHooks, mergeToken } from '../../theme/internal';
 
 export interface ComponentToken extends ArrowToken, ArrowOffsetToken {
   /**

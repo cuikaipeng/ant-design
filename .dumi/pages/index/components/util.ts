@@ -40,32 +40,32 @@ export interface Icon {
   href: string;
 }
 
-export type Articles = {
+export interface Articles {
   cn: Article[];
   en: Article[];
-};
+}
 
 export type Authors = Author[];
 
-export type Recommendations = {
+export interface Recommendations {
   cn: Recommendation[];
   en: Recommendation[];
-};
+}
 
-export type Extras = {
+export interface Extras {
   cn: Extra[];
   en: Extra[];
-};
+}
 
 export type Icons = Icon[];
 
-export type SiteData = {
+export interface SiteData {
   articles: Articles;
   authors: Authors;
   recommendations: Recommendations;
   extras: Extras;
   icons: Icons;
-};
+}
 
 export function preLoad(list: string[]) {
   if (typeof window !== 'undefined') {

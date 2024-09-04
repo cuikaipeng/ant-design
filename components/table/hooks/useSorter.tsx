@@ -9,14 +9,14 @@ import type { TooltipProps } from '../../tooltip';
 import Tooltip from '../../tooltip';
 import type {
   ColumnGroupType,
-  ColumnsType,
   ColumnTitleProps,
   ColumnType,
+  ColumnsType,
   CompareFn,
   Key,
+  SortOrder,
   SorterResult,
   SorterTooltipProps,
-  SortOrder,
   TableLocale,
   TransformColumns,
 } from '../interface';

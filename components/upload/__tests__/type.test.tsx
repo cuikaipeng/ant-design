@@ -25,9 +25,9 @@ describe('Upload.typescript', () => {
   });
 
   it('onChange params', () => {
-    type IFile = {
+    interface IFile {
       customFile: File;
-    };
+    }
 
     const upload = (
       <Upload<IFile> onChange={({ file }) => file.response?.customFile}>
@@ -39,9 +39,9 @@ describe('Upload.typescript', () => {
   });
 
   it('onChange fileList', () => {
-    type IFile = {
+    interface IFile {
       customFile: File;
-    };
+    }
 
     const upload = (
       <Upload<IFile> onChange={({ fileList }) => fileList.map((file) => file.response?.customFile)}>

@@ -89,7 +89,6 @@ const useThemeAnimation = () => {
       .startViewTransition(async () => {
         // wait for theme change end
         while (colorBgElevated === animateRef.current.colorBgElevated) {
-          // eslint-disable-next-line no-await-in-loop
           await new Promise((resolve) => {
             setTimeout(resolve, 1000 / 60);
           });

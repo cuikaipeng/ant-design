@@ -1,4 +1,3 @@
-/* eslint-disable no-unsafe-optional-chaining */
 /* eslint-disable react/no-multi-comp */
 import React, { useEffect, useState } from 'react';
 

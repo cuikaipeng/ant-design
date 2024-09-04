@@ -1,4 +1,3 @@
-/* eslint-disable import/prefer-default-export */
 import type { AnyObject } from '../_util/type';
 import type { ColumnTitle, ColumnTitleProps, ColumnType, Key } from './interface';
 

@@ -1,10 +1,10 @@
 /* eslint-disable no-template-curly-in-string */
 import Pagination from 'rc-pagination/lib/locale/ms_MY';
 
-import type { Locale } from '.';
 import Calendar from '../calendar/locale/ms_MY';
 import DatePicker from '../date-picker/locale/ms_MY';
 import TimePicker from '../time-picker/locale/ms_MY';
+import type { Locale } from '.';
 
 const typeTemplate = '${label} bukan ${type} jenis yang sah';
 

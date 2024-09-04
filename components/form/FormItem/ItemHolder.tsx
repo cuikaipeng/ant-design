@@ -5,7 +5,6 @@ import isVisible from 'rc-util/lib/Dom/isVisible';
 import useLayoutEffect from 'rc-util/lib/hooks/useLayoutEffect';
 import omit from 'rc-util/lib/omit';
 
-import type { FormItemProps } from '.';
 import { Row } from '../../grid';
 import type { ReportMetaChange } from '../context';
 import { FormContext, NoStyleItemContext } from '../context';
@@ -14,6 +13,7 @@ import FormItemLabel from '../FormItemLabel';
 import useDebounce from '../hooks/useDebounce';
 import { getStatus } from '../util';
 import StatusProvider from './StatusProvider';
+import type { FormItemProps } from '.';
 
 export interface ItemHolderProps extends FormItemProps {
   prefixCls: string;

@@ -17,8 +17,8 @@ import {
   Layout,
   Menu,
   Radio,
-  theme,
   Typography,
+  theme,
 } from 'antd';
 import { createStyles } from 'antd-style';
 import { generateColor } from 'antd/es/color-picker/util';
@@ -34,7 +34,7 @@ import Group from '../Group';
 import { getCarouselStyle } from '../util';
 import BackgroundImage from './BackgroundImage';
 import ColorPicker from './ColorPicker';
-import { DEFAULT_COLOR, getAvatarURL, getClosetColor, PINK_COLOR } from './colorUtil';
+import { DEFAULT_COLOR, PINK_COLOR, getAvatarURL, getClosetColor } from './colorUtil';
 import MobileCarousel from './MobileCarousel';
 import RadiusPicker from './RadiusPicker';
 import type { THEME } from './ThemePicker';

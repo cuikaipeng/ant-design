@@ -6,10 +6,10 @@ import LoadingOutlined from '@ant-design/icons/LoadingOutlined';
 import classNames from 'classnames';
 import type { Meta } from 'rc-field-form/lib/interface';
 
-import type { FeedbackIcons, ValidateStatus } from '.';
 import { FormContext, FormItemInputContext } from '../context';
 import type { FormItemStatusContextProps } from '../context';
 import { getStatus } from '../util';
+import type { FeedbackIcons, ValidateStatus } from '.';
 
 const iconMap = {
   success: CheckCircleFilled,

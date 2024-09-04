@@ -18,10 +18,10 @@ export type { MenuItemGroupProps } from 'rc-menu';
 export type { MenuDividerProps } from './MenuDivider';
 export type { MenuItemProps, MenuProps, MenuTheme, SubMenuProps };
 
-export type MenuRef = {
+export interface MenuRef {
   menu: RcMenuRef | null;
   focus: (options?: FocusOptions) => void;
-};
+}
 
 type ComponentProps = MenuProps & React.RefAttributes<MenuRef>;
 

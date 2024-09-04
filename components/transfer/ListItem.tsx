@@ -2,13 +2,13 @@ import * as React from 'react';
 import DeleteOutlined from '@ant-design/icons/DeleteOutlined';
 import classNames from 'classnames';
 
-import type { KeyWiseTransferItem } from '.';
 import TransButton from '../_util/transButton';
 import Checkbox from '../checkbox';
 import { useLocale } from '../locale';
 import defaultLocale from '../locale/en_US';
+import type { KeyWiseTransferItem } from '.';
 
-type ListItemProps<RecordType> = {
+interface ListItemProps<RecordType> {
   renderedText?: string | number;
   renderedEl: React.ReactNode;
   disabled?: boolean;
@@ -18,7 +18,7 @@ type ListItemProps<RecordType> = {
   onRemove?: (item: RecordType) => void;
   item: RecordType;
   showRemove?: boolean;
-};
+}
 
 const ListItem = <RecordType extends KeyWiseTransferItem>(props: ListItemProps<RecordType>) => {
   const {

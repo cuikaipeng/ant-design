@@ -7,6 +7,10 @@ import { groupKeysMap } from '../_util/transKeys';
 import Checkbox from '../checkbox';
 import Dropdown from '../dropdown';
 import type { MenuProps } from '../menu';
+import type { PaginationType, TransferKey } from './interface';
+import type { ListBodyRef, TransferListBodyProps } from './ListBody';
+import DefaultListBody, { OmitProps } from './ListBody';
+import Search from './search';
 import type {
   KeyWiseTransferItem,
   RenderResult,
@@ -15,10 +19,6 @@ import type {
   TransferDirection,
   TransferLocale,
 } from './index';
-import type { PaginationType, TransferKey } from './interface';
-import type { ListBodyRef, TransferListBodyProps } from './ListBody';
-import DefaultListBody, { OmitProps } from './ListBody';
-import Search from './search';
 
 const defaultRender = () => null;
 

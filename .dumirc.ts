@@ -1,4 +1,4 @@
-import path from 'path';
+import path from 'node:path';
 import { defineConfig } from 'dumi';
 import * as fs from 'fs-extra';
 
@@ -57,9 +57,12 @@ export default defineConfig({
   analytics: {
     ga_v2: 'UA-72788897-1',
   },
-  analyze: process.env.NODE_ENV === 'production' ? false : {
-    analyzerPort: 'auto',
-  },
+  analyze:
+    process.env.NODE_ENV === 'production'
+      ? false
+      : {
+          analyzerPort: 'auto',
+        },
   links: [
     {
       rel: 'prefetch',

@@ -1,5 +1,5 @@
 import type { ReactElement } from 'react';
-import React, { createRef, StrictMode } from 'react';
+import React, { StrictMode, createRef } from 'react';
 import type { RenderOptions } from '@testing-library/react';
 import { act, render } from '@testing-library/react';
 import MockDate from 'mockdate';
@@ -76,7 +76,6 @@ export const triggerResize = (target: Element) => {
  */
 export async function waitFakeTimer(advanceTime = 1000, times = 20) {
   for (let i = 0; i < times; i += 1) {
-    // eslint-disable-next-line no-await-in-loop
     await act(async () => {
       await Promise.resolve();
 

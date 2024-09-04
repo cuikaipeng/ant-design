@@ -7,9 +7,9 @@ import {
   Input,
   InputNumber,
   Mentions,
+  Segmented,
   Select,
   TreeSelect,
-  Segmented,
 } from 'antd';
 import type { FormProps } from 'antd';
 

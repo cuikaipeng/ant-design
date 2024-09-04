@@ -1,6 +1,6 @@
-import { createHash } from 'crypto';
-import fs from 'fs';
-import path from 'path';
+import { createHash } from 'node:crypto';
+import fs from 'node:fs';
+import path from 'node:path';
 import createEmotionServer from '@emotion/server/create-instance';
 import chalk from 'chalk';
 import type { IApi, IRoute } from 'dumi';
@@ -37,7 +37,6 @@ export const getHash = (str: string, length = 8) =>
  * extends dumi internal tech stack, for customize previewer props
  */
 class AntdReactTechStack extends ReactTechStack {
-  // eslint-disable-next-line class-methods-use-this
   generatePreviewerProps(...[props, opts]: any) {
     props.pkgDependencyList = { ...devDependencies, ...dependencies };
     props.jsx ??= '';

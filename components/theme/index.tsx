@@ -1,9 +1,8 @@
-/* eslint-disable import/prefer-default-export */
 import getDesignToken from './getDesignToken';
 import type { GlobalToken, MappingAlgorithm } from './interface';
 import {
-  defaultConfig,
   DesignTokenContext as InternalDesignTokenContext,
+  defaultConfig,
   useToken as useInternalToken,
 } from './internal';
 import compactAlgorithm from './themes/compact';

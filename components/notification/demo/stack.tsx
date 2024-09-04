@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { Button, Divider, InputNumber, notification, Space, Switch } from 'antd';
+import { Button, Divider, InputNumber, Space, Switch, notification } from 'antd';
 
 const Context = React.createContext({ name: 'Default' });
 
@@ -17,7 +17,7 @@ const App: React.FC = () => {
   const openNotification = () => {
     api.open({
       message: 'Notification Title',
-      description: `${Array(Math.round(Math.random() * 5) + 1)
+      description: `${Array.from({ length: Math.round(Math.random() * 5) + 1 })
         .fill('This is the content of the notification.')
         .join('\n')}`,
       duration: null,

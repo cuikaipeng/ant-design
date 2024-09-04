@@ -58,7 +58,7 @@ const useStyle = createStyles(({ token }) => ({
   `,
 }));
 
-const seeds = Array(30)
+const seeds = Array.from({ length: 30 })
   .fill(1)
   .map(() => Math.random());
 

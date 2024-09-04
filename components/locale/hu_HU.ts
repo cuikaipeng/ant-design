@@ -1,9 +1,9 @@
 import Pagination from 'rc-pagination/lib/locale/hu_HU';
 
-import type { Locale } from '.';
 import Calendar from '../calendar/locale/hu_HU';
 import DatePicker from '../date-picker/locale/hu_HU';
 import TimePicker from '../time-picker/locale/hu_HU';
+import type { Locale } from '.';
 
 const localeValues: Locale = {
   locale: 'hu',

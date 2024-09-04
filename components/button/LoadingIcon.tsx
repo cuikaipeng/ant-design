@@ -5,12 +5,12 @@ import CSSMotion from 'rc-motion';
 
 import IconWrapper from './IconWrapper';
 
-type InnerLoadingIconProps = {
+interface InnerLoadingIconProps {
   prefixCls: string;
   className?: string;
   style?: React.CSSProperties;
   iconClassName?: string;
-};
+}
 
 const InnerLoadingIcon = forwardRef<HTMLSpanElement, InnerLoadingIconProps>((props, ref) => {
   const { prefixCls, className, style, iconClassName } = props;
@@ -23,13 +23,13 @@ const InnerLoadingIcon = forwardRef<HTMLSpanElement, InnerLoadingIconProps>((pro
   );
 });
 
-export type LoadingIconProps = {
+export interface LoadingIconProps {
   prefixCls: string;
   existIcon: boolean;
   loading?: boolean | object;
   className?: string;
   style?: React.CSSProperties;
-};
+}
 
 const getCollapsedWidth = (): React.CSSProperties => ({
   width: 0,

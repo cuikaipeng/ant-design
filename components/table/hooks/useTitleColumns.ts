@@ -3,9 +3,9 @@ import type { AnyObject } from 'antd/es/_util/type';
 
 import type {
   ColumnGroupType,
-  ColumnsType,
   ColumnTitleProps,
   ColumnType,
+  ColumnsType,
   TransformColumns,
 } from '../interface';
 import { renderColumnTitle } from '../util';

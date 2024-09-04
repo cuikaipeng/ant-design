@@ -247,14 +247,14 @@ const CodePreviewer: React.FC<AntdPreviewerProps> = (props) => {
     title: `${localizedTitle} - antd@${dependencies.antd}`,
     html,
     js: `const { createRoot } = ReactDOM;\n${jsx
-      .replace(/import\s+(?:React,\s+)?{(\s+[^}]*\s+)}\s+from\s+'react'/, `const { $1 } = React;`)
-      .replace(/import\s+{(\s+[^}]*\s+)}\s+from\s+'antd';/, 'const { $1 } = antd;')
-      .replace(/import\s+{(\s+[^}]*\s+)}\s+from\s+'@ant-design\/icons';/, 'const { $1 } = icons;')
+      .replace(/import\s+(?:React,\s+)?\{(\s[^}]*\s)\}\s+from\s+'react'/, `const { $1 } = React;`)
+      .replace(/import\s+\{(\s[^}]*\s)\}\s+from\s+'antd';/, 'const { $1 } = antd;')
+      .replace(/import\s+\{(\s[^}]*\s)\}\s+from\s+'@ant-design\/icons';/, 'const { $1 } = icons;')
       .replace("import moment from 'moment';", '')
       .replace("import React from 'react';", '')
-      .replace(/import\s+{\s+(.*)\s+}\s+from\s+'react-router';/, 'const { $1 } = ReactRouter;')
+      .replace(/import\s+\{\s+(.*)\s+\}\s+from\s+'react-router';/, 'const { $1 } = ReactRouter;')
       .replace(
-        /import\s+{\s+(.*)\s+}\s+from\s+'react-router-dom';/,
+        /import\s+\{\s+(.*)\s+\}\s+from\s+'react-router-dom';/,
         'const { $1 } = ReactRouterDOM;',
       )
       .replace(/([A-Za-z]*)\s+as\s+([A-Za-z]*)/, '$1:$2')

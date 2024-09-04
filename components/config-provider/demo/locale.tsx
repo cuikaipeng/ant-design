@@ -25,11 +25,11 @@ import {
   Select,
   Space,
   Table,
-  theme,
   TimePicker,
   Tour,
   Transfer,
   Upload,
+  theme,
 } from 'antd';
 import enUS from 'antd/locale/en_US';
 import zhCN from 'antd/locale/zh_CN';

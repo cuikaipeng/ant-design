@@ -1,10 +1,9 @@
 import React from 'react';
 
-import SemanticPreview from '../../../.dumi/components/SemanticPreview';
-import useLocale from '../../../.dumi/hooks/useLocale';
-
 import { EditOutlined, EllipsisOutlined, SettingOutlined } from '@ant-design/icons';
 import { Avatar, Card } from 'antd';
+import SemanticPreview from '../../../.dumi/components/SemanticPreview';
+import useLocale from '../../../.dumi/hooks/useLocale';
 
 const { Meta } = Card;
 

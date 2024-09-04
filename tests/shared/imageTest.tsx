@@ -1,7 +1,7 @@
-import path from 'path';
+import path from 'node:path';
 import React from 'react';
 // Reference: https://github.com/ant-design/ant-design/pull/24003#discussion_r427267386
-import { createCache, extractStyle, StyleProvider } from '@ant-design/cssinjs';
+import { StyleProvider, createCache, extractStyle } from '@ant-design/cssinjs';
 import dayjs from 'dayjs';
 import fse from 'fs-extra';
 import { globSync } from 'glob';
@@ -241,14 +241,14 @@ export default function imageTest(
   });
 }
 
-type Options = {
+interface Options {
   skip?: boolean | string[];
   onlyViewport?: boolean | string[];
   /** Use SSR render instead. Only used when the third part deps component */
   ssr?: boolean;
   /** Open Trigger to check the popup render */
   openTriggerClassName?: string;
-};
+}
 
 // eslint-disable-next-line jest/no-export
 export function imageDemoTest(component: string, options: Options = {}) {
@@ -264,7 +264,6 @@ export function imageDemoTest(component: string, options: Options = {}) {
       describeMethod = describe;
     }
     describeMethod(`Test ${file} image`, () => {
-      // eslint-disable-next-line global-require,import/no-dynamic-require
       let Demo = require(`../../${file}`).default;
       if (typeof Demo === 'function') {
         Demo = <Demo />;

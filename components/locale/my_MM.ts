@@ -1,10 +1,10 @@
 /* eslint-disable no-template-curly-in-string */
 import Pagination from 'rc-pagination/lib/locale/my_MM';
 
-import type { Locale } from '.';
 import Calendar from '../calendar/locale/my_MM';
 import DatePicker from '../date-picker/locale/my_MM';
 import TimePicker from '../time-picker/locale/my_MM';
+import type { Locale } from '.';
 
 const typeTemplate = '${label} သည် တရားဝင် ${type} မဟုတ်ပါ';
 

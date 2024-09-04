@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, ConfigProvider, Flex, Row, Tag, theme, Typography } from 'antd';
+import { Col, ConfigProvider, Flex, Row, Tag, Typography, theme } from 'antd';
 import { createStyles, css } from 'antd-style';
 import classnames from 'classnames';
 

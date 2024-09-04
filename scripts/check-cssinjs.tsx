@@ -1,11 +1,10 @@
-/* eslint-disable no-console */
 import React from 'react';
 import {
+  NaNLinter,
+  StyleProvider,
   legacyNotSelectorLinter,
   logicalPropertiesLinter,
-  NaNLinter,
   parentSelectorLinter,
-  StyleProvider,
 } from '@ant-design/cssinjs';
 import chalk from 'chalk';
 import ReactDOMServer from 'react-dom/server';

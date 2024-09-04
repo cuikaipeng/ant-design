@@ -3,7 +3,7 @@ import React from 'react';
 import { cloneElement, isFragment } from '../_util/reactNode';
 import type { BaseButtonProps, LegacyButtonType } from './button';
 
-const rxTwoCNChar = /^[\u4e00-\u9fa5]{2}$/;
+const rxTwoCNChar = /^[\u4E00-\u9FA5]{2}$/;
 export const isTwoCNChar = rxTwoCNChar.test.bind(rxTwoCNChar);
 
 export function convertLegacyProps(

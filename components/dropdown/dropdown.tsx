@@ -39,9 +39,9 @@ type DropdownPlacement = Exclude<Placement, 'topCenter' | 'bottomCenter'>;
 
 type OverlayFunc = () => React.ReactElement;
 
-export type DropdownArrowOptions = {
+export interface DropdownArrowOptions {
   pointAtCenter?: boolean;
-};
+}
 
 export interface DropdownProps {
   menu?: MenuProps;

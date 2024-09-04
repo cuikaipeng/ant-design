@@ -1,9 +1,9 @@
 import { createContext } from 'react';
 
-export type DemoContextProps = {
+export interface DemoContextProps {
   showDebug?: boolean;
   codeType?: string;
-};
+}
 
 const DemoContext = createContext<{
   showDebug?: boolean;

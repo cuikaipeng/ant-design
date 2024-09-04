@@ -38,13 +38,13 @@ const useStyle = createStyles(({ token, css }) => ({
   `,
 }));
 
-export type Resource = {
+export interface Resource {
   title: string;
   description: string;
   cover: string;
   src: string;
   official?: boolean;
-};
+}
 
 const locales = {
   cn: {
@@ -59,9 +59,9 @@ const locales = {
   },
 };
 
-export type ResourceCardProps = {
+export interface ResourceCardProps {
   resource: Resource;
-};
+}
 
 const ResourceCard: React.FC<ResourceCardProps> = ({ resource }) => {
   const { styles } = useStyle();
@@ -99,9 +99,9 @@ const ResourceCard: React.FC<ResourceCardProps> = ({ resource }) => {
   );
 };
 
-export type ResourceCardsProps = {
+export interface ResourceCardsProps {
   resources: Resource[];
-};
+}
 
 const ResourceCards: React.FC<ResourceCardsProps> = ({ resources }) => (
   <Row gutter={[24, 24]}>

@@ -21,7 +21,10 @@ export type ProgressType = (typeof ProgressTypes)[number];
 const ProgressStatuses = ['normal', 'exception', 'active', 'success'] as const;
 export type ProgressSize = 'default' | 'small';
 export type StringGradients = Record<string, string>;
-type FromToGradients = { from: string; to: string };
+interface FromToGradients {
+  from: string;
+  to: string;
+}
 export type ProgressGradient = { direction?: string } & (StringGradients | FromToGradients);
 export interface PercentPositionType {
   align?: 'start' | 'center' | 'end';

@@ -3,10 +3,12 @@ import { Button, Tabs } from 'antd';
 
 type TargetKey = React.MouseEvent | React.KeyboardEvent | string;
 
-const defaultPanes = new Array(2).fill(null).map((_, index) => {
-  const id = String(index + 1);
-  return { label: `Tab ${id}`, children: `Content of Tab Pane ${index + 1}`, key: id };
-});
+const defaultPanes = Array.from({ length: 2 })
+  .fill(null)
+  .map((_, index) => {
+    const id = String(index + 1);
+    return { label: `Tab ${id}`, children: `Content of Tab Pane ${index + 1}`, key: id };
+  });
 
 const App: React.FC = () => {
   const [activeKey, setActiveKey] = useState(defaultPanes[0].key);

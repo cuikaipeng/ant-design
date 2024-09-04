@@ -3,9 +3,9 @@ import * as React from 'react';
 import type { AnyObject } from '../../../_util/type';
 import { devUseWarning } from '../../../_util/warning';
 import type {
-  ColumnsType,
   ColumnTitleProps,
   ColumnType,
+  ColumnsType,
   FilterKey,
   FilterValue,
   GetPopupContainer,

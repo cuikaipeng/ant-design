@@ -1,7 +1,7 @@
 import { unit } from '@ant-design/cssinjs';
 
-import type { MenuToken } from '.';
 import type { GenerateStyle } from '../../theme/internal';
+import type { MenuToken } from '.';
 
 const getHorizontalStyle: GenerateStyle<MenuToken> = (token) => {
   const {

@@ -4,8 +4,8 @@ import { resetComponent } from '../../style';
 import { initZoomMotion } from '../../style/motion';
 import type { ArrowOffsetToken } from '../../style/placementArrow';
 import getArrowStyle, {
-  getArrowOffsetToken,
   MAX_VERTICAL_CONTENT_RADIUS,
+  getArrowOffsetToken,
 } from '../../style/placementArrow';
 import type { ArrowToken } from '../../style/roundedArrow';
 import { getArrowToken } from '../../style/roundedArrow';

@@ -22,27 +22,31 @@ const App: React.FC = () => {
         defaultActiveKey="1"
         size={size}
         style={{ marginBottom: 32 }}
-        items={new Array(3).fill(null).map((_, i) => {
-          const id = String(i + 1);
-          return {
-            label: `Tab ${id}`,
-            key: id,
-            children: `Content of tab ${id}`,
-          };
-        })}
+        items={Array.from({ length: 3 })
+          .fill(null)
+          .map((_, i) => {
+            const id = String(i + 1);
+            return {
+              label: `Tab ${id}`,
+              key: id,
+              children: `Content of tab ${id}`,
+            };
+          })}
       />
       <Tabs
         defaultActiveKey="1"
         type="card"
         size={size}
-        items={new Array(3).fill(null).map((_, i) => {
-          const id = String(i + 1);
-          return {
-            label: `Card Tab ${id}`,
-            key: id,
-            children: `Content of card tab ${id}`,
-          };
-        })}
+        items={Array.from({ length: 3 })
+          .fill(null)
+          .map((_, i) => {
+            const id = String(i + 1);
+            return {
+              label: `Card Tab ${id}`,
+              key: id,
+              children: `Content of card tab ${id}`,
+            };
+          })}
       />
     </div>
   );

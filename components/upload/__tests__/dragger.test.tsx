@@ -1,4 +1,4 @@
-/* eslint-disable react/no-string-refs, react/prefer-es6-class */
+/* eslint-disable react/prefer-es6-class */
 import React from 'react';
 
 import Upload from '..';

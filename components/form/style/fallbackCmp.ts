@@ -4,10 +4,10 @@
  */
 
 // Style as inline component
-import { prepareToken } from '.';
-import type { FormToken } from '.';
 import { genSubStyleComponent } from '../../theme/internal';
 import type { GenerateStyle } from '../../theme/internal';
+import { prepareToken } from '.';
+import type { FormToken } from '.';
 
 // ============================= Fallback =============================
 const genFallbackStyle: GenerateStyle<FormToken> = (token) => {

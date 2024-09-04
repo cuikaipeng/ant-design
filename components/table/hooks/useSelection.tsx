@@ -18,8 +18,8 @@ import Checkbox from '../../checkbox';
 import Dropdown from '../../dropdown';
 import Radio from '../../radio';
 import type {
-  ColumnsType,
   ColumnType,
+  ColumnsType,
   ExpandType,
   GetPopupContainer,
   GetRowKey,

@@ -4,11 +4,11 @@ import CopyOutlined from '@ant-design/icons/CopyOutlined';
 import LoadingOutlined from '@ant-design/icons/LoadingOutlined';
 import classNames from 'classnames';
 
-import type { CopyConfig } from '.';
 import TransButton from '../../_util/transButton';
 import type { Locale } from '../../locale';
 import Tooltip from '../../tooltip';
 import { getNode, toList } from './util';
+import type { CopyConfig } from '.';
 
 export interface CopyBtnProps extends Omit<CopyConfig, 'onCopy'> {
   prefixCls: string;

@@ -1,10 +1,10 @@
 /* eslint-disable no-template-curly-in-string */
 import Pagination from 'rc-pagination/lib/locale/tr_TR';
 
-import type { Locale } from '.';
 import Calendar from '../calendar/locale/tr_TR';
 import DatePicker from '../date-picker/locale/tr_TR';
 import TimePicker from '../time-picker/locale/tr_TR';
+import type { Locale } from '.';
 
 const typeTemplate = '${label} geçerli bir ${type} değil';
 

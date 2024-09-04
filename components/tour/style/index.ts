@@ -4,8 +4,8 @@ import { TinyColor } from '@ctrl/tinycolor';
 import { genFocusStyle, resetComponent } from '../../style';
 import type { ArrowOffsetToken } from '../../style/placementArrow';
 import getArrowStyle, {
-  getArrowOffsetToken,
   MAX_VERTICAL_CONTENT_RADIUS,
+  getArrowOffsetToken,
 } from '../../style/placementArrow';
 import type { ArrowToken } from '../../style/roundedArrow';
 import { getArrowToken } from '../../style/roundedArrow';

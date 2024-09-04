@@ -1,11 +1,11 @@
 /* eslint no-param-reassign: 0 */
 // This config is for building dist files
+const path = require('node:path');
 const getWebpackConfig = require('@ant-design/tools/lib/getWebpackConfig');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const { codecovWebpackPlugin } = require('@codecov/webpack-plugin');
 const CircularDependencyPlugin = require('circular-dependency-plugin');
 const DuplicatePackageCheckerPlugin = require('@madccc/duplicate-package-checker-webpack-plugin');
-const path = require('path');
 
 function addLocales(webpackConfig) {
   let packageName = 'antd-with-locales';

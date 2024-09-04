@@ -1,7 +1,7 @@
 import { unit } from '@ant-design/cssinjs';
 
-import { genNoticeStyle, prepareComponentToken, prepareNotificationToken } from '.';
 import { genSubStyleComponent } from '../../theme/internal';
+import { genNoticeStyle, prepareComponentToken, prepareNotificationToken } from '.';
 
 export default genSubStyleComponent(
   ['Notification', 'PurePanel'],

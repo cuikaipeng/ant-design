@@ -1,8 +1,8 @@
 import { unit } from '@ant-design/cssinjs';
 import type { CSSInterpolation } from '@ant-design/cssinjs';
 
-import type { MenuToken } from '.';
 import { genFocusOutline } from '../../style';
+import type { MenuToken } from '.';
 
 const accessibilityFocus = (token: MenuToken) => ({
   ...genFocusOutline(token),

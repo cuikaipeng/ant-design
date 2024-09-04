@@ -7,7 +7,6 @@ import {
   ColorPicker,
   Dropdown,
   Input,
-  message,
   Modal,
   Progress,
   Select,
@@ -15,6 +14,7 @@ import {
   Steps,
   Switch,
   Tooltip,
+  message,
 } from 'antd';
 import { createStyles } from 'antd-style';
 
@@ -119,10 +119,12 @@ const ComponentsBlock: React.FC = () => {
         <div style={{ flex: 'none' }}>
           <Dropdown.Button
             menu={{
-              items: new Array(5).fill(null).map((_, index) => ({
-                key: `opt${index}`,
-                label: `${locale.option} ${index}`,
-              })),
+              items: Array.from({ length: 5 })
+                .fill(null)
+                .map((_, index) => ({
+                  key: `opt${index}`,
+                  label: `${locale.option} ${index}`,
+                })),
             }}
           >
             {locale.dropdown}

@@ -78,13 +78,13 @@ function getParagraphBasicProps(hasAvatar: boolean, hasTitle: boolean): Skeleton
   return basicProps;
 }
 
-type CompoundedComponent = {
+interface CompoundedComponent {
   Button: typeof SkeletonButton;
   Avatar: typeof SkeletonAvatar;
   Input: typeof SkeletonInput;
   Image: typeof SkeletonImage;
   Node: typeof SkeletonNode;
-};
+}
 
 const Skeleton: React.FC<SkeletonProps> & CompoundedComponent = (props) => {
   const {

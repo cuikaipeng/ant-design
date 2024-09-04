@@ -14,14 +14,14 @@ import type { ColorPickerProps, GetProp } from 'antd';
 
 type Color = Extract<GetProp<ColorPickerProps, 'value'>, { cleared: any }>;
 
-type ThemeData = {
+interface ThemeData {
   borderRadius: number;
   colorPrimary: string;
   Button?: {
     colorPrimary: string;
     algorithm?: boolean;
   };
-};
+}
 
 const defaultData: ThemeData = {
   borderRadius: 6,

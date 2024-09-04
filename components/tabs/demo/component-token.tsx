@@ -36,100 +36,114 @@ const App: React.FC = () => (
         defaultActiveKey="1"
         tabBarExtraContent={<Button>Extra Action</Button>}
         style={{ marginBottom: 32 }}
-        items={new Array(3).fill(null).map((_, i) => {
-          const id = String(i + 1);
-          return {
-            label: `Tab ${id}`,
-            key: id,
-            children: `Content of tab ${id}`,
-          };
-        })}
+        items={Array.from({ length: 3 })
+          .fill(null)
+          .map((_, i) => {
+            const id = String(i + 1);
+            return {
+              label: `Tab ${id}`,
+              key: id,
+              children: `Content of tab ${id}`,
+            };
+          })}
       />
       <Tabs
         tabPosition="left"
         defaultActiveKey="1"
         tabBarExtraContent={<Button>Extra Action</Button>}
         style={{ marginBottom: 32 }}
-        items={new Array(3).fill(null).map((_, i) => {
-          const id = String(i + 1);
-          return {
-            label: `Tab ${id}`,
-            key: id,
-            children: `Content of tab ${id}`,
-          };
-        })}
+        items={Array.from({ length: 3 })
+          .fill(null)
+          .map((_, i) => {
+            const id = String(i + 1);
+            return {
+              label: `Tab ${id}`,
+              key: id,
+              children: `Content of tab ${id}`,
+            };
+          })}
       />
       <Tabs
         size="small"
         defaultActiveKey="1"
         tabBarExtraContent={<Button>Extra Action</Button>}
         style={{ marginBottom: 32 }}
-        items={new Array(3).fill(null).map((_, i) => {
-          const id = String(i + 1);
-          return {
-            label: `Tab ${id}`,
-            key: id,
-            children: `Content of tab ${id}`,
-          };
-        })}
+        items={Array.from({ length: 3 })
+          .fill(null)
+          .map((_, i) => {
+            const id = String(i + 1);
+            return {
+              label: `Tab ${id}`,
+              key: id,
+              children: `Content of tab ${id}`,
+            };
+          })}
       />
       <Tabs
         size="large"
         defaultActiveKey="1"
         tabBarExtraContent={<Button>Extra Action</Button>}
         style={{ marginBottom: 32 }}
-        items={new Array(3).fill(null).map((_, i) => {
-          const id = String(i + 1);
-          return {
-            label: `Tab ${id}`,
-            key: id,
-            children: `Content of tab ${id}`,
-          };
-        })}
+        items={Array.from({ length: 3 })
+          .fill(null)
+          .map((_, i) => {
+            const id = String(i + 1);
+            return {
+              label: `Tab ${id}`,
+              key: id,
+              children: `Content of tab ${id}`,
+            };
+          })}
       />
       <Tabs
         defaultActiveKey="1"
         centered
         type="card"
-        items={new Array(3).fill(null).map((_, i) => {
-          const id = String(i + 1);
-          return {
-            disabled: i === 2,
-            label: `Tab ${id}`,
-            key: id,
-            children: `Content of Tab Pane ${id}`,
-          };
-        })}
+        items={Array.from({ length: 3 })
+          .fill(null)
+          .map((_, i) => {
+            const id = String(i + 1);
+            return {
+              disabled: i === 2,
+              label: `Tab ${id}`,
+              key: id,
+              children: `Content of Tab Pane ${id}`,
+            };
+          })}
       />
       <Tabs
         size="small"
         defaultActiveKey="1"
         centered
         type="card"
-        items={new Array(3).fill(null).map((_, i) => {
-          const id = String(i + 1);
-          return {
-            disabled: i === 2,
-            label: `Tab ${id}`,
-            key: id,
-            children: `Content of Tab Pane ${id}`,
-          };
-        })}
+        items={Array.from({ length: 3 })
+          .fill(null)
+          .map((_, i) => {
+            const id = String(i + 1);
+            return {
+              disabled: i === 2,
+              label: `Tab ${id}`,
+              key: id,
+              children: `Content of Tab Pane ${id}`,
+            };
+          })}
       />
       <Tabs
         size="large"
         defaultActiveKey="1"
         centered
         type="card"
-        items={new Array(3).fill(null).map((_, i) => {
-          const id = String(i + 1);
-          return {
-            disabled: i === 2,
-            label: `Tab ${id}`,
-            key: id,
-            children: `Content of Tab Pane ${id}`,
-          };
-        })}
+        items={Array.from({ length: 3 })
+          .fill(null)
+          .map((_, i) => {
+            const id = String(i + 1);
+            return {
+              disabled: i === 2,
+              label: `Tab ${id}`,
+              key: id,
+              children: `Content of Tab Pane ${id}`,
+            };
+          })}
       />
     </div>
   </ConfigProvider>

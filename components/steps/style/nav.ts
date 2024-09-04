@@ -1,9 +1,9 @@
 import { unit } from '@ant-design/cssinjs';
 import type { CSSObject } from '@ant-design/cssinjs';
 
-import type { StepsToken } from '.';
 import { textEllipsis } from '../../style';
 import type { GenerateStyle } from '../../theme/internal';
+import type { StepsToken } from '.';
 
 const genStepsNavStyle: GenerateStyle<StepsToken, CSSObject> = (token) => {
   const {

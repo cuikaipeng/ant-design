@@ -421,7 +421,7 @@ export default () => {
           showSearch={showSearch}
           onChange={handleTableTransferChange}
           filterOption={(inputValue, item) =>
-            item.title.indexOf(inputValue) !== -1 || item.tag?.indexOf(inputValue) !== -1
+            item.title.includes(inputValue) || item.tag?.indexOf(inputValue) !== -1
           }
           leftColumns={[
             {

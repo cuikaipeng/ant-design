@@ -6,9 +6,9 @@ import type { MultipleSelectorToken, SelectorToken } from '../../select/style/to
 import type { ArrowToken } from '../../style/roundedArrow';
 import { getArrowToken } from '../../style/roundedArrow';
 import type {
-  GlobalToken,
   FullToken,
   GetDefaultToken,
+  GlobalToken,
   TokenWithCommonCls,
 } from '../../theme/internal';
 
@@ -96,7 +96,7 @@ export interface ComponentToken
   zIndexPopup: number;
 }
 
-export type PickerPanelToken = {
+export interface PickerPanelToken {
   pickerCellCls: string;
   pickerCellInnerCls: string;
   pickerDatePanelPaddingHorizontal: number | string;
@@ -107,7 +107,7 @@ export type PickerPanelToken = {
   pickerControlIconSize: number;
   pickerControlIconMargin: number;
   pickerControlIconBorderWidth: number;
-};
+}
 
 export interface PickerToken
   extends FullToken<'DatePicker'>,

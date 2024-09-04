@@ -1,11 +1,11 @@
 import { unit } from '@ant-design/cssinjs';
 import type { CSSObject } from '@ant-design/cssinjs';
 
-import { prepareComponentToken } from '.';
-import type { CascaderToken } from '.';
 import { genComponentStyleHook } from '../../theme/internal';
 import type { GenerateStyle } from '../../theme/internal';
 import getColumnsStyle from './columns';
+import type { CascaderToken } from '.';
+import { prepareComponentToken } from '.';
 
 // ============================== Panel ===============================
 const genPanelStyle: GenerateStyle<CascaderToken> = (token: CascaderToken): CSSObject => {

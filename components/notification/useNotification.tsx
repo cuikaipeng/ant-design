@@ -15,7 +15,7 @@ import type {
   NotificationInstance,
   NotificationPlacement,
 } from './interface';
-import { getCloseIcon, PureContent } from './PurePanel';
+import { PureContent, getCloseIcon } from './PurePanel';
 import useStyle from './style';
 import { getMotion, getPlacementStyle } from './util';
 

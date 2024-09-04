@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { theme, Transfer, Tree } from 'antd';
+import { Transfer, Tree, theme } from 'antd';
 import type { GetProp, TransferProps, TreeDataNode } from 'antd';
 
 type TransferItem = GetProp<TransferProps, 'dataSource'>[number];

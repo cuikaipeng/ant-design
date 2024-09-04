@@ -1,7 +1,7 @@
 import React from 'react';
 import { DownOutlined } from '@ant-design/icons';
 import type { MenuProps } from 'antd';
-import { Dropdown, message, Space } from 'antd';
+import { Dropdown, Space, message } from 'antd';
 
 const onClick: MenuProps['onClick'] = ({ key }) => {
   message.info(`Click on item ${key}`);
