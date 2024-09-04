@@ -34,12 +34,15 @@ export default antfu({
     'react/prefer-destructuring-assignment': 'off', // TODO: remove this
     'react-refresh/only-export-components': 'off', // TODO: remove this
     'react/no-clone-element': 'off',
+    'react/no-children-for-each': 'off',
+    'react/no-children-count': 'off',
   },
 }, compat.configs["flat/recommended"], jest.configs["flat/recommended"], {
   // tests
   files: ['**/*.test.ts', 'tests/**/*', '**/__tests__/**/*', '**/*.test.tsx'],
   rules: {
     'react/no-create-ref': 'off',
+    'react/no-nested-components': 'off',
     'no-console': 'off',
     'unicorn/consistent-function-scoping': 'off',
     'ts/no-non-null-asserted-optional-chain': 'off',

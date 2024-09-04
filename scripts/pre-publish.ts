@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+import { Buffer } from 'node:buffer';
 import runScript from '@npmcli/run-script';
 import { Octokit } from '@octokit/rest';
 import AdmZip from 'adm-zip';

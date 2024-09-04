@@ -1,4 +1,3 @@
-/* eslint-disable react/prefer-es6-class */
 import React from 'react';
 
 import Upload from '..';
