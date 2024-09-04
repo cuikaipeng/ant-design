@@ -2,10 +2,9 @@ import classNames from 'classnames';
 
 import type { ValidateStatus } from '../form/FormItem';
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const InputStatuses = ['warning', 'error', ''] as const;
+const _InputStatuses = ['warning', 'error', ''] as const;
 
-export type InputStatus = (typeof InputStatuses)[number];
+export type InputStatus = (typeof _InputStatuses)[number];
 
 export function getStatusClassNames(
   prefixCls: string,

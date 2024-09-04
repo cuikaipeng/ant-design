@@ -29,19 +29,31 @@ export default antfu({
     'react/prefer-destructuring-assignment': 'off', // TODO: remove this
   },
 }, {
-  files: ['**/*.test.ts', 'tests/**/*', '**/*.test.tsx', 'components/*/demo/*.tsx'],
+  // tests
+  files: ['**/*.test.ts', 'tests/**/*', '**/*.test.tsx'],
+  rules: {
+    'react/no-create-ref': 'off',
+    'no-console': 'off',
+    'unicorn/consistent-function-scoping': 'off',
+    'ts/no-non-null-asserted-optional-chain': 'off',
+  },
+}, {
+  // demos
+  files: ['components/*/demo/*.tsx'],
   rules: {
     'react/no-create-ref': 'off',
     'no-console': 'off',
     'unicorn/consistent-function-scoping': 'off',
   },
 }, {
+  // dumi site
   files: ['.dumi/**/*'],
   rules: {
     'react-refresh/only-export-components': 'off', // TODO: remove this
     'react-dom/no-dangerously-set-inner-html': 'off', // TODO: remove this
   }
 }, {
+  // locales
   files: ['components/locale/*.ts'],
   rules: {
     'no-template-curly-in-string': 'off',
