@@ -107,15 +107,15 @@ const GlobalHolderWrapper = React.forwardRef<GlobalHolderRef, unknown>((_, ref) 
 
   React.useEffect(sync, []);
 
-  const global = globalConfig();
-  const rootPrefixCls = globalThis.getRootPrefixCls();
-  const rootIconPrefixCls = globalThis.getIconPrefixCls();
-  const theme = globalThis.getTheme();
+  const { getRootPrefixCls, getTheme, getIconPrefixCls, holderRender } = globalConfig();
+  const rootPrefixCls = getRootPrefixCls();
+  const rootIconPrefixCls = getIconPrefixCls();
+  const theme = getTheme();
 
   const dom = <GlobalHolder ref={ref} sync={sync} messageConfig={messageConfig} />;
   return (
     <ConfigProvider prefixCls={rootPrefixCls} iconPrefixCls={rootIconPrefixCls} theme={theme}>
-      {globalThis.holderRender ? globalThis.holderRender(dom) : dom}
+      {holderRender ? holderRender(dom) : dom}
     </ConfigProvider>
   );
 });
@@ -250,9 +250,9 @@ function open(config: ArgsProps): MessageType {
 }
 
 function typeOpen(type: NoticeType, args: Parameters<TypeOpen>): MessageType {
-  const global = globalConfig();
+  const { holderRender } = globalConfig();
 
-  if (process.env.NODE_ENV !== 'production' && !globalThis.holderRender) {
+  if (process.env.NODE_ENV !== 'production' && !holderRender) {
     warnContext('message');
   }
 

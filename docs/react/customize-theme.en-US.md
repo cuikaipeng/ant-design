@@ -449,7 +449,7 @@ const theme = {
 | --- | --- | --- | --- |
 | `Component` (Can be any antd Component name like `Button`) | Modify Component Token or override Component used Alias Token | `ComponentToken & AliasToken & { algorithm: boolean \| (token: SeedToken) => MapToken` \| `((token: SeedToken) => MapToken)[]}` | - |
 
-> `algorithm` of component is `false` by default, which means tokens of component will only override global token. When it is set with `true`, the algorithm will be the same as globalThis. You can also pass algorithm or Array of algorithm, and it will override algorithm of globalThis.
+> `algorithm` of component is `false` by default, which means tokens of component will only override global token. When it is set with `true`, the algorithm will be the same as global. You can also pass algorithm or Array of algorithm, and it will override algorithm of global.
 
 ### SeedToken
 

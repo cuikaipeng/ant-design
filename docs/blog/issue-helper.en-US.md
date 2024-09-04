@@ -135,9 +135,9 @@ console. log(key)
 
 let items=[];
 
-if(this.props.globalThis.template_list){
+if(this.props.global.template_list){
 
-items=this.props.globalThis.template_list.map((item)=>{
+items=this.props.global.template_list.map((item)=>{
 
 if(category===item.category){
 

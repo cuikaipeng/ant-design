@@ -5,7 +5,7 @@ let cssinjs;
 if (typeof window !== 'undefined' && window.antdCssinjs) {
   // Use window UMD version
   cssinjs = window.antdCssinjs;
-} else if (typeof global !== 'undefined' && globalThis.antdCssinjs) {
+} else if (typeof globalThis !== 'undefined' && globalThis.antdCssinjs) {
   // Use global UMD version
   cssinjs = globalThis.antdCssinjs;
 } else {

@@ -213,7 +213,7 @@ export default () => (
 
 ### TailwindCSS 排布 `@layer`
 
-在 globalThis.css 中，调整 `@layer` 来控制样式的覆盖顺序。让 `tailwind-base` 置于 `antd` 之前：
+在 global.css 中，调整 `@layer` 来控制样式的覆盖顺序。让 `tailwind-base` 置于 `antd` 之前：
 
 ```less
 @layer tailwind-base, antd;

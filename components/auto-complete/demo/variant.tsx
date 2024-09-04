@@ -19,14 +19,14 @@ const App: React.FC = () => {
         style={{ width: 200 }}
         placeholder="Outlined"
         onSearch={(text) => setOptions(getPanelValue(text))}
-        onSelect={globalThis.console.log}
+        onSelect={console.log}
       />
       <AutoComplete
         options={options}
         style={{ width: 200 }}
         placeholder="Filled"
         onSearch={(text) => setOptions(getPanelValue(text))}
-        onSelect={globalThis.console.log}
+        onSelect={console.log}
         variant="filled"
       />
       <AutoComplete
@@ -34,7 +34,7 @@ const App: React.FC = () => {
         style={{ width: 200 }}
         placeholder="Borderless"
         onSearch={(text) => setOptions(getPanelValue(text))}
-        onSelect={globalThis.console.log}
+        onSelect={console.log}
         variant="borderless"
       />
     </Flex>

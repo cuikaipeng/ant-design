@@ -70,7 +70,7 @@ function main() {
 
     fs.writeJsonSync(rewritePath, newPkgJson, { spaces: 2 });
 
-    globalThis.console.log(`🔮 [prepare-examples] ${pkgJson.name} has been prepared.`);
+    console.log(`🔮 [prepare-examples] ${pkgJson.name} has been prepared.`);
   }
 }
 

@@ -63,7 +63,7 @@ exports[`component changelog match snapshot misc changelog snapshot 1`] = `
   "- 🛠 修复外部暴露类 \`CompoundedComponent\` 的组件的类型报错。[#38666](https://github.com/ant-design/ant-design/pull/38666) [@wangcch](https://github.com/wangcch)",
   "- 🛠 重新添加 \`lib\` 产物。[#38832](https://github.com/ant-design/ant-design/pull/38832) [@chunsch](https://github.com/chunsch)",
   "  - 🤖 Export Design Token \`MappingAlgorithm\` as type of theme algorithm. [#43953](https://github.com/ant-design/ant-design/pull/43953)",
-  "- 🔥 Component Token support \`algorithm\` to calculate derivative tokens same as globalThis. [#43810](https://github.com/ant-design/ant-design/pull/43810) [@MadCcc](https://github.com/MadCcc)",
+  "- 🔥 Component Token support \`algorithm\` to calculate derivative tokens same as global. [#43810](https://github.com/ant-design/ant-design/pull/43810) [@MadCcc](https://github.com/MadCcc)",
   "- 🐞 Optimized the import method for \`@ant-design/icons\` to avoid importing all icons. [#43915](https://github.com/ant-design/ant-design/pull/43915) [@ssxenon01](https://github.com/ssxenon01)",
   "- 💄 Optimized \`@ant-design/icons\` the design of icons including CloseCircleFilled/CloseSquareFilled/CloseOutlined/CloseCircleOutlined/CloseSquareOutlined/ExportOutlined/ImportOutlined. [824500](https://github.com/ant-design/ant-design-icons/commit/824500349894a87562f033dbdc5e3c5d301a2f5c)",
   "- 💄 Fix when using with other component libraries that use \`@ant-design/cssinjs\`, antd styles will always be inserted at the top to avoid style override issues caused by loading order. [#43847](https://github.com/ant-design/ant-design/pull/43847)",

@@ -61,14 +61,13 @@ const ConfirmDialogWrapper: React.FC<ConfirmDialogProps> = (props) => {
 };
 
 export default function confirm(config: ModalFuncProps) {
-  const global = globalConfig();
+  const { getPrefixCls, getIconPrefixCls, getTheme, holderRender } = globalConfig();
 
-  if (process.env.NODE_ENV !== 'production' && !globalThis.holderRender) {
+  if (process.env.NODE_ENV !== 'production' && !holderRender) {
     warnContext('Modal');
   }
 
   const container = document.createDocumentFragment();
-  // eslint-disable-next-line @typescript-eslint/no-use-before-define
   let currentConfig = { ...config, close, open: true } as any;
   let timeoutId: ReturnType<typeof setTimeout>;
 
@@ -79,7 +78,6 @@ export default function confirm(config: ModalFuncProps) {
     }
     for (let i = 0; i < destroyFns.length; i++) {
       const fn = destroyFns[i];
-      // eslint-disable-next-line @typescript-eslint/no-use-before-define
       if (fn === close) {
         destroyFns.splice(i, 1);
         break;
@@ -98,15 +96,15 @@ export default function confirm(config: ModalFuncProps) {
      * Sync render blocks React event. Let's make this async.
      */
     timeoutId = setTimeout(() => {
-      const rootPrefixCls = globalThis.getPrefixCls(undefined, getRootPrefixCls());
-      const iconPrefixCls = globalThis.getIconPrefixCls();
-      const theme = globalThis.getTheme();
+      const rootPrefixCls = getPrefixCls(undefined, getRootPrefixCls());
+      const iconPrefixCls = getIconPrefixCls();
+      const theme = getTheme();
 
       const dom = <ConfirmDialogWrapper {...props} />;
 
       reactRender(
         <ConfigProvider prefixCls={rootPrefixCls} iconPrefixCls={iconPrefixCls} theme={theme}>
-          {globalThis.holderRender ? globalThis.holderRender(dom) : dom}
+          {holderRender ? holderRender(dom) : dom}
         </ConfigProvider>,
         container,
       );
