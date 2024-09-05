@@ -164,7 +164,6 @@ function flushNotice() {
         });
         break;
       }
-
       case 'destroy':
         act(() => {
           notification?.instance!.destroy(task.key);

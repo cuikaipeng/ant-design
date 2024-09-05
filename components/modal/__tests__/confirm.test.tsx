@@ -339,7 +339,7 @@ describe('Modal.confirm triggers callbacks correctly', () => {
         Modal[type]?.({
           title: 'title',
           content: 'content',
-          onOk: (_) => null,
+          onOk: () => null,
         });
         await waitFakeTimer();
         expect($$(`.ant-modal-confirm-${type}`)).toHaveLength(1);
