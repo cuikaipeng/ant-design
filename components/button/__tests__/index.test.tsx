@@ -231,7 +231,7 @@ describe('Button', () => {
   it('should merge text if children using variable', () => {
     const wrapper = render(
       <Button>
-        This {'is'} a test {1}
+        This is a test {1}
       </Button>,
     );
     expect(wrapper.container.firstChild).toMatchSnapshot();
