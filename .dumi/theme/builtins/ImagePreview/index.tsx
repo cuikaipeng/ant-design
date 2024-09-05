@@ -115,6 +115,7 @@ const ImagePreview: React.FC<React.PropsWithChildren<ImagePreviewProps>> = (prop
               <Image className={coverMeta.className} src={coverMeta.src} alt={coverMeta.alt} />
             </div>
             <div className="preview-image-title">{coverMeta.alt}</div>
+            {/* eslint-disable-next-line react-dom/no-dangerously-set-innerhtml */}
             <div
               className="preview-image-description"
               // biome-ignore lint/security/noDangerouslySetInnerHtml: it's for markdown

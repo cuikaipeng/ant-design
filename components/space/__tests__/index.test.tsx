@@ -102,7 +102,7 @@ describe('Space', () => {
     const { container } = render(
       <Space>
         text1<span>text1</span>
-        {/* eslint-disable-next-line react/jsx-no-useless-fragment */}
+        {/* eslint-disable-next-line react/no-useless-fragment */}
         <>text3</>
       </Space>,
     );
@@ -166,7 +166,7 @@ describe('Space', () => {
     const { container } = render(
       <Space split="-">
         text1<span>text1</span>
-        {/* eslint-disable-next-line react/jsx-no-useless-fragment */}
+        {/* eslint-disable-next-line react/no-useless-fragment */}
         <>text3</>
       </Space>,
     );

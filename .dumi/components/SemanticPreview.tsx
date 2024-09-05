@@ -70,8 +70,10 @@ export interface SemanticPreviewProps {
   height?: number;
 }
 
+const emptyArray: SemanticPreviewProps['semantics'] = [];
+
 const SemanticPreview: React.FC<SemanticPreviewProps> = (props) => {
-  const { semantics = [], children, height } = props;
+  const { semantics = emptyArray, children, height } = props;
   const { token } = theme.useToken();
 
   // ======================= Semantic =======================

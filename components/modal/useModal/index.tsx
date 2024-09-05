@@ -31,7 +31,7 @@ const ElementsHolder = React.memo(
       }),
       [],
     );
-    // eslint-disable-next-line react/jsx-no-useless-fragment
+    // eslint-disable-next-line react/no-useless-fragment
     return <>{elements}</>;
   }),
 );

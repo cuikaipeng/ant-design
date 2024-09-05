@@ -401,9 +401,10 @@ createRoot(document.getElementById('container')).render(<Demo />);
             />
           </div>
           {description && (
+            /* eslint-disable-next-line react-dom/no-dangerously-set-innerhtml */
             <div
               className="code-box-description"
-              // biome-ignore lint/security/noDangerouslySetInnerHtml: it's for markdown
+              /* biome-ignore lint/security/noDangerouslySetInnerHtml: it's for markdown */
               dangerouslySetInnerHTML={{ __html: description }}
             />
           )}

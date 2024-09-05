@@ -329,7 +329,7 @@ describe('Button', () => {
   it('should handle fragment as children', () => {
     const wrapper = render(
       <Button>
-        {/* eslint-disable-next-line react/jsx-no-useless-fragment */}
+        {/* eslint-disable-next-line react/no-useless-fragment */}
         <>text</>
       </Button>,
     );

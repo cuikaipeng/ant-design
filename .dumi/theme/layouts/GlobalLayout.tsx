@@ -163,7 +163,7 @@ const GlobalLayout: React.FC = () => {
       plain: true,
       types: 'style',
     });
-    // biome-ignore lint/security/noDangerouslySetInnerHtml: only used in .dumi
+    /* biome-ignore lint/security/noDangerouslySetInnerHtml: only used in .dumi */ /* eslint-disable-next-line react-dom/no-dangerously-set-innerhtml */
     return <style data-type="antd-cssinjs" dangerouslySetInnerHTML={{ __html: styleText }} />;
   });
 
@@ -173,6 +173,7 @@ const GlobalLayout: React.FC = () => {
       types: ['cssVar', 'token'],
     });
     return (
+      /* eslint-disable-next-line react-dom/no-dangerously-set-innerhtml */
       <style
         data-type="antd-css-var"
         data-rc-order="prepend"
@@ -184,6 +185,7 @@ const GlobalLayout: React.FC = () => {
   });
 
   useServerInsertedHTML(() => (
+    /* eslint-disable-next-line react-dom/no-dangerously-set-innerhtml */
     <style
       data-sandpack="true"
       id="sandpack"
