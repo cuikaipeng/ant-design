@@ -119,7 +119,7 @@ describe('Menu', () => {
         <Menu.Item />
       </>
       {undefined}
-      {/* eslint-disable-next-line react/no-useless-fragment */}
+      {}
       <>
         {/* eslint-disable-next-line react/no-useless-fragment */}
         <>
