@@ -59,6 +59,7 @@ function useModal(): readonly [instance: HookAPI, contextHolder: React.ReactElem
       function hookConfirm(config: ModalFuncProps) {
         uuid += 1;
 
+        // eslint-disable-next-line react/no-create-ref
         const modalRef = React.createRef<HookModalRef>();
 
         // Proxy to promise with `onClose`

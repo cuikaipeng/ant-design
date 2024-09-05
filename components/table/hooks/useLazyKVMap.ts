@@ -47,7 +47,7 @@ const useLazyKVMap = <RecordType extends AnyObject = AnyObject>(
       };
     }
 
-    return mapCacheRef.current.kvMap?.get(key)!;
+    return mapCacheRef.current.kvMap?.get(key) || ({} as RecordType);
   }
 
   return [getRecordByKey] as const;

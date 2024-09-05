@@ -15,9 +15,10 @@ export interface CountdownProps extends StatisticProps {
   onChange?: (value?: valueType) => void;
 }
 
-function getTime(value?: valueType) {
-  return new Date(value as valueType).getTime();
-}
+const getTime = (value?: valueType) => new Date(value as valueType).getTime();
+
+const valueRender: StatisticProps['valueRender'] = (node) =>
+  cloneElement(node, { title: undefined });
 
 const Countdown: React.FC<CountdownProps> = (props) => {
   const { value, format = 'HH:mm:ss', onChange, onFinish, ...rest } = props;
@@ -59,9 +60,6 @@ const Countdown: React.FC<CountdownProps> = (props) => {
 
   const formatter: StatisticProps['formatter'] = (formatValue, config) =>
     formatCountdown(formatValue, { ...config, format });
-
-  const valueRender: StatisticProps['valueRender'] = (node) =>
-    cloneElement(node, { title: undefined });
 
   return <Statistic {...rest} value={value} valueRender={valueRender} formatter={formatter} />;
 };

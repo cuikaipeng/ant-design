@@ -22,14 +22,14 @@ const inlineStyle: React.CSSProperties = {
   display: 'inline-flex',
 };
 
-const TransButton = React.forwardRef<HTMLDivElement, TransButtonProps>((props, ref) => {
-  const onKeyDown: React.KeyboardEventHandler<HTMLDivElement> = (event) => {
-    const { keyCode } = event;
-    if (keyCode === KeyCode.ENTER) {
-      event.preventDefault();
-    }
-  };
+const onKeyDown: React.KeyboardEventHandler<HTMLDivElement> = (event) => {
+  const { keyCode } = event;
+  if (keyCode === KeyCode.ENTER) {
+    event.preventDefault();
+  }
+};
 
+const TransButton = React.forwardRef<HTMLDivElement, TransButtonProps>((props, ref) => {
   const onKeyUp: React.KeyboardEventHandler<HTMLDivElement> = (event) => {
     const { keyCode } = event;
     const { onClick } = props;

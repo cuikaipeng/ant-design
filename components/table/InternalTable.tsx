@@ -271,7 +271,7 @@ const InternalTable = <RecordType extends AnyObject = AnyObject>(
 
       // Trigger pagination events
       if (pagination) {
-        pagination.onChange?.(1, changeInfo.pagination?.pageSize!);
+        pagination.onChange?.(1, changeInfo.pagination?.pageSize ?? DEFAULT_PAGE_SIZE);
       }
     }
 

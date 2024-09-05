@@ -1,5 +1,4 @@
 const fs = require('node:fs');
-
 const path = require('node:path');
 
 const blogList = [
@@ -23,6 +22,7 @@ const blogList = [
 describe('blog', () => {
   it('should not include Chinese in en-US blog', () => {
     blogList.forEach((blog) => {
+      // eslint-disable-next-line node/prefer-global/buffer
       fs.readFile(blog, (err: NodeJS.ErrnoException | null, data: Buffer) => {
         if (err) {
           return;

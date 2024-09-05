@@ -118,10 +118,12 @@ const WaveEffect: React.FC<WaveEffectProps> = (props) => {
       motionDeadline={5000}
       onAppearEnd={(_, event) => {
         if (event.deadline || (event as TransitionEvent).propertyName === 'opacity') {
-          const holder = divRef.current?.parentElement!;
-          unmount(holder).then(() => {
-            holder?.remove();
-          });
+          const holder = divRef.current?.parentElement;
+          if (holder) {
+            unmount(holder).then(() => {
+              holder?.remove();
+            });
+          }
         }
         return false;
       }}

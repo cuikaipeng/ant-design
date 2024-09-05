@@ -101,10 +101,9 @@ export const devUseWarning: (component: string) => TypeWarning =
         return typeWarning;
       }
     : () => {
+        // eslint-disable-next-line unicorn/consistent-function-scoping
         const noopWarning: TypeWarning = () => {};
-
         noopWarning.deprecated = noop;
-
         return noopWarning;
       };
 

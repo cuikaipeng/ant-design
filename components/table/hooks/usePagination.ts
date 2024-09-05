@@ -72,7 +72,7 @@ function usePagination(
       pagination.onChange?.(current, pageSize);
     }
     refreshPagination(current, pageSize);
-    onChange(current, pageSize || mergedPagination?.pageSize!);
+    onChange(current, pageSize || mergedPagination?.pageSize);
   };
 
   if (pagination === false) {
