@@ -43251,6 +43251,7 @@ exports[`ConfigProvider components Upload configProvider 1`] = `
     >
       <input
         accept=""
+        name="file"
         style="display: none;"
         type="file"
       />
@@ -43348,6 +43349,7 @@ exports[`ConfigProvider components Upload configProvider componentDisabled 1`] =
       <input
         accept=""
         disabled=""
+        name="file"
         style="display: none;"
         type="file"
       />
@@ -43413,6 +43415,7 @@ exports[`ConfigProvider components Upload configProvider componentSize large 1`]
     >
       <input
         accept=""
+        name="file"
         style="display: none;"
         type="file"
       />
@@ -43509,6 +43512,7 @@ exports[`ConfigProvider components Upload configProvider componentSize middle 1`
     >
       <input
         accept=""
+        name="file"
         style="display: none;"
         type="file"
       />
@@ -43605,6 +43609,7 @@ exports[`ConfigProvider components Upload configProvider componentSize small 1`]
     >
       <input
         accept=""
+        name="file"
         style="display: none;"
         type="file"
       />
@@ -43701,6 +43706,7 @@ exports[`ConfigProvider components Upload normal 1`] = `
     >
       <input
         accept=""
+        name="file"
         style="display: none;"
         type="file"
       />
@@ -43797,6 +43803,7 @@ exports[`ConfigProvider components Upload prefixCls 1`] = `
     >
       <input
         accept=""
+        name="file"
         style="display: none;"
         type="file"
       />
