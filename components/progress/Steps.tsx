@@ -26,7 +26,7 @@ const Steps: React.FC<ProgressStepsProps> = (props) => {
   const mergedSize = size ?? [stepWidth, strokeWidth];
   const [width, height] = getSize(mergedSize, 'step', { steps, strokeWidth });
   const unitWidth = width / steps;
-  const styledSteps: React.ReactNode[] = new Array(steps);
+  const styledSteps: React.ReactNode[] = Array.from({ length: steps });
   for (let i = 0; i < steps; i++) {
     const color = Array.isArray(strokeColor) ? strokeColor[i] : strokeColor;
     styledSteps[i] = (

@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-no-constructed-context-values */
 import path from 'node:path';
 import * as React from 'react';
 import { StyleProvider, createCache } from '@ant-design/cssinjs';

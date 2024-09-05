@@ -39,7 +39,7 @@ export default antfu(
     'react/no-children-for-each': 'off',
     'react/no-children-count': 'off',
     'react/no-children-map': 'off',
-    'react-dom/no-children-only': 'off',
+    'react/no-children-only': 'off',
   },
 },
 compat.configs["flat/recommended"],
