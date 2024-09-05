@@ -8,14 +8,14 @@ import type { Theme } from './context';
 
 const dynamicStyleMark = `-ant-${Date.now()}-${Math.random()}`;
 
+const formatColor = (color: TinyColor, updater?: (cloneColor: TinyColor) => TinyColor) => {
+  let clone = color.clone();
+  clone = updater?.(clone) || clone;
+  return clone.toRgbString();
+};
+
 export function getStyle(globalPrefixCls: string, theme: Theme) {
   const variables: Record<string, string> = {};
-
-  const formatColor = (color: TinyColor, updater?: (cloneColor: TinyColor) => TinyColor) => {
-    let clone = color.clone();
-    clone = updater?.(clone) || clone;
-    return clone.toRgbString();
-  };
 
   const fillColor = (colorVal: string, type: string) => {
     const baseColor = new TinyColor(colorVal);

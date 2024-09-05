@@ -11,6 +11,7 @@ if (typeof window !== 'undefined' && window.antdCssinjs) {
 } else {
   // Use local version.
   // Use relative path since webpack will also replace module here.
+  // eslint-disable-next-line antfu/no-import-node-modules-by-path
   cssinjs = require('../node_modules/@ant-design/cssinjs');
 }
 

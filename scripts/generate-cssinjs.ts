@@ -21,6 +21,8 @@ export const styleFiles = globSync(
     .join('/'),
 );
 
+let useStyle: StyleFn = () => {};
+
 export const generateCssinjs = ({ key, beforeRender, render }: GenCssinjsOptions) =>
   Promise.all(
     styleFiles.map(async (file) => {
@@ -28,7 +30,6 @@ export const generateCssinjs = ({ key, beforeRender, render }: GenCssinjsOptions
       const pathArr = file.split('/');
       const styleIndex = pathArr.lastIndexOf('style');
       const componentName = pathArr[styleIndex - 1];
-      let useStyle: StyleFn = () => {};
       if (file.includes('grid')) {
         const { useColStyle, useRowStyle } = await import(absPath);
         useStyle = (prefixCls) => {

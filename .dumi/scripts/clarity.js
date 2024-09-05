@@ -1,4 +1,3 @@
-/* eslint-disable */
 // https://clarity.microsoft.com
 (function (c, l, a, r, i, t, y) {
   c[a] =

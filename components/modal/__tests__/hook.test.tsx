@@ -430,7 +430,7 @@ describe('Modal.hook', () => {
               onOk: async () => {
                 if (notReady) {
                   notReady = false;
-                  return Promise.reject();
+                  return Promise.reject(new Error('error'));
                 }
               },
             });

@@ -1,4 +1,3 @@
-/* eslint-disable react/button-has-type */
 import React, { Children, createRef, useContext, useEffect, useMemo, useState } from 'react';
 import classNames from 'classnames';
 import omit from 'rc-util/lib/omit';
@@ -126,6 +125,7 @@ const InternalCompoundedButton = React.forwardRef<
 
   const [hasTwoCNChar, setHasTwoCNChar] = useState<boolean>(false);
 
+  // eslint-disable-next-line react/no-create-ref
   const internalRef = createRef<HTMLButtonElement | HTMLAnchorElement>();
 
   const buttonRef = composeRef(ref, internalRef);

@@ -29,8 +29,7 @@ function prepareCanvas(
  * This is a lazy hook function since SSR no need this
  */
 export default function useClips() {
-  // Get single clips
-  function getClips(
+  return (
     content: NonNullable<WatermarkProps['content']> | HTMLImageElement,
     rotate: number,
     ratio: number,
@@ -39,7 +38,7 @@ export default function useClips() {
     font: Required<NonNullable<WatermarkProps['font']>>,
     gapX: number,
     gapY: number,
-  ): [dataURL: string, finalWidth: number, finalHeight: number] {
+  ): [dataURL: string, finalWidth: number, finalHeight: number] => {
     // ================= Text / Image =================
     const [ctx, canvas, contentWidth, contentHeight] = prepareCanvas(width, height, ratio);
 
@@ -132,7 +131,5 @@ export default function useClips() {
     drawImg(cutWidth + realGapX, +cutHeight / 2 + realGapY / 2);
 
     return [fCanvas.toDataURL(), filledWidth / ratio, filledHeight / ratio];
-  }
-
-  return getClips;
+  };
 }

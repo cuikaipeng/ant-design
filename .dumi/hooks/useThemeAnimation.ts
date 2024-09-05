@@ -27,38 +27,38 @@ const viewTransitionStyle = `
 }
 `;
 
+const startAnimationTheme = (clipPath: string[], isDark: boolean) => {
+  updateCSS(
+    `
+  * {
+  transition: none !important;
+}
+  `,
+    'disable-transition',
+  );
+
+  document.documentElement
+    .animate(
+      {
+        clipPath: isDark ? [...clipPath].reverse() : clipPath,
+      },
+      {
+        duration: 500,
+        easing: 'ease-in',
+        pseudoElement: isDark ? '::view-transition-old(root)' : '::view-transition-new(root)',
+      },
+    )
+    .addEventListener('finish', () => {
+      removeCSS('disable-transition');
+    });
+};
+
 const useThemeAnimation = () => {
   const {
     token: { colorBgElevated },
   } = theme.useToken();
 
   const animateRef = useRef<{ colorBgElevated: string }>({ colorBgElevated });
-
-  const startAnimationTheme = (clipPath: string[], isDark: boolean) => {
-    updateCSS(
-      `
-    * {
-    transition: none !important;
-  }
-    `,
-      'disable-transition',
-    );
-
-    document.documentElement
-      .animate(
-        {
-          clipPath: isDark ? [...clipPath].reverse() : clipPath,
-        },
-        {
-          duration: 500,
-          easing: 'ease-in',
-          pseudoElement: isDark ? '::view-transition-old(root)' : '::view-transition-new(root)',
-        },
-      )
-      .addEventListener('finish', () => {
-        removeCSS('disable-transition');
-      });
-  };
 
   const toggleAnimationTheme = (
     event: React.MouseEvent<HTMLElement, MouseEvent>,
@@ -68,7 +68,6 @@ const useThemeAnimation = () => {
     if (!(event && typeof document.startViewTransition === 'function')) {
       return;
     }
-    const time = Date.now();
     const x = event.clientX;
     const y = event.clientY;
     const endRadius = Math.hypot(Math.max(x, innerWidth - x), Math.max(y, innerHeight - y));
@@ -98,7 +97,6 @@ const useThemeAnimation = () => {
         root.classList.add(isDark ? 'light' : 'dark');
       })
       .ready.then(() => {
-        console.log(`Theme transition finished in ${Date.now() - time}ms`);
         const clipPath = [
           `circle(0px at ${x}px ${y}px)`,
           `circle(${endRadius}px at ${x}px ${y}px)`,

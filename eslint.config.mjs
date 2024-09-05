@@ -16,6 +16,7 @@ export default antfu(
     '**/.dumi/tmp-production/**',
     '**/*.snap',
     '**/*.md',
+    '.dumi/scripts/clarity.js',
   ],
   settings: {
     polyfills: ['Promise', 'URL'],
@@ -30,6 +31,8 @@ export default antfu(
     'ts/no-require-imports': 'off',
     'ts/explicit-function-return-type': 'off',
     'unicorn/prefer-number-properties': 'off',
+    'regexp/no-unused-capturing-group': 'off',
+    'regexp/no-misleading-capturing-group': 'off',
     'test/prefer-lowercase-title': 'off',
     'react-hooks/exhaustive-deps': 'off',
     'ts/ban-ts-comment': 'off', // TODO: remove this
@@ -40,6 +43,7 @@ export default antfu(
     'react/no-children-count': 'off',
     'react/no-children-map': 'off',
     'react/no-children-only': 'off',
+    'react/no-unstable-default-props': 'off',
   },
 },
 compat.configs["flat/recommended"],
@@ -82,7 +86,6 @@ jest.configs["flat/recommended"],
     'unicorn/consistent-function-scoping': 'off',
     'jsx-a11y/anchor-is-valid': 'off',
     'jsx-a11y/anchor-has-content': 'off',
-    'react/no-unstable-default-props': 'off',
   },
   settings: {
     polyfills: ['Promise', 'URL', 'fetch', 'requestAnimationFrame'],
@@ -93,6 +96,7 @@ jest.configs["flat/recommended"],
   rules: {
     'react-refresh/only-export-components': 'off', // TODO: remove this
     'react-dom/no-dangerously-set-inner-html': 'off', // TODO: remove this
+    'react/no-array-index-key': 'off',
   },
   settings: {
     polyfills: ['Promise', 'URL', 'URLSearchParams'],

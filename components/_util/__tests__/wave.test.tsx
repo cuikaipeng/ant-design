@@ -34,12 +34,6 @@ describe('Wave component', () => {
     (window as any).ResizeObserver = FakeResizeObserver;
   });
 
-  afterAll(() => {
-    jest.useRealTimers();
-    expect(obCnt).not.toBe(0);
-    expect(disCnt).not.toBe(0);
-  });
-
   beforeEach(() => {
     jest.useFakeTimers();
     (globalThis as any).isVisible = true;
@@ -54,6 +48,12 @@ describe('Wave component', () => {
     for (let i = 0; i < styles.length; i += 1) {
       styles[i].remove();
     }
+  });
+
+  afterAll(() => {
+    jest.useRealTimers();
+    expect(obCnt).not.toBe(0);
+    expect(disCnt).not.toBe(0);
   });
 
   function getWaveStyle() {

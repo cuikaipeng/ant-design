@@ -168,6 +168,7 @@ const CodePreviewer: React.FC<AntdPreviewerProps> = (props) => {
   if (!previewDemo.current) {
     previewDemo.current = iframe ? (
       <BrowserFrame>
+        {/* eslint-disable-next-line react-dom/no-missing-iframe-sandbox */}
         <iframe
           src={demoUrl}
           height={iframe === true ? undefined : iframe}
@@ -252,8 +253,10 @@ const CodePreviewer: React.FC<AntdPreviewerProps> = (props) => {
       .replace(/import\s+\{(\s[^}]*\s)\}\s+from\s+'@ant-design\/icons';/, 'const { $1 } = icons;')
       .replace("import moment from 'moment';", '')
       .replace("import React from 'react';", '')
+      // eslint-disable-next-line regexp/no-super-linear-backtracking
       .replace(/import\s+\{\s+(.*)\s+\}\s+from\s+'react-router';/, 'const { $1 } = ReactRouter;')
       .replace(
+        // eslint-disable-next-line regexp/no-super-linear-backtracking
         /import\s+\{\s+(.*)\s+\}\s+from\s+'react-router-dom';/,
         'const { $1 } = ReactRouterDOM;',
       )

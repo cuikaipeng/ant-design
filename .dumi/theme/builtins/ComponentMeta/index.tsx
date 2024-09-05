@@ -79,6 +79,13 @@ export interface ComponentMetaProps {
   version?: string;
 }
 
+const transformComponentName = (componentName: string) => {
+  if (componentName === 'Notifiction' || componentName === 'Message') {
+    return componentName.toLowerCase();
+  }
+  return componentName;
+};
+
 const ComponentMeta: React.FC<ComponentMetaProps> = (props) => {
   const { component, source, filename, version } = props;
   const { token } = theme.useToken();
@@ -115,13 +122,6 @@ const ComponentMeta: React.FC<ComponentMetaProps> = (props) => {
 
     return [source, source];
   }, [component, source]);
-
-  const transformComponentName = (componentName: string) => {
-    if (componentName === 'Notifiction' || componentName === 'Message') {
-      return componentName.toLowerCase();
-    }
-    return componentName;
-  };
 
   // ======================== Render ========================
   const importList = [

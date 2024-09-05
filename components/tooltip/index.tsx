@@ -158,7 +158,7 @@ const InternalTooltip = React.forwardRef<TooltipRef, TooltipProps>((props, ref) 
   // ============================== Ref ===============================
   const warning = devUseWarning('Tooltip');
 
-  const tooltipRef = React.useRef<RcTooltipRef>(null);
+  const tooltipRef = React.useRef<RcTooltipRef>(null!);
 
   const forceAlign = () => {
     tooltipRef.current?.forceAlign();
@@ -170,7 +170,7 @@ const InternalTooltip = React.forwardRef<TooltipRef, TooltipProps>((props, ref) 
       warning.deprecated(false, 'forcePopupAlign', 'forceAlign');
       forceAlign();
     },
-    nativeElement: tooltipRef.current?.nativeElement!,
+    nativeElement: tooltipRef.current?.nativeElement,
   }));
 
   // ============================== Warn ==============================

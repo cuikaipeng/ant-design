@@ -137,6 +137,7 @@ async function printLog() {
       let html: string | undefined;
       let tryTimes = 0;
       const timeout = 30000;
+      // eslint-disable-next-line unicorn/consistent-function-scoping
       const fetchPullRequest = async () => {
         try {
           res = await new Promise<Response>((resolve, reject) => {

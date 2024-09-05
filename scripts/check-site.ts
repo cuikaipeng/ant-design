@@ -14,6 +14,11 @@ const components = uniq(
   ),
 ).filter((component) => !component.includes('_util'));
 
+const handleComponentName = (name: string) => {
+  const [, componentName] = name.split('/');
+  return componentName.toLowerCase().replace('-cn', '').replace('-', '');
+};
+
 describe('site test', () => {
   let server: http.Server | https.Server;
   const port = 3000;
@@ -26,11 +31,6 @@ describe('site test', () => {
       return { status: res.status, $ };
     });
     return resp;
-  };
-
-  const handleComponentName = (name: string) => {
-    const [, componentName] = name.split('/');
-    return componentName.toLowerCase().replace('-cn', '').replace('-', '');
   };
 
   const expectComponent = async (component: string) => {
