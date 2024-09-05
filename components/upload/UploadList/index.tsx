@@ -22,6 +22,9 @@ interface UploadListRef {
   handleDownload: (file: UploadFile) => void;
 }
 
+const defaultItems: UploadListProps['items'] = [];
+const defaultProgress = { size: [-1, 2], showInfo: false };
+
 const InternalUploadList: React.ForwardRefRenderFunction<UploadListRef, UploadListProps> = (
   props,
   ref,
@@ -36,7 +39,7 @@ const InternalUploadList: React.ForwardRefRenderFunction<UploadListRef, UploadLi
     iconRender,
     isImageUrl: isImgUrl = isImageUrl,
     prefixCls: customizePrefixCls,
-    items = [],
+    items = defaultItems,
     showPreviewIcon = true,
     showRemoveIcon = true,
     showDownloadIcon = false,
@@ -44,7 +47,7 @@ const InternalUploadList: React.ForwardRefRenderFunction<UploadListRef, UploadLi
     previewIcon,
     downloadIcon,
     extra,
-    progress = { size: [-1, 2], showInfo: false },
+    progress = defaultProgress,
     appendAction,
     appendActionVisible = true,
     itemRender,

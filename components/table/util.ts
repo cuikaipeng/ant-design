@@ -33,8 +33,9 @@ export const renderColumnTitle = <RecordType extends AnyObject = AnyObject>(
  *
  * Should filter [object Object]
  *
- * @param title
- * @returns
+ * @param title - 列标题
+ * @param props - 列标题属性
+ * @returns 安全处理后的列标题字符串
  */
 export const safeColumnTitle = <RecordType extends AnyObject = AnyObject>(
   title: ColumnTitle<RecordType>,
