@@ -483,6 +483,7 @@ createRoot(document.getElementById('container')).render(<Demo />);
                   track({ type: 'codesandbox', demo: asset.id });
                   codeSandboxIconRef.current?.submit();
                 }}
+                role="presentation"
               >
                 <input
                   type="hidden"

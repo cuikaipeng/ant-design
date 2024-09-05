@@ -996,7 +996,6 @@ describe('Table.filter', () => {
             dataIndex: 'name',
             key: 'name',
             filteredValue: name,
-            // eslint-disable-next-line react/no-unstable-nested-components
             filterDropdown: ({ setSelectedKeys, selectedKeys, confirm }) => (
               <div>
                 <Input

@@ -2,8 +2,10 @@
 import antfu from '@antfu/eslint-config';
 import compat from "eslint-plugin-compat";
 import jest from "eslint-plugin-jest";
+import jsxA11y from "eslint-plugin-jsx-a11y";
 
-export default antfu({
+export default antfu(
+  {
   ignores: [
     '**/node_modules/**',
     '**/dist/**',
@@ -37,7 +39,20 @@ export default antfu({
     'react/no-children-for-each': 'off',
     'react/no-children-count': 'off',
   },
-}, compat.configs["flat/recommended"], jest.configs["flat/recommended"], {
+},
+compat.configs["flat/recommended"],
+jest.configs["flat/recommended"],
+{
+  ...jsxA11y.flatConfigs.recommended,
+  rules: {
+    ...jsxA11y.flatConfigs.recommended.rules,
+    'jsx-a11y/no-noninteractive-element-interactions': 'off',
+    'jsx-a11y/no-static-element-interactions': 'off',
+    'jsx-a11y/click-events-have-key-events': 'off',
+    'jsx-a11y/no-autofocus': 'off',
+  },
+},
+{
   // tests
   files: ['**/*.test.ts', 'tests/**/*', '**/__tests__/**/*', '**/*.test.tsx'],
   rules: {
@@ -53,6 +68,8 @@ export default antfu({
     'jest/valid-title': 'off',
     'jest/no-conditional-expect': 'off',
     'jest/no-standalone-expect': 'off',
+    'jsx-a11y/anchor-is-valid': 'off',
+    'jsx-a11y/anchor-has-content': 'off',
   },
 }, {
   // demos
@@ -61,6 +78,8 @@ export default antfu({
     'react/no-create-ref': 'off',
     'no-console': 'off',
     'unicorn/consistent-function-scoping': 'off',
+    'jsx-a11y/anchor-is-valid': 'off',
+    'jsx-a11y/anchor-has-content': 'off',
   },
   settings: {
     polyfills: ['Promise', 'URL', 'fetch', 'requestAnimationFrame'],
