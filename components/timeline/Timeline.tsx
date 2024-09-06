@@ -1,15 +1,15 @@
-import classNames from 'classnames';
 import * as React from 'react';
+import classNames from 'classnames';
 
 import { devUseWarning } from '../_util/warning';
 import { ConfigContext } from '../config-provider';
 import useCSSVarCls from '../config-provider/hooks/useCSSVarCls';
-import TimelineItem from './TimelineItem';
-import type { TimelineItemProps } from './TimelineItem';
-import TimelineItemList from './TimelineItemList';
 // CSSINJS
 import useStyle from './style';
+import TimelineItem from './TimelineItem';
+import TimelineItemList from './TimelineItemList';
 import useItems from './useItems';
+import type { TimelineItemProps } from './TimelineItem';
 
 export interface TimelineProps {
   prefixCls?: string;

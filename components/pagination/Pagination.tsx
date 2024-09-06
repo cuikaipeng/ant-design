@@ -1,12 +1,12 @@
+import * as React from 'react';
 import DoubleLeftOutlined from '@ant-design/icons/DoubleLeftOutlined';
 import DoubleRightOutlined from '@ant-design/icons/DoubleRightOutlined';
 import LeftOutlined from '@ant-design/icons/LeftOutlined';
 import RightOutlined from '@ant-design/icons/RightOutlined';
 import classNames from 'classnames';
 import RcPagination from 'rc-pagination';
-import type { PaginationLocale, PaginationProps as RcPaginationProps } from 'rc-pagination';
 import enUS from 'rc-pagination/lib/locale/en_US';
-import * as React from 'react';
+import type { PaginationLocale, PaginationProps as RcPaginationProps } from 'rc-pagination';
 
 import { ConfigContext } from '../config-provider';
 import useSize from '../config-provider/hooks/useSize';

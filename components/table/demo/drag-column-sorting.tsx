@@ -1,22 +1,22 @@
+import React, { createContext, useContext, useState } from 'react';
 import {
+  closestCenter,
   DndContext,
   DragOverlay,
   PointerSensor,
-  closestCenter,
   useSensor,
   useSensors,
 } from '@dnd-kit/core';
-import type { DragEndEvent, DragOverEvent, UniqueIdentifier } from '@dnd-kit/core';
 import { restrictToHorizontalAxis } from '@dnd-kit/modifiers';
 import {
-  SortableContext,
   arrayMove,
   horizontalListSortingStrategy,
+  SortableContext,
   useSortable,
 } from '@dnd-kit/sortable';
 import { Table } from 'antd';
+import type { DragEndEvent, DragOverEvent, UniqueIdentifier } from '@dnd-kit/core';
 import type { TableColumnsType } from 'antd';
-import React, { createContext, useContext, useState } from 'react';
 
 interface DataType {
   key: string;

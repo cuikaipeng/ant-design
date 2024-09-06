@@ -1,7 +1,7 @@
-import { unit } from '@ant-design/cssinjs';
-import type { CSSObject } from '@ant-design/cssinjs';
-import { TinyColor } from '@ctrl/tinycolor';
 import type * as React from 'react';
+import { unit } from '@ant-design/cssinjs';
+import { TinyColor } from '@ctrl/tinycolor';
+import type { CSSObject } from '@ant-design/cssinjs';
 
 import { resetComponent } from '../../style';
 import { genStyleHooks, mergeToken } from '../../theme/internal';

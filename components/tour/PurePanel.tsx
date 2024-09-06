@@ -1,14 +1,14 @@
-import classNames from 'classnames';
 import * as React from 'react';
+import classNames from 'classnames';
 
-import { withPureRenderTheme } from '../_util/PurePanel';
 import useClosable from '../_util/hooks/useClosable';
+import { withPureRenderTheme } from '../_util/PurePanel';
 import { cloneElement } from '../_util/reactNode';
 import { ConfigContext } from '../config-provider';
 import { RawPurePanel as PopoverRawPurePanel } from '../popover/PurePanel';
-import type { TourStepProps } from './interface';
 import TourPanel from './panelRender';
 import useStyle from './style';
+import type { TourStepProps } from './interface';
 
 export interface PurePanelProps extends TourStepProps {}
 

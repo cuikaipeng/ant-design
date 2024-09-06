@@ -1,7 +1,7 @@
-import { Col, ConfigProvider, Flex, Row, Tag, Typography, theme } from 'antd';
+import React from 'react';
+import { Col, ConfigProvider, Flex, Row, Tag, theme, Typography } from 'antd';
 import { createStyles, css } from 'antd-style';
 import classnames from 'classnames';
-import React from 'react';
 
 const MARK_BORDER_SIZE = 2;
 

@@ -1,15 +1,15 @@
+import * as React from 'react';
 import classNames from 'classnames';
 import toArray from 'rc-util/lib/Children/toArray';
-import * as React from 'react';
 
 import { isPresetSize, isValidGapNumber } from '../_util/gapSize';
 import { ConfigContext } from '../config-provider';
-import type { SizeType } from '../config-provider/SizeContext';
 import Compact from './Compact';
-import Item from './Item';
 import { SpaceContextProvider } from './context';
-import type { SpaceContextType } from './context';
+import Item from './Item';
 import useStyle from './style';
+import type { SizeType } from '../config-provider/SizeContext';
+import type { SpaceContextType } from './context';
 
 export { SpaceContext } from './context';
 

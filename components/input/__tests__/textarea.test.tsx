@@ -1,6 +1,6 @@
-import { spyElementPrototypes } from 'rc-util/lib/test/domHook';
 import type { ChangeEventHandler, TextareaHTMLAttributes } from 'react';
 import React, { useState } from 'react';
+import { spyElementPrototypes } from 'rc-util/lib/test/domHook';
 
 import Input from '..';
 import focusTest from '../../../tests/shared/focusTest';

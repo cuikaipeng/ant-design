@@ -1,18 +1,18 @@
+import * as React from 'react';
 import classNames from 'classnames';
 import ResizeObserver from 'rc-resize-observer';
 import { composeRef } from 'rc-util/lib/ref';
-import * as React from 'react';
 
 import { responsiveArray } from '../_util/responsiveObserver';
-import type { Breakpoint } from '../_util/responsiveObserver';
 import { devUseWarning } from '../_util/warning';
 import { ConfigContext } from '../config-provider';
 import useCSSVarCls from '../config-provider/hooks/useCSSVarCls';
 import useSize from '../config-provider/hooks/useSize';
 import useBreakpoint from '../grid/hooks/useBreakpoint';
 import AvatarContext from './AvatarContext';
-import type { AvatarContextType, AvatarSize } from './AvatarContext';
 import useStyle from './style';
+import type { Breakpoint } from '../_util/responsiveObserver';
+import type { AvatarContextType, AvatarSize } from './AvatarContext';
 
 export interface AvatarProps {
   /** Shape of avatar, options: `circle`, `square` */

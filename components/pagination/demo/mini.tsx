@@ -1,6 +1,6 @@
+import React from 'react';
 import { Pagination } from 'antd';
 import type { PaginationProps } from 'antd';
-import React from 'react';
 
 const showTotal: PaginationProps['showTotal'] = (total) => `Total ${total} items`;
 

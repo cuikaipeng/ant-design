@@ -1,6 +1,6 @@
+import React, { useState } from 'react';
 import { Radio } from 'antd';
 import type { RadioChangeEvent } from 'antd';
-import React, { useState } from 'react';
 
 const plainOptions = ['Apple', 'Pear', 'Orange'];
 const options = [

@@ -1,27 +1,27 @@
+import * as React from 'react';
+import { forwardRef } from 'react';
 import EllipsisOutlined from '@ant-design/icons/EllipsisOutlined';
 import classNames from 'classnames';
 import RcMenu from 'rc-menu';
-import type { MenuProps as RcMenuProps, MenuRef as RcMenuRef } from 'rc-menu';
 import { useEvent } from 'rc-util';
 import omit from 'rc-util/lib/omit';
-import * as React from 'react';
-import { forwardRef } from 'react';
+import type { MenuProps as RcMenuProps, MenuRef as RcMenuRef } from 'rc-menu';
 
 import initCollapseMotion from '../_util/motion';
 import { cloneElement } from '../_util/reactNode';
-import type { GetProp } from '../_util/type';
 import { devUseWarning } from '../_util/warning';
 import { ConfigContext } from '../config-provider';
 import useCSSVarCls from '../config-provider/hooks/useCSSVarCls';
-import type { SiderContextProps } from '../layout/Sider';
 import MenuContext from './MenuContext';
-import type { MenuContextProps, MenuTheme } from './MenuContext';
 import Divider from './MenuDivider';
 import MenuItem from './MenuItem';
 import OverrideContext from './OverrideContext';
-import SubMenu from './SubMenu';
-import type { ItemType } from './interface';
 import useStyle from './style';
+import SubMenu from './SubMenu';
+import type { GetProp } from '../_util/type';
+import type { SiderContextProps } from '../layout/Sider';
+import type { ItemType } from './interface';
+import type { MenuContextProps, MenuTheme } from './MenuContext';
 
 function isEmptyIcon(icon?: React.ReactNode) {
   return icon === null || icon === false;

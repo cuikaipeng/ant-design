@@ -1,9 +1,9 @@
-import classNames from 'classnames';
 import * as React from 'react';
+import classNames from 'classnames';
 
 import { ConfigContext } from '../config-provider';
-import type { SkeletonElementProps } from './Element';
 import useStyle from './style';
+import type { SkeletonElementProps } from './Element';
 
 export interface SkeletonImageProps extends Omit<SkeletonElementProps, 'size' | 'shape'> {}
 

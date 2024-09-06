@@ -1,11 +1,13 @@
 import * as React from 'react';
 
-import type { AnyObject } from '../../../_util/type';
 import { devUseWarning } from '../../../_util/warning';
+import { getColumnKey, getColumnPos, renderColumnTitle } from '../../util';
+import FilterDropdown, { flattenKeys } from './FilterDropdown';
+import type { AnyObject } from '../../../_util/type';
 import type {
+  ColumnsType,
   ColumnTitleProps,
   ColumnType,
-  ColumnsType,
   FilterKey,
   FilterValue,
   GetPopupContainer,
@@ -14,8 +16,6 @@ import type {
   TableLocale,
   TransformColumns,
 } from '../../interface';
-import { getColumnKey, getColumnPos, renderColumnTitle } from '../../util';
-import FilterDropdown, { flattenKeys } from './FilterDropdown';
 
 export interface FilterState<RecordType = AnyObject> {
   column: ColumnType<RecordType>;

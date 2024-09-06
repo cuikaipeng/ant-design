@@ -1,9 +1,9 @@
 import React, { forwardRef } from 'react';
 
 import InputNumber from '..';
-import type { InputNumberProps } from '..';
 import focusTest from '../../../tests/shared/focusTest';
 import { fireEvent, render } from '../../../tests/utils';
+import type { InputNumberProps } from '..';
 
 describe('prefix', () => {
   focusTest(

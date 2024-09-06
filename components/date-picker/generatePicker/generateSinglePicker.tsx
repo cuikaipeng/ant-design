@@ -1,3 +1,5 @@
+import * as React from 'react';
+import { forwardRef, useContext, useImperativeHandle } from 'react';
 import CalendarOutlined from '@ant-design/icons/CalendarOutlined';
 import ClockCircleOutlined from '@ant-design/icons/ClockCircleOutlined';
 import classNames from 'classnames';
@@ -5,13 +7,10 @@ import RCPicker from 'rc-picker';
 import type { PickerRef } from 'rc-picker';
 import type { GenerateConfig } from 'rc-picker/lib/generate/index';
 import type { PickerMode } from 'rc-picker/lib/interface';
-import * as React from 'react';
-import { forwardRef, useContext, useImperativeHandle } from 'react';
 
 import ContextIsolator from '../../_util/ContextIsolator';
 import { useZIndex } from '../../_util/hooks/useZIndex';
 import { getMergedStatus, getStatusClassNames } from '../../_util/statusUtils';
-import type { AnyObject } from '../../_util/type';
 import { devUseWarning } from '../../_util/warning';
 import { ConfigContext } from '../../config-provider';
 import DisabledContext from '../../config-provider/DisabledContext';
@@ -36,8 +35,9 @@ import {
   YEAR,
   YEARPICKER,
 } from './constant';
-import type { GenericTimePickerProps, PickerProps, PickerPropsWithMultiple } from './interface';
 import useComponents from './useComponents';
+import type { AnyObject } from '../../_util/type';
+import type { GenericTimePickerProps, PickerProps, PickerPropsWithMultiple } from './interface';
 
 const generatePicker = <DateType extends AnyObject = AnyObject>(
   generateConfig: GenerateConfig<DateType>,

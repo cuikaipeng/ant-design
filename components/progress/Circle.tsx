@@ -1,11 +1,11 @@
+import * as React from 'react';
 import classNames from 'classnames';
 import { Circle as RCCircle } from 'rc-progress';
 import type { ProgressProps as RcProgressProps } from 'rc-progress';
-import * as React from 'react';
 
 import Tooltip from '../tooltip';
-import type { ProgressGradient, ProgressProps } from './progress';
 import { getPercentage, getSize, getStrokeColor } from './utils';
+import type { ProgressGradient, ProgressProps } from './progress';
 
 const CIRCLE_MIN_STROKE_WIDTH = 3;
 

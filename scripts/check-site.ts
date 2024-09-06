@@ -1,5 +1,3 @@
-import type http from 'node:http';
-import type https from 'node:https';
 /// <reference types="jest" />
 import { join } from 'node:path';
 import { load } from 'cheerio';
@@ -7,6 +5,8 @@ import { globSync } from 'glob';
 import { createServer } from 'http-server';
 import fetch from 'isomorphic-fetch';
 import uniq from 'lodash/uniq';
+import type http from 'node:http';
+import type https from 'node:https';
 
 const components = uniq(
   globSync('components/!(overview)/*.md', { cwd: join(process.cwd()), dot: false }).map((path) =>

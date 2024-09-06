@@ -1,7 +1,7 @@
-import { Flex, Popover } from 'antd';
-import type { GetProp } from 'antd';
-import { createStyles } from 'antd-style';
 import React from 'react';
+import { Flex, Popover } from 'antd';
+import { createStyles } from 'antd-style';
+import type { GetProp } from 'antd';
 
 const useStyle = createStyles(() => ({
   item: {

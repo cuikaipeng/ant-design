@@ -1,6 +1,6 @@
-import { Alert } from 'antd';
 import React from 'react';
 import Marquee from 'react-fast-marquee';
+import { Alert } from 'antd';
 
 const App: React.FC = () => (
   <Alert

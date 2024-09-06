@@ -1,15 +1,15 @@
+import * as React from 'react';
+import { useMemo } from 'react';
 import classNames from 'classnames';
 import CSSMotion, { CSSMotionList } from 'rc-motion';
 import type { CSSMotionProps } from 'rc-motion';
-import * as React from 'react';
-import { useMemo } from 'react';
 
 import initCollapseMotion from '../_util/motion';
 import useCSSVarCls from '../config-provider/hooks/useCSSVarCls';
-import type { ValidateStatus } from './FormItem';
 import { FormItemPrefixContext } from './context';
 import useDebounce from './hooks/useDebounce';
 import useStyle from './style';
+import type { ValidateStatus } from './FormItem';
 
 const EMPTY_LIST: React.ReactNode[] = [];
 

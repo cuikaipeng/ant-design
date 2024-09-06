@@ -1,25 +1,25 @@
+import React, { Suspense, useCallback, useEffect } from 'react';
 import {
-  NaNLinter,
-  StyleProvider,
   createCache,
   extractStyle,
   legacyNotSelectorLinter,
+  NaNLinter,
   parentSelectorLinter,
+  StyleProvider,
 } from '@ant-design/cssinjs';
 import { HappyProvider } from '@ant-design/happy-work-theme';
 import { getSandpackCssText } from '@codesandbox/sandpack-react';
-import { App, theme as antdTheme } from 'antd';
+import { theme as antdTheme, App } from 'antd';
+import { createSearchParams, useOutlet, useSearchParams, useServerInsertedHTML } from 'dumi';
 import type { MappingAlgorithm } from 'antd';
 import type { DirectionType, ThemeConfig } from 'antd/es/config-provider';
-import { createSearchParams, useOutlet, useSearchParams, useServerInsertedHTML } from 'dumi';
-import React, { Suspense, useCallback, useEffect } from 'react';
 
 import { DarkContext } from '../../hooks/useDark';
 import useLayoutState from '../../hooks/useLayoutState';
 import useLocation from '../../hooks/useLocation';
 import SiteThemeProvider from '../SiteThemeProvider';
-import type { ThemeName } from '../common/ThemeSwitch';
 import SiteContext from '../slots/SiteContext';
+import type { ThemeName } from '../common/ThemeSwitch';
 import type { SiteContextProps } from '../slots/SiteContext';
 
 const ThemeSwitch = React.lazy(() => import('../common/ThemeSwitch'));

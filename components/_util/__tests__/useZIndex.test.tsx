@@ -1,3 +1,5 @@
+import type { PropsWithChildren } from 'react';
+import React, { useEffect } from 'react';
 import { render } from '@testing-library/react';
 import {
   AutoComplete,
@@ -17,13 +19,11 @@ import {
   TreeSelect,
 } from 'antd';
 import type { ImageProps, MenuProps } from 'antd';
-import type { PropsWithChildren } from 'react';
-import React, { useEffect } from 'react';
 
 import { waitFakeTimer } from '../../../tests/utils';
 import { consumerBaseZIndexOffset, containerBaseZIndexOffset, useZIndex } from '../hooks/useZIndex';
-import type { ZIndexConsumer, ZIndexContainer } from '../hooks/useZIndex';
 import zIndexContext from '../zindexContext';
+import type { ZIndexConsumer, ZIndexContainer } from '../hooks/useZIndex';
 
 const WrapWithProvider: React.FC<PropsWithChildren<{ containerType: ZIndexContainer }>> = ({
   children,

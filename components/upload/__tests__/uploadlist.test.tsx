@@ -1,15 +1,15 @@
 import React from 'react';
 
 import Upload from '..';
-import type { UploadFile, UploadProps } from '..';
 import { act, fireEvent, render, waitFakeTimer, waitFor } from '../../../tests/utils';
 import Form from '../../form';
-import type { FormInstance } from '../../form';
 import UploadList from '../UploadList';
-import type { UploadListProps, UploadLocale } from '../interface';
 import { previewImage } from '../utils';
 import { setup, teardown } from './mock';
 import { errorRequest, successRequest } from './requests';
+import type { UploadFile, UploadProps } from '..';
+import type { FormInstance } from '../../form';
+import type { UploadListProps, UploadLocale } from '../interface';
 
 const fileList: UploadProps['fileList'] = [
   {

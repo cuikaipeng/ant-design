@@ -1,9 +1,9 @@
 import { TinyColor } from '@ctrl/tinycolor';
 
 import { initComponentToken } from '../../input/style/token';
+import { getArrowToken } from '../../style/roundedArrow';
 import type { SharedComponentToken, SharedInputToken } from '../../input/style/token';
 import type { MultipleSelectorToken, SelectorToken } from '../../select/style/token';
-import { getArrowToken } from '../../style/roundedArrow';
 import type { ArrowToken } from '../../style/roundedArrow';
 import type {
   FullToken,

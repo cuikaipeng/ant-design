@@ -1,8 +1,8 @@
-import { ConfigProvider, theme as antdTheme } from 'antd';
-import type { ThemeConfig } from 'antd';
-import { ThemeProvider } from 'antd-style';
-import type { ThemeProviderProps } from 'antd-style';
 import React, { useContext } from 'react';
+import { theme as antdTheme, ConfigProvider } from 'antd';
+import { ThemeProvider } from 'antd-style';
+import type { ThemeConfig } from 'antd';
+import type { ThemeProviderProps } from 'antd-style';
 
 import SiteContext from './slots/SiteContext';
 

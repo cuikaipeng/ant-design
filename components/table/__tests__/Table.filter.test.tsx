@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
 import Table from '..';
-import type { ColumnGroupType, ColumnType, TableProps } from '..';
 import { act, fireEvent, render, waitFakeTimer, waitFor } from '../../../tests/utils';
 import { resetWarned } from '../../_util/warning';
 import Button from '../../button';
@@ -9,8 +8,9 @@ import ConfigProvider from '../../config-provider';
 import Input from '../../input';
 import Menu from '../../menu';
 import Select from '../../select';
-import type { SelectProps } from '../../select';
 import Tooltip from '../../tooltip';
+import type { ColumnGroupType, ColumnType, TableProps } from '..';
+import type { SelectProps } from '../../select';
 import type {
   ColumnFilterItem,
   ColumnsType,

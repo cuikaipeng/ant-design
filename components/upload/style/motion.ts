@@ -1,7 +1,7 @@
 import { Keyframes } from '@ant-design/cssinjs';
 
-import type { UploadToken } from '.';
 import { initFadeMotion } from '../../style/motion';
+import type { UploadToken } from '.';
 import type { GenerateStyle } from '../../theme/internal';
 
 // =========================== Motion ===========================

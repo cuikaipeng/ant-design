@@ -1,6 +1,6 @@
-import type { AvatarListItem } from '@qixian.cs/github-contributors-list/dist/AvatarList';
-import { Avatar, Skeleton, Tooltip } from 'antd';
 import React from 'react';
+import { Avatar, Skeleton, Tooltip } from 'antd';
+import type { AvatarListItem } from '@qixian.cs/github-contributors-list/dist/AvatarList';
 
 const AvatarPlaceholder: React.FC<{ num?: number }> = ({ num = 3 }) => (
   <li>

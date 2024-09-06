@@ -1,7 +1,7 @@
-import { LoadingOutlined, PlusOutlined } from '@ant-design/icons';
-import { Flex, Upload, message } from 'antd';
-import type { GetProp, UploadProps } from 'antd';
 import React, { useState } from 'react';
+import { LoadingOutlined, PlusOutlined } from '@ant-design/icons';
+import { Flex, message, Upload } from 'antd';
+import type { GetProp, UploadProps } from 'antd';
 
 type FileType = Parameters<GetProp<UploadProps, 'beforeUpload'>>[0];
 

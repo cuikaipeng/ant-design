@@ -1,13 +1,13 @@
-import { render as reactRender, unmount as reactUnmount } from 'rc-util/lib/React/render';
 import React, { useContext } from 'react';
+import { render as reactRender, unmount as reactUnmount } from 'rc-util/lib/React/render';
 
 import warning from '../_util/warning';
 import ConfigProvider, { ConfigContext, globalConfig, warnContext } from '../config-provider';
 import ConfirmDialog from './ConfirmDialog';
-import type { ConfirmDialogProps } from './ConfirmDialog';
 import destroyFns from './destroyFns';
-import type { ModalFuncProps } from './interface';
 import { getConfirmLocale } from './locale';
+import type { ConfirmDialogProps } from './ConfirmDialog';
+import type { ModalFuncProps } from './interface';
 
 let defaultRootPrefixCls = '';
 

@@ -1,10 +1,10 @@
-import classNames from 'classnames';
 import * as React from 'react';
+import classNames from 'classnames';
 
 import { devUseWarning } from '../_util/warning';
 import { ConfigContext } from '../config-provider';
-import type { AntAnchor } from './Anchor';
 import AnchorContext from './context';
+import type { AntAnchor } from './Anchor';
 
 export interface AnchorLinkBaseProps {
   prefixCls?: string;

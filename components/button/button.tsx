@@ -1,22 +1,22 @@
+import React, { Children, createRef, useContext, useEffect, useMemo, useState } from 'react';
 import classNames from 'classnames';
 import omit from 'rc-util/lib/omit';
 import { composeRef } from 'rc-util/lib/ref';
-import React, { Children, createRef, useContext, useEffect, useMemo, useState } from 'react';
 
 import { devUseWarning } from '../_util/warning';
 import Wave from '../_util/wave';
 import { ConfigContext } from '../config-provider';
 import DisabledContext from '../config-provider/DisabledContext';
-import type { SizeType } from '../config-provider/SizeContext';
 import useSize from '../config-provider/hooks/useSize';
 import { useCompactItemContext } from '../space/Compact';
-import IconWrapper from './IconWrapper';
-import LoadingIcon from './LoadingIcon';
 import Group, { GroupSizeContext } from './button-group';
 import { isTwoCNChar, isUnBorderedButtonType, spaceChildren } from './buttonHelpers';
-import type { ButtonHTMLType, ButtonShape, ButtonType } from './buttonHelpers';
+import IconWrapper from './IconWrapper';
+import LoadingIcon from './LoadingIcon';
 import useStyle from './style';
 import CompactCmp from './style/compactCmp';
+import type { SizeType } from '../config-provider/SizeContext';
+import type { ButtonHTMLType, ButtonShape, ButtonType } from './buttonHelpers';
 
 export type LegacyButtonType = ButtonType | 'danger';
 

@@ -1,5 +1,5 @@
-import useLayoutEffect from 'rc-util/lib/hooks/useLayoutEffect';
 import { useRef } from 'react';
+import useLayoutEffect from 'rc-util/lib/hooks/useLayoutEffect';
 
 import useForceUpdate from '../../_util/hooks/useForceUpdate';
 import useResponsiveObserver from '../../_util/responsiveObserver';

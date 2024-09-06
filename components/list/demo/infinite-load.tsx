@@ -1,6 +1,6 @@
-import { Avatar, Divider, List, Skeleton } from 'antd';
 import React, { useEffect, useState } from 'react';
 import InfiniteScroll from 'react-infinite-scroll-component';
+import { Avatar, Divider, List, Skeleton } from 'antd';
 
 interface DataType {
   gender: string;

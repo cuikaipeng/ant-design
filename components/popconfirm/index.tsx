@@ -1,17 +1,17 @@
+import * as React from 'react';
 import ExclamationCircleFilled from '@ant-design/icons/ExclamationCircleFilled';
 import classNames from 'classnames';
 import useMergedState from 'rc-util/lib/hooks/useMergedState';
 import omit from 'rc-util/lib/omit';
-import * as React from 'react';
 
-import type { RenderFunction } from '../_util/getRenderPropValue';
-import type { ButtonProps, LegacyButtonType } from '../button/button';
 import { ConfigContext } from '../config-provider';
 import Popover from '../popover';
-import type { PopoverProps } from '../popover';
-import type { AbstractTooltipProps, TooltipRef } from '../tooltip';
 import PurePanel, { Overlay } from './PurePanel';
 import useStyle from './style';
+import type { RenderFunction } from '../_util/getRenderPropValue';
+import type { ButtonProps, LegacyButtonType } from '../button/button';
+import type { PopoverProps } from '../popover';
+import type { AbstractTooltipProps, TooltipRef } from '../tooltip';
 
 export interface PopconfirmProps extends AbstractTooltipProps {
   title: React.ReactNode | RenderFunction;

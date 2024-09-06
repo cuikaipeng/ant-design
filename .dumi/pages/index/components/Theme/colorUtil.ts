@@ -1,5 +1,5 @@
-import type { ColorPickerProps, GetProp } from 'antd';
 import { generateColor } from 'antd/es/color-picker/util';
+import type { ColorPickerProps, GetProp } from 'antd';
 
 type Color = GetProp<ColorPickerProps, 'value'>;
 

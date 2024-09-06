@@ -1,5 +1,5 @@
-import userEvent from '@testing-library/user-event';
 import React from 'react';
+import userEvent from '@testing-library/user-event';
 
 import AutoComplete from '..';
 import mountTest from '../../../tests/shared/mountTest';

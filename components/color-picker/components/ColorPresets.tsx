@@ -1,16 +1,16 @@
+import type { FC } from 'react';
+import React, { useMemo } from 'react';
 import { ColorBlock, Color as RcColor } from '@rc-component/color-picker';
 import classNames from 'classnames';
 import useMergedState from 'rc-util/lib/hooks/useMergedState';
-import type { FC } from 'react';
-import React, { useMemo } from 'react';
 
 import Collapse from '../../collapse';
-import type { CollapseProps } from '../../collapse';
 import { useLocale } from '../../locale';
 import { useToken } from '../../theme/internal';
+import { generateColor } from '../util';
+import type { CollapseProps } from '../../collapse';
 import type { AggregationColor } from '../color';
 import type { PresetsItem } from '../interface';
-import { generateColor } from '../util';
 
 interface ColorPresetsProps {
   prefixCls: string;

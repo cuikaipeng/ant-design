@@ -1,6 +1,6 @@
+import React from 'react';
 import kebabCase from 'lodash/kebabCase';
 import canUseDom from 'rc-util/lib/Dom/canUseDom';
-import React from 'react';
 
 import ConfigProvider from '..';
 import { Button, InputNumber, Select } from '../..';

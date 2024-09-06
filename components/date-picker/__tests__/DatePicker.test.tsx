@@ -1,20 +1,20 @@
-import type { TriggerProps } from '@rc-component/trigger';
 import dayjs from 'dayjs';
+import type { TriggerProps } from '@rc-component/trigger';
 
 import 'dayjs/locale/mk'; // to test local in 'prop locale should works' test case
 
+import React from 'react';
 import { CloseCircleFilled } from '@ant-design/icons';
 import customParseFormat from 'dayjs/plugin/customParseFormat';
 import MockDate from 'mockdate';
 import dayJsGenerateConfig from 'rc-picker/lib/generate/dayjs';
-import React from 'react';
 
 import DatePicker from '..';
 import focusTest from '../../../tests/shared/focusTest';
 import { fireEvent, render } from '../../../tests/utils';
 import { resetWarned } from '../../_util/warning';
-import type { PickerLocale } from '../generatePicker';
 import { getClearButton } from './utils';
+import type { PickerLocale } from '../generatePicker';
 
 dayjs.extend(customParseFormat);
 

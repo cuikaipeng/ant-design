@@ -1,10 +1,9 @@
+import React, { useEffect, useRef } from 'react';
 import { produce } from 'immer';
 import cloneDeep from 'lodash/cloneDeep';
 import type { UploadRequestOption } from 'rc-upload/lib/interface';
-import React, { useEffect, useRef } from 'react';
 
 import Upload from '..';
-import type { RcFile, UploadFile, UploadProps } from '..';
 import mountTest from '../../../tests/shared/mountTest';
 import rtlTest from '../../../tests/shared/rtlTest';
 import { act, fireEvent, render, waitFakeTimer } from '../../../tests/utils';
@@ -12,6 +11,7 @@ import { resetWarned } from '../../_util/warning';
 import Form from '../../form';
 import { getFileItem, isImageUrl, removeFileItem } from '../utils';
 import { setup, teardown } from './mock';
+import type { RcFile, UploadFile, UploadProps } from '..';
 
 (globalThis as any).IS_REACT_ACT_ENVIRONMENT = true;
 

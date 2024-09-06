@@ -1,6 +1,6 @@
+import type { CSSProperties } from 'react';
 import { unit } from '@ant-design/cssinjs';
 import type { CSSObject } from '@ant-design/cssinjs';
-import type { CSSProperties } from 'react';
 
 import { genStyleHooks, mergeToken } from '../../theme/internal';
 import type { FullToken, GenerateStyle, GetDefaultToken } from '../../theme/internal';

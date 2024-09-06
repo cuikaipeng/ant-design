@@ -1,7 +1,7 @@
-import type { TriggerProps, TriggerRef } from '@rc-component/trigger';
+import React from 'react';
 import dayjs from 'dayjs';
 import customParseFormat from 'dayjs/plugin/customParseFormat';
-import React from 'react';
+import type { TriggerProps, TriggerRef } from '@rc-component/trigger';
 
 import ConfigProvider from '..';
 import { render } from '../../../tests/utils';

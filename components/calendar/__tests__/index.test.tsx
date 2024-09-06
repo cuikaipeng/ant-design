@@ -3,10 +3,10 @@ import React from 'react';
 import Dayjs from 'dayjs';
 
 import MockDate from 'mockdate';
-import type { PickerPanelProps } from 'rc-picker';
 import dayjsGenerateConfig from 'rc-picker/lib/generate/dayjs';
-import type { Locale } from 'rc-picker/lib/interface';
 import { resetWarned } from 'rc-util/lib/warning';
+import type { PickerPanelProps } from 'rc-picker';
+import type { Locale } from 'rc-picker/lib/interface';
 import Calendar from '..';
 
 import mountTest from '../../../tests/shared/mountTest';

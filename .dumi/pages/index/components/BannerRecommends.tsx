@@ -1,7 +1,7 @@
+import React, { useContext } from 'react';
 import { Badge, Carousel, Flex, Skeleton, Typography } from 'antd';
 import { createStyles } from 'antd-style';
 import classNames from 'classnames';
-import React, { useContext } from 'react';
 
 import useLocale from '../../../hooks/useLocale';
 import SiteContext from '../../../theme/slots/SiteContext';

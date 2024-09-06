@@ -1,15 +1,15 @@
-import { ColorBlock } from '@rc-component/color-picker';
-import classNames from 'classnames';
-import pickAttrs from 'rc-util/lib/pickAttrs';
 /* eslint-disable react/no-array-index-key */
 import type { CSSProperties, MouseEventHandler } from 'react';
 import React, { forwardRef, useMemo } from 'react';
+import { ColorBlock } from '@rc-component/color-picker';
+import classNames from 'classnames';
+import pickAttrs from 'rc-util/lib/pickAttrs';
 
 import { useLocale } from '../../locale';
-import type { AggregationColor } from '../color';
-import type { ColorFormatType, ColorPickerProps } from '../interface';
 import { getColorAlpha } from '../util';
 import ColorClear from './ColorClear';
+import type { AggregationColor } from '../color';
+import type { ColorFormatType, ColorPickerProps } from '../interface';
 
 export interface ColorTriggerProps {
   prefixCls: string;

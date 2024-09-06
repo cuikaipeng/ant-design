@@ -1,5 +1,5 @@
-import type { BasicDataNode } from 'rc-tree';
 import * as React from 'react';
+import type { BasicDataNode } from 'rc-tree';
 
 import { render } from '../../../tests/utils';
 import Tree from '../index';

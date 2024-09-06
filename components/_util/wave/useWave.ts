@@ -1,11 +1,11 @@
+import * as React from 'react';
 import { useEvent } from 'rc-util';
 import raf from 'rc-util/lib/raf';
-import * as React from 'react';
 
 import { ConfigContext } from '../../config-provider';
 import useToken from '../../theme/useToken';
-import showWaveEffect from './WaveEffect';
 import { TARGET_CLS } from './interface';
+import showWaveEffect from './WaveEffect';
 import type { ShowWave, WaveComponent } from './interface';
 
 const useWave = (

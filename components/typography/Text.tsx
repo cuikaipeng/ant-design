@@ -1,5 +1,5 @@
-import omit from 'rc-util/lib/omit';
 import * as React from 'react';
+import omit from 'rc-util/lib/omit';
 
 import { devUseWarning } from '../_util/warning';
 import Base from './Base';

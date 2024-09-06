@@ -1,7 +1,7 @@
-import { TinyColor } from '@ctrl/tinycolor';
-import { Global, css } from '@emotion/react';
-import { useTheme } from 'antd-style';
 import React from 'react';
+import { TinyColor } from '@ctrl/tinycolor';
+import { css, Global } from '@emotion/react';
+import { useTheme } from 'antd-style';
 
 const GlobalStyle: React.FC = () => {
   const token = useTheme();

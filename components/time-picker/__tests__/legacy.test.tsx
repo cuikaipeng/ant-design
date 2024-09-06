@@ -1,7 +1,7 @@
-import dayjs from 'dayjs';
-import type { Dayjs } from 'dayjs';
-import customParseFormat from 'dayjs/plugin/customParseFormat';
 import React from 'react';
+import dayjs from 'dayjs';
+import customParseFormat from 'dayjs/plugin/customParseFormat';
+import type { Dayjs } from 'dayjs';
 
 import TimePicker from '..';
 import { fireEvent, render } from '../../../tests/utils';

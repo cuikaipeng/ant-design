@@ -1,6 +1,6 @@
+import React from 'react';
 import dayjs from 'dayjs';
 import customParseFormat from 'dayjs/plugin/customParseFormat';
-import React from 'react';
 
 import ConfigProvider from '..';
 import { render } from '../../../tests/utils';
@@ -41,13 +41,11 @@ import Rate from '../../rate';
 import Select from '../../select';
 import Skeleton from '../../skeleton';
 import Slider from '../../slider';
-import type { SliderTooltipProps } from '../../slider';
 import Spin from '../../spin';
 import Statistic from '../../statistic';
 import Steps from '../../steps';
 import Switch from '../../switch';
 import Table from '../../table';
-import type { ColumnsType } from '../../table';
 import Tabs from '../../tabs';
 import Tag from '../../tag';
 import TimePicker from '../../time-picker';
@@ -57,6 +55,8 @@ import Transfer from '../../transfer';
 import Tree from '../../tree';
 import TreeSelect from '../../tree-select';
 import Upload from '../../upload';
+import type { SliderTooltipProps } from '../../slider';
+import type { ColumnsType } from '../../table';
 
 dayjs.extend(customParseFormat);
 jest.mock('rc-util/lib/Portal');

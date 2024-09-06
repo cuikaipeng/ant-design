@@ -1,10 +1,10 @@
-import { EditOutlined, GithubOutlined } from '@ant-design/icons';
-import { Descriptions, Tooltip, Typography, theme } from 'antd';
-import type { GetProp } from 'antd';
-import { createStyles, css } from 'antd-style';
-import kebabCase from 'lodash/kebabCase';
 import React from 'react';
 import CopyToClipboard from 'react-copy-to-clipboard';
+import { EditOutlined, GithubOutlined } from '@ant-design/icons';
+import { Descriptions, theme, Tooltip, Typography } from 'antd';
+import { createStyles, css } from 'antd-style';
+import kebabCase from 'lodash/kebabCase';
+import type { GetProp } from 'antd';
 
 import useLocale from '../../../hooks/useLocale';
 

@@ -1,8 +1,8 @@
 import { TinyColor } from '@ctrl/tinycolor';
 
-import type { AliasToken, MapToken, OverrideToken, SeedToken } from '../interface';
 import seedToken from '../themes/seed';
 import getAlphaColor from './getAlphaColor';
+import type { AliasToken, MapToken, OverrideToken, SeedToken } from '../interface';
 
 /** Raw merge of `@ant-design/cssinjs` token. Which need additional process */
 type RawMergedToken = MapToken & OverrideToken & { override: Partial<AliasToken> };

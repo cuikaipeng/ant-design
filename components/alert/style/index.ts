@@ -1,6 +1,6 @@
+import type { CSSProperties } from 'react';
 import { unit } from '@ant-design/cssinjs';
 import type { CSSObject } from '@ant-design/cssinjs';
-import type { CSSProperties } from 'react';
 
 import { resetComponent } from '../../style';
 import { genStyleHooks } from '../../theme/internal';

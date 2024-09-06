@@ -1,14 +1,14 @@
+import * as React from 'react';
 import classNames from 'classnames';
 import omit from 'rc-util/lib/omit';
-import * as React from 'react';
 
 import { ConfigContext } from '../config-provider';
 import useCSSVarCls from '../config-provider/hooks/useCSSVarCls';
 import Checkbox from './Checkbox';
-import type { CheckboxChangeEvent } from './Checkbox';
 import GroupContext from './GroupContext';
-import type { CheckboxGroupContext } from './GroupContext';
 import useStyle from './style';
+import type { CheckboxChangeEvent } from './Checkbox';
+import type { CheckboxGroupContext } from './GroupContext';
 
 export interface CheckboxOptionType<T = any> {
   label: React.ReactNode;

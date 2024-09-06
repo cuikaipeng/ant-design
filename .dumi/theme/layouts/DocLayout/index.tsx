@@ -1,5 +1,5 @@
-import ConfigProvider from 'antd/es/config-provider';
 import React, { useContext, useEffect, useLayoutEffect, useRef } from 'react';
+import ConfigProvider from 'antd/es/config-provider';
 
 import zhCN from 'antd/es/locale/zh_CN';
 

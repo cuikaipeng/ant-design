@@ -1,12 +1,12 @@
-import { fireEvent, render } from '@testing-library/react';
 import React from 'react';
+import { fireEvent, render } from '@testing-library/react';
 
 import focusTest from '../../../tests/shared/focusTest';
 import mountTest from '../../../tests/shared/mountTest';
 import rtlTest from '../../../tests/shared/rtlTest';
 import Button from '../../button';
-import type { InputRef } from '../Input';
 import Search from '../Search';
+import type { InputRef } from '../Input';
 
 describe('Input.Search', () => {
   focusTest(Search, { refFocus: true });

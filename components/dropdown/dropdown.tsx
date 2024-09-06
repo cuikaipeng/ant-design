@@ -1,26 +1,26 @@
+import * as React from 'react';
 import RightOutlined from '@ant-design/icons/RightOutlined';
-import type { AlignType } from '@rc-component/trigger';
 import classNames from 'classnames';
 import RcDropdown from 'rc-dropdown';
 import { useEvent } from 'rc-util';
 import useMergedState from 'rc-util/lib/hooks/useMergedState';
 import omit from 'rc-util/lib/omit';
-import * as React from 'react';
+import type { AlignType } from '@rc-component/trigger';
 
-import genPurePanel from '../_util/PurePanel';
 import { useZIndex } from '../_util/hooks/useZIndex';
 import getPlacements from '../_util/placements';
-import type { AdjustOverflow } from '../_util/placements';
+import genPurePanel from '../_util/PurePanel';
 import { cloneElement } from '../_util/reactNode';
 import { devUseWarning } from '../_util/warning';
 import zIndexContext from '../_util/zindexContext';
 import { ConfigContext } from '../config-provider';
 import useCSSVarCls from '../config-provider/hooks/useCSSVarCls';
 import Menu from '../menu';
-import type { MenuProps } from '../menu';
 import { OverrideProvider } from '../menu/OverrideContext';
 import { useToken } from '../theme/internal';
 import useStyle from './style';
+import type { AdjustOverflow } from '../_util/placements';
+import type { MenuProps } from '../menu';
 
 const _Placements = [
   'topLeft',

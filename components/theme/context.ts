@@ -1,10 +1,10 @@
+import React from 'react';
 import { createTheme } from '@ant-design/cssinjs';
 import type { Theme } from '@ant-design/cssinjs';
-import React from 'react';
 
-import type { AliasToken, MapToken, OverrideToken, SeedToken } from './interface';
 import defaultDerivative from './themes/default';
 import defaultSeedToken from './themes/seed';
+import type { AliasToken, MapToken, OverrideToken, SeedToken } from './interface';
 
 export const defaultTheme = createTheme(defaultDerivative);
 

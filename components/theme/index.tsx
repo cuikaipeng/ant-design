@@ -1,13 +1,13 @@
 import getDesignToken from './getDesignToken';
-import type { GlobalToken, MappingAlgorithm } from './interface';
 import {
-  DesignTokenContext as InternalDesignTokenContext,
   defaultConfig,
+  DesignTokenContext as InternalDesignTokenContext,
   useToken as useInternalToken,
 } from './internal';
 import compactAlgorithm from './themes/compact';
 import darkAlgorithm from './themes/dark';
 import defaultAlgorithm from './themes/default';
+import type { GlobalToken, MappingAlgorithm } from './interface';
 
 // ZombieJ: We export as object to user but array in internal.
 // This is used to minimize the bundle size for antd package but safe to refactor as object also.

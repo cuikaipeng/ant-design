@@ -1,7 +1,7 @@
-import { PlusOutlined } from '@ant-design/icons';
-import { Flex, Input, Tag, Tooltip, theme } from 'antd';
-import type { InputRef } from 'antd';
 import React, { useEffect, useRef, useState } from 'react';
+import { PlusOutlined } from '@ant-design/icons';
+import { Flex, Input, Tag, theme, Tooltip } from 'antd';
+import type { InputRef } from 'antd';
 
 const tagInputStyle: React.CSSProperties = {
   width: 64,

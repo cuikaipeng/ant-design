@@ -1,17 +1,17 @@
+import * as React from 'react';
+import { useRef, useState } from 'react';
 import EyeInvisibleOutlined from '@ant-design/icons/EyeInvisibleOutlined';
 import EyeOutlined from '@ant-design/icons/EyeOutlined';
 import classNames from 'classnames';
 import omit from 'rc-util/lib/omit';
 import { composeRef } from 'rc-util/lib/ref';
-import * as React from 'react';
-import { useRef, useState } from 'react';
 
 import { ConfigContext } from '../config-provider';
-import type { ConfigConsumerProps } from '../config-provider';
 import DisabledContext from '../config-provider/DisabledContext';
-import Input from './Input';
-import type { InputProps, InputRef } from './Input';
 import useRemovePasswordTimeout from './hooks/useRemovePasswordTimeout';
+import Input from './Input';
+import type { ConfigConsumerProps } from '../config-provider';
+import type { InputProps, InputRef } from './Input';
 
 const defaultIconRender = (visible: boolean): React.ReactNode =>
   visible ? <EyeOutlined /> : <EyeInvisibleOutlined />;

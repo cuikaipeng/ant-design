@@ -7,10 +7,10 @@ import DatePicker from '..';
 
 import { render } from '../../../tests/utils';
 import ConfigProvider from '../../config-provider';
-import type { Locale } from '../../locale';
 import jaJP from '../../locale/ja_JP';
 import locale from '../../locale/zh_CN';
 import zhTW from '../locale/zh_TW';
+import type { Locale } from '../../locale';
 import 'dayjs/locale/zh-cn';
 
 dayjs.extend(customParseFormat);

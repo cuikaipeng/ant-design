@@ -1,3 +1,4 @@
+import React from 'react';
 import { AntDesignOutlined, CheckOutlined, CloseOutlined } from '@ant-design/icons';
 import {
   Alert,
@@ -6,6 +7,7 @@ import {
   ColorPicker,
   Dropdown,
   Input,
+  message,
   Modal,
   Progress,
   Select,
@@ -13,10 +15,8 @@ import {
   Steps,
   Switch,
   Tooltip,
-  message,
 } from 'antd';
 import { createStyles } from 'antd-style';
-import React from 'react';
 
 import useLocale from '../../../../hooks/useLocale';
 import Tilt from './Tilt';

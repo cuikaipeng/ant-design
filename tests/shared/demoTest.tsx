@@ -1,9 +1,9 @@
+import * as React from 'react';
 import path from 'node:path';
-import { StyleProvider, createCache } from '@ant-design/cssinjs';
+import { createCache, StyleProvider } from '@ant-design/cssinjs';
 import { ConfigProvider } from 'antd';
 import { globSync } from 'glob';
 import kebabCase from 'lodash/kebabCase';
-import * as React from 'react';
 import { renderToString } from 'react-dom/server';
 
 import { resetWarned } from '../../components/_util/warning';

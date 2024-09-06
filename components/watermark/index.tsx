@@ -1,15 +1,15 @@
+import React, { useEffect } from 'react';
 import { useMutateObserver } from '@rc-component/mutate-observer';
 import classNames from 'classnames';
 import { useEvent } from 'rc-util';
-import React, { useEffect } from 'react';
 
 import { useToken } from '../theme/internal';
 import WatermarkContext from './context';
-import type { WatermarkContextProps } from './context';
 import useClips, { FontGap } from './useClips';
 import useRafDebounce from './useRafDebounce';
 import useWatermark from './useWatermark';
 import { getPixelRatio, reRendering } from './utils';
+import type { WatermarkContextProps } from './context';
 
 export interface WatermarkProps {
   zIndex?: number;

@@ -1,5 +1,5 @@
-import { unit } from '@ant-design/cssinjs';
 import type React from 'react';
+import { unit } from '@ant-design/cssinjs';
 
 import { genFocusStyle, resetComponent } from '../../style';
 import { initFadeMotion, initZoomMotion } from '../../style/motion';
@@ -7,8 +7,8 @@ import { genStyleHooks, mergeToken } from '../../theme/internal';
 import type {
   AliasToken,
   FullToken,
-  GenStyleFn,
   GenerateStyle,
+  GenStyleFn,
   GlobalToken,
   TokenWithCommonCls,
 } from '../../theme/internal';

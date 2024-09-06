@@ -1,14 +1,14 @@
-import type { BaseSliderProps } from '@rc-component/color-picker';
+import * as React from 'react';
 import classNames from 'classnames';
 import { UnstableContext } from 'rc-slider';
 import { useEvent } from 'rc-util';
-import * as React from 'react';
+import type { BaseSliderProps } from '@rc-component/color-picker';
 
-import type { GetContextProp, GetProp } from '../../_util/type';
 import Slider from '../../slider';
 import SliderInternalContext from '../../slider/Context';
-import type { SliderInternalContextProps } from '../../slider/Context';
 import { getGradientPercentColor } from '../util';
+import type { GetContextProp, GetProp } from '../../_util/type';
+import type { SliderInternalContextProps } from '../../slider/Context';
 
 export interface GradientColorSliderProps
   extends Omit<BaseSliderProps, 'value' | 'onChange' | 'onChangeComplete' | 'type'> {

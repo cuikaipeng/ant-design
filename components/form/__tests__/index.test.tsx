@@ -1,12 +1,11 @@
-import { AlertFilled } from '@ant-design/icons';
-import type { ColProps } from 'antd/es/grid';
-import classNames from 'classnames';
 import type { ChangeEventHandler } from 'react';
 import React, { version as ReactVersion, useEffect, useRef, useState } from 'react';
+import { AlertFilled } from '@ant-design/icons';
+import classNames from 'classnames';
 import scrollIntoView from 'scroll-into-view-if-needed';
+import type { ColProps } from 'antd/es/grid';
 
 import Form from '..';
-import type { FormInstance } from '..';
 import mountTest from '../../../tests/shared/mountTest';
 import rtlTest from '../../../tests/shared/rtlTest';
 import { fireEvent, pureRender, render, screen, waitFakeTimer } from '../../../tests/utils';
@@ -28,8 +27,9 @@ import Slider from '../../slider';
 import Switch from '../../switch';
 import TreeSelect from '../../tree-select';
 import Upload from '../../upload';
-import type { NamePath } from '../interface';
 import * as Util from '../util';
+import type { FormInstance } from '..';
+import type { NamePath } from '../interface';
 
 const { RangePicker } = DatePicker;
 const { TextArea } = Input;

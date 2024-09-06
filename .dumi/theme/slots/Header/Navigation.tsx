@@ -1,9 +1,9 @@
+import * as React from 'react';
 import { MenuOutlined } from '@ant-design/icons';
 import { Menu } from 'antd';
-import type { MenuProps } from 'antd';
 import { createStyles, css } from 'antd-style';
 import { FormattedMessage, useFullSidebarData, useLocation } from 'dumi';
-import * as React from 'react';
+import type { MenuProps } from 'antd';
 
 import useLocale from '../../../hooks/useLocale';
 import Link from '../../common/Link';

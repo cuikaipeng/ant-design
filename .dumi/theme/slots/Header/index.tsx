@@ -1,3 +1,4 @@
+import React, { useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
 import { GithubOutlined, MenuOutlined } from '@ant-design/icons';
 import { Alert, Col, ConfigProvider, Popover, Row, Select } from 'antd';
 import { createStyles } from 'antd-style';
@@ -5,7 +6,6 @@ import classNames from 'classnames';
 import dayjs from 'dayjs';
 import { useLocation, useSiteData } from 'dumi';
 import DumiSearchBar from 'dumi/theme-default/slots/SearchBar';
-import React, { useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
 
 import useLocale from '../../../hooks/useLocale';
 import DirectionIcon from '../../icons/DirectionIcon';
@@ -13,10 +13,10 @@ import { ANT_DESIGN_NOT_SHOW_BANNER } from '../../layouts/GlobalLayout';
 import * as utils from '../../utils';
 import { getThemeConfig } from '../../utils';
 import SiteContext from '../SiteContext';
-import type { SiteContextProps } from '../SiteContext';
 import Logo from './Logo';
 import Navigation from './Navigation';
 import SwitchBtn from './SwitchBtn';
+import type { SiteContextProps } from '../SiteContext';
 import type { SharedProps } from './interface';
 
 const RESPONSIVE_XS = 1120;

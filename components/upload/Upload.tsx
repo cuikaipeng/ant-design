@@ -1,16 +1,18 @@
-import classNames from 'classnames';
-import RcUpload from 'rc-upload';
-import type { UploadProps as RcUploadProps } from 'rc-upload';
-import useMergedState from 'rc-util/lib/hooks/useMergedState';
 import * as React from 'react';
 import { flushSync } from 'react-dom';
+import classNames from 'classnames';
+import RcUpload from 'rc-upload';
+import useMergedState from 'rc-util/lib/hooks/useMergedState';
+import type { UploadProps as RcUploadProps } from 'rc-upload';
 
 import { devUseWarning } from '../_util/warning';
 import { ConfigContext } from '../config-provider';
 import DisabledContext from '../config-provider/DisabledContext';
 import { useLocale } from '../locale';
 import defaultLocale from '../locale/en_US';
+import useStyle from './style';
 import UploadList from './UploadList';
+import { file2Obj, getFileItem, removeFileItem, updateFileList } from './utils';
 import type {
   RcFile,
   ShowUploadListInterface,
@@ -18,8 +20,6 @@ import type {
   UploadFile,
   UploadProps,
 } from './interface';
-import useStyle from './style';
-import { file2Obj, getFileItem, removeFileItem, updateFileList } from './utils';
 
 export const LIST_IGNORE = `__LIST_IGNORE_${Date.now()}__`;
 

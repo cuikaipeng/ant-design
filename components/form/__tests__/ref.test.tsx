@@ -1,5 +1,5 @@
-import type { FormRef } from 'rc-field-form/lib/interface';
 import React from 'react';
+import type { FormRef } from 'rc-field-form/lib/interface';
 
 import Form from '..';
 import { fireEvent, render } from '../../../tests/utils';

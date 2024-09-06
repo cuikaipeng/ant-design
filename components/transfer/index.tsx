@@ -1,28 +1,28 @@
-import classNames from 'classnames';
-import type { CSSProperties, ChangeEvent } from 'react';
+import type { ChangeEvent, CSSProperties } from 'react';
 import React, { useCallback, useContext } from 'react';
+import classNames from 'classnames';
 
 import useMultipleSelect from '../_util/hooks/useMultipleSelect';
-import type { PrevSelectedIndex } from '../_util/hooks/useMultipleSelect';
 import { getMergedStatus, getStatusClassNames } from '../_util/statusUtils';
-import type { InputStatus } from '../_util/statusUtils';
 import { groupDisabledKeysMap, groupKeysMap } from '../_util/transKeys';
 import { devUseWarning } from '../_util/warning';
 import { ConfigContext } from '../config-provider';
-import type { ConfigConsumerProps } from '../config-provider';
 import DefaultRenderEmpty from '../config-provider/defaultRenderEmpty';
 import { FormItemInputContext } from '../form/context';
-import type { FormItemStatusContextProps } from '../form/context';
 import { useLocale } from '../locale';
 import defaultLocale from '../locale/en_US';
 import useData from './hooks/useData';
 import useSelection from './hooks/useSelection';
-import type { PaginationType, TransferKey } from './interface';
 import List from './list';
-import type { TransferCustomListBodyProps, TransferListProps } from './list';
 import Operation from './operation';
 import Search from './search';
 import useStyle from './style';
+import type { PrevSelectedIndex } from '../_util/hooks/useMultipleSelect';
+import type { InputStatus } from '../_util/statusUtils';
+import type { ConfigConsumerProps } from '../config-provider';
+import type { FormItemStatusContextProps } from '../form/context';
+import type { PaginationType, TransferKey } from './interface';
+import type { TransferCustomListBodyProps, TransferListProps } from './list';
 
 export type { TransferListProps } from './list';
 export type { TransferOperationProps } from './operation';

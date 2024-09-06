@@ -1,3 +1,4 @@
+import React, { useContext } from 'react';
 import {
   AntDesignOutlined,
   BgColorsOutlined,
@@ -13,12 +14,11 @@ import {
   ZhihuOutlined,
 } from '@ant-design/icons';
 import { TinyColor } from '@ctrl/tinycolor';
-import { createStyles } from 'antd-style';
 import getAlphaColor from 'antd/es/theme/util/getAlphaColor';
+import { createStyles } from 'antd-style';
 import { FormattedMessage, Link } from 'dumi';
 import RcFooter from 'rc-footer';
 import type { FooterColumn } from 'rc-footer/lib/column';
-import React, { useContext } from 'react';
 
 import useLocale from '../../../hooks/useLocale';
 import useLocation from '../../../hooks/useLocation';

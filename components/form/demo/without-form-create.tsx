@@ -1,6 +1,6 @@
+import React, { useState } from 'react';
 import { Form, InputNumber } from 'antd';
 import type { InputNumberProps } from 'antd';
-import React, { useState } from 'react';
 
 type ValidateStatus = Parameters<typeof Form.Item>[0]['validateStatus'];
 

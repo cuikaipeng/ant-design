@@ -1,7 +1,7 @@
+import * as React from 'react';
 import classNames from 'classnames';
 import RcCheckbox from 'rc-checkbox';
 import { composeRef } from 'rc-util/lib/ref';
-import * as React from 'react';
 
 import { devUseWarning } from '../_util/warning';
 import Wave from '../_util/wave';
@@ -11,8 +11,8 @@ import DisabledContext from '../config-provider/DisabledContext';
 import useCSSVarCls from '../config-provider/hooks/useCSSVarCls';
 import { FormItemInputContext } from '../form/context';
 import RadioGroupContext, { RadioOptionTypeContext } from './context';
-import type { RadioChangeEvent, RadioProps, RadioRef } from './interface';
 import useStyle from './style';
+import type { RadioChangeEvent, RadioProps, RadioRef } from './interface';
 
 const InternalRadio: React.ForwardRefRenderFunction<RadioRef, RadioProps> = (props, ref) => {
   const groupContext = React.useContext(RadioGroupContext);

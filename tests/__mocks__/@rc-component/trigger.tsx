@@ -1,6 +1,6 @@
-import type { TriggerProps, TriggerRef } from '@rc-component/trigger';
-import MockTrigger from '@rc-component/trigger/lib/mock';
 import * as React from 'react';
+import MockTrigger from '@rc-component/trigger/lib/mock';
+import type { TriggerProps, TriggerRef } from '@rc-component/trigger';
 
 import { TriggerMockContext } from '../../shared/demoTestContext';
 

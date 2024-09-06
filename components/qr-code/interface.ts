@@ -1,5 +1,5 @@
-import type { QRProps } from '@rc-component/qrcode';
 import type { ReactNode } from 'react';
+import type { QRProps } from '@rc-component/qrcode';
 
 import type { Locale } from '../locale';
 

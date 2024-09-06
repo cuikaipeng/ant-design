@@ -1,8 +1,8 @@
 import React from 'react';
 
 import Radio from '..';
-import type { RadioGroupProps } from '..';
 import { fireEvent, render } from '../../../tests/utils';
+import type { RadioGroupProps } from '..';
 
 describe('Radio Group', () => {
   const RadioGroupComponent: React.FC<RadioGroupProps> = (props) => (

@@ -1,15 +1,15 @@
+import * as React from 'react';
 import CheckCircleFilled from '@ant-design/icons/CheckCircleFilled';
 import CloseCircleFilled from '@ant-design/icons/CloseCircleFilled';
 import ExclamationCircleFilled from '@ant-design/icons/ExclamationCircleFilled';
 import LoadingOutlined from '@ant-design/icons/LoadingOutlined';
 import classNames from 'classnames';
 import type { Meta } from 'rc-field-form/lib/interface';
-import * as React from 'react';
 
-import type { FeedbackIcons, ValidateStatus } from '.';
 import { FormContext, FormItemInputContext } from '../context';
-import type { FormItemStatusContextProps } from '../context';
 import { getStatus } from '../util';
+import type { FeedbackIcons, ValidateStatus } from '.';
+import type { FormItemStatusContextProps } from '../context';
 
 const iconMap = {
   success: CheckCircleFilled,

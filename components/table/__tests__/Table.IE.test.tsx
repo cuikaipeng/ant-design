@@ -1,8 +1,8 @@
 import React from 'react';
 
 import Table from '..';
-import type { TableRef } from '..';
 import { render } from '../../../tests/utils';
+import type { TableRef } from '..';
 
 describe('Table.IE', () => {
   beforeAll(() => {

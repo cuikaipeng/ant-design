@@ -1,5 +1,5 @@
-import { unit } from '@ant-design/cssinjs';
 import type { CSSProperties } from 'react';
+import { unit } from '@ant-design/cssinjs';
 
 import { genFocusStyle, resetComponent } from '../../style';
 import {
@@ -12,12 +12,12 @@ import {
   slideUpOut,
 } from '../../style/motion';
 import getArrowStyle, { getArrowOffsetToken } from '../../style/placementArrow';
-import type { ArrowOffsetToken } from '../../style/placementArrow';
 import { getArrowToken } from '../../style/roundedArrow';
-import type { ArrowToken } from '../../style/roundedArrow';
 import { genStyleHooks, mergeToken } from '../../theme/internal';
-import type { FullToken, GenerateStyle, GetDefaultToken } from '../../theme/internal';
 import genStatusStyle from './status';
+import type { ArrowOffsetToken } from '../../style/placementArrow';
+import type { ArrowToken } from '../../style/roundedArrow';
+import type { FullToken, GenerateStyle, GetDefaultToken } from '../../theme/internal';
 
 export interface ComponentToken extends ArrowToken, ArrowOffsetToken {
   /**

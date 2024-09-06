@@ -1,13 +1,13 @@
+import React, { Suspense, useRef, useState } from 'react';
 import { SearchOutlined } from '@ant-design/icons';
 import { resetWarned } from 'rc-util/lib/warning';
-import React, { Suspense, useRef, useState } from 'react';
 
 import Button from '..';
 import mountTest from '../../../tests/shared/mountTest';
 import rtlTest from '../../../tests/shared/rtlTest';
 import { act, fireEvent, render, waitFakeTimer } from '../../../tests/utils';
-import type { GetRef } from '../../_util/type';
 import ConfigProvider from '../../config-provider';
+import type { GetRef } from '../../_util/type';
 import type { BaseButtonProps } from '../button';
 
 describe('Button', () => {

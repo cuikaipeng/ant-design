@@ -1,8 +1,8 @@
 import type { FC } from 'react';
 import React from 'react';
 
-import type { AggregationColor } from '../color';
 import { generateColor } from '../util';
+import type { AggregationColor } from '../color';
 
 interface ColorClearProps {
   prefixCls: string;

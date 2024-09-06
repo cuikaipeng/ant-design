@@ -1,41 +1,44 @@
+import * as React from 'react';
 import { createTheme } from '@ant-design/cssinjs';
 import IconContext from '@ant-design/icons/lib/components/Context';
 import useMemo from 'rc-util/lib/hooks/useMemo';
 import { merge } from 'rc-util/lib/utils/set';
-import * as React from 'react';
 
 import warning, { devUseWarning, WarningContext } from '../_util/warning';
-import type { WarningContextProps } from '../_util/warning';
 import ValidateMessagesContext from '../form/validateMessagesContext';
 import LocaleProvider, { ANT_MARK } from '../locale';
-import type { Locale } from '../locale';
 import LocaleContext from '../locale/context';
-import type { LocaleContextProps } from '../locale/context';
 import defaultLocale from '../locale/en_US';
-import { DesignTokenContext, defaultTheme } from '../theme/context';
+import { defaultTheme, DesignTokenContext } from '../theme/context';
 import defaultSeedToken from '../theme/themes/seed';
-import { DisabledContextProvider } from './DisabledContext';
-import MotionWrapper from './MotionWrapper';
-import PropWarning from './PropWarning';
-import SizeContext, { SizeContextProvider } from './SizeContext';
-import type { SizeType } from './SizeContext';
 import {
   ConfigConsumer,
   ConfigContext,
-  Variants,
   defaultIconPrefixCls,
   defaultPrefixCls,
+  Variants,
 } from './context';
+import { registerTheme } from './cssVariables';
+import { DisabledContextProvider } from './DisabledContext';
+import useConfig from './hooks/useConfig';
+import useTheme from './hooks/useTheme';
+import MotionWrapper from './MotionWrapper';
+import PropWarning from './PropWarning';
+import SizeContext, { SizeContextProvider } from './SizeContext';
+import useStyle from './style';
+import type { WarningContextProps } from '../_util/warning';
+import type { Locale } from '../locale';
+import type { LocaleContextProps } from '../locale/context';
 import type {
   AlertConfig,
   BadgeConfig,
   ButtonConfig,
-  CSPConfig,
   CardConfig,
   CascaderConfig,
   CollapseConfig,
   ComponentStyleConfig,
   ConfigConsumerProps,
+  CSPConfig,
   DatePickerConfig,
   DirectionType,
   DrawerConfig,
@@ -69,11 +72,8 @@ import type {
   Variant,
   WaveConfig,
 } from './context';
-import { registerTheme } from './cssVariables';
 import type { RenderEmptyHandler } from './defaultRenderEmpty';
-import useConfig from './hooks/useConfig';
-import useTheme from './hooks/useTheme';
-import useStyle from './style';
+import type { SizeType } from './SizeContext';
 
 export type { Variant };
 

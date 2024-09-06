@@ -1,13 +1,13 @@
-import { CloseOutlined } from '@ant-design/icons';
 import React from 'react';
+import { CloseOutlined } from '@ant-design/icons';
 
 import Select from '..';
-import type { SelectProps } from '..';
 import focusTest from '../../../tests/shared/focusTest';
 import mountTest from '../../../tests/shared/mountTest';
 import rtlTest from '../../../tests/shared/rtlTest';
 import { act, fireEvent, render } from '../../../tests/utils';
 import { resetWarned } from '../../_util/warning';
+import type { SelectProps } from '..';
 
 const { Option } = Select;
 

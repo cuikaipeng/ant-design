@@ -1,18 +1,18 @@
+import * as React from 'react';
 import classNames from 'classnames';
 import { PickerPanel as RCPickerPanel } from 'rc-picker';
+import useMergedState from 'rc-util/lib/hooks/useMergedState';
 import type { BasePickerPanelProps as RcBasePickerPanelProps } from 'rc-picker';
 import type { GenerateConfig } from 'rc-picker/lib/generate';
 import type { CellRenderInfo } from 'rc-picker/lib/interface';
-import useMergedState from 'rc-util/lib/hooks/useMergedState';
-import * as React from 'react';
 
-import type { AnyObject } from '../_util/type';
 import { devUseWarning } from '../_util/warning';
 import { ConfigContext } from '../config-provider';
 import { useLocale } from '../locale';
 import CalendarHeader from './Header';
 import enUS from './locale/en_US';
 import useStyle from './style';
+import type { AnyObject } from '../_util/type';
 
 export type CalendarMode = 'year' | 'month';
 export type HeaderRender<DateType> = (config: {

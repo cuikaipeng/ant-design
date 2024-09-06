@@ -1,25 +1,27 @@
-import FilterFilled from '@ant-design/icons/FilterFilled';
-import type { AnyObject } from 'antd/es/_util/type';
-import classNames from 'classnames';
-import type { FieldDataNode } from 'rc-tree';
-import isEqual from 'rc-util/lib/isEqual';
 import * as React from 'react';
+import FilterFilled from '@ant-design/icons/FilterFilled';
+import classNames from 'classnames';
+import isEqual from 'rc-util/lib/isEqual';
+import type { AnyObject } from 'antd/es/_util/type';
+import type { FieldDataNode } from 'rc-tree';
 
-import type { FilterState } from '.';
 import useSyncState from '../../../_util/hooks/useSyncState';
 import { devUseWarning } from '../../../_util/warning';
 import Button from '../../../button';
 import Checkbox from '../../../checkbox';
-import type { CheckboxChangeEvent } from '../../../checkbox';
 import { ConfigContext } from '../../../config-provider/context';
 import Dropdown from '../../../dropdown';
-import type { DropdownProps } from '../../../dropdown';
 import Empty from '../../../empty';
 import Menu from '../../../menu';
-import type { MenuProps } from '../../../menu';
 import { OverrideProvider } from '../../../menu/OverrideContext';
 import Radio from '../../../radio';
 import Tree from '../../../tree';
+import FilterSearch from './FilterSearch';
+import FilterDropdownMenuWrapper from './FilterWrapper';
+import type { FilterState } from '.';
+import type { CheckboxChangeEvent } from '../../../checkbox';
+import type { DropdownProps } from '../../../dropdown';
+import type { MenuProps } from '../../../menu';
 import type { EventDataNode } from '../../../tree';
 import type {
   ColumnFilterItem,
@@ -31,8 +33,6 @@ import type {
   Key,
   TableLocale,
 } from '../../interface';
-import FilterSearch from './FilterSearch';
-import FilterDropdownMenuWrapper from './FilterWrapper';
 
 type FilterTreeDataNode = FieldDataNode<{ title: React.ReactNode; key: string }>;
 

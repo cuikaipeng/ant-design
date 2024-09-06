@@ -1,8 +1,8 @@
 import React from 'react';
 
 import Upload from '..';
-import type { UploadListProps, UploadProps } from '..';
 import UploadList from '../UploadList';
+import type { UploadListProps, UploadProps } from '..';
 
 describe('Upload.typescript', () => {
   it('Upload', () => {

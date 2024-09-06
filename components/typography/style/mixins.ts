@@ -11,8 +11,8 @@ import { gold } from '@ant-design/colors';
 import { unit } from '@ant-design/cssinjs';
 import type { CSSObject } from '@ant-design/cssinjs';
 
-import type { TypographyToken } from '.';
 import { operationUnit } from '../../style';
+import type { TypographyToken } from '.';
 import type { GenerateStyle } from '../../theme/internal';
 
 const getTitleStyle = (

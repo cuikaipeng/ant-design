@@ -1,12 +1,12 @@
-import type { UnstableContext } from 'rc-slider';
 import * as React from 'react';
+import type { UnstableContext } from 'rc-slider';
 
-import type { GetContextProp } from '../../../_util/type';
 import { AggregationColor } from '../../color';
-import type { GradientColor } from '../../color';
-import type { PanelPickerContextProps } from '../../context';
 import { getGradientPercentColor } from '../../util';
 import { GradientColorSlider } from '../ColorSlider';
+import type { GetContextProp } from '../../../_util/type';
+import type { GradientColor } from '../../color';
+import type { PanelPickerContextProps } from '../../context';
 
 function sortColors(colors: { percent: number; color: string }[]) {
   return [...colors].sort((a, b) => a.percent - b.percent);

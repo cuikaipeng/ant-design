@@ -1,9 +1,11 @@
-import { render } from 'rc-util/lib/React/render';
 import React, { useContext } from 'react';
+import { render } from 'rc-util/lib/React/render';
 
 import { AppConfigContext } from '../app/context';
 import ConfigProvider, { ConfigContext, globalConfig, warnContext } from '../config-provider';
 import PurePanel from './PurePanel';
+import useMessage, { useInternalMessage } from './useMessage';
+import { wrapPromiseFn } from './util';
 import type {
   ArgsProps,
   ConfigOptions,
@@ -12,8 +14,6 @@ import type {
   NoticeType,
   TypeOpen,
 } from './interface';
-import useMessage, { useInternalMessage } from './useMessage';
-import { wrapPromiseFn } from './util';
 
 export type { ArgsProps };
 

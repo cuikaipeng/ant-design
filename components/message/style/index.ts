@@ -1,6 +1,6 @@
+import type { CSSProperties } from 'react';
 import { Keyframes } from '@ant-design/cssinjs';
 import type { CSSObject } from '@ant-design/cssinjs';
-import type { CSSProperties } from 'react';
 
 import { CONTAINER_MAX_OFFSET } from '../../_util/hooks/useZIndex';
 import { resetComponent } from '../../style';

@@ -1,8 +1,8 @@
-import SearchOutlined from '@ant-design/icons/SearchOutlined';
 import * as React from 'react';
+import SearchOutlined from '@ant-design/icons/SearchOutlined';
 
-import type { AnyObject } from '../../../_util/type';
 import Input from '../../../input';
+import type { AnyObject } from '../../../_util/type';
 import type { FilterSearchType, TableLocale } from '../../interface';
 
 interface FilterSearchProps<RecordType = AnyObject> {

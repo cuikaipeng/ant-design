@@ -1,5 +1,5 @@
-import { CheckCircleOutlined } from '@ant-design/icons';
 import React from 'react';
+import { CheckCircleOutlined } from '@ant-design/icons';
 
 import Tag from '..';
 import mountTest from '../../../tests/shared/mountTest';

@@ -16,8 +16,8 @@ import {
 import { resetComponent, resetIcon } from '../../style';
 import { genCompactItemStyle } from '../../style/compact-item';
 import { genStyleHooks, mergeToken } from '../../theme/internal';
-import type { GenerateStyle } from '../../theme/internal';
 import { prepareComponentToken } from './token';
+import type { GenerateStyle } from '../../theme/internal';
 import type { ComponentToken, InputNumberToken } from './token';
 
 export type { ComponentToken };

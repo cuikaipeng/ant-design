@@ -1,15 +1,15 @@
+import React, { useContext } from 'react';
 import { QRCodeCanvas, QRCodeSVG } from '@rc-component/qrcode';
 import classNames from 'classnames';
-import React, { useContext } from 'react';
 
 import { devUseWarning } from '../_util/warning';
 import { ConfigContext } from '../config-provider';
-import type { ConfigConsumerProps } from '../config-provider';
 import { useLocale } from '../locale';
 import { useToken } from '../theme/internal';
 import QRcodeStatus from './QrcodeStatus';
-import type { QRCodeProps, QRProps } from './interface';
 import useStyle from './style/index';
+import type { ConfigConsumerProps } from '../config-provider';
+import type { QRCodeProps, QRProps } from './interface';
 
 const QRCode: React.FC<QRCodeProps> = (props) => {
   const [, token] = useToken();

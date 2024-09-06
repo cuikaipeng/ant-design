@@ -1,9 +1,9 @@
-import { spyElementPrototypes } from 'rc-util/lib/test/domHook';
 import React from 'react';
+import { spyElementPrototypes } from 'rc-util/lib/test/domHook';
 
 import Table from '..';
-import type { ColumnsType } from '..';
 import { render, triggerResize, waitFakeTimer } from '../../../tests/utils';
+import type { ColumnsType } from '..';
 
 const columns: ColumnsType<any> = [
   { title: 'Column 1', dataIndex: 'address', key: '1' },

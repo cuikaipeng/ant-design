@@ -1,11 +1,11 @@
 import React from 'react';
 
 import List from '..';
-import type { ListProps } from '..';
 import mountTest from '../../../tests/shared/mountTest';
 import rtlTest from '../../../tests/shared/rtlTest';
 import { render } from '../../../tests/utils';
 import ConfigProvider from '../../config-provider';
+import type { ListProps } from '..';
 
 describe('List', () => {
   mountTest(List);

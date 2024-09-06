@@ -1,12 +1,12 @@
-import type { TriggerProps } from '@rc-component/trigger';
 import React from 'react';
+import type { TriggerProps } from '@rc-component/trigger';
 
 import Dropdown from '..';
-import type { DropDownProps } from '..';
 import mountTest from '../../../tests/shared/mountTest';
 import rtlTest from '../../../tests/shared/rtlTest';
 import { act, fireEvent, render, waitFakeTimer } from '../../../tests/utils';
 import { resetWarned } from '../../_util/warning';
+import type { DropDownProps } from '..';
 
 let triggerProps: TriggerProps;
 

@@ -1,12 +1,12 @@
 import { resetComponent } from '../../style';
 import { genCollapseMotion } from '../../style/motion';
 import { genStyleHooks, mergeToken } from '../../theme/internal';
-import type { FullToken, GenerateStyle, GetDefaultToken } from '../../theme/internal';
 import genDraggerStyle from './dragger';
 import genListStyle from './list';
 import genMotionStyle from './motion';
 import { genPictureCardStyle, genPictureStyle } from './picture';
 import genRtlStyle from './rtl';
+import type { FullToken, GenerateStyle, GetDefaultToken } from '../../theme/internal';
 
 export interface ComponentToken {
   /**

@@ -3,9 +3,9 @@ import React from 'react';
 import mountTest from '../../../tests/shared/mountTest';
 import rtlTest from '../../../tests/shared/rtlTest';
 import { act, fireEvent, render, waitFakeTimer } from '../../../tests/utils';
-import type { GetRef } from '../../_util/type';
 import Tooltip from '../../tooltip';
 import Badge from '../index';
+import type { GetRef } from '../../_util/type';
 
 describe('Badge', () => {
   mountTest(Badge);

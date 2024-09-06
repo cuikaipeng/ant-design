@@ -1,8 +1,8 @@
+import React, { useEffect, useRef, useState } from 'react';
 import { PlusOutlined } from '@ant-design/icons';
 import { Input, Tag, theme } from 'antd';
-import type { InputRef } from 'antd';
 import { TweenOneGroup } from 'rc-tween-one';
-import React, { useEffect, useRef, useState } from 'react';
+import type { InputRef } from 'antd';
 
 const App: React.FC = () => {
   const { token } = theme.useToken();

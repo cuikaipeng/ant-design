@@ -1,9 +1,9 @@
 import type { FC } from 'react';
 import React, { useEffect, useState } from 'react';
 
-import type { AggregationColor } from '../color';
 import { generateColor, getColorAlpha } from '../util';
 import ColorSteppers from './ColorSteppers';
+import type { AggregationColor } from '../color';
 
 interface ColorAlphaInputProps {
   prefixCls: string;

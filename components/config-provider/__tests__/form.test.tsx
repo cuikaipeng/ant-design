@@ -1,15 +1,15 @@
-import type { ValidateMessages } from 'rc-field-form/es/interface';
 import React from 'react';
 import scrollIntoView from 'scroll-into-view-if-needed';
+import type { ValidateMessages } from 'rc-field-form/es/interface';
 
 import ConfigProvider from '..';
 import { act, fireEvent, render, waitFakeTimer } from '../../../tests/utils';
 import Button from '../../button';
 import Form from '../../form';
-import type { FormInstance } from '../../form';
 import Input from '../../input';
 import InputNumber from '../../input-number';
 import zhCN from '../../locale/zh_CN';
+import type { FormInstance } from '../../form';
 
 jest.mock('scroll-into-view-if-needed');
 

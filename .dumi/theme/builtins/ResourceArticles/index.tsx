@@ -1,8 +1,8 @@
+import * as React from 'react';
 import { Avatar, Divider, Empty, Skeleton, Tabs } from 'antd';
 import { createStyles } from 'antd-style';
 import dayjs from 'dayjs';
 import { FormattedMessage } from 'dumi';
-import * as React from 'react';
 
 import useLocale from '../../../hooks/useLocale';
 import { useSiteData } from '../../../pages/index/components/util';

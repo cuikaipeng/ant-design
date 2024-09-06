@@ -1,10 +1,9 @@
+import type { CSSProperties } from 'react';
 import { unit } from '@ant-design/cssinjs';
 import type { CSSObject } from '@ant-design/cssinjs';
-import type { CSSProperties } from 'react';
 
 import { genFocusOutline, resetComponent } from '../../style';
 import { genStyleHooks, mergeToken } from '../../theme/internal';
-import type { FullToken, GenerateStyle, GetDefaultToken } from '../../theme/internal';
 import genStepsCustomIconStyle from './custom-icon';
 import genStepsHorizontalStyle from './horizontal';
 import genStepsInlineStyle from './inline';
@@ -15,6 +14,7 @@ import genStepsProgressDotStyle from './progress-dot';
 import genStepsRTLStyle from './rtl';
 import genStepsSmallStyle from './small';
 import genStepsVerticalStyle from './vertical';
+import type { FullToken, GenerateStyle, GetDefaultToken } from '../../theme/internal';
 
 export interface ComponentToken {
   /**

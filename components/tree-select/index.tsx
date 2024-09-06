@@ -1,24 +1,20 @@
+import * as React from 'react';
 import classNames from 'classnames';
+import RcTreeSelect, { SHOW_ALL, SHOW_CHILD, SHOW_PARENT, TreeNode } from 'rc-tree-select';
+import omit from 'rc-util/lib/omit';
 import type { BaseSelectRef } from 'rc-select';
 import type { Placement } from 'rc-select/lib/BaseSelect';
-import RcTreeSelect, { SHOW_ALL, SHOW_CHILD, SHOW_PARENT, TreeNode } from 'rc-tree-select';
 import type { TreeSelectProps as RcTreeSelectProps } from 'rc-tree-select';
 import type { BaseOptionType, DefaultOptionType } from 'rc-tree-select/lib/TreeSelect';
-import omit from 'rc-util/lib/omit';
-import * as React from 'react';
 
-import genPurePanel from '../_util/PurePanel';
 import { useZIndex } from '../_util/hooks/useZIndex';
 import { getTransitionName } from '../_util/motion';
-import type { SelectCommonPlacement } from '../_util/motion';
+import genPurePanel from '../_util/PurePanel';
 import { getMergedStatus, getStatusClassNames } from '../_util/statusUtils';
-import type { InputStatus } from '../_util/statusUtils';
 import { devUseWarning } from '../_util/warning';
 import { ConfigContext } from '../config-provider';
-import type { Variant } from '../config-provider';
-import DisabledContext from '../config-provider/DisabledContext';
-import type { SizeType } from '../config-provider/SizeContext';
 import DefaultRenderEmpty from '../config-provider/defaultRenderEmpty';
+import DisabledContext from '../config-provider/DisabledContext';
 import useCSSVarCls from '../config-provider/hooks/useCSSVarCls';
 import useSize from '../config-provider/hooks/useSize';
 import { FormItemInputContext } from '../form/context';
@@ -28,10 +24,14 @@ import useSelectStyle from '../select/style';
 import useIcons from '../select/useIcons';
 import useShowArrow from '../select/useShowArrow';
 import { useCompactItemContext } from '../space/Compact';
-import type { AntTreeNodeProps, TreeProps } from '../tree';
-import type { SwitcherIcon } from '../tree/Tree';
 import SwitcherIconCom from '../tree/utils/iconUtil';
 import useStyle from './style';
+import type { SelectCommonPlacement } from '../_util/motion';
+import type { InputStatus } from '../_util/statusUtils';
+import type { Variant } from '../config-provider';
+import type { SizeType } from '../config-provider/SizeContext';
+import type { AntTreeNodeProps, TreeProps } from '../tree';
+import type { SwitcherIcon } from '../tree/Tree';
 
 type RawValue = string | number;
 

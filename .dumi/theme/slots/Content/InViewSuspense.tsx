@@ -1,7 +1,7 @@
-import { Skeleton } from 'antd';
 import React, { Suspense } from 'react';
 import { InView } from 'react-intersection-observer';
 import type { IntersectionObserverProps } from 'react-intersection-observer';
+import { Skeleton } from 'antd';
 
 type InViewSuspenseProps = Pick<IntersectionObserverProps, 'delay'> & {
   fallback?: React.ReactNode;

@@ -1,19 +1,19 @@
+import React, { memo, useContext } from 'react';
 import CloseOutlined from '@ant-design/icons/CloseOutlined';
 import FileTextOutlined from '@ant-design/icons/FileTextOutlined';
 import classNames from 'classnames';
 import CSSMotion from 'rc-motion';
 import { useEvent } from 'rc-util';
 import useMergedState from 'rc-util/lib/hooks/useMergedState';
-import React, { memo, useContext } from 'react';
 
 import { devUseWarning } from '../_util/warning';
 import { ConfigContext } from '../config-provider';
-import type { ConfigConsumerProps } from '../config-provider';
 import useCSSVarCls from '../config-provider/hooks/useCSSVarCls';
-import FloatButton, { floatButtonPrefixCls } from './FloatButton';
 import { FloatButtonGroupProvider } from './context';
-import type { FloatButtonGroupProps } from './interface';
+import FloatButton, { floatButtonPrefixCls } from './FloatButton';
 import useStyle from './style';
+import type { ConfigConsumerProps } from '../config-provider';
+import type { FloatButtonGroupProps } from './interface';
 
 const FloatButtonGroup: React.FC<FloatButtonGroupProps> = (props) => {
   const {

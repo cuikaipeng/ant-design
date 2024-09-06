@@ -1,21 +1,21 @@
+import * as React from 'react';
 import RightOutlined from '@ant-design/icons/RightOutlined';
 import classNames from 'classnames';
 import RcCollapse from 'rc-collapse';
-import type { CollapseProps as RcCollapseProps } from 'rc-collapse';
-import type { CSSMotionProps } from 'rc-motion';
 import toArray from 'rc-util/lib/Children/toArray';
 import omit from 'rc-util/lib/omit';
-import * as React from 'react';
+import type { CollapseProps as RcCollapseProps } from 'rc-collapse';
+import type { CSSMotionProps } from 'rc-motion';
 
 import initCollapseMotion from '../_util/motion';
 import { cloneElement } from '../_util/reactNode';
 import { devUseWarning } from '../_util/warning';
 import { ConfigContext } from '../config-provider';
-import type { SizeType } from '../config-provider/SizeContext';
 import useSize from '../config-provider/hooks/useSize';
 import CollapsePanel from './CollapsePanel';
-import type { CollapsibleType } from './CollapsePanel';
 import useStyle from './style';
+import type { SizeType } from '../config-provider/SizeContext';
+import type { CollapsibleType } from './CollapsePanel';
 
 /** @deprecated Please use `start` | `end` instead */
 type ExpandIconPositionLegacy = 'left' | 'right';

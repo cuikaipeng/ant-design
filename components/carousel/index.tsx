@@ -1,7 +1,7 @@
-import SlickCarousel from '@ant-design/react-slick';
-import type { Settings } from '@ant-design/react-slick';
-import classNames from 'classnames';
 import * as React from 'react';
+import SlickCarousel from '@ant-design/react-slick';
+import classNames from 'classnames';
+import type { Settings } from '@ant-design/react-slick';
 
 import { ConfigContext } from '../config-provider';
 import useStyle from './style';

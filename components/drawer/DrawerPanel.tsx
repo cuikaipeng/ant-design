@@ -1,11 +1,11 @@
+import * as React from 'react';
 import classNames from 'classnames';
 import type { DrawerProps as RCDrawerProps } from 'rc-drawer';
-import * as React from 'react';
 
 import useClosable, { pickClosable } from '../_util/hooks/useClosable';
-import type { ClosableType } from '../_util/hooks/useClosable';
 import { ConfigContext } from '../config-provider';
 import Skeleton from '../skeleton';
+import type { ClosableType } from '../_util/hooks/useClosable';
 
 export interface DrawerClassNames extends NonNullable<RCDrawerProps['classNames']> {
   header?: string;

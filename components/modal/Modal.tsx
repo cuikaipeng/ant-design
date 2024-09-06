@@ -1,7 +1,7 @@
+import * as React from 'react';
 import CloseOutlined from '@ant-design/icons/CloseOutlined';
 import classNames from 'classnames';
 import Dialog from 'rc-dialog';
-import * as React from 'react';
 
 import ContextIsolator from '../_util/ContextIsolator';
 import useClosable, { pickClosable } from '../_util/hooks/useClosable';
@@ -14,9 +14,9 @@ import { ConfigContext } from '../config-provider';
 import useCSSVarCls from '../config-provider/hooks/useCSSVarCls';
 import Skeleton from '../skeleton';
 import { usePanelRef } from '../watermark/context';
-import type { ModalProps, MousePosition } from './interface';
 import { Footer, renderCloseIcon } from './shared';
 import useStyle from './style';
+import type { ModalProps, MousePosition } from './interface';
 
 let mousePosition: MousePosition;
 

@@ -1,7 +1,7 @@
+import React, { useState } from 'react';
 import { CloseCircleFilled } from '@ant-design/icons';
 import dayjs from 'dayjs';
 import customParseFormat from 'dayjs/plugin/customParseFormat';
-import React, { useState } from 'react';
 
 import DatePicker from '..';
 import focusTest from '../../../tests/shared/focusTest';

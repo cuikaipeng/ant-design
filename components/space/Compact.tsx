@@ -1,12 +1,12 @@
+import * as React from 'react';
 import classNames from 'classnames';
 import toArray from 'rc-util/lib/Children/toArray';
-import * as React from 'react';
 
 import { ConfigContext } from '../config-provider';
-import type { DirectionType } from '../config-provider';
-import type { SizeType } from '../config-provider/SizeContext';
 import useSize from '../config-provider/hooks/useSize';
 import useStyle from './style';
+import type { DirectionType } from '../config-provider';
+import type { SizeType } from '../config-provider/SizeContext';
 
 export interface SpaceCompactItemContextType {
   compactSize?: SizeType;

@@ -3,9 +3,9 @@ import type { CSSInterpolation, CSSObject } from '@ant-design/cssinjs';
 
 import { genFocusStyle } from '../../style';
 import { genStyleHooks, mergeToken } from '../../theme/internal';
-import type { GenerateStyle } from '../../theme/internal';
 import genGroupStyle from './group';
 import { prepareComponentToken, prepareToken } from './token';
+import type { GenerateStyle } from '../../theme/internal';
 import type { ButtonToken, ComponentToken } from './token';
 
 export type { ComponentToken };

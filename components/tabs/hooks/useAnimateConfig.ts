@@ -1,8 +1,8 @@
 import type { CSSMotionProps } from 'rc-motion';
 import type { AnimatedConfig } from 'rc-tabs/lib/interface';
 
-import type { TabsProps } from '..';
 import { getTransitionName } from '../../_util/motion';
+import type { TabsProps } from '..';
 
 const motion: CSSMotionProps = {
   motionAppear: false,

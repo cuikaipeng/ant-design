@@ -3,8 +3,8 @@ import React, { useEffect, useState } from 'react';
 
 import Input from '../../input';
 import { toHexFormat } from '../color';
-import type { AggregationColor } from '../color';
 import { generateColor } from '../util';
+import type { AggregationColor } from '../color';
 
 interface ColorHexInputProps {
   prefixCls: string;

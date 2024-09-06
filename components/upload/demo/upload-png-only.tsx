@@ -1,7 +1,7 @@
-import { UploadOutlined } from '@ant-design/icons';
-import { Button, Upload, message } from 'antd';
-import type { UploadProps } from 'antd';
 import React from 'react';
+import { UploadOutlined } from '@ant-design/icons';
+import { Button, message, Upload } from 'antd';
+import type { UploadProps } from 'antd';
 
 const props: UploadProps = {
   beforeUpload: (file) => {

@@ -1,8 +1,8 @@
 import React from 'react';
 
 import Table from '..';
-import type { TableProps } from '..';
 import { fireEvent, render } from '../../../tests/utils';
+import type { TableProps } from '..';
 
 const columns: TableProps['columns'] = [
   {

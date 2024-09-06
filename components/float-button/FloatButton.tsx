@@ -1,18 +1,18 @@
+import React, { useContext, useMemo } from 'react';
 import classNames from 'classnames';
 import omit from 'rc-util/lib/omit';
-import React, { useContext, useMemo } from 'react';
 
 import { devUseWarning } from '../_util/warning';
 import Badge from '../badge';
 import { ConfigContext } from '../config-provider';
-import type { ConfigConsumerProps } from '../config-provider';
 import useCSSVarCls from '../config-provider/hooks/useCSSVarCls';
 import Tooltip from '../tooltip';
-import type BackTop from './BackTop';
-import Content from './FloatButtonContent';
-import type FloatButtonGroup from './FloatButtonGroup';
-import type PurePanel from './PurePanel';
 import FloatButtonGroupContext from './context';
+import Content from './FloatButtonContent';
+import useStyle from './style';
+import type { ConfigConsumerProps } from '../config-provider';
+import type BackTop from './BackTop';
+import type FloatButtonGroup from './FloatButtonGroup';
 import type {
   FloatButtonBadgeProps,
   FloatButtonContentProps,
@@ -20,7 +20,7 @@ import type {
   FloatButtonProps,
   FloatButtonShape,
 } from './interface';
-import useStyle from './style';
+import type PurePanel from './PurePanel';
 
 export const floatButtonPrefixCls = 'float-btn';
 

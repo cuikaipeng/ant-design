@@ -26,8 +26,8 @@ import type { ComponentToken as FloatButtonComponentToken } from '../../float-bu
 import type { ComponentToken as FormComponentToken } from '../../form/style';
 import type { ComponentToken as GridComponentToken } from '../../grid/style';
 import type { ComponentToken as ImageComponentToken } from '../../image/style';
-import type { ComponentToken as InputNumberComponentToken } from '../../input-number/style';
 import type { ComponentToken as InputComponentToken } from '../../input/style';
+import type { ComponentToken as InputNumberComponentToken } from '../../input-number/style';
 import type { ComponentToken as LayoutComponentToken } from '../../layout/style';
 import type { ComponentToken as ListComponentToken } from '../../list/style';
 import type { ComponentToken as MentionsComponentToken } from '../../mentions/style';
@@ -59,8 +59,8 @@ import type { ComponentToken as TimelineComponentToken } from '../../timeline/st
 import type { ComponentToken as TooltipComponentToken } from '../../tooltip/style';
 import type { ComponentToken as TourComponentToken } from '../../tour/style';
 import type { ComponentToken as TransferComponentToken } from '../../transfer/style';
-import type { ComponentToken as TreeSelectComponentToken } from '../../tree-select/style';
 import type { ComponentToken as TreeComponentToken } from '../../tree/style';
+import type { ComponentToken as TreeSelectComponentToken } from '../../tree-select/style';
 import type { ComponentToken as TypographyComponentToken } from '../../typography/style';
 import type { ComponentToken as UploadComponentToken } from '../../upload/style';
 

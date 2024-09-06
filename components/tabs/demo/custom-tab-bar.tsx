@@ -1,7 +1,7 @@
-import { Tabs, theme } from 'antd';
-import type { TabsProps } from 'antd';
 import React from 'react';
 import StickyBox from 'react-sticky-box';
+import { Tabs, theme } from 'antd';
+import type { TabsProps } from 'antd';
 
 const items = Array.from({ length: 3 })
   .fill(null)

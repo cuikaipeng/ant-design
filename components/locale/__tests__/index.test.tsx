@@ -80,8 +80,6 @@ import svSE from '../../locale/sv_SE';
 import taIN from '../../locale/ta_IN';
 import thTH from '../../locale/th_TH';
 
-import type { Locale } from '..';
-import type { TableProps } from '../..';
 import tkTK from '../../locale/tk_TK';
 import trTR from '../../locale/tr_TR';
 import ukUA from '../../locale/uk_UA';
@@ -91,6 +89,8 @@ import viVN from '../../locale/vi_VN';
 import zhCN from '../../locale/zh_CN';
 import zhHK from '../../locale/zh_HK';
 import zhTW from '../../locale/zh_TW';
+import type { Locale } from '..';
+import type { TableProps } from '../..';
 import 'dayjs/locale/ar';
 import 'dayjs/locale/az';
 import 'dayjs/locale/be';

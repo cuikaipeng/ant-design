@@ -5,8 +5,8 @@ import mountTest from '../../../tests/shared/mountTest';
 import rtlTest from '../../../tests/shared/rtlTest';
 import { render } from '../../../tests/utils';
 import { resetWarned } from '../../_util/warning';
-import type { ItemType } from '../Breadcrumb';
 import Breadcrumb from '../index';
+import type { ItemType } from '../Breadcrumb';
 
 describe('Breadcrumb', () => {
   mountTest(Breadcrumb);

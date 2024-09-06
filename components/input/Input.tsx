@@ -1,18 +1,15 @@
+import React, { forwardRef, useContext, useEffect, useRef } from 'react';
 import classNames from 'classnames';
 import RcInput from 'rc-input';
-import type { InputRef, InputProps as RcInputProps } from 'rc-input';
 import { composeRef } from 'rc-util/lib/ref';
-import React, { forwardRef, useContext, useEffect, useRef } from 'react';
+import type { InputRef, InputProps as RcInputProps } from 'rc-input';
 
 import ContextIsolator from '../_util/ContextIsolator';
 import getAllowClear from '../_util/getAllowClear';
 import { getMergedStatus, getStatusClassNames } from '../_util/statusUtils';
-import type { InputStatus } from '../_util/statusUtils';
 import { devUseWarning } from '../_util/warning';
 import { ConfigContext } from '../config-provider';
-import type { Variant } from '../config-provider';
 import DisabledContext from '../config-provider/DisabledContext';
-import type { SizeType } from '../config-provider/SizeContext';
 import useCSSVarCls from '../config-provider/hooks/useCSSVarCls';
 import useSize from '../config-provider/hooks/useSize';
 import { FormItemInputContext } from '../form/context';
@@ -21,6 +18,9 @@ import { useCompactItemContext } from '../space/Compact';
 import useRemovePasswordTimeout from './hooks/useRemovePasswordTimeout';
 import useStyle from './style';
 import { hasPrefixSuffix } from './utils';
+import type { InputStatus } from '../_util/statusUtils';
+import type { Variant } from '../config-provider';
+import type { SizeType } from '../config-provider/SizeContext';
 
 export interface InputFocusOptions extends FocusOptions {
   cursor?: 'start' | 'end' | 'all';

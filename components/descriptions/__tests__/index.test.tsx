@@ -1,5 +1,5 @@
-import MockDate from 'mockdate';
 import React from 'react';
+import MockDate from 'mockdate';
 
 import Descriptions from '..';
 import mountTest from '../../../tests/shared/mountTest';

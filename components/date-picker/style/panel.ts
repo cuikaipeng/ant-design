@@ -1,6 +1,6 @@
 import { unit } from '@ant-design/cssinjs';
-import type { CSSObject } from '@ant-design/cssinjs';
 import { TinyColor } from '@ctrl/tinycolor';
+import type { CSSObject } from '@ant-design/cssinjs';
 
 import type { GenerateStyle } from '../../theme/internal';
 import type { PickerToken, SharedPickerToken } from './token';

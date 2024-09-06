@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import { EllipsisOutlined } from '@ant-design/icons';
 import {
   Button,
@@ -17,12 +18,15 @@ import {
   Select,
   Space,
   Table,
+  theme,
   TimePicker,
   Tour,
   Transfer,
   Upload,
-  theme,
 } from 'antd';
+import enUS from 'antd/locale/en_US';
+import zhCN from 'antd/locale/zh_CN';
+import dayjs from 'dayjs';
 import type {
   ConfigProviderProps,
   RadioChangeEvent,
@@ -30,10 +34,6 @@ import type {
   TourProps,
   UploadFile,
 } from 'antd';
-import enUS from 'antd/locale/en_US';
-import zhCN from 'antd/locale/zh_CN';
-import dayjs from 'dayjs';
-import React, { useState } from 'react';
 
 import 'dayjs/locale/zh-cn';
 

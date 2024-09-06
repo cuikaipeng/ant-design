@@ -6,9 +6,9 @@ import {
   initPanelComponentToken,
   initPickerPanelToken,
 } from '../../date-picker/style';
-import type { PanelComponentToken, PickerPanelToken } from '../../date-picker/style';
 import { resetComponent } from '../../style';
 import { genStyleHooks, mergeToken } from '../../theme/internal';
+import type { PanelComponentToken, PickerPanelToken } from '../../date-picker/style';
 import type { FullToken, GetDefaultToken } from '../../theme/internal';
 
 export interface ComponentToken {

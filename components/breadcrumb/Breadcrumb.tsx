@@ -1,19 +1,19 @@
+import * as React from 'react';
 import classNames from 'classnames';
 import toArray from 'rc-util/lib/Children/toArray';
 import pickAttrs from 'rc-util/lib/pickAttrs';
-import * as React from 'react';
 
 import { cloneElement } from '../_util/reactNode';
-import type { AnyObject } from '../_util/type';
 import { devUseWarning } from '../_util/warning';
 import { ConfigContext } from '../config-provider';
-import type { DropdownProps } from '../dropdown';
 import BreadcrumbItem, { InternalBreadcrumbItem } from './BreadcrumbItem';
-import type { BreadcrumbItemProps } from './BreadcrumbItem';
 import BreadcrumbSeparator from './BreadcrumbSeparator';
 import useStyle from './style';
 import useItemRender from './useItemRender';
 import useItems from './useItems';
+import type { AnyObject } from '../_util/type';
+import type { DropdownProps } from '../dropdown';
+import type { BreadcrumbItemProps } from './BreadcrumbItem';
 
 export interface BreadcrumbItemType {
   key?: React.Key;

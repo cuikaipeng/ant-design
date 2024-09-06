@@ -2,8 +2,8 @@ import type { FC } from 'react';
 import React, { useContext } from 'react';
 
 import ActionButton from '../../_util/ActionButton';
-import type { ConfirmDialogProps } from '../ConfirmDialog';
 import { ModalContext } from '../context';
+import type { ConfirmDialogProps } from '../ConfirmDialog';
 
 export interface ConfirmCancelBtnProps
   extends Pick<

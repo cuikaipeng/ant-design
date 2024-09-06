@@ -1,7 +1,7 @@
-import { Col, Row, Statistic } from 'antd';
-import type { StatisticProps } from 'antd';
 import React from 'react';
 import CountUp from 'react-countup';
+import { Col, Row, Statistic } from 'antd';
+import type { StatisticProps } from 'antd';
 
 const formatter: StatisticProps['formatter'] = (value) => (
   <CountUp end={value as number} separator="," />

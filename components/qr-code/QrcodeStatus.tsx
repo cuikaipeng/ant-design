@@ -1,9 +1,9 @@
-import { ReloadOutlined } from '@ant-design/icons';
 import React from 'react';
+import { ReloadOutlined } from '@ant-design/icons';
 
 import Button from '../button';
-import type { Locale } from '../locale';
 import Spin from '../spin';
+import type { Locale } from '../locale';
 import type { QRCodeProps, StatusRenderInfo } from './interface';
 
 export interface QRcodeStatusProps {

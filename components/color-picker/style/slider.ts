@@ -1,8 +1,8 @@
 import { unit } from '@ant-design/cssinjs';
 import type { CSSObject } from '@ant-design/cssinjs';
 
-import type { GenerateStyle } from '../../theme/internal';
 import { getTransBg } from './color-block';
+import type { GenerateStyle } from '../../theme/internal';
 import type { ColorPickerToken } from './index';
 
 const genSliderStyle: GenerateStyle<ColorPickerToken, CSSObject> = (token) => {

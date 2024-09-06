@@ -1,12 +1,12 @@
+import { useContext } from 'react';
 import { genStyleUtils } from '@ant-design/cssinjs-utils';
 import type { GetCompUnitless } from '@ant-design/cssinjs-utils/es/util/genStyleUtils';
-import { useContext } from 'react';
 
 import { ConfigContext } from '../../config-provider/context';
 import { genCommonStyle, genLinkStyle } from '../../style';
-import type { AliasToken, ComponentTokenMap, SeedToken } from '../interface';
 import useLocalToken, { unitless } from '../useToken';
 import useResetIconStyle from './useResetIconStyle';
+import type { AliasToken, ComponentTokenMap, SeedToken } from '../interface';
 
 export const { genStyleHooks, genComponentStyleHook, genSubStyleComponent } = genStyleUtils<
   ComponentTokenMap,

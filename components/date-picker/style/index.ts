@@ -14,12 +14,12 @@ import {
 } from '../../style/motion';
 import { genRoundedArrow } from '../../style/roundedArrow';
 import { genStyleHooks, mergeToken } from '../../theme/internal';
-import type { GenerateStyle } from '../../theme/internal';
 import genPickerMultipleStyle from './multiple';
 import genPickerPanelStyle, { genPanelStyle } from './panel';
 import { initPanelComponentToken, initPickerPanelToken, prepareComponentToken } from './token';
-import type { ComponentToken, PanelComponentToken, PickerPanelToken, PickerToken } from './token';
 import genVariantsStyle from './variants';
+import type { GenerateStyle } from '../../theme/internal';
+import type { ComponentToken, PanelComponentToken, PickerPanelToken, PickerToken } from './token';
 
 export type { ComponentToken, PanelComponentToken, PickerPanelToken };
 export { genPanelStyle, initPanelComponentToken, initPickerPanelToken };

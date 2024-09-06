@@ -1,14 +1,14 @@
+import * as React from 'react';
 import CheckOutlined from '@ant-design/icons/CheckOutlined';
 import CopyOutlined from '@ant-design/icons/CopyOutlined';
 import LoadingOutlined from '@ant-design/icons/LoadingOutlined';
 import classNames from 'classnames';
-import * as React from 'react';
 
-import type { CopyConfig } from '.';
 import TransButton from '../../_util/transButton';
-import type { Locale } from '../../locale';
 import Tooltip from '../../tooltip';
 import { getNode, toList } from './util';
+import type { CopyConfig } from '.';
+import type { Locale } from '../../locale';
 
 export interface CopyBtnProps extends Omit<CopyConfig, 'onCopy'> {
   prefixCls: string;

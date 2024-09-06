@@ -1,6 +1,6 @@
+import React from 'react';
 import { Cascader } from 'antd';
 import type { CascaderProps } from 'antd';
-import React from 'react';
 
 const { SHOW_CHILD } = Cascader;
 
