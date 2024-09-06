@@ -1,6 +1,6 @@
+import classNames from 'classnames';
 import type { CSSProperties, FC, HTMLAttributes, ReactElement, ReactNode } from 'react';
 import React, { Children, useContext } from 'react';
-import classNames from 'classnames';
 
 import { cloneElement } from '../_util/reactNode';
 import { ConfigContext } from '../config-provider';
@@ -107,7 +107,7 @@ const InternalItem = React.forwardRef<HTMLDivElement, ListItemProps>((props, ref
   };
 
   const prefixCls = getPrefixCls('list', customizePrefixCls);
-  const actionsContent = (actions && actions.length > 0) && (
+  const actionsContent = actions && actions.length > 0 && (
     <ul
       className={classNames(`${prefixCls}-item-action`, moduleClass('actions'))}
       key="actions"
