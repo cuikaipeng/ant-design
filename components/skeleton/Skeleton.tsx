@@ -3,16 +3,16 @@ import classNames from 'classnames';
 
 import { ConfigContext } from '../config-provider';
 import SkeletonAvatar from './Avatar';
+import type { AvatarProps } from './Avatar';
 import SkeletonButton from './Button';
 import Element from './Element';
 import SkeletonImage from './Image';
 import SkeletonInput from './Input';
 import SkeletonNode from './Node';
 import Paragraph from './Paragraph';
+import type { SkeletonParagraphProps } from './Paragraph';
 import useStyle from './style';
 import Title from './Title';
-import type { AvatarProps } from './Avatar';
-import type { SkeletonParagraphProps } from './Paragraph';
 import type { SkeletonTitleProps } from './Title';
 
 /* This only for skeleton internal. */

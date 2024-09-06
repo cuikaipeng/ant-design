@@ -8,15 +8,15 @@ import {
 } from '@ant-design/icons';
 
 import Menu from '..';
+import type { MenuProps, MenuRef } from '..';
+import initCollapseMotion from '../../_util/motion';
+import { noop } from '../../_util/warning';
 import { TriggerMockContext } from '../../../tests/shared/demoTestContext';
 import mountTest from '../../../tests/shared/mountTest';
 import rtlTest from '../../../tests/shared/rtlTest';
 import { act, fireEvent, render } from '../../../tests/utils';
-import initCollapseMotion from '../../_util/motion';
-import { noop } from '../../_util/warning';
 import Layout from '../../layout';
 import OverrideContext from '../OverrideContext';
-import type { MenuProps, MenuRef } from '..';
 
 Object.defineProperty(globalThis, 'IS_REACT_ACT_ENVIRONMENT', {
   writable: true,

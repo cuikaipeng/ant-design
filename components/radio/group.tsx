@@ -7,14 +7,14 @@ import { ConfigContext } from '../config-provider';
 import useCSSVarCls from '../config-provider/hooks/useCSSVarCls';
 import useSize from '../config-provider/hooks/useSize';
 import { RadioGroupContextProvider } from './context';
-import Radio from './radio';
-import useStyle from './style';
 import type {
   RadioChangeEvent,
   RadioGroupButtonStyle,
   RadioGroupContextProps,
   RadioGroupProps,
 } from './interface';
+import Radio from './radio';
+import useStyle from './style';
 
 const RadioGroup = React.forwardRef<HTMLDivElement, RadioGroupProps>((props, ref) => {
   const { getPrefixCls, direction } = React.useContext(ConfigContext);

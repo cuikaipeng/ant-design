@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { Tooltip } from 'antd';
 
 import Progress from '..';
+import type { ProgressProps } from '..';
 import mountTest from '../../../tests/shared/mountTest';
 import rtlTest from '../../../tests/shared/rtlTest';
 import { fireEvent, render } from '../../../tests/utils';
 import { handleGradient, sortGradient } from '../Line';
 import { ProgressTypes } from '../progress';
 import ProgressSteps from '../Steps';
-import type { ProgressProps } from '..';
 
 describe('Progress', () => {
   mountTest(Progress);

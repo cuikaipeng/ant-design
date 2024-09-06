@@ -1,10 +1,10 @@
 import React from 'react';
 
 import Table from '..';
-import { act, fireEvent, render } from '../../../tests/utils';
-import { resetWarned } from '../../_util/warning';
-import ConfigProvider from '../../config-provider';
 import type { TableProps } from '..';
+import { resetWarned } from '../../_util/warning';
+import { act, fireEvent, render } from '../../../tests/utils';
+import ConfigProvider from '../../config-provider';
 import type { TableRowSelection } from '../interface';
 
 describe('Table.rowSelection', () => {

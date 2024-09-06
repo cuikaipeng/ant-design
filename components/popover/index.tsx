@@ -4,15 +4,15 @@ import useMergedState from 'rc-util/lib/hooks/useMergedState';
 import KeyCode from 'rc-util/lib/KeyCode';
 
 import { getRenderPropValue } from '../_util/getRenderPropValue';
+import type { RenderFunction } from '../_util/getRenderPropValue';
 import { getTransitionName } from '../_util/motion';
 import { cloneElement } from '../_util/reactNode';
 import { ConfigContext } from '../config-provider';
 import Tooltip from '../tooltip';
+import type { AbstractTooltipProps, TooltipRef } from '../tooltip';
 import PurePanel, { Overlay } from './PurePanel';
 // CSSINJS
 import useStyle from './style';
-import type { RenderFunction } from '../_util/getRenderPropValue';
-import type { AbstractTooltipProps, TooltipRef } from '../tooltip';
 
 export interface PopoverProps extends AbstractTooltipProps {
   title?: React.ReactNode | RenderFunction;

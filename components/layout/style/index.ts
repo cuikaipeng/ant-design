@@ -3,8 +3,8 @@ import { unit } from '@ant-design/cssinjs';
 import type { CSSObject } from '@ant-design/cssinjs';
 
 import { genStyleHooks } from '../../theme/internal';
-import genLayoutLightStyle from './light';
 import type { FullToken, GenerateStyle, GetDefaultToken } from '../../theme/internal';
+import genLayoutLightStyle from './light';
 
 export interface ComponentToken {
   /** @deprecated Use headerBg instead */

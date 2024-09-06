@@ -1,6 +1,6 @@
 import { unit } from '@ant-design/cssinjs';
-import { TinyColor } from '@ctrl/tinycolor';
 import type { CSSObject } from '@ant-design/cssinjs';
+import { TinyColor } from '@ctrl/tinycolor';
 
 import { genFocusStyle, resetComponent } from '../../style';
 import { genStyleHooks, mergeToken } from '../../theme/internal';

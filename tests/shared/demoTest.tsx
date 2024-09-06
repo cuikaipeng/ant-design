@@ -1,5 +1,5 @@
-import * as React from 'react';
 import path from 'node:path';
+import * as React from 'react';
 import { createCache, StyleProvider } from '@ant-design/cssinjs';
 import { ConfigProvider } from 'antd';
 import { globSync } from 'glob';

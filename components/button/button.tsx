@@ -8,15 +8,15 @@ import Wave from '../_util/wave';
 import { ConfigContext } from '../config-provider';
 import DisabledContext from '../config-provider/DisabledContext';
 import useSize from '../config-provider/hooks/useSize';
+import type { SizeType } from '../config-provider/SizeContext';
 import { useCompactItemContext } from '../space/Compact';
 import Group, { GroupSizeContext } from './button-group';
 import { isTwoCNChar, isUnBorderedButtonType, spaceChildren } from './buttonHelpers';
+import type { ButtonHTMLType, ButtonShape, ButtonType } from './buttonHelpers';
 import IconWrapper from './IconWrapper';
 import LoadingIcon from './LoadingIcon';
 import useStyle from './style';
 import CompactCmp from './style/compactCmp';
-import type { SizeType } from '../config-provider/SizeContext';
-import type { ButtonHTMLType, ButtonShape, ButtonType } from './buttonHelpers';
 
 export type LegacyButtonType = ButtonType | 'danger';
 

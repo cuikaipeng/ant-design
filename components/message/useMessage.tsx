@@ -7,11 +7,8 @@ import type { NotificationAPI, NotificationConfig as RcNotificationConfig } from
 
 import { devUseWarning } from '../_util/warning';
 import { ConfigContext } from '../config-provider';
-import useCSSVarCls from '../config-provider/hooks/useCSSVarCls';
-import { PureContent } from './PurePanel';
-import useStyle from './style';
-import { getMotion, wrapPromiseFn } from './util';
 import type { ComponentStyleConfig } from '../config-provider/context';
+import useCSSVarCls from '../config-provider/hooks/useCSSVarCls';
 import type {
   ArgsProps,
   ConfigOptions,
@@ -20,6 +17,9 @@ import type {
   NoticeType,
   TypeOpen,
 } from './interface';
+import { PureContent } from './PurePanel';
+import useStyle from './style';
+import { getMotion, wrapPromiseFn } from './util';
 
 const DEFAULT_OFFSET = 8;
 const DEFAULT_DURATION = 3;

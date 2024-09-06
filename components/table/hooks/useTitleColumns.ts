@@ -1,7 +1,6 @@
 import * as React from 'react';
 import type { AnyObject } from 'antd/es/_util/type';
 
-import { renderColumnTitle } from '../util';
 import type {
   ColumnGroupType,
   ColumnsType,
@@ -9,6 +8,7 @@ import type {
   ColumnType,
   TransformColumns,
 } from '../interface';
+import { renderColumnTitle } from '../util';
 
 const fillTitle = <RecordType extends AnyObject = AnyObject>(
   columns: ColumnsType<RecordType>,

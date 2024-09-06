@@ -6,10 +6,10 @@ import classNames from 'classnames';
 import pickAttrs from 'rc-util/lib/pickAttrs';
 
 import { useLocale } from '../../locale';
-import { getColorAlpha } from '../util';
-import ColorClear from './ColorClear';
 import type { AggregationColor } from '../color';
 import type { ColorFormatType, ColorPickerProps } from '../interface';
+import { getColorAlpha } from '../util';
+import ColorClear from './ColorClear';
 
 export interface ColorTriggerProps {
   prefixCls: string;

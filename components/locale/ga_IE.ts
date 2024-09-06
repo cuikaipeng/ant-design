@@ -1,9 +1,9 @@
 import Pagination from 'rc-pagination/lib/locale/ga_IE';
 
+import type { Locale } from '.';
 import Calendar from '../calendar/locale/ga_IE';
 import DatePicker from '../date-picker/locale/ga_IE';
 import TimePicker from '../time-picker/locale/ga_IE';
-import type { Locale } from '.';
 
 const typeTemplate = '${label} is not a valid ${type}';
 

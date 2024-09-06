@@ -6,10 +6,10 @@ import getArrowStyle, {
   getArrowOffsetToken,
   MAX_VERTICAL_CONTENT_RADIUS,
 } from '../../style/placementArrow';
-import { getArrowToken } from '../../style/roundedArrow';
-import { genStyleHooks, mergeToken } from '../../theme/internal';
 import type { ArrowOffsetToken } from '../../style/placementArrow';
+import { getArrowToken } from '../../style/roundedArrow';
 import type { ArrowToken } from '../../style/roundedArrow';
+import { genStyleHooks, mergeToken } from '../../theme/internal';
 import type { FullToken, GenerateStyle, GetDefaultToken } from '../../theme/internal';
 
 export interface ComponentToken extends ArrowOffsetToken, ArrowToken {

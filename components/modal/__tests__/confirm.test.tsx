@@ -6,11 +6,11 @@ import KeyCode from 'rc-util/lib/KeyCode';
 import { resetWarned } from 'rc-util/lib/warning';
 
 import Modal from '..';
+import type { ModalFuncProps } from '..';
 import { act, fireEvent, waitFakeTimer } from '../../../tests/utils';
 import ConfigProvider, { defaultPrefixCls } from '../../config-provider';
-import destroyFns from '../destroyFns';
-import type { ModalFuncProps } from '..';
 import type { ModalFunc } from '../confirm';
+import destroyFns from '../destroyFns';
 
 (globalThis as any).IS_REACT_ACT_ENVIRONMENT = true;
 

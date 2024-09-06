@@ -3,14 +3,14 @@ import type { Rule, RuleObject, RuleRender } from 'rc-field-form/lib/interface';
 import warning from '../_util/warning';
 import { FormProvider } from './context';
 import ErrorList from './ErrorList';
-import InternalForm, { useForm, useWatch } from './Form';
-import Item from './FormItem';
-import List from './FormList';
-import useFormInstance from './hooks/useFormInstance';
 import type { ErrorListProps } from './ErrorList';
+import InternalForm, { useForm, useWatch } from './Form';
 import type { FormInstance, FormProps } from './Form';
+import Item from './FormItem';
 import type { FormItemProps } from './FormItem';
+import List from './FormList';
 import type { FormListFieldData, FormListOperation, FormListProps } from './FormList';
+import useFormInstance from './hooks/useFormInstance';
 
 type InternalFormType = typeof InternalForm;
 

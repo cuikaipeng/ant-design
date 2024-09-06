@@ -2,8 +2,8 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import { spyElementPrototypes } from 'rc-util/lib/test/domHook';
 
-import { createEvent, fireEvent } from '../../../tests/utils';
 import { resetWarned } from '../../_util/warning';
+import { createEvent, fireEvent } from '../../../tests/utils';
 import { AggregationColor } from '../color';
 import ColorPicker from '../ColorPicker';
 

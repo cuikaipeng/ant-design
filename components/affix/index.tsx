@@ -5,9 +5,9 @@ import omit from 'rc-util/lib/omit';
 
 import throttleByAnimationFrame from '../_util/throttleByAnimationFrame';
 import { ConfigContext } from '../config-provider';
+import type { ConfigConsumerProps } from '../config-provider';
 import useStyle from './style';
 import { getFixedBottom, getFixedTop, getTargetRect } from './utils';
-import type { ConfigConsumerProps } from '../config-provider';
 
 const TRIGGER_EVENTS: (keyof WindowEventMap)[] = [
   'resize',

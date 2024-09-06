@@ -1,11 +1,11 @@
 import React from 'react';
 import dayjs from 'dayjs';
-import customParseFormat from 'dayjs/plugin/customParseFormat';
 import type { Dayjs } from 'dayjs';
+import customParseFormat from 'dayjs/plugin/customParseFormat';
 
 import TimePicker from '..';
-import { fireEvent, render } from '../../../tests/utils';
 import { resetWarned } from '../../_util/warning';
+import { fireEvent, render } from '../../../tests/utils';
 
 dayjs.extend(customParseFormat);
 

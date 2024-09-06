@@ -1,9 +1,10 @@
 import React from 'react';
-
 import dayjs from 'dayjs';
 import preParsePostFormat from 'dayjs/plugin/preParsePostFormat';
 import MockDate from 'mockdate';
+
 import LocaleProvider from '..';
+import type { Locale } from '..';
 import {
   Calendar,
   DatePicker,
@@ -15,6 +16,7 @@ import {
   TimePicker,
   Transfer,
 } from '../..';
+import type { TableProps } from '../..';
 import mountTest from '../../../tests/shared/mountTest';
 import { render } from '../../../tests/utils';
 import arEG from '../../locale/ar_EG';
@@ -75,11 +77,9 @@ import siLK from '../../locale/si_LK';
 import skSK from '../../locale/sk_SK';
 import slSI from '../../locale/sl_SI';
 import srRS from '../../locale/sr_RS';
-
 import svSE from '../../locale/sv_SE';
 import taIN from '../../locale/ta_IN';
 import thTH from '../../locale/th_TH';
-
 import tkTK from '../../locale/tk_TK';
 import trTR from '../../locale/tr_TR';
 import ukUA from '../../locale/uk_UA';
@@ -89,8 +89,7 @@ import viVN from '../../locale/vi_VN';
 import zhCN from '../../locale/zh_CN';
 import zhHK from '../../locale/zh_HK';
 import zhTW from '../../locale/zh_TW';
-import type { Locale } from '..';
-import type { TableProps } from '../..';
+
 import 'dayjs/locale/ar';
 import 'dayjs/locale/az';
 import 'dayjs/locale/be';

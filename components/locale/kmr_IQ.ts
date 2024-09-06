@@ -1,9 +1,9 @@
 import Pagination from 'rc-pagination/lib/locale/kmr_IQ';
 
+import type { Locale } from '.';
 import Calendar from '../calendar/locale/kmr_IQ';
 import DatePicker from '../date-picker/locale/kmr_IQ';
 import TimePicker from '../time-picker/locale/kmr_IQ';
-import type { Locale } from '.';
 
 const localeValues: Locale = {
   locale: 'ku',

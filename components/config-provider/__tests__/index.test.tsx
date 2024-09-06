@@ -2,15 +2,15 @@ import React, { useState } from 'react';
 import { SmileOutlined } from '@ant-design/icons';
 
 import ConfigProvider, { ConfigContext } from '..';
+import type { ConfigConsumerProps, RenderEmptyHandler } from '..';
+import { resetWarned } from '../../_util/warning';
 import mountTest from '../../../tests/shared/mountTest';
 import { fireEvent, render } from '../../../tests/utils';
-import { resetWarned } from '../../_util/warning';
 import Button from '../../button';
 import Form from '../../form';
 import Input from '../../input';
 import Select from '../../select';
 import Table from '../../table';
-import type { ConfigConsumerProps, RenderEmptyHandler } from '..';
 
 describe('ConfigProvider', () => {
   mountTest(() => (

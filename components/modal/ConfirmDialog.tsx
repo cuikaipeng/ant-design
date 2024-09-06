@@ -9,16 +9,16 @@ import { CONTAINER_MAX_OFFSET } from '../_util/hooks/useZIndex';
 import { getTransitionName } from '../_util/motion';
 import { devUseWarning } from '../_util/warning';
 import ConfigProvider from '../config-provider';
+import type { ThemeConfig } from '../config-provider';
 import { useLocale } from '../locale';
 import useToken from '../theme/useToken';
 import CancelBtn from './components/ConfirmCancelBtn';
 import OkBtn from './components/ConfirmOkBtn';
 import { ModalContextProvider } from './context';
-import Modal from './Modal';
-import Confirm from './style/confirm';
-import type { ThemeConfig } from '../config-provider';
 import type { ModalContextProps } from './context';
 import type { ModalFuncProps, ModalLocale } from './interface';
+import Modal from './Modal';
+import Confirm from './style/confirm';
 
 export interface ConfirmDialogProps extends ModalFuncProps {
   prefixCls: string;

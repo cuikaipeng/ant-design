@@ -3,9 +3,9 @@ import { render } from 'rc-util/lib/React/render';
 
 import { AppConfigContext } from '../app/context';
 import ConfigProvider, { ConfigContext, globalConfig, warnContext } from '../config-provider';
+import type { ArgsProps, GlobalConfigProps, NotificationInstance } from './interface';
 import PurePanel from './PurePanel';
 import useNotification, { useInternalNotification } from './useNotification';
-import type { ArgsProps, GlobalConfigProps, NotificationInstance } from './interface';
 
 export type { ArgsProps };
 

@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
 
 import { ConfigContext } from '.';
-import Empty from '../empty';
 import type { ConfigConsumerProps } from '.';
+import Empty from '../empty';
 
 type ComponentName =
   | 'Table'

@@ -1,12 +1,12 @@
 import React from 'react';
-
 import userEvent from '@testing-library/user-event';
-import mountTest from '../../../tests/shared/mountTest';
 
+import mountTest from '../../../tests/shared/mountTest';
 import rtlTest from '../../../tests/shared/rtlTest';
 import { render, screen } from '../../../tests/utils';
 import Button from '../../button/index';
 import Card from '../index';
+
 import '@testing-library/jest-dom';
 
 describe('Card', () => {

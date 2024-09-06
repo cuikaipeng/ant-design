@@ -4,9 +4,8 @@ import CaretUpOutlined from '@ant-design/icons/CaretUpOutlined';
 import classNames from 'classnames';
 import KeyCode from 'rc-util/lib/KeyCode';
 
-import Tooltip from '../../tooltip';
-import { getColumnKey, getColumnPos, renderColumnTitle, safeColumnTitle } from '../util';
 import type { AnyObject } from '../../_util/type';
+import Tooltip from '../../tooltip';
 import type { TooltipProps } from '../../tooltip';
 import type {
   ColumnGroupType,
@@ -21,6 +20,7 @@ import type {
   TableLocale,
   TransformColumns,
 } from '../interface';
+import { getColumnKey, getColumnPos, renderColumnTitle, safeColumnTitle } from '../util';
 
 const ASCEND = 'ascend';
 const DESCEND = 'descend';

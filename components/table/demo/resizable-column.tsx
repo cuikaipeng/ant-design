@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import type { ResizeCallbackData } from 'react-resizable';
-import { Resizable } from 'react-resizable';
 import { Table } from 'antd';
 import type { TableColumnsType } from 'antd';
+import type { ResizeCallbackData } from 'react-resizable';
+import { Resizable } from 'react-resizable';
 
 interface DataType {
   key: React.Key;

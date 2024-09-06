@@ -2,9 +2,9 @@ import type { FC } from 'react';
 import React, { useEffect, useState } from 'react';
 import type { RGB } from '@rc-component/color-picker';
 
+import type { AggregationColor } from '../color';
 import { generateColor } from '../util';
 import ColorSteppers from './ColorSteppers';
-import type { AggregationColor } from '../color';
 
 interface ColorRgbInputProps {
   prefixCls: string;

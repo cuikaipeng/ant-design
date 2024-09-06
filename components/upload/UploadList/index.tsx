@@ -11,11 +11,11 @@ import useForceUpdate from '../../_util/hooks/useForceUpdate';
 import initCollapseMotion from '../../_util/motion';
 import { cloneElement } from '../../_util/reactNode';
 import Button from '../../button';
+import type { ButtonProps } from '../../button';
 import { ConfigContext } from '../../config-provider';
+import type { UploadFile, UploadListProps } from '../interface';
 import { isImageUrl, previewImage } from '../utils';
 import ListItem from './ListItem';
-import type { ButtonProps } from '../../button';
-import type { UploadFile, UploadListProps } from '../interface';
 
 interface UploadListRef {
   handlePreview: (file: UploadFile, e?: React.SyntheticEvent<HTMLElement>) => void;

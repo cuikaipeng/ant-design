@@ -5,7 +5,6 @@ import type { CSSObject } from '@ant-design/cssinjs';
 import { resetComponent } from '../../style';
 import { genCollapseMotion, zoomIn } from '../../style/motion';
 import { genStyleHooks, mergeToken } from '../../theme/internal';
-import genFormValidateMotionStyle from './explain';
 import type {
   AliasToken,
   FullToken,
@@ -13,6 +12,7 @@ import type {
   GenStyleFn,
   GetDefaultToken,
 } from '../../theme/internal';
+import genFormValidateMotionStyle from './explain';
 
 export interface ComponentToken {
   /**

@@ -3,12 +3,12 @@ import type { CSSObject } from '@ant-design/cssinjs';
 
 import { genCompactItemStyle } from '../../style/compact-item';
 import { genStyleHooks, mergeToken } from '../../theme/internal';
+import type { FullToken, GenerateStyle } from '../../theme/internal';
 import genColorBlockStyle from './color-block';
 import genInputStyle from './input';
 import genPickerStyle from './picker';
 import genPresetsStyle from './presets';
 import genSliderStyle from './slider';
-import type { FullToken, GenerateStyle } from '../../theme/internal';
 
 // biome-ignore lint/suspicious/noEmptyInterface: ComponentToken need to be empty by default
 export interface ComponentToken {}

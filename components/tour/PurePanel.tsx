@@ -6,9 +6,9 @@ import { withPureRenderTheme } from '../_util/PurePanel';
 import { cloneElement } from '../_util/reactNode';
 import { ConfigContext } from '../config-provider';
 import { RawPurePanel as PopoverRawPurePanel } from '../popover/PurePanel';
+import type { TourStepProps } from './interface';
 import TourPanel from './panelRender';
 import useStyle from './style';
-import type { TourStepProps } from './interface';
 
 export interface PurePanelProps extends TourStepProps {}
 

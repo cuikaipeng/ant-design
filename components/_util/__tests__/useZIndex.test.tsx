@@ -22,8 +22,8 @@ import type { ImageProps, MenuProps } from 'antd';
 
 import { waitFakeTimer } from '../../../tests/utils';
 import { consumerBaseZIndexOffset, containerBaseZIndexOffset, useZIndex } from '../hooks/useZIndex';
-import zIndexContext from '../zindexContext';
 import type { ZIndexConsumer, ZIndexContainer } from '../hooks/useZIndex';
+import zIndexContext from '../zindexContext';
 
 const WrapWithProvider: React.FC<PropsWithChildren<{ containerType: ZIndexContainer }>> = ({
   children,

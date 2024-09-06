@@ -3,8 +3,11 @@ import classNames from 'classnames';
 import omit from 'rc-util/lib/omit';
 
 import { isPresetColor, isPresetStatusColor } from '../_util/colors';
+import type { PresetColorType, PresetStatusColorType } from '../_util/colors';
 import useClosable, { pickClosable } from '../_util/hooks/useClosable';
+import type { ClosableType } from '../_util/hooks/useClosable';
 import { replaceElement } from '../_util/reactNode';
+import type { LiteralUnion } from '../_util/type';
 import { devUseWarning } from '../_util/warning';
 import Wave from '../_util/wave';
 import { ConfigContext } from '../config-provider';
@@ -12,9 +15,6 @@ import CheckableTag from './CheckableTag';
 import useStyle from './style';
 import PresetCmp from './style/presetCmp';
 import StatusCmp from './style/statusCmp';
-import type { PresetColorType, PresetStatusColorType } from '../_util/colors';
-import type { ClosableType } from '../_util/hooks/useClosable';
-import type { LiteralUnion } from '../_util/type';
 
 export type { CheckableTagProps } from './CheckableTag';
 

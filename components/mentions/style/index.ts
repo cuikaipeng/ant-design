@@ -6,6 +6,7 @@ import {
   initComponentToken,
   initInputToken,
 } from '../../input/style';
+import type { SharedComponentToken, SharedInputToken } from '../../input/style/token';
 import {
   genBorderlessStyle,
   genDisabledStyle,
@@ -14,7 +15,6 @@ import {
 } from '../../input/style/variants';
 import { resetComponent, textEllipsis } from '../../style';
 import { genStyleHooks, mergeToken } from '../../theme/internal';
-import type { SharedComponentToken, SharedInputToken } from '../../input/style/token';
 import type { FullToken, GenerateStyle, GetDefaultToken } from '../../theme/internal';
 
 export interface ComponentToken extends SharedComponentToken {

@@ -7,6 +7,7 @@ import {
   useSensor,
   useSensors,
 } from '@dnd-kit/core';
+import type { DragEndEvent, DragOverEvent, UniqueIdentifier } from '@dnd-kit/core';
 import { restrictToHorizontalAxis } from '@dnd-kit/modifiers';
 import {
   arrayMove,
@@ -15,7 +16,6 @@ import {
   useSortable,
 } from '@dnd-kit/sortable';
 import { Table } from 'antd';
-import type { DragEndEvent, DragOverEvent, UniqueIdentifier } from '@dnd-kit/core';
 import type { TableColumnsType } from 'antd';
 
 interface DataType {

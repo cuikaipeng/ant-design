@@ -1,9 +1,9 @@
 import Pagination from 'rc-pagination/lib/locale/fr_FR';
 
+import type { Locale } from '.';
 import Calendar from '../calendar/locale/fr_FR';
 import DatePicker from '../date-picker/locale/fr_FR';
 import TimePicker from '../time-picker/locale/fr_FR';
-import type { Locale } from '.';
 
 const typeTemplate = "La valeur du champ ${label} n'est pas valide pour le type ${type}";
 

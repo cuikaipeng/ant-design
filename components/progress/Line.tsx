@@ -3,8 +3,6 @@ import { presetPrimaryColors } from '@ant-design/colors';
 import classNames from 'classnames';
 
 import { devUseWarning } from '../_util/warning';
-import { LineStrokeColorVar, Percent } from './style';
-import { getSize, getSuccessPercent, validProgress } from './utils';
 import type { DirectionType } from '../config-provider';
 import type {
   PercentPositionType,
@@ -12,6 +10,8 @@ import type {
   ProgressProps,
   StringGradients,
 } from './progress';
+import { LineStrokeColorVar, Percent } from './style';
+import { getSize, getSuccessPercent, validProgress } from './utils';
 
 interface LineProps extends ProgressProps {
   prefixCls: string;

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { closestCenter, DndContext, PointerSensor, useSensor } from '@dnd-kit/core';
+import type { DragEndEvent } from '@dnd-kit/core';
 import {
   arrayMove,
   horizontalListSortingStrategy,
@@ -8,7 +9,6 @@ import {
 } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 import { Tabs } from 'antd';
-import type { DragEndEvent } from '@dnd-kit/core';
 
 interface DraggableTabPaneProps extends React.HTMLAttributes<HTMLDivElement> {
   'data-node-key': string;

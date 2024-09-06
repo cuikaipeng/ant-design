@@ -1,5 +1,5 @@
-import React from 'react';
 import util from 'node:util';
+import React from 'react';
 import type { DOMWindow } from 'jsdom';
 
 console.log('Current React Version:', React.version);

@@ -1,7 +1,6 @@
 import * as React from 'react';
 import classNames from 'classnames';
 import RcCascader from 'rc-cascader';
-import omit from 'rc-util/lib/omit';
 import type {
   BaseOptionType,
   DefaultOptionType,
@@ -10,17 +9,22 @@ import type {
   ShowSearchType,
 } from 'rc-cascader';
 import type { Placement } from 'rc-select/lib/BaseSelect';
+import omit from 'rc-util/lib/omit';
 
 import { useZIndex } from '../_util/hooks/useZIndex';
 import { getTransitionName } from '../_util/motion';
+import type { SelectCommonPlacement } from '../_util/motion';
 import genPurePanel from '../_util/PurePanel';
 import { getMergedStatus, getStatusClassNames } from '../_util/statusUtils';
+import type { InputStatus } from '../_util/statusUtils';
 import { devUseWarning } from '../_util/warning';
 import { ConfigContext } from '../config-provider';
+import type { Variant } from '../config-provider';
 import DefaultRenderEmpty from '../config-provider/defaultRenderEmpty';
 import DisabledContext from '../config-provider/DisabledContext';
 import useCSSVarCls from '../config-provider/hooks/useCSSVarCls';
 import useSize from '../config-provider/hooks/useSize';
+import type { SizeType } from '../config-provider/SizeContext';
 import { FormItemInputContext } from '../form/context';
 import useVariant from '../form/hooks/useVariants';
 import mergedBuiltinPlacements from '../select/mergedBuiltinPlacements';
@@ -33,10 +37,6 @@ import useCheckable from './hooks/useCheckable';
 import useColumnIcons from './hooks/useColumnIcons';
 import CascaderPanel from './Panel';
 import useStyle from './style';
-import type { SelectCommonPlacement } from '../_util/motion';
-import type { InputStatus } from '../_util/statusUtils';
-import type { Variant } from '../config-provider';
-import type { SizeType } from '../config-provider/SizeContext';
 
 // Align the design since we use `rc-select` in root. This help:
 // - List search content will show all content

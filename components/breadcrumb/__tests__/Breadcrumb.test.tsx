@@ -1,12 +1,12 @@
 import React from 'react';
 
+import { resetWarned } from '../../_util/warning';
 import accessibilityTest from '../../../tests/shared/accessibilityTest';
 import mountTest from '../../../tests/shared/mountTest';
 import rtlTest from '../../../tests/shared/rtlTest';
 import { render } from '../../../tests/utils';
-import { resetWarned } from '../../_util/warning';
-import Breadcrumb from '../index';
 import type { ItemType } from '../Breadcrumb';
+import Breadcrumb from '../index';
 
 describe('Breadcrumb', () => {
   mountTest(Breadcrumb);

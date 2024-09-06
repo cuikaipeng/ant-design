@@ -4,12 +4,12 @@ import classNames from 'classnames';
 
 import { devUseWarning } from '../_util/warning';
 import { ConfigContext } from '../config-provider';
+import type { ConfigConsumerProps } from '../config-provider';
 import { useLocale } from '../locale';
 import { useToken } from '../theme/internal';
+import type { QRCodeProps, QRProps } from './interface';
 import QRcodeStatus from './QrcodeStatus';
 import useStyle from './style/index';
-import type { ConfigConsumerProps } from '../config-provider';
-import type { QRCodeProps, QRProps } from './interface';
 
 const QRCode: React.FC<QRCodeProps> = (props) => {
   const [, token] = useToken();

@@ -1,40 +1,37 @@
 import * as React from 'react';
 import classNames from 'classnames';
 import { INTERNAL_HOOKS } from 'rc-table';
+import type { Reference as RcReference, TableProps as RcTableProps } from 'rc-table';
 import { convertChildrenToColumns } from 'rc-table/lib/hooks/useColumns';
 import omit from 'rc-util/lib/omit';
-import type { Reference as RcReference, TableProps as RcTableProps } from 'rc-table';
 
 import useProxyImperativeHandle from '../_util/hooks/useProxyImperativeHandle';
+import type { Breakpoint } from '../_util/responsiveObserver';
 import scrollTo from '../_util/scrollTo';
+import type { AnyObject } from '../_util/type';
 import { devUseWarning } from '../_util/warning';
 import { ConfigContext } from '../config-provider/context';
+import type { ConfigConsumerProps } from '../config-provider/context';
 import DefaultRenderEmpty from '../config-provider/defaultRenderEmpty';
 import useCSSVarCls from '../config-provider/hooks/useCSSVarCls';
 import useSize from '../config-provider/hooks/useSize';
+import type { SizeType } from '../config-provider/SizeContext';
 import useBreakpoint from '../grid/hooks/useBreakpoint';
 import defaultLocale from '../locale/en_US';
 import Pagination from '../pagination';
 import Spin from '../spin';
+import type { SpinProps } from '../spin';
 import { useToken } from '../theme/internal';
 import renderExpandIcon from './ExpandIcon';
 import useContainerWidth from './hooks/useContainerWidth';
 import useFilter, { getFilterData } from './hooks/useFilter';
+import type { FilterConfig, FilterState } from './hooks/useFilter';
 import useLazyKVMap from './hooks/useLazyKVMap';
 import usePagination, { DEFAULT_PAGE_SIZE, getPaginationParam } from './hooks/usePagination';
 import useSelection from './hooks/useSelection';
 import useSorter, { getSortData } from './hooks/useSorter';
-import useTitleColumns from './hooks/useTitleColumns';
-import RcTable from './RcTable';
-import RcVirtualTable from './RcTable/VirtualTable';
-import useStyle from './style';
-import type { Breakpoint } from '../_util/responsiveObserver';
-import type { AnyObject } from '../_util/type';
-import type { ConfigConsumerProps } from '../config-provider/context';
-import type { SizeType } from '../config-provider/SizeContext';
-import type { SpinProps } from '../spin';
-import type { FilterConfig, FilterState } from './hooks/useFilter';
 import type { SortState } from './hooks/useSorter';
+import useTitleColumns from './hooks/useTitleColumns';
 import type {
   ColumnsType,
   ColumnTitleProps,
@@ -54,6 +51,9 @@ import type {
   TablePaginationConfig,
   TableRowSelection,
 } from './interface';
+import RcTable from './RcTable';
+import RcVirtualTable from './RcTable/VirtualTable';
+import useStyle from './style';
 
 export type { ColumnsType, TablePaginationConfig };
 

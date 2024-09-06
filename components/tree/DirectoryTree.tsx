@@ -3,16 +3,16 @@ import FileOutlined from '@ant-design/icons/FileOutlined';
 import FolderOpenOutlined from '@ant-design/icons/FolderOpenOutlined';
 import FolderOutlined from '@ant-design/icons/FolderOutlined';
 import classNames from 'classnames';
-import { conductExpandParent } from 'rc-tree/lib/util';
-import { convertDataToEntities, convertTreeToData } from 'rc-tree/lib/utils/treeUtil';
 import type RcTree from 'rc-tree';
 import type { BasicDataNode } from 'rc-tree';
 import type { DataNode, EventDataNode, Key } from 'rc-tree/lib/interface';
+import { conductExpandParent } from 'rc-tree/lib/util';
+import { convertDataToEntities, convertTreeToData } from 'rc-tree/lib/utils/treeUtil';
 
 import { ConfigContext } from '../config-provider';
 import Tree from './Tree';
-import { calcRangeKeys, convertDirectoryKeysToNodes } from './utils/dictUtil';
 import type { AntdTreeNodeAttribute, TreeProps } from './Tree';
+import { calcRangeKeys, convertDirectoryKeysToNodes } from './utils/dictUtil';
 
 export type ExpandAction = false | 'click' | 'doubleClick';
 

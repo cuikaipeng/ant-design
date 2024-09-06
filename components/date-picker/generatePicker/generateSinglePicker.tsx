@@ -11,6 +11,7 @@ import type { PickerMode } from 'rc-picker/lib/interface';
 import ContextIsolator from '../../_util/ContextIsolator';
 import { useZIndex } from '../../_util/hooks/useZIndex';
 import { getMergedStatus, getStatusClassNames } from '../../_util/statusUtils';
+import type { AnyObject } from '../../_util/type';
 import { devUseWarning } from '../../_util/warning';
 import { ConfigContext } from '../../config-provider';
 import DisabledContext from '../../config-provider/DisabledContext';
@@ -35,9 +36,8 @@ import {
   YEAR,
   YEARPICKER,
 } from './constant';
-import useComponents from './useComponents';
-import type { AnyObject } from '../../_util/type';
 import type { GenericTimePickerProps, PickerProps, PickerPropsWithMultiple } from './interface';
+import useComponents from './useComponents';
 
 const generatePicker = <DateType extends AnyObject = AnyObject>(
   generateConfig: GenerateConfig<DateType>,

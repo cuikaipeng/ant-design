@@ -10,8 +10,8 @@ import type {
 
 import { ConfigContext } from '../config-provider';
 import useSize from '../config-provider/hooks/useSize';
-import useStyle from './style';
 import type { SizeType } from '../config-provider/SizeContext';
+import useStyle from './style';
 
 export type { SegmentedValue } from 'rc-segmented';
 

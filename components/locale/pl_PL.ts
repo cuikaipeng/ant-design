@@ -1,9 +1,9 @@
 import Pagination from 'rc-pagination/lib/locale/pl_PL';
 
+import type { Locale } from '.';
 import Calendar from '../calendar/locale/pl_PL';
 import DatePicker from '../date-picker/locale/pl_PL';
 import TimePicker from '../time-picker/locale/pl_PL';
-import type { Locale } from '.';
 
 const typeTemplate = '${label} nie posiada poprawnej wartości dla typu ${type}';
 

@@ -69,6 +69,7 @@
     "prepare": "is-ci || husky && dumi setup",
     "prepublishOnly": "tsx ./scripts/pre-publish.ts",
     "prettier": "prettier -c --write . --cache",
+    "prettier-import-sort": "npm run prettier -- --plugin=@ianvs/prettier-plugin-sort-imports",
     "biome": "biome check --write",
     "pub": "echo 'Please use `npm publish` instead.'",
     "postpublish": "tsx scripts/post-publish.ts",
@@ -96,7 +97,9 @@
     "tsc:old": "tsc --noEmit -p tsconfig-old-react.json",
     "version": "tsx scripts/generate-version.ts"
   },
-  "browserslist": ["defaults"],
+  "browserslist": [
+    "defaults"
+  ],
   "peerDependencies": {
     "react": ">=16.9.0",
     "react-dom": ">=16.9.0"

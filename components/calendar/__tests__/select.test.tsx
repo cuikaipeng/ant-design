@@ -1,11 +1,10 @@
 import React from 'react';
-
 import Dayjs from 'dayjs';
-
 import { resetWarned } from 'rc-util/lib/warning';
-import Calendar from '..';
 
+import Calendar from '..';
 import { fireEvent, render, waitFakeTimer } from '../../../tests/utils';
+
 import 'dayjs/locale/zh-cn';
 
 describe('Calendar.onSelect', () => {

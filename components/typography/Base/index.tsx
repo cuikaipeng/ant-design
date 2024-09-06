@@ -2,30 +2,30 @@ import * as React from 'react';
 import EditOutlined from '@ant-design/icons/EditOutlined';
 import classNames from 'classnames';
 import ResizeObserver from 'rc-resize-observer';
+import type { AutoSizeType } from 'rc-textarea';
 import toArray from 'rc-util/lib/Children/toArray';
 import useLayoutEffect from 'rc-util/lib/hooks/useLayoutEffect';
 import useMergedState from 'rc-util/lib/hooks/useMergedState';
 import omit from 'rc-util/lib/omit';
 import { composeRef } from 'rc-util/lib/ref';
-import type { AutoSizeType } from 'rc-textarea';
 
 import { isStyleSupport } from '../../_util/styleChecker';
 import TransButton from '../../_util/transButton';
 import { ConfigContext } from '../../config-provider';
 import useLocale from '../../locale/useLocale';
 import Tooltip from '../../tooltip';
+import type { TooltipProps } from '../../tooltip';
 import Editable from '../Editable';
 import useCopyClick from '../hooks/useCopyClick';
 import useMergedConfig from '../hooks/useMergedConfig';
 import usePrevious from '../hooks/usePrevious';
 import useTooltipProps from '../hooks/useTooltipProps';
 import Typography from '../Typography';
+import type { TypographyProps } from '../Typography';
 import CopyBtn from './CopyBtn';
 import Ellipsis from './Ellipsis';
 import EllipsisTooltip from './EllipsisTooltip';
 import { isEleEllipsis, isValidText } from './util';
-import type { TooltipProps } from '../../tooltip';
-import type { TypographyProps } from '../Typography';
 
 export type BaseType = 'secondary' | 'success' | 'warning' | 'danger';
 

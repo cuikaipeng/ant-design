@@ -2,8 +2,8 @@ import * as React from 'react';
 import LoadingOutlined from '@ant-design/icons/LoadingOutlined';
 import classNames from 'classnames';
 
-import TimelineItem from './TimelineItem';
 import type { TimelineProps } from './Timeline';
+import TimelineItem from './TimelineItem';
 import type { TimelineItemProps } from './TimelineItem';
 
 const TimelineItemList: React.FC<TimelineProps & { hashId: string; direction?: string }> = ({

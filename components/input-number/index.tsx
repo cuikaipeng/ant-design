@@ -7,18 +7,18 @@ import type { InputNumberProps as RcInputNumberProps, ValueType } from 'rc-input
 
 import ContextIsolator from '../_util/ContextIsolator';
 import { getMergedStatus, getStatusClassNames } from '../_util/statusUtils';
+import type { InputStatus } from '../_util/statusUtils';
 import { devUseWarning } from '../_util/warning';
 import ConfigProvider, { ConfigContext } from '../config-provider';
+import type { Variant } from '../config-provider';
 import DisabledContext from '../config-provider/DisabledContext';
 import useCSSVarCls from '../config-provider/hooks/useCSSVarCls';
 import useSize from '../config-provider/hooks/useSize';
+import type { SizeType } from '../config-provider/SizeContext';
 import { FormItemInputContext } from '../form/context';
 import useVariant from '../form/hooks/useVariants';
 import { useCompactItemContext } from '../space/Compact';
 import useStyle from './style';
-import type { InputStatus } from '../_util/statusUtils';
-import type { Variant } from '../config-provider';
-import type { SizeType } from '../config-provider/SizeContext';
 
 export interface InputNumberProps<T extends ValueType = ValueType>
   extends Omit<RcInputNumberProps<T>, 'prefix' | 'size' | 'controls'> {

@@ -5,13 +5,12 @@ import omit from 'rc-util/lib/omit';
 import { devUseWarning } from '../_util/warning';
 import Badge from '../badge';
 import { ConfigContext } from '../config-provider';
+import type { ConfigConsumerProps } from '../config-provider';
 import useCSSVarCls from '../config-provider/hooks/useCSSVarCls';
 import Tooltip from '../tooltip';
+import type BackTop from './BackTop';
 import FloatButtonGroupContext from './context';
 import Content from './FloatButtonContent';
-import useStyle from './style';
-import type { ConfigConsumerProps } from '../config-provider';
-import type BackTop from './BackTop';
 import type FloatButtonGroup from './FloatButtonGroup';
 import type {
   FloatButtonBadgeProps,
@@ -21,6 +20,7 @@ import type {
   FloatButtonShape,
 } from './interface';
 import type PurePanel from './PurePanel';
+import useStyle from './style';
 
 export const floatButtonPrefixCls = 'float-btn';
 

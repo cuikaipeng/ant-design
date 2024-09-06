@@ -4,18 +4,18 @@ import { useEvent } from 'rc-util';
 import pickAttrs from 'rc-util/lib/pickAttrs';
 
 import { getMergedStatus } from '../../_util/statusUtils';
+import type { InputStatus } from '../../_util/statusUtils';
 import { devUseWarning } from '../../_util/warning';
 import { ConfigContext } from '../../config-provider';
+import type { Variant } from '../../config-provider';
 import useCSSVarCls from '../../config-provider/hooks/useCSSVarCls';
 import useSize from '../../config-provider/hooks/useSize';
-import { FormItemInputContext } from '../../form/context';
-import useStyle from '../style/otp';
-import OTPInput from './OTPInput';
-import type { InputStatus } from '../../_util/statusUtils';
-import type { Variant } from '../../config-provider';
 import type { SizeType } from '../../config-provider/SizeContext';
+import { FormItemInputContext } from '../../form/context';
 import type { FormItemStatusContextProps } from '../../form/context';
 import type { InputRef } from '../Input';
+import useStyle from '../style/otp';
+import OTPInput from './OTPInput';
 import type { OTPInputProps } from './OTPInput';
 
 export interface OTPRef {

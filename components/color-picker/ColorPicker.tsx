@@ -7,22 +7,22 @@ import genPurePanel from '../_util/PurePanel';
 import { getStatusClassNames } from '../_util/statusUtils';
 import { devUseWarning } from '../_util/warning';
 import { ConfigContext } from '../config-provider/context';
+import type { ConfigConsumerProps } from '../config-provider/context';
 import DisabledContext from '../config-provider/DisabledContext';
 import useCSSVarCls from '../config-provider/hooks/useCSSVarCls';
 import useSize from '../config-provider/hooks/useSize';
 import { FormItemInputContext } from '../form/context';
 import Popover from '../popover';
+import type { PopoverProps } from '../popover';
 import { useCompactItemContext } from '../space/Compact';
 import { AggregationColor } from './color';
 import ColorPickerPanel from './ColorPickerPanel';
+import type { ColorPickerPanelProps } from './ColorPickerPanel';
 import ColorTrigger from './components/ColorTrigger';
 import useModeColor from './hooks/useModeColor';
+import type { ColorPickerProps, ModeType, TriggerPlacement } from './interface';
 import useStyle from './style';
 import { genAlphaColor, generateColor, getColorAlpha } from './util';
-import type { ConfigConsumerProps } from '../config-provider/context';
-import type { PopoverProps } from '../popover';
-import type { ColorPickerPanelProps } from './ColorPickerPanel';
-import type { ColorPickerProps, ModeType, TriggerPlacement } from './interface';
 
 type CompoundedComponent = React.FC<ColorPickerProps> & {
   _InternalPanelDoNotUseOrYouWillBeFired: typeof PurePanel;

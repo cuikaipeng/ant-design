@@ -2,18 +2,18 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { createEvent, fireEvent, render } from '@testing-library/react';
 import { spyElementPrototypes } from 'rc-util/lib/test/domHook';
 
+import { resetWarned } from '../../_util/warning';
 import mountTest from '../../../tests/shared/mountTest';
 import rtlTest from '../../../tests/shared/rtlTest';
 import { waitFakeTimer } from '../../../tests/utils';
-import { resetWarned } from '../../_util/warning';
 import Button from '../../button';
 import ConfigProvider from '../../config-provider';
 import Form from '../../form';
 import theme from '../../theme';
 import { AggregationColor } from '../color';
 import ColorPicker from '../ColorPicker';
-import { generateColor } from '../util';
 import type { ColorPickerProps, ColorValueType } from '../interface';
+import { generateColor } from '../util';
 
 function doMouseMove(
   container: HTMLElement,

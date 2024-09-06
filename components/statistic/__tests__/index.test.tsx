@@ -3,11 +3,11 @@ import dayjs from 'dayjs';
 import MockDate from 'mockdate';
 
 import Statistic from '..';
+import type { CountdownProps } from '..';
 import mountTest from '../../../tests/shared/mountTest';
 import rtlTest from '../../../tests/shared/rtlTest';
 import { fireEvent, render, waitFakeTimer } from '../../../tests/utils';
 import { formatTimeStr } from '../utils';
-import type { CountdownProps } from '..';
 
 describe('Statistic', () => {
   mountTest(Statistic);

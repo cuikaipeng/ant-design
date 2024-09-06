@@ -5,12 +5,12 @@ import classNames from 'classnames';
 import useMergedState from 'rc-util/lib/hooks/useMergedState';
 
 import Collapse from '../../collapse';
+import type { CollapseProps } from '../../collapse';
 import { useLocale } from '../../locale';
 import { useToken } from '../../theme/internal';
-import { generateColor } from '../util';
-import type { CollapseProps } from '../../collapse';
 import type { AggregationColor } from '../color';
 import type { PresetsItem } from '../interface';
+import { generateColor } from '../util';
 
 interface ColorPresetsProps {
   prefixCls: string;

@@ -1,8 +1,8 @@
 import React from 'react';
 
 import Table from '..';
-import { act, fireEvent, render } from '../../../tests/utils';
 import type { ColumnType, TableProps } from '..';
+import { act, fireEvent, render } from '../../../tests/utils';
 import type { SortOrder, TablePaginationConfig } from '../interface';
 
 describe('Table.sorter', () => {

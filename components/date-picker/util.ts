@@ -2,9 +2,9 @@ import * as React from 'react';
 import type { AlignType } from '@rc-component/trigger';
 import type { PickerMode } from 'rc-picker/lib/interface';
 
-import useSelectIcons from '../select/useIcons';
 import type { SelectCommonPlacement } from '../_util/motion';
 import type { DirectionType } from '../config-provider';
+import useSelectIcons from '../select/useIcons';
 import type { PickerLocale, PickerProps } from './generatePicker';
 
 export function getPlaceholder(

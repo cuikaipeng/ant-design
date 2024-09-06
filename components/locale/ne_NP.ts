@@ -1,9 +1,9 @@
 import Pagination from 'rc-pagination/lib/locale/en_US';
 
+import type { Locale } from '.';
 import Calendar from '../calendar/locale/en_US';
 import DatePicker from '../date-picker/locale/en_US';
 import TimePicker from '../time-picker/locale/en_US';
-import type { Locale } from '.';
 
 const typeTemplate = '${label} यो एक मान्य ${type} होइन';
 

@@ -5,8 +5,8 @@ import focusTest from '../../../tests/shared/focusTest';
 import mountTest from '../../../tests/shared/mountTest';
 import rtlTest from '../../../tests/shared/rtlTest';
 import Button from '../../button';
-import Search from '../Search';
 import type { InputRef } from '../Input';
+import Search from '../Search';
 
 describe('Input.Search', () => {
   focusTest(Search, { refFocus: true });

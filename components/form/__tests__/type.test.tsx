@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 
 import Form from '..';
-import Input from '../../input';
 import type { FormInstance } from '..';
+import Input from '../../input';
 
 interface FormValues {
   username?: string;

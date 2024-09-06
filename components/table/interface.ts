@@ -1,6 +1,6 @@
 import type * as React from 'react';
-import { ExpandableConfig, GetRowKey } from 'rc-table/lib/interface';
 import type { Reference } from 'rc-table';
+import { ExpandableConfig, GetRowKey } from 'rc-table/lib/interface';
 import type {
   FixedType,
   GetComponentProps,

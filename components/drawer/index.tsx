@@ -13,8 +13,8 @@ import zIndexContext from '../_util/zindexContext';
 import { ConfigContext } from '../config-provider';
 import { usePanelRef } from '../watermark/context';
 import DrawerPanel from './DrawerPanel';
-import useStyle from './style';
 import type { DrawerClassNames, DrawerPanelProps, DrawerStyles } from './DrawerPanel';
+import useStyle from './style';
 
 const _SizeTypes = ['default', 'large'] as const;
 type sizeType = (typeof _SizeTypes)[number];

@@ -4,9 +4,9 @@
  */
 
 import { prepareToken } from '.';
+import type { FormToken } from '.';
 // Style as inline component
 import { genSubStyleComponent } from '../../theme/internal';
-import type { FormToken } from '.';
 import type { GenerateStyle } from '../../theme/internal';
 
 // ============================= Fallback =============================

@@ -13,11 +13,11 @@ import { ANT_DESIGN_NOT_SHOW_BANNER } from '../../layouts/GlobalLayout';
 import * as utils from '../../utils';
 import { getThemeConfig } from '../../utils';
 import SiteContext from '../SiteContext';
+import type { SiteContextProps } from '../SiteContext';
+import type { SharedProps } from './interface';
 import Logo from './Logo';
 import Navigation from './Navigation';
 import SwitchBtn from './SwitchBtn';
-import type { SiteContextProps } from '../SiteContext';
-import type { SharedProps } from './interface';
 
 const RESPONSIVE_XS = 1120;
 const RESPONSIVE_SM = 1200;

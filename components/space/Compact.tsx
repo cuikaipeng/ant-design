@@ -3,10 +3,10 @@ import classNames from 'classnames';
 import toArray from 'rc-util/lib/Children/toArray';
 
 import { ConfigContext } from '../config-provider';
-import useSize from '../config-provider/hooks/useSize';
-import useStyle from './style';
 import type { DirectionType } from '../config-provider';
+import useSize from '../config-provider/hooks/useSize';
 import type { SizeType } from '../config-provider/SizeContext';
+import useStyle from './style';
 
 export interface SpaceCompactItemContextType {
   compactSize?: SizeType;

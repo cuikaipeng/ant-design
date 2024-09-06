@@ -1,8 +1,8 @@
 import * as React from 'react';
 import toArray from 'rc-util/lib/Children/toArray';
 
-import { devUseWarning } from '../_util/warning';
 import type { StepProps } from '.';
+import { devUseWarning } from '../_util/warning';
 
 function filter<T>(items: (T | null)[]): T[] {
   return items.filter((item) => item) as T[];

@@ -2,10 +2,10 @@ import * as React from 'react';
 import classNames from 'classnames';
 import { Popup } from 'rc-tooltip';
 
+import type { TooltipProps } from '.';
 import { ConfigContext } from '../config-provider';
 import useStyle from './style';
 import { parseColor } from './util';
-import type { TooltipProps } from '.';
 
 export interface PurePanelProps extends Omit<TooltipProps, 'children'> {}
 

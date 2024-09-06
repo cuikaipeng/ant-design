@@ -1,7 +1,7 @@
 import React from 'react';
 import { ColorPicker } from 'antd';
-import { FormattedMessage } from 'dumi';
 import type { Color } from 'antd/es/color-picker';
+import { FormattedMessage } from 'dumi';
 
 import useLocale from '../../../hooks/useLocale';
 import ColorPatterns from './ColorPatterns';

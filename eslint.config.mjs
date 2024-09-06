@@ -44,34 +44,10 @@ export default antfu(
       'react/no-children-map': 'off',
       'react/no-children-only': 'off',
       'react/no-unstable-default-props': 'off',
-      'perfectionist/sort-imports': [
-        'error',
-        {
-          groups: [
-            'react',
-            'builtin',
-            'external',
-            'type',
-            ['internal', 'internal-type'],
-            ['parent', 'sibling', 'index'],
-            ['parent-type', 'sibling-type', 'index-type'],
-            'side-effect',
-            'object',
-            'unknown',
-          ],
-          newlinesBetween: 'ignore',
-          order: 'asc',
-          type: 'natural',
-          customGroups: {
-            type: {
-              react: ['react', 'react-*'],
-            },
-            value: {
-              react: ['react', 'react-*'],
-            },
-          },
-        },
-      ],
+      'perfectionist/sort-imports': 'off',
+      'perfectionist/sort-exports': 'off',
+      'perfectionist/sort-named-imports': 'off',
+      'perfectionist/sort-named-exports': 'off',
     },
   },
   compat.configs['flat/recommended'],

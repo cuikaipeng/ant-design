@@ -30,6 +30,7 @@ import Layout from '../../layout';
 import List from '../../list';
 import Mentions from '../../mentions';
 import Menu from '../../menu';
+import type { MenuProps } from '../../menu';
 import message from '../../message';
 import Modal from '../../modal';
 import notification from '../../notification';
@@ -58,7 +59,6 @@ import Tree from '../../tree';
 import TreeSelect from '../../tree-select';
 import Typography from '../../typography';
 import Upload from '../../upload';
-import type { MenuProps } from '../../menu';
 
 describe('ConfigProvider support style and className props', () => {
   it('Should Space classNames works', () => {

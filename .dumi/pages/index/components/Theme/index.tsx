@@ -19,11 +19,11 @@ import {
   theme,
   Typography,
 } from 'antd';
-import { generateColor } from 'antd/es/color-picker/util';
+import type { ColorPickerProps, GetProp, MenuProps, ThemeConfig } from 'antd';
 import { createStyles } from 'antd-style';
+import { generateColor } from 'antd/es/color-picker/util';
 import classNames from 'classnames';
 import { useLocation } from 'dumi';
-import type { ColorPickerProps, GetProp, MenuProps, ThemeConfig } from 'antd';
 
 import useDark from '../../../../hooks/useDark';
 import useLocale from '../../../../hooks/useLocale';

@@ -2,8 +2,8 @@ import * as React from 'react';
 import useState from 'rc-util/lib/hooks/useState';
 
 import Button from '../button';
-import { convertLegacyProps } from '../button/buttonHelpers';
 import type { ButtonProps, LegacyButtonType } from '../button/button';
+import { convertLegacyProps } from '../button/buttonHelpers';
 
 export interface ActionButtonProps {
   type?: LegacyButtonType;

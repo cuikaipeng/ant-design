@@ -4,10 +4,10 @@ import type { Theme } from '@ant-design/cssinjs';
 
 import version from '../version';
 import { defaultTheme, DesignTokenContext } from './context';
-import defaultSeedToken from './themes/seed';
-import formatToken from './util/alias';
 import type { DesignTokenProviderProps } from './context';
 import type { AliasToken, GlobalToken, SeedToken } from './interface';
+import defaultSeedToken from './themes/seed';
+import formatToken from './util/alias';
 
 export const unitless: {
   [key in keyof AliasToken]?: boolean;

@@ -1,6 +1,6 @@
 import { unit } from '@ant-design/cssinjs';
-import { TinyColor } from '@ctrl/tinycolor';
 import type { CSSObject } from '@ant-design/cssinjs';
+import { TinyColor } from '@ctrl/tinycolor';
 
 import { genModalMaskStyle } from '../../modal/style';
 import { textEllipsis } from '../../style';

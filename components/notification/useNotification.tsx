@@ -6,18 +6,18 @@ import type { NotificationAPI, NotificationConfig as RcNotificationConfig } from
 
 import { devUseWarning } from '../_util/warning';
 import { ConfigContext } from '../config-provider';
+import type { NotificationConfig as CPNotificationConfig } from '../config-provider/context';
 import useCSSVarCls from '../config-provider/hooks/useCSSVarCls';
 import { useToken } from '../theme/internal';
-import { getCloseIcon, PureContent } from './PurePanel';
-import useStyle from './style';
-import { getMotion, getPlacementStyle } from './util';
-import type { NotificationConfig as CPNotificationConfig } from '../config-provider/context';
 import type {
   ArgsProps,
   NotificationConfig,
   NotificationInstance,
   NotificationPlacement,
 } from './interface';
+import { getCloseIcon, PureContent } from './PurePanel';
+import useStyle from './style';
+import { getMotion, getPlacementStyle } from './util';
 
 const DEFAULT_OFFSET = 24;
 const DEFAULT_DURATION = 4.5;

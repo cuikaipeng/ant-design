@@ -10,8 +10,8 @@ import scrollTo from '../_util/scrollTo';
 import throttleByAnimationFrame from '../_util/throttleByAnimationFrame';
 import { devUseWarning } from '../_util/warning';
 import { ConfigContext } from '../config-provider';
-import useStyle from './style';
 import type { ConfigConsumerProps } from '../config-provider';
+import useStyle from './style';
 
 export interface BackTopProps {
   visibilityHeight?: number;

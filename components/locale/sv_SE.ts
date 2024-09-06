@@ -1,9 +1,9 @@
 import Pagination from 'rc-pagination/lib/locale/sv_SE';
 
+import type { Locale } from '.';
 import Calendar from '../calendar/locale/sv_SE';
 import DatePicker from '../date-picker/locale/sv_SE';
 import TimePicker from '../time-picker/locale/sv_SE';
-import type { Locale } from '.';
 
 const typeTemplate = '${label} är inte en giltig ${type}';
 

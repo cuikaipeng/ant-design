@@ -4,14 +4,14 @@ import classnames from 'classnames';
 import CSSMotion from 'rc-motion';
 
 import { isPresetColor } from '../_util/colors';
+import type { PresetStatusColorType } from '../_util/colors';
 import { cloneElement } from '../_util/reactNode';
+import type { LiteralUnion } from '../_util/type';
 import { ConfigContext } from '../config-provider';
+import type { PresetColorKey } from '../theme/internal';
 import Ribbon from './Ribbon';
 import ScrollNumber from './ScrollNumber';
 import useStyle from './style';
-import type { PresetStatusColorType } from '../_util/colors';
-import type { LiteralUnion } from '../_util/type';
-import type { PresetColorKey } from '../theme/internal';
 
 export type { ScrollNumberProps } from './ScrollNumber';
 

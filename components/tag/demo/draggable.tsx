@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { closestCenter, DndContext, PointerSensor, useSensor, useSensors } from '@dnd-kit/core';
+import type { DragEndEvent } from '@dnd-kit/core';
 import {
   arrayMove,
   horizontalListSortingStrategy,
@@ -7,7 +8,6 @@ import {
   useSortable,
 } from '@dnd-kit/sortable';
 import { Flex, Tag } from 'antd';
-import type { DragEndEvent } from '@dnd-kit/core';
 
 interface Item {
   id: number;

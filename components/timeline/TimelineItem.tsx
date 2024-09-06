@@ -1,8 +1,8 @@
 import * as React from 'react';
 import classNames from 'classnames';
 
-import { ConfigContext } from '../config-provider';
 import type { LiteralUnion } from '../_util/type';
+import { ConfigContext } from '../config-provider';
 
 type Color = 'blue' | 'red' | 'green' | 'gray';
 

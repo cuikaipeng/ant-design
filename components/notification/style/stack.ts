@@ -1,8 +1,8 @@
 import type { CSSObject } from '@ant-design/cssinjs';
 
-import { NotificationPlacements } from '../interface';
 import type { NotificationToken } from '.';
 import type { GenerateStyle } from '../../theme/internal';
+import { NotificationPlacements } from '../interface';
 import type { NotificationPlacement } from '../interface';
 
 const placementAlignProperty: Record<NotificationPlacement, 'left' | 'right'> = {

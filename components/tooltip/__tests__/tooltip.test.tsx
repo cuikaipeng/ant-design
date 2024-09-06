@@ -2,11 +2,12 @@ import React from 'react';
 import { spyElementPrototype } from 'rc-util/lib/test/domHook';
 
 import Tooltip from '..';
+import type { TooltipPlacement } from '..';
+import getPlacements from '../../_util/placements';
+import { resetWarned } from '../../_util/warning';
 import mountTest from '../../../tests/shared/mountTest';
 import rtlTest from '../../../tests/shared/rtlTest';
 import { act, fireEvent, render, waitFakeTimer } from '../../../tests/utils';
-import getPlacements from '../../_util/placements';
-import { resetWarned } from '../../_util/warning';
 import Button from '../../button';
 import DatePicker from '../../date-picker';
 import Input from '../../input';
@@ -14,7 +15,6 @@ import Group from '../../input/Group';
 import Radio from '../../radio';
 import Switch from '../../switch';
 import { isTooltipOpen } from './util';
-import type { TooltipPlacement } from '..';
 
 describe('Tooltip', () => {
   mountTest(Tooltip);

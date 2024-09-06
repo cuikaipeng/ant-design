@@ -2,8 +2,8 @@ import type { ComponentProps } from 'react';
 import React, { useContext, useEffect, useMemo } from 'react';
 import { Button, Tabs, Typography } from 'antd';
 import { createStyles } from 'antd-style';
-import JsonML from 'jsonml.js/lib/utils';
 import toReactElement from 'jsonml-to-react-element';
+import JsonML from 'jsonml.js/lib/utils';
 import Prism from 'prismjs';
 
 import DemoContext from '../slots/DemoContext';

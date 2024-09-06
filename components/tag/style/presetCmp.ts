@@ -1,7 +1,7 @@
 // Style as status component
 import { prepareComponentToken, prepareToken } from '.';
-import { genPresetColor, genSubStyleComponent } from '../../theme/internal';
 import type { TagToken } from '.';
+import { genPresetColor, genSubStyleComponent } from '../../theme/internal';
 
 // ============================== Preset ==============================
 const genPresetStyle = (token: TagToken) =>

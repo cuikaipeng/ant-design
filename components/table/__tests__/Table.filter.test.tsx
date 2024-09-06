@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from 'react';
 
 import Table from '..';
-import { act, fireEvent, render, waitFakeTimer, waitFor } from '../../../tests/utils';
+import type { ColumnGroupType, ColumnType, TableProps } from '..';
 import { resetWarned } from '../../_util/warning';
+import { act, fireEvent, render, waitFakeTimer, waitFor } from '../../../tests/utils';
 import Button from '../../button';
 import ConfigProvider from '../../config-provider';
 import Input from '../../input';
 import Menu from '../../menu';
 import Select from '../../select';
-import Tooltip from '../../tooltip';
-import type { ColumnGroupType, ColumnType, TableProps } from '..';
 import type { SelectProps } from '../../select';
+import Tooltip from '../../tooltip';
 import type {
   ColumnFilterItem,
   ColumnsType,

@@ -6,12 +6,12 @@ import confirm, {
   withSuccess,
   withWarn,
 } from './confirm';
+import type { ModalStaticFunctions } from './confirm';
 import destroyFns from './destroyFns';
+import type { ModalFuncProps } from './interface';
 import OriginModal from './Modal';
 import PurePanel from './PurePanel';
 import useModal from './useModal';
-import type { ModalStaticFunctions } from './confirm';
-import type { ModalFuncProps } from './interface';
 
 export type { ModalFuncProps, ModalLocale, ModalProps } from './interface';
 

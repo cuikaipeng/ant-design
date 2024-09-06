@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import { createPortal } from 'react-dom';
 
 import Input from '..';
+import type { InputProps, InputRef } from '..';
+import { resetWarned } from '../../_util/warning';
 import mountTest from '../../../tests/shared/mountTest';
 import rtlTest from '../../../tests/shared/rtlTest';
 import { fireEvent, render } from '../../../tests/utils';
-import { resetWarned } from '../../_util/warning';
 import Form from '../../form';
 import { triggerFocus } from '../Input';
-import type { InputProps, InputRef } from '..';
 
 describe('Input', () => {
   const errorSpy = jest.spyOn(console, 'error').mockImplementation(() => {});

@@ -1,8 +1,8 @@
 import * as React from 'react';
 
 import Checkbox from '..';
-import Input from '../../input';
 import type { CheckboxRef } from '..';
+import Input from '../../input';
 
 describe('Checkbox.typescript', () => {
   it('Checkbox', () => {

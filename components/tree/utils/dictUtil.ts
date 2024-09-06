@@ -1,5 +1,5 @@
-import { fillFieldNames } from 'rc-tree/lib/utils/treeUtil';
 import type { DataNode, Key } from 'rc-tree/lib/interface';
+import { fillFieldNames } from 'rc-tree/lib/utils/treeUtil';
 
 import type { TreeProps } from '../Tree';
 

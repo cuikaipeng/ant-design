@@ -1,9 +1,9 @@
 import Pagination from 'rc-pagination/lib/locale/ka_GE';
 
+import type { Locale } from '.';
 import Calendar from '../calendar/locale/ka_GE';
 import DatePicker from '../date-picker/locale/ka_GE';
 import TimePicker from '../time-picker/locale/ka_GE';
-import type { Locale } from '.';
 
 const typeTemplate = '${label} არ არის სწორი ${type}';
 

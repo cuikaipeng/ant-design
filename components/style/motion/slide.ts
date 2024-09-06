@@ -1,8 +1,8 @@
 import { Keyframes } from '@ant-design/cssinjs';
 import type { CSSInterpolation } from '@ant-design/cssinjs';
 
-import { initMotion } from './motion';
 import type { AliasToken, TokenWithCommonCls } from '../../theme/internal';
+import { initMotion } from './motion';
 
 export const slideUpIn = new Keyframes('antSlideUpIn', {
   '0%': {

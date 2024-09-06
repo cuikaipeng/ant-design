@@ -7,22 +7,22 @@ import type { FormRef, InternalNamePath, ValidateErrorEntity } from 'rc-field-fo
 import type { Options } from 'scroll-into-view-if-needed';
 
 import { ConfigContext } from '../config-provider';
+import type { Variant } from '../config-provider';
 import DisabledContext, { DisabledContextProvider } from '../config-provider/DisabledContext';
 import useCSSVarCls from '../config-provider/hooks/useCSSVarCls';
 import useSize from '../config-provider/hooks/useSize';
 import SizeContext from '../config-provider/SizeContext';
-import { FormContext, FormProvider, VariantContext } from './context';
-import useForm from './hooks/useForm';
-import useFormWarning from './hooks/useFormWarning';
-import useStyle from './style';
-import ValidateMessagesContext from './validateMessagesContext';
-import type { Variant } from '../config-provider';
 import type { SizeType } from '../config-provider/SizeContext';
 import type { ColProps } from '../grid/col';
+import { FormContext, FormProvider, VariantContext } from './context';
 import type { FormContextProps } from './context';
 import type { FeedbackIcons } from './FormItem';
+import useForm from './hooks/useForm';
 import type { FormInstance } from './hooks/useForm';
+import useFormWarning from './hooks/useFormWarning';
 import type { FormLabelAlign } from './interface';
+import useStyle from './style';
+import ValidateMessagesContext from './validateMessagesContext';
 
 export type RequiredMark =
   | boolean

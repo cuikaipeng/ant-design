@@ -1,9 +1,9 @@
 import Pagination from 'rc-pagination/lib/locale/az_AZ';
 
+import type { Locale } from '.';
 import Calendar from '../calendar/locale/az_AZ';
 import DatePicker from '../date-picker/locale/az_AZ';
 import TimePicker from '../time-picker/locale/az_AZ';
-import type { Locale } from '.';
 
 const typeTemplate = '${label} Hökmlü deyil ${type}';
 

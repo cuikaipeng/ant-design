@@ -4,8 +4,8 @@ import omit from 'rc-util/lib/omit';
 
 import { ConfigContext } from '../config-provider';
 import Element from './Element';
-import useStyle from './style';
 import type { SkeletonElementProps } from './Element';
+import useStyle from './style';
 
 export interface SkeletonButtonProps extends Omit<SkeletonElementProps, 'size'> {
   size?: 'large' | 'small' | 'default';

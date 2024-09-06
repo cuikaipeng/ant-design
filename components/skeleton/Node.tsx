@@ -3,8 +3,8 @@ import DotChartOutlined from '@ant-design/icons/DotChartOutlined';
 import classNames from 'classnames';
 
 import { ConfigContext } from '../config-provider';
-import useStyle from './style';
 import type { SkeletonElementProps } from './Element';
+import useStyle from './style';
 
 export interface SkeletonNodeProps extends Omit<SkeletonElementProps, 'size' | 'shape'> {
   fullSize?: boolean;

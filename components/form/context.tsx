@@ -2,9 +2,9 @@ import type { PropsWithChildren, ReactNode } from 'react';
 import * as React from 'react';
 import { createContext, useContext, useMemo } from 'react';
 import { FormProvider as RcFormProvider } from 'rc-field-form';
-import omit from 'rc-util/lib/omit';
 import type { FormProviderProps as RcFormProviderProps } from 'rc-field-form/lib/FormContext';
 import type { Meta } from 'rc-field-form/lib/interface';
+import omit from 'rc-util/lib/omit';
 
 import type { Variant } from '../config-provider';
 import type { ColProps } from '../grid/col';

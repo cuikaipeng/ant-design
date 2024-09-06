@@ -11,9 +11,9 @@ import type { NoticeProps } from 'rc-notification/lib/Notice';
 
 import { ConfigContext } from '../config-provider';
 import useCSSVarCls from '../config-provider/hooks/useCSSVarCls';
+import type { IconType } from './interface';
 import useStyle from './style';
 import PurePanelStyle from './style/pure-panel';
-import type { IconType } from './interface';
 
 export const TypeIcon = {
   info: <InfoCircleFilled />,

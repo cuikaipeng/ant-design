@@ -2,9 +2,9 @@ import * as React from 'react';
 import { useEvent, useMergedState } from 'rc-util';
 
 import { useLocale } from '../../locale';
-import { generateColor } from '../util';
 import type { AggregationColor } from '../color';
 import type { ColorPickerProps, ColorValueType, ModeType } from '../interface';
+import { generateColor } from '../util';
 
 export type ModeOptions = {
   label: React.ReactNode;

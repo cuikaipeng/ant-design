@@ -2,11 +2,11 @@ import * as React from 'react';
 import classNames from 'classnames';
 
 import Col from '../grid/col';
+import type { ColProps } from '../grid/col';
 import { FormContext, FormItemPrefixContext } from './context';
 import ErrorList from './ErrorList';
-import FallbackCmp from './style/fallbackCmp';
-import type { ColProps } from '../grid/col';
 import type { ValidateStatus } from './FormItem';
+import FallbackCmp from './style/fallbackCmp';
 
 interface FormItemInputMiscProps {
   prefixCls: string;

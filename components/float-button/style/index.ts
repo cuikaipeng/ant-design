@@ -5,8 +5,8 @@ import { resetComponent } from '../../style';
 import { initFadeMotion } from '../../style/motion/fade';
 import { initMotion } from '../../style/motion/motion';
 import { genStyleHooks, mergeToken } from '../../theme/internal';
-import getOffset from '../util';
 import type { FullToken, GenerateStyle, GetDefaultToken } from '../../theme/internal';
+import getOffset from '../util';
 
 /** Component only token. Which will handle additional calculation of alias token */
 export interface ComponentToken {

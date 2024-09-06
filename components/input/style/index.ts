@@ -4,7 +4,9 @@ import type { CSSObject } from '@ant-design/cssinjs';
 import { clearFix, resetComponent } from '../../style';
 import { genCompactItemStyle } from '../../style/compact-item';
 import { genStyleHooks, mergeToken } from '../../theme/internal';
+import type { GenerateStyle } from '../../theme/internal';
 import { initComponentToken, initInputToken } from './token';
+import type { ComponentToken, InputToken } from './token';
 import {
   genBorderlessStyle,
   genFilledGroupStyle,
@@ -12,8 +14,6 @@ import {
   genOutlinedGroupStyle,
   genOutlinedStyle,
 } from './variants';
-import type { GenerateStyle } from '../../theme/internal';
-import type { ComponentToken, InputToken } from './token';
 
 export type { ComponentToken };
 export { initComponentToken, initInputToken };

@@ -1,9 +1,9 @@
 import { unit } from '@ant-design/cssinjs';
 
 import { prepareComponentToken, prepareToken } from '.';
+import type { BadgeToken } from '.';
 import { resetComponent } from '../../style';
 import { genPresetColor, genStyleHooks } from '../../theme/internal';
-import type { BadgeToken } from '.';
 import type { GenerateStyle } from '../../theme/internal';
 
 // ============================== Ribbon ==============================

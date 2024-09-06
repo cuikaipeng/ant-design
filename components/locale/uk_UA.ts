@@ -1,9 +1,9 @@
 import Pagination from 'rc-pagination/lib/locale/uk_UA';
 
+import type { Locale } from '.';
 import Calendar from '../calendar/locale/uk_UA';
 import DatePicker from '../date-picker/locale/uk_UA';
 import TimePicker from '../time-picker/locale/uk_UA';
-import type { Locale } from '.';
 
 const typeTemplate: string = '${label} не є типом ${type}';
 

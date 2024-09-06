@@ -2,11 +2,11 @@ import * as React from 'react';
 import classNames from 'classnames';
 import useMergedState from 'rc-util/lib/hooks/useMergedState';
 
-import Pagination from '../pagination';
-import ListItem from './ListItem';
 import type { KeyWiseTransferItem } from '.';
+import Pagination from '../pagination';
 import type { PaginationType, TransferKey } from './interface';
 import type { RenderedItem, TransferListProps } from './list';
+import ListItem from './ListItem';
 
 export const OmitProps = ['handleFilter', 'handleClear', 'checkedKeys'] as const;
 export type OmitProp = (typeof OmitProps)[number];

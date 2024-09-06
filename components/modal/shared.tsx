@@ -6,9 +6,9 @@ import { useLocale } from '../locale';
 import NormalCancelBtn from './components/NormalCancelBtn';
 import NormalOkBtn from './components/NormalOkBtn';
 import { ModalContextProvider } from './context';
-import { getConfirmLocale } from './locale';
 import type { ModalContextProps } from './context';
 import type { ModalProps } from './interface';
+import { getConfirmLocale } from './locale';
 
 export function renderCloseIcon(prefixCls: string, closeIcon?: React.ReactNode) {
   return (

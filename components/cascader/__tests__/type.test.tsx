@@ -1,8 +1,8 @@
 import * as React from 'react';
 
 import Cascader from '..';
-import { render } from '../../../tests/utils';
 import type { BaseOptionType, CascaderAutoProps, CascaderProps } from '..';
+import { render } from '../../../tests/utils';
 import type { CascaderPanelAutoProps, CascaderPanelProps } from '../Panel';
 
 describe('Cascader.typescript', () => {

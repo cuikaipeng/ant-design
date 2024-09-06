@@ -1,14 +1,12 @@
 import React from 'react';
-
 import Dayjs from 'dayjs';
-
 import MockDate from 'mockdate';
-import dayjsGenerateConfig from 'rc-picker/lib/generate/dayjs';
-import { resetWarned } from 'rc-util/lib/warning';
 import type { PickerPanelProps } from 'rc-picker';
+import dayjsGenerateConfig from 'rc-picker/lib/generate/dayjs';
 import type { Locale } from 'rc-picker/lib/interface';
-import Calendar from '..';
+import { resetWarned } from 'rc-util/lib/warning';
 
+import Calendar from '..';
 import mountTest from '../../../tests/shared/mountTest';
 import rtlTest from '../../../tests/shared/rtlTest';
 import { fireEvent, render } from '../../../tests/utils';
@@ -18,6 +16,7 @@ import Button from '../../radio/radioButton';
 import Select from '../../select';
 import Header from '../Header';
 import type { CalendarHeaderProps } from '../Header';
+
 import 'dayjs/locale/zh-cn';
 
 const ref: {

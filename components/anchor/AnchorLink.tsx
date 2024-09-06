@@ -3,8 +3,8 @@ import classNames from 'classnames';
 
 import { devUseWarning } from '../_util/warning';
 import { ConfigContext } from '../config-provider';
-import AnchorContext from './context';
 import type { AntAnchor } from './Anchor';
+import AnchorContext from './context';
 
 export interface AnchorLinkBaseProps {
   prefixCls?: string;

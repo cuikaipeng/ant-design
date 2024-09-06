@@ -4,11 +4,11 @@ import isVisible from 'rc-util/lib/Dom/isVisible';
 import { composeRef, supportRef } from 'rc-util/lib/ref';
 
 import { ConfigContext } from '../../config-provider';
+import type { ConfigConsumerProps } from '../../config-provider';
 import { cloneElement } from '../reactNode';
+import type { WaveComponent } from './interface';
 import useStyle from './style';
 import useWave from './useWave';
-import type { ConfigConsumerProps } from '../../config-provider';
-import type { WaveComponent } from './interface';
 
 export interface WaveProps {
   disabled?: boolean;

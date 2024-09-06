@@ -14,8 +14,8 @@ import {
   ZhihuOutlined,
 } from '@ant-design/icons';
 import { TinyColor } from '@ctrl/tinycolor';
-import getAlphaColor from 'antd/es/theme/util/getAlphaColor';
 import { createStyles } from 'antd-style';
+import getAlphaColor from 'antd/es/theme/util/getAlphaColor';
 import { FormattedMessage, Link } from 'dumi';
 import RcFooter from 'rc-footer';
 import type { FooterColumn } from 'rc-footer/lib/column';

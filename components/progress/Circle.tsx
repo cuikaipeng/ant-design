@@ -4,8 +4,8 @@ import { Circle as RCCircle } from 'rc-progress';
 import type { ProgressProps as RcProgressProps } from 'rc-progress';
 
 import Tooltip from '../tooltip';
-import { getPercentage, getSize, getStrokeColor } from './utils';
 import type { ProgressGradient, ProgressProps } from './progress';
+import { getPercentage, getSize, getStrokeColor } from './utils';
 
 const CIRCLE_MIN_STROKE_WIDTH = 3;
 

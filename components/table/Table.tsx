@@ -2,6 +2,7 @@ import * as React from 'react';
 import { EXPAND_COLUMN, Summary } from 'rc-table';
 import type { Reference } from 'rc-table';
 
+import type { AnyObject } from '../_util/type';
 import Column from './Column';
 import ColumnGroup from './ColumnGroup';
 import {
@@ -10,9 +11,8 @@ import {
   SELECTION_INVERT,
   SELECTION_NONE,
 } from './hooks/useSelection';
-import InternalTable from './InternalTable';
-import type { AnyObject } from '../_util/type';
 import type { RefTable } from './interface';
+import InternalTable from './InternalTable';
 import type { TableProps } from './InternalTable';
 
 const Table = <RecordType extends AnyObject = AnyObject>(

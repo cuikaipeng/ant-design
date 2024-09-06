@@ -1,18 +1,18 @@
 import React, { useContext } from 'react';
 import RCTour from '@rc-component/tour';
-import classNames from 'classnames';
 import type { TourProps as RcTourProps } from '@rc-component/tour';
+import classNames from 'classnames';
 
 import { useZIndex } from '../_util/hooks/useZIndex';
 import getPlacements from '../_util/placements';
 import zIndexContext from '../_util/zindexContext';
 import { ConfigContext } from '../config-provider';
+import type { ConfigConsumerProps } from '../config-provider';
 import { useToken } from '../theme/internal';
+import type { TourProps } from './interface';
 import TourPanel from './panelRender';
 import PurePanel from './PurePanel';
 import useStyle from './style';
-import type { ConfigConsumerProps } from '../config-provider';
-import type { TourProps } from './interface';
 
 const Tour: React.FC<TourProps> & { _InternalPanelDoNotUseOrYouWillBeFired: typeof PurePanel } = (
   props,

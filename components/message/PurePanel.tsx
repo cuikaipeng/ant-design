@@ -10,8 +10,8 @@ import type { NoticeProps } from 'rc-notification/lib/Notice';
 
 import { ConfigContext } from '../config-provider';
 import useCSSVarCls from '../config-provider/hooks/useCSSVarCls';
-import useStyle from './style';
 import type { NoticeType } from './interface';
+import useStyle from './style';
 
 export const TypeIcon = {
   info: <InfoCircleFilled />,

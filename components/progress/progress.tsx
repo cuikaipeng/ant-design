@@ -9,12 +9,12 @@ import omit from 'rc-util/lib/omit';
 
 import { devUseWarning } from '../_util/warning';
 import { ConfigContext } from '../config-provider';
+import type { ConfigConsumerProps } from '../config-provider';
 import Circle from './Circle';
 import Line from './Line';
 import Steps from './Steps';
 import useStyle from './style';
 import { getSize, getSuccessPercent, validProgress } from './utils';
-import type { ConfigConsumerProps } from '../config-provider';
 
 export const ProgressTypes = ['line', 'circle', 'dashboard'] as const;
 export type ProgressType = (typeof ProgressTypes)[number];

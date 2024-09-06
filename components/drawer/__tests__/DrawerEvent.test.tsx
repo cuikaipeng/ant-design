@@ -1,8 +1,8 @@
 import React from 'react';
 
 import Drawer from '..';
-import { act, fireEvent, render } from '../../../tests/utils';
 import type { DrawerProps } from '..';
+import { act, fireEvent, render } from '../../../tests/utils';
 
 const DrawerTest: React.FC<DrawerProps> = (props) => (
   <Drawer open getContainer={false} {...props}>

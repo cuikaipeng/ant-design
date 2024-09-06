@@ -1,9 +1,9 @@
 import Pagination from 'rc-pagination/lib/locale/ro_RO';
 
+import type { Locale } from '.';
 import Calendar from '../calendar/locale/ro_RO';
 import DatePicker from '../date-picker/locale/ro_RO';
 import TimePicker from '../time-picker/locale/ro_RO';
-import type { Locale } from '.';
 
 const typeTemplate = '${label} nu conține tipul corect (${type})';
 

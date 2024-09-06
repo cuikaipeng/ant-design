@@ -1,10 +1,11 @@
 import * as React from 'react';
 import classNames from 'classnames';
 import { composeRef } from 'rc-util/lib/ref';
+
 import { devUseWarning } from '../_util/warning';
 import { ConfigContext } from '../config-provider';
-import useStyle from './style';
 import type { ConfigConsumerProps, DirectionType } from '../config-provider';
+import useStyle from './style';
 
 export interface TypographyProps<C extends keyof JSX.IntrinsicElements>
   extends React.HTMLAttributes<HTMLElement> {

@@ -1,5 +1,6 @@
 import { operationUnit } from '../../style';
 import { genStyleHooks } from '../../theme/internal';
+import type { FullToken, GenerateStyle, GetDefaultToken } from '../../theme/internal';
 import {
   getCopyableStyles,
   getEditableStyles,
@@ -8,7 +9,6 @@ import {
   getResetStyles,
   getTitleStyles,
 } from './mixins';
-import type { FullToken, GenerateStyle, GetDefaultToken } from '../../theme/internal';
 
 /** Component only token. Which will handle additional calculation of alias token */
 export interface ComponentToken {

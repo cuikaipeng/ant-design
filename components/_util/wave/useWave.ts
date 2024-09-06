@@ -5,8 +5,8 @@ import raf from 'rc-util/lib/raf';
 import { ConfigContext } from '../../config-provider';
 import useToken from '../../theme/useToken';
 import { TARGET_CLS } from './interface';
-import showWaveEffect from './WaveEffect';
 import type { ShowWave, WaveComponent } from './interface';
+import showWaveEffect from './WaveEffect';
 
 const useWave = (
   nodeRef: React.RefObject<HTMLElement>,

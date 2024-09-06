@@ -1,9 +1,9 @@
 import Pagination from 'rc-pagination/lib/locale/ca_ES';
 
+import type { Locale } from '.';
 import Calendar from '../calendar/locale/ca_ES';
 import DatePicker from '../date-picker/locale/ca_ES';
 import TimePicker from '../time-picker/locale/ca_ES';
-import type { Locale } from '.';
 
 const typeTemplate = '${label} no és un ${type} vàlid';
 

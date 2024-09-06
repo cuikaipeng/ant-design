@@ -1,16 +1,16 @@
 import * as React from 'react';
 import classNames from 'classnames';
 import { Item } from 'rc-menu';
+import type { MenuItemProps as RcMenuItemProps } from 'rc-menu';
 import toArray from 'rc-util/lib/Children/toArray';
 import omit from 'rc-util/lib/omit';
-import type { MenuItemProps as RcMenuItemProps } from 'rc-menu';
 
 import { cloneElement } from '../_util/reactNode';
 import { SiderContext } from '../layout/Sider';
-import Tooltip from '../tooltip';
-import MenuContext from './MenuContext';
 import type { SiderContextProps } from '../layout/Sider';
+import Tooltip from '../tooltip';
 import type { TooltipProps } from '../tooltip';
+import MenuContext from './MenuContext';
 import type { MenuContextProps } from './MenuContext';
 
 export interface MenuItemProps extends Omit<RcMenuItemProps, 'title'> {

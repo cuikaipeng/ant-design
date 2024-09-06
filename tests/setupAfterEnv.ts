@@ -1,7 +1,7 @@
 import { toHaveNoViolations } from 'jest-axe';
-
 import jsdom from 'jsdom';
 import format, { plugins } from 'pretty-format';
+
 import { defaultConfig } from '../components/theme/internal';
 
 import '@testing-library/jest-dom';

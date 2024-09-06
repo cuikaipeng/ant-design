@@ -1,7 +1,7 @@
 import * as React from 'react';
 
-import { groupKeysMap } from '../../_util/transKeys';
 import type { KeyWise, TransferProps } from '..';
+import { groupKeysMap } from '../../_util/transKeys';
 import type { AnyObject } from '../../_util/type';
 import type { TransferKey } from '../interface';
 

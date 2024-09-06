@@ -12,11 +12,11 @@ import { devUseWarning } from '../_util/warning';
 import { ConfigContext } from '../config-provider';
 import useCSSVarCls from '../config-provider/hooks/useCSSVarCls';
 import useSize from '../config-provider/hooks/useSize';
+import type { SizeType } from '../config-provider/SizeContext';
 import useAnimateConfig from './hooks/useAnimateConfig';
 import useLegacyItems from './hooks/useLegacyItems';
 import useStyle from './style';
 import TabPane from './TabPane';
-import type { SizeType } from '../config-provider/SizeContext';
 import type { TabPaneProps } from './TabPane';
 
 export type TabsType = 'line' | 'card' | 'editable-card';

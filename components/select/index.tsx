@@ -2,21 +2,25 @@
 import * as React from 'react';
 import classNames from 'classnames';
 import RcSelect, { OptGroup, Option } from 'rc-select';
-import omit from 'rc-util/lib/omit';
 import type { BaseSelectRef, SelectProps as RcSelectProps } from 'rc-select';
 import type { OptionProps } from 'rc-select/lib/Option';
 import type { BaseOptionType, DefaultOptionType } from 'rc-select/lib/Select';
+import omit from 'rc-util/lib/omit';
 
 import { useZIndex } from '../_util/hooks/useZIndex';
 import { getTransitionName } from '../_util/motion';
+import type { SelectCommonPlacement } from '../_util/motion';
 import genPurePanel from '../_util/PurePanel';
 import { getMergedStatus, getStatusClassNames } from '../_util/statusUtils';
+import type { InputStatus } from '../_util/statusUtils';
 import { devUseWarning } from '../_util/warning';
 import { ConfigContext } from '../config-provider';
+import type { Variant } from '../config-provider';
 import DefaultRenderEmpty from '../config-provider/defaultRenderEmpty';
 import DisabledContext from '../config-provider/DisabledContext';
 import useCSSVarCls from '../config-provider/hooks/useCSSVarCls';
 import useSize from '../config-provider/hooks/useSize';
+import type { SizeType } from '../config-provider/SizeContext';
 import { FormItemInputContext } from '../form/context';
 import useVariants from '../form/hooks/useVariants';
 import { useCompactItemContext } from '../space/Compact';
@@ -25,10 +29,6 @@ import mergedBuiltinPlacements from './mergedBuiltinPlacements';
 import useStyle from './style';
 import useIcons from './useIcons';
 import useShowArrow from './useShowArrow';
-import type { SelectCommonPlacement } from '../_util/motion';
-import type { InputStatus } from '../_util/statusUtils';
-import type { Variant } from '../config-provider';
-import type { SizeType } from '../config-provider/SizeContext';
 
 type RawValue = string | number;
 

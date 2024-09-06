@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { act, fireEvent, render, waitFakeTimer } from '../../../tests/utils';
 import { resetWarned } from '../../_util/warning';
+import { act, fireEvent, render, waitFakeTimer } from '../../../tests/utils';
 
 describe('Collapse', () => {
   const Collapse = require('..').default;

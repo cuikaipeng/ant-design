@@ -4,9 +4,9 @@ import CloseOutlined from '@ant-design/icons/CloseOutlined';
 import classNames from 'classnames';
 
 import Button from '../button';
+import type { ButtonProps } from '../button';
 import { useLocale } from '../locale';
 import defaultLocale from '../locale/en_US';
-import type { ButtonProps } from '../button';
 import type { TourStepProps } from './interface';
 
 function isValidNode(node: ReactNode): boolean {

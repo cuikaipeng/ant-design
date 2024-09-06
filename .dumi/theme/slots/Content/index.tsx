@@ -7,10 +7,10 @@ import useLayoutState from '../../../hooks/useLayoutState';
 import useLocation from '../../../hooks/useLocation';
 import ComponentMeta from '../../builtins/ComponentMeta';
 import DemoContext from '../DemoContext';
+import type { DemoContextProps } from '../DemoContext';
 import SiteContext from '../SiteContext';
 import { useStyle } from './DocAnchor';
 import InViewSuspense from './InViewSuspense';
-import type { DemoContextProps } from '../DemoContext';
 
 const Contributors = React.lazy(() => import('./Contributors'));
 const ColumnCard = React.lazy(() => import('./ColumnCard'));

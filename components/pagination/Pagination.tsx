@@ -5,8 +5,8 @@ import LeftOutlined from '@ant-design/icons/LeftOutlined';
 import RightOutlined from '@ant-design/icons/RightOutlined';
 import classNames from 'classnames';
 import RcPagination from 'rc-pagination';
-import enUS from 'rc-pagination/lib/locale/en_US';
 import type { PaginationLocale, PaginationProps as RcPaginationProps } from 'rc-pagination';
+import enUS from 'rc-pagination/lib/locale/en_US';
 
 import { ConfigContext } from '../config-provider';
 import useSize from '../config-provider/hooks/useSize';

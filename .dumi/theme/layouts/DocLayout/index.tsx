@@ -1,22 +1,19 @@
 import React, { useContext, useEffect, useLayoutEffect, useRef } from 'react';
 import ConfigProvider from 'antd/es/config-provider';
-
 import zhCN from 'antd/es/locale/zh_CN';
-
 import classNames from 'classnames';
 import dayjs from 'dayjs';
 import { Helmet, useOutlet, useSiteData } from 'dumi';
-import useLocale from '../../../hooks/useLocale';
 
+import useLocale from '../../../hooks/useLocale';
 import useLocation from '../../../hooks/useLocation';
 import GlobalStyles from '../../common/GlobalStyles';
 import Header from '../../slots/Header';
 import SiteContext from '../../slots/SiteContext';
 import IndexLayout from '../IndexLayout';
-
 import ResourceLayout from '../ResourceLayout';
-
 import SidebarLayout from '../SidebarLayout';
+
 import '../../static/style';
 import 'dayjs/locale/zh-cn';
 

@@ -24,9 +24,6 @@ import {
   Transfer,
   Upload,
 } from 'antd';
-import enUS from 'antd/locale/en_US';
-import zhCN from 'antd/locale/zh_CN';
-import dayjs from 'dayjs';
 import type {
   ConfigProviderProps,
   RadioChangeEvent,
@@ -34,6 +31,9 @@ import type {
   TourProps,
   UploadFile,
 } from 'antd';
+import enUS from 'antd/locale/en_US';
+import zhCN from 'antd/locale/zh_CN';
+import dayjs from 'dayjs';
 
 import 'dayjs/locale/zh-cn';
 

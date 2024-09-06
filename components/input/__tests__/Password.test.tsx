@@ -1,12 +1,12 @@
 import React from 'react';
 
 import Input from '..';
+import type { InputRef } from '..';
 import focusTest from '../../../tests/shared/focusTest';
 import mountTest from '../../../tests/shared/mountTest';
 import rtlTest from '../../../tests/shared/rtlTest';
 import { fireEvent, render, waitFakeTimer } from '../../../tests/utils';
 import Password from '../Password';
-import type { InputRef } from '..';
 
 describe('Input.Password', () => {
   focusTest(Input.Password, { refFocus: true });

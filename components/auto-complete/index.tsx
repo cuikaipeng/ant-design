@@ -1,16 +1,16 @@
 import * as React from 'react';
 import classNames from 'classnames';
+import type { BaseSelectRef } from 'rc-select';
 import toArray from 'rc-util/lib/Children/toArray';
 import omit from 'rc-util/lib/omit';
-import type { BaseSelectRef } from 'rc-select';
 
 import { useZIndex } from '../_util/hooks/useZIndex';
 import genPurePanel from '../_util/PurePanel';
+import type { InputStatus } from '../_util/statusUtils';
 import { devUseWarning } from '../_util/warning';
 import { ConfigContext } from '../config-provider';
-import Select from '../select';
-import type { InputStatus } from '../_util/statusUtils';
 import type { ConfigConsumerProps } from '../config-provider';
+import Select from '../select';
 import type {
   BaseOptionType,
   DefaultOptionType,

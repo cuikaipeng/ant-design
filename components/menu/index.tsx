@@ -4,14 +4,14 @@ import { ItemGroup } from 'rc-menu';
 import type { MenuRef as RcMenuRef } from 'rc-menu';
 
 import { SiderContext } from '../layout/Sider';
-import InternalMenu from './menu';
-import MenuDivider from './MenuDivider';
-import Item from './MenuItem';
-import SubMenu from './SubMenu';
 import type { ItemType, MenuItemType } from './interface';
+import InternalMenu from './menu';
 import type { MenuProps } from './menu';
 import type { MenuTheme } from './MenuContext';
+import MenuDivider from './MenuDivider';
+import Item from './MenuItem';
 import type { MenuItemProps } from './MenuItem';
+import SubMenu from './SubMenu';
 import type { SubMenuProps } from './SubMenu';
 
 export type { MenuDividerProps } from './MenuDivider';

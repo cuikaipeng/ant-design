@@ -1,9 +1,9 @@
 import Pagination from 'rc-pagination/lib/locale/uz_UZ';
 
+import type { Locale } from '.';
 import Calendar from '../calendar/locale/uz_UZ';
 import DatePicker from '../date-picker/locale/uz_UZ';
 import TimePicker from '../time-picker/locale/uz_UZ';
-import type { Locale } from '.';
 
 const typeTemplate: string = '${label} ${type} turi emas';
 

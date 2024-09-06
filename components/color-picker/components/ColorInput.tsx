@@ -3,13 +3,13 @@ import React, { useMemo } from 'react';
 import useMergedState from 'rc-util/lib/hooks/useMergedState';
 
 import Select from '../../select';
+import type { AggregationColor } from '../color';
 import { ColorFormat } from '../interface';
+import type { ColorFormatType } from '../interface';
 import ColorAlphaInput from './ColorAlphaInput';
 import ColorHexInput from './ColorHexInput';
 import ColorHsbInput from './ColorHsbInput';
 import ColorRgbInput from './ColorRgbInput';
-import type { AggregationColor } from '../color';
-import type { ColorFormatType } from '../interface';
 
 interface ColorInputProps {
   prefixCls: string;

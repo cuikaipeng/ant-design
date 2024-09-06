@@ -1,9 +1,9 @@
 import type { ReactElement } from 'react';
 import React, { useContext, useMemo } from 'react';
 import { LeftOutlined, RightOutlined } from '@ant-design/icons';
+import type { GetProp, MenuProps } from 'antd';
 import { createStyles } from 'antd-style';
 import classNames from 'classnames';
-import type { GetProp, MenuProps } from 'antd';
 
 import useMenu from '../../hooks/useMenu';
 import SiteContext from '../slots/SiteContext';

@@ -10,11 +10,11 @@ import CSSMotion from 'rc-motion';
 import pickAttrs from 'rc-util/lib/pickAttrs';
 import { composeRef } from 'rc-util/lib/ref';
 
+import type { ClosableType } from '../_util/hooks/useClosable';
 import { replaceElement } from '../_util/reactNode';
 import { devUseWarning } from '../_util/warning';
 import { ConfigContext } from '../config-provider';
 import useStyle from './style';
-import type { ClosableType } from '../_util/hooks/useClosable';
 
 export interface AlertRef {
   nativeElement: HTMLDivElement;
