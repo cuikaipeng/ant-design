@@ -79,9 +79,11 @@ function toReactComponent(jsonML: any[]) {
         const attr = JsonML.getAttributes(node);
         return (
           <pre key={index} className={`language-${attr.lang}`}>
-            {/* biome-ignore lint/security/noDangerouslySetInnerHtml: description is from markdown */
-            /* eslint-disable-next-line react-dom/no-dangerously-set-innerhtml */}
-            <code dangerouslySetInnerHTML={{ __html: attr.highlighted }} />
+            {/* eslint-disable-next-line react-dom/no-dangerously-set-innerhtml */}
+            <code
+              /* biome-ignore lint/security/noDangerouslySetInnerHtml: description is from markdown */
+              dangerouslySetInnerHTML={{ __html: attr.highlighted }}
+            />
           </pre>
         );
       },
