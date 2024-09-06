@@ -1,9 +1,10 @@
-import * as React from 'react';
 import classNames from 'classnames';
-import type { CascaderProps as RcCascaderProps } from 'rc-cascader';
 import { Panel } from 'rc-cascader';
+import type { CascaderProps as RcCascaderProps } from 'rc-cascader';
 import type { PickType } from 'rc-cascader/lib/Panel';
+import * as React from 'react';
 
+import type { CascaderProps, DefaultOptionType } from '.';
 import DefaultRenderEmpty from '../config-provider/defaultRenderEmpty';
 import useCSSVarCls from '../config-provider/hooks/useCSSVarCls';
 import useBase from './hooks/useBase';
@@ -11,7 +12,6 @@ import useCheckable from './hooks/useCheckable';
 import useColumnIcons from './hooks/useColumnIcons';
 import useStyle from './style';
 import usePanelStyle from './style/panel';
-import type { CascaderProps, DefaultOptionType } from '.';
 
 export type PanelPickType = Exclude<PickType, 'checkable'> | 'multiple' | 'rootClassName';
 

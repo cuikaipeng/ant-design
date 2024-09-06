@@ -1,19 +1,31 @@
-import * as React from 'react';
 import { createTheme } from '@ant-design/cssinjs';
 import IconContext from '@ant-design/icons/lib/components/Context';
 import useMemo from 'rc-util/lib/hooks/useMemo';
 import { merge } from 'rc-util/lib/utils/set';
+import * as React from 'react';
 
-import warning, { WarningContext, devUseWarning } from '../_util/warning';
+import warning, { devUseWarning, WarningContext } from '../_util/warning';
 import type { WarningContextProps } from '../_util/warning';
 import ValidateMessagesContext from '../form/validateMessagesContext';
-import type { Locale } from '../locale';
 import LocaleProvider, { ANT_MARK } from '../locale';
-import type { LocaleContextProps } from '../locale/context';
+import type { Locale } from '../locale';
 import LocaleContext from '../locale/context';
+import type { LocaleContextProps } from '../locale/context';
 import defaultLocale from '../locale/en_US';
 import { DesignTokenContext, defaultTheme } from '../theme/context';
 import defaultSeedToken from '../theme/themes/seed';
+import { DisabledContextProvider } from './DisabledContext';
+import MotionWrapper from './MotionWrapper';
+import PropWarning from './PropWarning';
+import SizeContext, { SizeContextProvider } from './SizeContext';
+import type { SizeType } from './SizeContext';
+import {
+  ConfigConsumer,
+  ConfigContext,
+  Variants,
+  defaultIconPrefixCls,
+  defaultPrefixCls,
+} from './context';
 import type {
   AlertConfig,
   BadgeConfig,
@@ -57,22 +69,10 @@ import type {
   Variant,
   WaveConfig,
 } from './context';
-import {
-  ConfigConsumer,
-  ConfigContext,
-  Variants,
-  defaultIconPrefixCls,
-  defaultPrefixCls,
-} from './context';
 import { registerTheme } from './cssVariables';
 import type { RenderEmptyHandler } from './defaultRenderEmpty';
-import { DisabledContextProvider } from './DisabledContext';
 import useConfig from './hooks/useConfig';
 import useTheme from './hooks/useTheme';
-import MotionWrapper from './MotionWrapper';
-import PropWarning from './PropWarning';
-import type { SizeType } from './SizeContext';
-import SizeContext, { SizeContextProvider } from './SizeContext';
 import useStyle from './style';
 
 export type { Variant };
@@ -99,11 +99,11 @@ export const warnContext: (componentName: string) => void =
 
 export {
   ConfigConsumer,
-  ConfigContext,
-  defaultPrefixCls,
-  defaultIconPrefixCls,
   type ConfigConsumerProps,
+  ConfigContext,
   type CSPConfig,
+  defaultIconPrefixCls,
+  defaultPrefixCls,
   type DirectionType,
   type RenderEmptyHandler,
   type ThemeConfig,

@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
 import { StyleProvider, createCache, extractStyle } from '@ant-design/cssinjs';
+import React, { useEffect } from 'react';
 
 import message from '..';
 import { act, fireEvent, render } from '../../../tests/utils';

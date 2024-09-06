@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react';
 import { CloseOutlined } from '@ant-design/icons';
 import { render } from '@testing-library/react';
+import React, { useEffect } from 'react';
 
-import type { UseClosableParams } from '../hooks/useClosable';
 import useClosable from '../hooks/useClosable';
+import type { UseClosableParams } from '../hooks/useClosable';
 
 type ParamsOfUseClosable = [
   closable: UseClosableParams['closable'],

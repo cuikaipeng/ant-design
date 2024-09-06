@@ -1,6 +1,6 @@
 import React from 'react';
-import RenderEmpty from '../defaultRenderEmpty';
 import { render } from '../../../tests/utils';
+import RenderEmpty from '../defaultRenderEmpty';
 
 describe('renderEmpty', () => {
   it.each([

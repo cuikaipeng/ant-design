@@ -1,7 +1,7 @@
 import React from 'react';
 
-import type { ColumnType, TableProps } from '..';
 import Table from '..';
+import type { ColumnType, TableProps } from '..';
 import { act, fireEvent, render } from '../../../tests/utils';
 import type { SortOrder, TablePaginationConfig } from '../interface';
 

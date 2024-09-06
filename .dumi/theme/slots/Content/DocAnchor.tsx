@@ -1,9 +1,9 @@
-import React from 'react';
 import { Anchor } from 'antd';
 import { createStyles, useTheme } from 'antd-style';
 import type { AnchorLinkItemProps } from 'antd/es/anchor/Anchor';
 import classNames from 'classnames';
 import { useRouteMeta, useTabMeta } from 'dumi';
+import React from 'react';
 
 export const useStyle = createStyles(({ token, css }) => {
   const { antCls } = token;

@@ -1,6 +1,6 @@
-/// <reference types="jest" />
 import type http from 'node:http';
 import type https from 'node:https';
+/// <reference types="jest" />
 import { join } from 'node:path';
 import { load } from 'cheerio';
 import { globSync } from 'glob';

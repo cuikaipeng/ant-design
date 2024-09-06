@@ -1,16 +1,16 @@
-import React, { memo, useContext, useMemo, useRef, useState } from 'react';
-import type { CSSProperties } from 'react';
 import { SearchOutlined } from '@ant-design/icons';
 import { Affix, Card, Col, Divider, Flex, Input, Row, Tag, Typography } from 'antd';
 import { createStyles, useTheme } from 'antd-style';
 import { useIntl, useLocation, useSidebarData } from 'dumi';
 import debounce from 'lodash/debounce';
+import React, { memo, useContext, useMemo, useRef, useState } from 'react';
+import type { CSSProperties } from 'react';
 import scrollIntoView from 'scroll-into-view-if-needed';
 
 import Link from '../../common/Link';
 import SiteContext from '../../slots/SiteContext';
-import type { Component } from './ProComponentsList';
 import proComponentsList from './ProComponentsList';
+import type { Component } from './ProComponentsList';
 
 const useStyle = createStyles(({ token, css }) => ({
   componentsOverviewGroupTitle: css`

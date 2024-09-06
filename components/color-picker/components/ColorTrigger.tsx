@@ -1,9 +1,9 @@
-/* eslint-disable react/no-array-index-key */
-import type { CSSProperties, MouseEventHandler } from 'react';
-import React, { forwardRef, useMemo } from 'react';
 import { ColorBlock } from '@rc-component/color-picker';
 import classNames from 'classnames';
 import pickAttrs from 'rc-util/lib/pickAttrs';
+/* eslint-disable react/no-array-index-key */
+import type { CSSProperties, MouseEventHandler } from 'react';
+import React, { forwardRef, useMemo } from 'react';
 
 import { useLocale } from '../../locale';
 import type { AggregationColor } from '../color';

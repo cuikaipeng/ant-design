@@ -1,7 +1,7 @@
-import * as React from 'react';
 import classNames from 'classnames';
 import useMergedState from 'rc-util/lib/hooks/useMergedState';
 import pickAttrs from 'rc-util/lib/pickAttrs';
+import * as React from 'react';
 
 import { ConfigContext } from '../config-provider';
 import useCSSVarCls from '../config-provider/hooks/useCSSVarCls';

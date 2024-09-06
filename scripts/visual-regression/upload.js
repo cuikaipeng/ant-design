@@ -1,9 +1,9 @@
 // Attention: use all node builtin modules except `ali-oss`
 // Must keep our ak/sk safe
 
-const path = require('node:path');
-const fs = require('node:fs');
 const assert = require('node:assert');
+const fs = require('node:fs');
+const path = require('node:path');
 const OSS = require('ali-oss');
 
 // node scripts/visual-regression/upload.js ./visualRegressionReport.tar.gz --ref=pr-id

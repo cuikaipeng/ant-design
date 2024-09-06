@@ -1,12 +1,12 @@
-import React, { useContext, useEffect, useRef, useState } from 'react';
 import { LinkOutlined, ThunderboltOutlined, UpOutlined } from '@ant-design/icons';
-import type { Project } from '@stackblitz/sdk';
 import stackblitzSdk from '@stackblitz/sdk';
+import type { Project } from '@stackblitz/sdk';
 import { Alert, Badge, Flex, Tooltip } from 'antd';
 import { createStyles, css } from 'antd-style';
 import classNames from 'classnames';
 import { FormattedMessage, useLiveDemo, useSiteData } from 'dumi';
 import LZString from 'lz-string';
+import React, { useContext, useEffect, useRef, useState } from 'react';
 
 import useLocation from '../../../hooks/useLocation';
 import BrowserFrame from '../../common/BrowserFrame';
@@ -18,8 +18,8 @@ import CodeSandboxIcon from '../../icons/CodeSandboxIcon';
 import ExternalLinkIcon from '../../icons/ExternalLinkIcon';
 import RiddleIcon from '../../icons/RiddleIcon';
 import DemoContext from '../../slots/DemoContext';
-import type { SiteContextProps } from '../../slots/SiteContext';
 import SiteContext from '../../slots/SiteContext';
+import type { SiteContextProps } from '../../slots/SiteContext';
 import { ping } from '../../utils';
 import type { AntdPreviewerProps } from './Previewer';
 

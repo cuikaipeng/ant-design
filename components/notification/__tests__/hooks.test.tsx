@@ -1,5 +1,5 @@
-import React from 'react';
 import { StyleProvider, createCache, extractStyle } from '@ant-design/cssinjs';
+import React from 'react';
 
 import notification from '..';
 import { act, fireEvent, pureRender, render } from '../../../tests/utils';

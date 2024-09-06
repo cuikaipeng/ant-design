@@ -2,8 +2,8 @@ import { unit } from '@ant-design/cssinjs';
 import { TinyColor } from '@ctrl/tinycolor';
 
 import { resetComponent } from '../../style';
-import type { FullToken, GenerateStyle, GetDefaultToken } from '../../theme/internal';
 import { genStyleHooks, mergeToken } from '../../theme/internal';
+import type { FullToken, GenerateStyle, GetDefaultToken } from '../../theme/internal';
 
 // biome-ignore lint/suspicious/noEmptyInterface: ComponentToken need to be empty by default
 export interface ComponentToken {}

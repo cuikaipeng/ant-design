@@ -1,5 +1,5 @@
-import type { ColorGenInput } from '@rc-component/color-picker';
 import { Color as RcColor } from '@rc-component/color-picker';
+import type { ColorGenInput } from '@rc-component/color-picker';
 
 import { AggregationColor } from './color';
 import type { ColorValueType } from './interface';

@@ -1,11 +1,11 @@
-import React from 'react';
 import type { FormRef } from 'rc-field-form/lib/interface';
+import React from 'react';
 
 import Form from '..';
 import { fireEvent, render } from '../../../tests/utils';
 import Button from '../../button';
-import type { InputRef } from '../../input';
 import Input from '../../input';
+import type { InputRef } from '../../input';
 
 interface TestProps {
   show?: boolean;

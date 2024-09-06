@@ -1,7 +1,7 @@
 import * as React from 'react';
 
-import type { ColumnProps } from '..';
 import Table from '..';
+import type { ColumnProps } from '..';
 
 const { Column, ColumnGroup } = Table;
 

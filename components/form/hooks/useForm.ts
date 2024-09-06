@@ -1,7 +1,7 @@
-import * as React from 'react';
-import type { FormInstance as RcFormInstance } from 'rc-field-form';
 import { useForm as useRcForm } from 'rc-field-form';
+import type { FormInstance as RcFormInstance } from 'rc-field-form';
 import { getDOM } from 'rc-util/lib/Dom/findDOMNode';
+import * as React from 'react';
 import scrollIntoView from 'scroll-into-view-if-needed';
 
 import type { InternalNamePath, NamePath, ScrollOptions } from '../interface';

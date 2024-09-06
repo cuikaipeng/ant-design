@@ -1,7 +1,7 @@
 import React from 'react';
 
-import type { TableRef } from '..';
 import Table from '..';
+import type { TableRef } from '..';
 import { render } from '../../../tests/utils';
 
 describe('Table.IE', () => {

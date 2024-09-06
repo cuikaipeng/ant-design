@@ -2,13 +2,13 @@ import type { CSSObject } from '@ant-design/cssinjs';
 
 import { resetComponent, resetIcon, textEllipsis } from '../../style';
 import { genCompactItemStyle } from '../../style/compact-item';
-import type { GenerateStyle } from '../../theme/internal';
 import { genStyleHooks, mergeToken } from '../../theme/internal';
+import type { GenerateStyle } from '../../theme/internal';
 import genDropdownStyle from './dropdown';
 import genMultipleStyle from './multiple';
 import genSingleStyle from './single';
-import type { ComponentToken, SelectToken } from './token';
 import { prepareComponentToken } from './token';
+import type { ComponentToken, SelectToken } from './token';
 import genVariantsStyle from './variants';
 
 export type { ComponentToken };

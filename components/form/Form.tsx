@@ -1,22 +1,22 @@
-import * as React from 'react';
-import { useMemo } from 'react';
 import classNames from 'classnames';
 import FieldForm, { List, useWatch } from 'rc-field-form';
 import type { FormProps as RcFormProps } from 'rc-field-form/lib/Form';
 import type { FormRef, InternalNamePath, ValidateErrorEntity } from 'rc-field-form/lib/interface';
+import * as React from 'react';
+import { useMemo } from 'react';
 import type { Options } from 'scroll-into-view-if-needed';
 
 import { ConfigContext } from '../config-provider';
+import type { Variant } from '../config-provider';
 import DisabledContext, { DisabledContextProvider } from '../config-provider/DisabledContext';
+import SizeContext from '../config-provider/SizeContext';
+import type { SizeType } from '../config-provider/SizeContext';
 import useCSSVarCls from '../config-provider/hooks/useCSSVarCls';
 import useSize from '../config-provider/hooks/useSize';
-import type { SizeType } from '../config-provider/SizeContext';
-import SizeContext from '../config-provider/SizeContext';
 import type { ColProps } from '../grid/col';
-import type { Variant } from '../config-provider';
-import type { FormContextProps } from './context';
-import { FormContext, FormProvider, VariantContext } from './context';
 import type { FeedbackIcons } from './FormItem';
+import { FormContext, FormProvider, VariantContext } from './context';
+import type { FormContextProps } from './context';
 import useForm from './hooks/useForm';
 import type { FormInstance } from './hooks/useForm';
 import useFormWarning from './hooks/useFormWarning';
@@ -229,6 +229,6 @@ if (process.env.NODE_ENV !== 'production') {
   Form.displayName = 'Form';
 }
 
-export { List, useForm, useWatch, type FormInstance };
+export { type FormInstance, List, useForm, useWatch };
 
 export default Form;

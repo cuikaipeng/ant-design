@@ -2,8 +2,8 @@ import { unit } from '@ant-design/cssinjs';
 import type { CSSObject } from '@ant-design/cssinjs';
 
 import { clearFix, resetComponent, textEllipsis } from '../../style';
-import type { FullToken, GenerateStyle, GetDefaultToken } from '../../theme/internal';
 import { genStyleHooks, mergeToken } from '../../theme/internal';
+import type { FullToken, GenerateStyle, GetDefaultToken } from '../../theme/internal';
 
 export interface ComponentToken {
   /**

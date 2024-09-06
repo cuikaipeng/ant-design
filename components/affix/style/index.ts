@@ -1,7 +1,7 @@
 import type { CSSObject } from '@ant-design/cssinjs';
 
-import type { FullToken, GenerateStyle, GetDefaultToken } from '../../theme/internal';
 import { genStyleHooks } from '../../theme/internal';
+import type { FullToken, GenerateStyle, GetDefaultToken } from '../../theme/internal';
 
 export interface ComponentToken {
   /**

@@ -1,6 +1,6 @@
-import React from 'react';
-import type { IPreviewerProps } from 'dumi';
 import { useTabMeta } from 'dumi';
+import type { IPreviewerProps } from 'dumi';
+import React from 'react';
 
 import CodePreviewer from './CodePreviewer';
 import DesignPreviewer from './DesignPreviewer';

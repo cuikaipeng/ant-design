@@ -1,7 +1,7 @@
-import React from 'react';
 import { DatePicker } from 'antd';
 import type { TimeRangePickerProps } from 'antd';
 import dayjs from 'dayjs';
+import React from 'react';
 
 const { _InternalRangePanelDoNotUseOrYouWillBeFired: PureRangePicker } = DatePicker;
 

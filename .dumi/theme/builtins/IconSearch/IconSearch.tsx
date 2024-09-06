@@ -1,15 +1,15 @@
-import type { CSSProperties } from 'react';
-import React, { useCallback, useMemo, useState } from 'react';
 import Icon, * as AntdIcons from '@ant-design/icons';
-import type { SegmentedProps } from 'antd';
 import { Affix, Empty, Input, Segmented } from 'antd';
+import type { SegmentedProps } from 'antd';
 import { createStyles, useTheme } from 'antd-style';
 import { useIntl } from 'dumi';
 import debounce from 'lodash/debounce';
+import type { CSSProperties } from 'react';
+import React, { useCallback, useMemo, useState } from 'react';
 
 import Category from './Category';
-import type { CategoriesKeys } from './fields';
 import { categories } from './fields';
+import type { CategoriesKeys } from './fields';
 import { FilledIcon, OutlinedIcon, TwoToneIcon } from './themeIcons';
 
 export enum ThemeType {

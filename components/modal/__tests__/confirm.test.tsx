@@ -1,12 +1,12 @@
-import * as React from 'react';
 import { SmileOutlined } from '@ant-design/icons';
 import CSSMotion from 'rc-motion';
 import { genCSSMotion } from 'rc-motion/lib/CSSMotion';
 import KeyCode from 'rc-util/lib/KeyCode';
 import { resetWarned } from 'rc-util/lib/warning';
+import * as React from 'react';
 
-import type { ModalFuncProps } from '..';
 import Modal from '..';
+import type { ModalFuncProps } from '..';
 import { act, fireEvent, waitFakeTimer } from '../../../tests/utils';
 import ConfigProvider, { defaultPrefixCls } from '../../config-provider';
 import type { ModalFunc } from '../confirm';

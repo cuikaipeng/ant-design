@@ -1,19 +1,19 @@
+import classNames from 'classnames';
 /* eslint-disable react/no-array-index-key */
 import * as React from 'react';
-import classNames from 'classnames';
 
-import type { Breakpoint } from '../_util/responsiveObserver';
 import { matchScreen } from '../_util/responsiveObserver';
+import type { Breakpoint } from '../_util/responsiveObserver';
 import { ConfigContext } from '../config-provider';
 import useSize from '../config-provider/hooks/useSize';
 import useBreakpoint from '../grid/hooks/useBreakpoint';
-import DEFAULT_COLUMN_MAP from './constant';
 import DescriptionsContext from './DescriptionsContext';
+import DescriptionsItem from './Item';
+import type { DescriptionsItemProps } from './Item';
+import Row from './Row';
+import DEFAULT_COLUMN_MAP from './constant';
 import useItems from './hooks/useItems';
 import useRow from './hooks/useRow';
-import type { DescriptionsItemProps } from './Item';
-import DescriptionsItem from './Item';
-import Row from './Row';
 import useStyle from './style';
 
 interface CompoundedComponent {

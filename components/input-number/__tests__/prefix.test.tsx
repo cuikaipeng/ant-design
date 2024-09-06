@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react';
 
-import type { InputNumberProps } from '..';
 import InputNumber from '..';
+import type { InputNumberProps } from '..';
 import focusTest from '../../../tests/shared/focusTest';
 import { fireEvent, render } from '../../../tests/utils';
 

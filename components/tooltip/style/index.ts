@@ -2,15 +2,15 @@ import { unit } from '@ant-design/cssinjs';
 
 import { resetComponent } from '../../style';
 import { initZoomMotion } from '../../style/motion';
-import type { ArrowOffsetToken } from '../../style/placementArrow';
 import getArrowStyle, {
-  MAX_VERTICAL_CONTENT_RADIUS,
   getArrowOffsetToken,
+  MAX_VERTICAL_CONTENT_RADIUS,
 } from '../../style/placementArrow';
-import type { ArrowToken } from '../../style/roundedArrow';
+import type { ArrowOffsetToken } from '../../style/placementArrow';
 import { getArrowToken } from '../../style/roundedArrow';
-import type { FullToken, GenerateStyle, GetDefaultToken } from '../../theme/internal';
+import type { ArrowToken } from '../../style/roundedArrow';
 import { genPresetColor, genStyleHooks, mergeToken } from '../../theme/internal';
+import type { FullToken, GenerateStyle, GetDefaultToken } from '../../theme/internal';
 
 export interface ComponentToken extends ArrowOffsetToken, ArrowToken {
   /**

@@ -1,5 +1,5 @@
-const $ = require('dekko');
 const chalk = require('chalk');
+const $ = require('dekko');
 
 $('dist')
   .isDirectory()

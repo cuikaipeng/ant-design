@@ -1,8 +1,8 @@
-import type { CSSObject } from '@ant-design/cssinjs';
 import { Keyframes, unit } from '@ant-design/cssinjs';
+import type { CSSObject } from '@ant-design/cssinjs';
 
-import type { CSSUtil, FullToken, GenerateStyle, GetDefaultToken } from '../../theme/internal';
 import { genStyleHooks, mergeToken } from '../../theme/internal';
+import type { CSSUtil, FullToken, GenerateStyle, GetDefaultToken } from '../../theme/internal';
 
 export interface ComponentToken {
   /** @deprecated use gradientFromColor instead. */

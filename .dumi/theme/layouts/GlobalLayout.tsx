@@ -1,4 +1,3 @@
-import React, { Suspense, useCallback, useEffect } from 'react';
 import {
   NaNLinter,
   StyleProvider,
@@ -13,14 +12,15 @@ import { App, theme as antdTheme } from 'antd';
 import type { MappingAlgorithm } from 'antd';
 import type { DirectionType, ThemeConfig } from 'antd/es/config-provider';
 import { createSearchParams, useOutlet, useSearchParams, useServerInsertedHTML } from 'dumi';
+import React, { Suspense, useCallback, useEffect } from 'react';
 
 import { DarkContext } from '../../hooks/useDark';
 import useLayoutState from '../../hooks/useLayoutState';
 import useLocation from '../../hooks/useLocation';
-import type { ThemeName } from '../common/ThemeSwitch';
 import SiteThemeProvider from '../SiteThemeProvider';
-import type { SiteContextProps } from '../slots/SiteContext';
+import type { ThemeName } from '../common/ThemeSwitch';
 import SiteContext from '../slots/SiteContext';
+import type { SiteContextProps } from '../slots/SiteContext';
 
 const ThemeSwitch = React.lazy(() => import('../common/ThemeSwitch'));
 

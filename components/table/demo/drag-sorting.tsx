@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
-import type { DragEndEvent } from '@dnd-kit/core';
 import { DndContext, PointerSensor, useSensor, useSensors } from '@dnd-kit/core';
+import type { DragEndEvent } from '@dnd-kit/core';
 import { restrictToVerticalAxis } from '@dnd-kit/modifiers';
 import {
   SortableContext,
@@ -11,6 +10,7 @@ import {
 import { CSS } from '@dnd-kit/utilities';
 import { Table } from 'antd';
 import type { TableColumnsType } from 'antd';
+import React, { useState } from 'react';
 
 interface DataType {
   key: string;

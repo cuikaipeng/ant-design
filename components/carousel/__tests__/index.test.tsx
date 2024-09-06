@@ -1,7 +1,7 @@
 import React from 'react';
 
-import type { CarouselRef } from '..';
 import Carousel from '..';
+import type { CarouselRef } from '..';
 import mountTest from '../../../tests/shared/mountTest';
 import rtlTest from '../../../tests/shared/rtlTest';
 import { render, waitFakeTimer } from '../../../tests/utils';

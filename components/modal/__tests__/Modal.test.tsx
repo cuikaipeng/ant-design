@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 
-import type { ModalProps } from '..';
 import Modal from '..';
-import { resetWarned } from '../../_util/warning';
+import type { ModalProps } from '..';
 import mountTest from '../../../tests/shared/mountTest';
 import rtlTest from '../../../tests/shared/rtlTest';
 import { createEvent, fireEvent, render } from '../../../tests/utils';
+import { resetWarned } from '../../_util/warning';
 
 jest.mock('rc-util/lib/Portal');
 

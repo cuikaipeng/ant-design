@@ -1,7 +1,7 @@
-import React, { useContext, useLayoutEffect } from 'react';
 import { StyleProvider } from '@ant-design/cssinjs';
 import { ExclamationCircleFilled } from '@ant-design/icons';
 import { App, Button, ConfigProvider, Modal, Space, message, notification } from 'antd';
+import React, { useContext, useLayoutEffect } from 'react';
 
 const Demo: React.FC = () => {
   const { locale, theme } = useContext(ConfigProvider.ConfigContext);

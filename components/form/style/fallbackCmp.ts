@@ -3,11 +3,11 @@
  * Safe to remove.
  */
 
+import { prepareToken } from '.';
+import type { FormToken } from '.';
 // Style as inline component
 import { genSubStyleComponent } from '../../theme/internal';
 import type { GenerateStyle } from '../../theme/internal';
-import { prepareToken } from '.';
-import type { FormToken } from '.';
 
 // ============================= Fallback =============================
 const genFallbackStyle: GenerateStyle<FormToken> = (token) => {

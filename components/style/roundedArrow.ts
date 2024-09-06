@@ -1,5 +1,5 @@
-import type { CSSObject } from '@ant-design/cssinjs';
 import { unit } from '@ant-design/cssinjs';
+import type { CSSObject } from '@ant-design/cssinjs';
 
 import type { AliasToken } from '../theme/interface';
 import type { CSSUtil } from '../theme/internal';

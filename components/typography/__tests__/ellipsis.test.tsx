@@ -1,5 +1,5 @@
-import React from 'react';
 import { spyElementPrototypes } from 'rc-util/lib/test/domHook';
+import React from 'react';
 
 import {
   act,
@@ -9,8 +9,8 @@ import {
   waitFakeTimer,
   waitFor,
 } from '../../../tests/utils';
-import type { EllipsisConfig } from '../Base';
 import Base from '../Base';
+import type { EllipsisConfig } from '../Base';
 
 jest.mock('copy-to-clipboard');
 

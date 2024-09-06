@@ -1,7 +1,6 @@
-import React, { useContext, useMemo } from 'react';
 import { HolderOutlined } from '@ant-design/icons';
-import type { DragEndEvent } from '@dnd-kit/core';
 import { DndContext } from '@dnd-kit/core';
+import type { DragEndEvent } from '@dnd-kit/core';
 import type { SyntheticListenerMap } from '@dnd-kit/core/dist/hooks/utilities';
 import { restrictToVerticalAxis } from '@dnd-kit/modifiers';
 import {
@@ -13,6 +12,7 @@ import {
 import { CSS } from '@dnd-kit/utilities';
 import { Button, Table } from 'antd';
 import type { TableColumnsType } from 'antd';
+import React, { useContext, useMemo } from 'react';
 
 interface DataType {
   key: string;

@@ -1,8 +1,8 @@
-import React from 'react';
 import * as AntdIcons from '@ant-design/icons';
 import { App, Badge } from 'antd';
 import { createStyles } from 'antd-style';
 import classNames from 'classnames';
+import React from 'react';
 import CopyToClipboard from 'react-copy-to-clipboard';
 
 import type { ThemeType } from './IconSearch';

@@ -1,7 +1,7 @@
-import React from 'react';
 import { CheckCircleFilled, CloseCircleFilled, ReloadOutlined } from '@ant-design/icons';
-import type { QRCodeProps } from 'antd';
 import { Button, Flex, QRCode, Space, Spin } from 'antd';
+import type { QRCodeProps } from 'antd';
+import React from 'react';
 
 const value = 'https://ant.design';
 

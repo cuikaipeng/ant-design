@@ -1,11 +1,11 @@
-import React from 'react';
 import { render } from '@testing-library/react';
 import { spyElementPrototypes } from 'rc-util/lib/test/domHook';
+import React from 'react';
 
-import { resetWarned } from '../../_util/warning';
 import { createEvent, fireEvent } from '../../../tests/utils';
-import { AggregationColor } from '../color';
+import { resetWarned } from '../../_util/warning';
 import ColorPicker from '../ColorPicker';
+import { AggregationColor } from '../color';
 
 describe('ColorPicker.gradient', () => {
   const errorSpy = jest.spyOn(console, 'error').mockImplementation(() => {});

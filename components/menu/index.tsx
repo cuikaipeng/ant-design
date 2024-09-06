@@ -1,21 +1,21 @@
+import { ItemGroup } from 'rc-menu';
+import type { MenuRef as RcMenuRef } from 'rc-menu';
 import * as React from 'react';
 import { forwardRef, useImperativeHandle, useRef } from 'react';
-import type { MenuRef as RcMenuRef } from 'rc-menu';
-import { ItemGroup } from 'rc-menu';
 
 import { SiderContext } from '../layout/Sider';
-import type { ItemType, MenuItemType } from './interface';
-import type { MenuProps } from './menu';
-import InternalMenu from './menu';
 import type { MenuTheme } from './MenuContext';
 import MenuDivider from './MenuDivider';
 import Item from './MenuItem';
 import type { MenuItemProps } from './MenuItem';
 import SubMenu from './SubMenu';
 import type { SubMenuProps } from './SubMenu';
+import type { ItemType, MenuItemType } from './interface';
+import InternalMenu from './menu';
+import type { MenuProps } from './menu';
 
-export type { MenuItemGroupProps } from 'rc-menu';
 export type { MenuDividerProps } from './MenuDivider';
+export type { MenuItemGroupProps } from 'rc-menu';
 export type { MenuItemProps, MenuProps, MenuTheme, SubMenuProps };
 
 export interface MenuRef {

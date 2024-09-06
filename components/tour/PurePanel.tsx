@@ -1,8 +1,8 @@
-import * as React from 'react';
 import classNames from 'classnames';
+import * as React from 'react';
 
-import useClosable from '../_util/hooks/useClosable';
 import { withPureRenderTheme } from '../_util/PurePanel';
+import useClosable from '../_util/hooks/useClosable';
 import { cloneElement } from '../_util/reactNode';
 import { ConfigContext } from '../config-provider';
 import { RawPurePanel as PopoverRawPurePanel } from '../popover/PurePanel';

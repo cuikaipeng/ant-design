@@ -1,4 +1,3 @@
-import * as React from 'react';
 import classNames from 'classnames';
 import RcMentions from 'rc-mentions';
 import type {
@@ -7,17 +6,18 @@ import type {
   MentionsRef as RcMentionsRef,
 } from 'rc-mentions/lib/Mentions';
 import { composeRef } from 'rc-util/lib/ref';
+import * as React from 'react';
 
-import getAllowClear from '../_util/getAllowClear';
 import genPurePanel from '../_util/PurePanel';
-import type { InputStatus } from '../_util/statusUtils';
+import getAllowClear from '../_util/getAllowClear';
 import { getMergedStatus, getStatusClassNames } from '../_util/statusUtils';
+import type { InputStatus } from '../_util/statusUtils';
 import { devUseWarning } from '../_util/warning';
 import { ConfigContext } from '../config-provider';
+import type { Variant } from '../config-provider';
 import DefaultRenderEmpty from '../config-provider/defaultRenderEmpty';
 import useCSSVarCls from '../config-provider/hooks/useCSSVarCls';
 import { FormItemInputContext } from '../form/context';
-import type { Variant } from '../config-provider';
 import useVariant from '../form/hooks/useVariants';
 import Spin from '../spin';
 import useStyle from './style';

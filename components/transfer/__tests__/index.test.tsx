@@ -1,9 +1,9 @@
-import React, { useCallback, useEffect, useState } from 'react';
 import { fireEvent, render, waitFor } from '@testing-library/react';
 import type { DefaultRecordType } from 'rc-table/lib/interface';
+import React, { useCallback, useEffect, useState } from 'react';
 
-import type { SelectAllLabel, TransferProps } from '..';
 import Transfer from '..';
+import type { SelectAllLabel, TransferProps } from '..';
 import mountTest from '../../../tests/shared/mountTest';
 import rtlTest from '../../../tests/shared/rtlTest';
 import Button from '../../button';

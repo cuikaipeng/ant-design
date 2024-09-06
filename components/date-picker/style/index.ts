@@ -1,5 +1,5 @@
-import type { CSSObject } from '@ant-design/cssinjs';
 import { unit } from '@ant-design/cssinjs';
+import type { CSSObject } from '@ant-design/cssinjs';
 
 import { genPlaceholderStyle, initInputToken } from '../../input/style';
 import { resetComponent, textEllipsis } from '../../style';
@@ -13,16 +13,16 @@ import {
   slideUpOut,
 } from '../../style/motion';
 import { genRoundedArrow } from '../../style/roundedArrow';
-import type { GenerateStyle } from '../../theme/internal';
 import { genStyleHooks, mergeToken } from '../../theme/internal';
+import type { GenerateStyle } from '../../theme/internal';
 import genPickerMultipleStyle from './multiple';
 import genPickerPanelStyle, { genPanelStyle } from './panel';
-import type { ComponentToken, PanelComponentToken, PickerPanelToken, PickerToken } from './token';
 import { initPanelComponentToken, initPickerPanelToken, prepareComponentToken } from './token';
+import type { ComponentToken, PanelComponentToken, PickerPanelToken, PickerToken } from './token';
 import genVariantsStyle from './variants';
 
 export type { ComponentToken, PanelComponentToken, PickerPanelToken };
-export { initPickerPanelToken, initPanelComponentToken, genPanelStyle };
+export { genPanelStyle, initPanelComponentToken, initPickerPanelToken };
 
 const genPickerPadding = (
   token: PickerToken,

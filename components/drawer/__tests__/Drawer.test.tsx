@@ -1,11 +1,11 @@
 import React from 'react';
 
-import type { DrawerProps } from '..';
 import Drawer from '..';
-import { resetWarned } from '../../_util/warning';
+import type { DrawerProps } from '..';
 import mountTest from '../../../tests/shared/mountTest';
 import rtlTest from '../../../tests/shared/rtlTest';
 import { act, fireEvent, render } from '../../../tests/utils';
+import { resetWarned } from '../../_util/warning';
 import ConfigProvider from '../../config-provider';
 
 const DrawerTest: React.FC<DrawerProps> = ({ getContainer }) => (

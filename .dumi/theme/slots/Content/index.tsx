@@ -1,16 +1,16 @@
-import React, { useContext, useLayoutEffect, useMemo, useState } from 'react';
 import { Col, Flex, Space, Typography } from 'antd';
 import classNames from 'classnames';
 import { FormattedMessage, useRouteMeta } from 'dumi';
+import React, { useContext, useLayoutEffect, useMemo, useState } from 'react';
 
 import useLayoutState from '../../../hooks/useLayoutState';
 import useLocation from '../../../hooks/useLocation';
 import ComponentMeta from '../../builtins/ComponentMeta';
-import type { DemoContextProps } from '../DemoContext';
 import DemoContext from '../DemoContext';
+import type { DemoContextProps } from '../DemoContext';
 import SiteContext from '../SiteContext';
-import InViewSuspense from './InViewSuspense';
 import { useStyle } from './DocAnchor';
+import InViewSuspense from './InViewSuspense';
 
 const Contributors = React.lazy(() => import('./Contributors'));
 const ColumnCard = React.lazy(() => import('./ColumnCard'));

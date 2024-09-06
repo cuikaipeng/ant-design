@@ -1,13 +1,13 @@
-import type { CSSProperties } from 'react';
-import type { CSSObject } from '@ant-design/cssinjs';
 import { unit } from '@ant-design/cssinjs';
+import type { CSSObject } from '@ant-design/cssinjs';
 import { TinyColor } from '@ctrl/tinycolor';
 import type { CssUtil } from 'antd-style';
+import type { CSSProperties } from 'react';
 
 import { clearFix, resetComponent, resetIcon } from '../../style';
 import { genCollapseMotion, initSlideMotion, initZoomMotion } from '../../style/motion';
-import type { FullToken, GenerateStyle, GetDefaultToken } from '../../theme/internal';
 import { genStyleHooks, mergeToken } from '../../theme/internal';
+import type { FullToken, GenerateStyle, GetDefaultToken } from '../../theme/internal';
 import getHorizontalStyle from './horizontal';
 import getRTLStyle from './rtl';
 import getThemeStyle from './theme';

@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   NaNLinter,
   StyleProvider,
@@ -7,6 +6,7 @@ import {
   parentSelectorLinter,
 } from '@ant-design/cssinjs';
 import chalk from 'chalk';
+import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 
 import { ConfigProvider } from '../components';

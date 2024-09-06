@@ -1,6 +1,7 @@
 import { unit } from '@ant-design/cssinjs';
 
 import { getStyle as getCheckboxStyle } from '../../checkbox/style';
+import { genStyleHooks, mergeToken } from '../../theme/internal';
 import type {
   AliasToken,
   CSSUtil,
@@ -8,9 +9,8 @@ import type {
   GenerateStyle,
   GetDefaultToken,
 } from '../../theme/internal';
-import { genStyleHooks, mergeToken } from '../../theme/internal';
-import type { TreeSharedToken } from '../../tree/style';
 import { genTreeStyle, initComponentToken } from '../../tree/style';
+import type { TreeSharedToken } from '../../tree/style';
 
 export interface ComponentToken extends TreeSharedToken {}
 

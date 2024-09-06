@@ -1,4 +1,3 @@
-import React, { useContext } from 'react';
 import {
   AntDesignOutlined,
   BgColorsOutlined,
@@ -19,6 +18,7 @@ import getAlphaColor from 'antd/es/theme/util/getAlphaColor';
 import { FormattedMessage, Link } from 'dumi';
 import RcFooter from 'rc-footer';
 import type { FooterColumn } from 'rc-footer/lib/column';
+import React, { useContext } from 'react';
 
 import useLocale from '../../../hooks/useLocale';
 import useLocation from '../../../hooks/useLocation';

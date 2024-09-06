@@ -1,7 +1,7 @@
 import * as React from 'react';
 
-import type { SelectProps } from '../select';
 import Select from '../select';
+import type { SelectProps } from '../select';
 
 type CompoundedComponent = React.FC<SelectProps> & {
   Option: typeof Select.Option;
@@ -13,4 +13,4 @@ const MiddleSelect: CompoundedComponent = (props) => <Select {...props} showSear
 MiniSelect.Option = Select.Option;
 MiddleSelect.Option = Select.Option;
 
-export { MiniSelect, MiddleSelect };
+export { MiddleSelect, MiniSelect };

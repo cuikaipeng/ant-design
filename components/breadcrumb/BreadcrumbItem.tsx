@@ -1,10 +1,10 @@
-import * as React from 'react';
 import DownOutlined from '@ant-design/icons/DownOutlined';
+import * as React from 'react';
 
 import { devUseWarning } from '../_util/warning';
 import { ConfigContext } from '../config-provider';
-import type { DropdownProps } from '../dropdown/dropdown';
 import Dropdown from '../dropdown/dropdown';
+import type { DropdownProps } from '../dropdown/dropdown';
 import type { ItemType } from './Breadcrumb';
 import BreadcrumbSeparator from './BreadcrumbSeparator';
 import { renderItem } from './useItemRender';

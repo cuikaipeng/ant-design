@@ -1,5 +1,3 @@
-import type { ReactElement } from 'react';
-import * as React from 'react';
 import CheckCircleFilled from '@ant-design/icons/CheckCircleFilled';
 import CloseCircleFilled from '@ant-design/icons/CloseCircleFilled';
 import CloseOutlined from '@ant-design/icons/CloseOutlined';
@@ -9,6 +7,8 @@ import classNames from 'classnames';
 import CSSMotion from 'rc-motion';
 import pickAttrs from 'rc-util/lib/pickAttrs';
 import { composeRef } from 'rc-util/lib/ref';
+import type { ReactElement } from 'react';
+import * as React from 'react';
 
 import type { ClosableType } from '../_util/hooks/useClosable';
 import { replaceElement } from '../_util/reactNode';

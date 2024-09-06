@@ -6,8 +6,8 @@ import { fireEvent, render } from '../../../tests/utils';
 import Collapse from '../../collapse';
 import Input from '../../input';
 import Table from '../../table';
-import type { CheckboxGroupProps } from '../index';
 import Checkbox from '../index';
+import type { CheckboxGroupProps } from '../index';
 
 describe('CheckboxGroup', () => {
   mountTest(Checkbox.Group);

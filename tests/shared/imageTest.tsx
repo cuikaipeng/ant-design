@@ -1,5 +1,4 @@
 import path from 'node:path';
-import React from 'react';
 // Reference: https://github.com/ant-design/ant-design/pull/24003#discussion_r427267386
 import { StyleProvider, createCache, extractStyle } from '@ant-design/cssinjs';
 import dayjs from 'dayjs';
@@ -8,6 +7,7 @@ import { globSync } from 'glob';
 import { JSDOM } from 'jsdom';
 import MockDate from 'mockdate';
 import type { HTTPRequest } from 'puppeteer';
+import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 
 import { App, ConfigProvider, theme } from '../../components';

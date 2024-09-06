@@ -1,6 +1,6 @@
 import { operationUnit } from '../../style';
-import type { FullToken, GenerateStyle, GetDefaultToken } from '../../theme/internal';
 import { genStyleHooks } from '../../theme/internal';
+import type { FullToken, GenerateStyle, GetDefaultToken } from '../../theme/internal';
 import {
   getCopyableStyles,
   getEditableStyles,

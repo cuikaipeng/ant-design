@@ -1,6 +1,6 @@
-import * as React from 'react';
 import LoadingOutlined from '@ant-design/icons/LoadingOutlined';
 import classNames from 'classnames';
+import * as React from 'react';
 
 import type { TimelineProps } from './Timeline';
 import TimelineItem from './TimelineItem';

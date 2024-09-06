@@ -1,14 +1,14 @@
-import React, { useEffect } from 'react';
 import { SmileOutlined } from '@ant-design/icons';
 import ConfigProvider from 'antd/es/config-provider';
 import type { NotificationConfig } from 'antd/es/notification/interface';
+import React, { useEffect } from 'react';
 
 import App from '..';
 import mountTest from '../../../tests/shared/mountTest';
 import rtlTest from '../../../tests/shared/rtlTest';
 import { render, waitFakeTimer } from '../../../tests/utils';
-import type { AppConfig } from '../context';
 import { AppConfigContext } from '../context';
+import type { AppConfig } from '../context';
 
 describe('App', () => {
   mountTest(App);

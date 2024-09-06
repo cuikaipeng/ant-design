@@ -1,11 +1,11 @@
-import * as React from 'react';
 import classNames from 'classnames';
 import omit from 'rc-util/lib/omit';
+import * as React from 'react';
 
-import type { PresetColorType, PresetStatusColorType } from '../_util/colors';
 import { isPresetColor, isPresetStatusColor } from '../_util/colors';
-import type { ClosableType } from '../_util/hooks/useClosable';
+import type { PresetColorType, PresetStatusColorType } from '../_util/colors';
 import useClosable, { pickClosable } from '../_util/hooks/useClosable';
+import type { ClosableType } from '../_util/hooks/useClosable';
 import { replaceElement } from '../_util/reactNode';
 import type { LiteralUnion } from '../_util/type';
 import { devUseWarning } from '../_util/warning';

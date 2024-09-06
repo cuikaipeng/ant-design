@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   BorderBottomOutlined,
   BorderTopOutlined,
@@ -9,6 +8,7 @@ import {
 } from '@ant-design/icons';
 import { Button, Divider, Space, notification } from 'antd';
 import type { NotificationArgsProps } from 'antd';
+import React from 'react';
 
 type NotificationPlacement = NotificationArgsProps['placement'];
 

@@ -1,12 +1,12 @@
-import * as React from 'react';
 import { Avatar, Divider, Empty, Skeleton, Tabs } from 'antd';
 import { createStyles } from 'antd-style';
 import dayjs from 'dayjs';
 import { FormattedMessage } from 'dumi';
+import * as React from 'react';
 
 import useLocale from '../../../hooks/useLocale';
-import type { Article, Authors, SiteData } from '../../../pages/index/components/util';
 import { useSiteData } from '../../../pages/index/components/util';
+import type { Article, Authors, SiteData } from '../../../pages/index/components/util';
 
 const useStyle = createStyles(({ token, css }) => {
   const { antCls } = token;

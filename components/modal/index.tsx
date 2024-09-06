@@ -1,4 +1,5 @@
-import type { ModalStaticFunctions } from './confirm';
+import OriginModal from './Modal';
+import PurePanel from './PurePanel';
 import confirm, {
   modalGlobalConfig,
   withConfirm,
@@ -7,10 +8,9 @@ import confirm, {
   withSuccess,
   withWarn,
 } from './confirm';
+import type { ModalStaticFunctions } from './confirm';
 import destroyFns from './destroyFns';
 import type { ModalFuncProps } from './interface';
-import OriginModal from './Modal';
-import PurePanel from './PurePanel';
 import useModal from './useModal';
 
 export type { ModalFuncProps, ModalLocale, ModalProps } from './interface';

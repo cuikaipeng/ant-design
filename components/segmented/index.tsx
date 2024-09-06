@@ -1,16 +1,16 @@
-import * as React from 'react';
 import classNames from 'classnames';
+import RcSegmented from 'rc-segmented';
 import type {
   SegmentedProps as RCSegmentedProps,
   SegmentedLabeledOption as RcSegmentedLabeledOption,
   SegmentedValue as RcSegmentedValue,
   SegmentedRawOption,
 } from 'rc-segmented';
-import RcSegmented from 'rc-segmented';
+import * as React from 'react';
 
 import { ConfigContext } from '../config-provider';
-import useSize from '../config-provider/hooks/useSize';
 import type { SizeType } from '../config-provider/SizeContext';
+import useSize from '../config-provider/hooks/useSize';
 import useStyle from './style';
 
 export type { SegmentedValue } from 'rc-segmented';

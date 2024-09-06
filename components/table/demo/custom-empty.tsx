@@ -1,5 +1,5 @@
-import type { GetProp } from 'antd';
 import { Button, ConfigProvider, Empty, Table } from 'antd';
+import type { GetProp } from 'antd';
 import React, { useState } from 'react';
 
 const genFakeData = (count = 5) =>

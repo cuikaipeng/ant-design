@@ -1,10 +1,10 @@
-import type { CSSProperties } from 'react';
-import type { CSSObject } from '@ant-design/cssinjs';
 import { unit } from '@ant-design/cssinjs';
+import type { CSSObject } from '@ant-design/cssinjs';
+import type { CSSProperties } from 'react';
 
 import { resetComponent } from '../../style';
-import type { FullToken, GenerateStyle, GetDefaultToken } from '../../theme/internal';
 import { genStyleHooks } from '../../theme/internal';
+import type { FullToken, GenerateStyle, GetDefaultToken } from '../../theme/internal';
 
 export interface ComponentToken {
   // Component token here

@@ -1,5 +1,5 @@
-import * as React from 'react';
 import { Theme } from '@ant-design/cssinjs';
+import * as React from 'react';
 
 import theme from '..';
 import { render, renderHook } from '../../../tests/utils';

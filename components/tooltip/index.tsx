@@ -1,21 +1,21 @@
-import * as React from 'react';
 import type { BuildInPlacements } from '@rc-component/trigger';
 import classNames from 'classnames';
 import RcTooltip from 'rc-tooltip';
-import type { placements as Placements } from 'rc-tooltip/lib/placements';
 import type {
   TooltipProps as RcTooltipProps,
   TooltipRef as RcTooltipRef,
 } from 'rc-tooltip/lib/Tooltip';
+import type { placements as Placements } from 'rc-tooltip/lib/placements';
 import useMergedState from 'rc-util/lib/hooks/useMergedState';
+import * as React from 'react';
 
-import type { PresetColorType } from '../_util/colors';
 import ContextIsolator from '../_util/ContextIsolator';
+import type { PresetColorType } from '../_util/colors';
 import type { RenderFunction } from '../_util/getRenderPropValue';
 import { useZIndex } from '../_util/hooks/useZIndex';
 import { getTransitionName } from '../_util/motion';
-import type { AdjustOverflow, PlacementsConfig } from '../_util/placements';
 import getPlacements from '../_util/placements';
+import type { AdjustOverflow, PlacementsConfig } from '../_util/placements';
 import { cloneElement, isFragment } from '../_util/reactNode';
 import type { LiteralUnion } from '../_util/type';
 import { devUseWarning } from '../_util/warning';

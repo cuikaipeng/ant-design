@@ -14,8 +14,8 @@ import {
   genOutlinedStyle,
 } from '../../input/style/variants';
 import { resetComponent, textEllipsis } from '../../style';
-import type { FullToken, GenerateStyle, GetDefaultToken } from '../../theme/internal';
 import { genStyleHooks, mergeToken } from '../../theme/internal';
+import type { FullToken, GenerateStyle, GetDefaultToken } from '../../theme/internal';
 
 export interface ComponentToken extends SharedComponentToken {
   /**

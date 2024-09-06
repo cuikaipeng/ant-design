@@ -1,8 +1,8 @@
-import type { CSSObject } from '@ant-design/cssinjs';
 import { unit } from '@ant-design/cssinjs';
+import type { CSSObject } from '@ant-design/cssinjs';
 
-import type { GenerateStyle } from '../../theme/internal';
 import type { StepsToken } from '.';
+import type { GenerateStyle } from '../../theme/internal';
 
 const genStepsCustomIconStyle: GenerateStyle<StepsToken, CSSObject> = (token) => {
   const { componentCls, customIconTop, customIconSize, customIconFontSize } = token;

@@ -1,12 +1,12 @@
-import React, { useContext } from 'react';
 import { Badge, Carousel, Flex, Skeleton, Typography } from 'antd';
 import { createStyles } from 'antd-style';
 import classNames from 'classnames';
+import React, { useContext } from 'react';
 
 import useLocale from '../../../hooks/useLocale';
 import SiteContext from '../../../theme/slots/SiteContext';
-import type { Extra, Icon } from './util';
 import { getCarouselStyle, useSiteData } from './util';
+import type { Extra, Icon } from './util';
 
 const useStyle = createStyles(({ token, css, cx }) => {
   const { carousel } = getCarouselStyle();

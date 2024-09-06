@@ -1,14 +1,14 @@
-import React from 'react';
 import kebabCase from 'lodash/kebabCase';
 import canUseDom from 'rc-util/lib/Dom/canUseDom';
+import React from 'react';
 
 import ConfigProvider from '..';
 import { Button, InputNumber, Select } from '../..';
-import { resetWarned } from '../../_util/warning';
 import { render } from '../../../tests/utils';
+import { resetWarned } from '../../_util/warning';
 import theme from '../../theme';
-import type { GlobalToken } from '../../theme/internal';
 import { useToken } from '../../theme/internal';
+import type { GlobalToken } from '../../theme/internal';
 
 const { defaultAlgorithm, darkAlgorithm, compactAlgorithm } = theme;
 

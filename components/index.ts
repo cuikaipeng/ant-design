@@ -1,5 +1,5 @@
 export type { Breakpoint } from './_util/responsiveObserver';
-export type { GetProps, GetRef, GetProp } from './_util/type';
+export type { GetProp, GetProps, GetRef } from './_util/type';
 export { default as Affix } from './affix';
 export type { AffixProps, AffixRef } from './affix';
 export { default as Alert } from './alert';
@@ -27,8 +27,8 @@ export type { CardProps } from './card';
 export { default as Carousel } from './carousel';
 export type { CarouselProps } from './carousel';
 export { default as Cascader } from './cascader';
-export type { CascaderProps, CascaderAutoProps } from './cascader';
-export type { CascaderPanelProps, CascaderPanelAutoProps } from './cascader/Panel';
+export type { CascaderAutoProps, CascaderProps } from './cascader';
+export type { CascaderPanelAutoProps, CascaderPanelProps } from './cascader/Panel';
 export { default as Checkbox } from './checkbox';
 export type { CheckboxOptionType, CheckboxProps, CheckboxRef } from './checkbox';
 export { default as Col } from './col';
@@ -134,8 +134,8 @@ export { default as Table } from './table';
 export type {
   ColumnGroupType as TableColumnGroupType,
   ColumnProps as TableColumnProps,
-  ColumnType as TableColumnType,
   ColumnsType as TableColumnsType,
+  ColumnType as TableColumnType,
   TablePaginationConfig,
   TableProps,
 } from './table';
@@ -157,8 +157,8 @@ export { default as Transfer } from './transfer';
 export type { TransferProps } from './transfer';
 export { default as Tree } from './tree';
 export type {
-  DataNode as TreeDataNode,
   AntTreeNodeProps as TreeNodeProps,
+  DataNode as TreeDataNode,
   TreeProps,
 } from './tree';
 export { default as TreeSelect } from './tree-select';

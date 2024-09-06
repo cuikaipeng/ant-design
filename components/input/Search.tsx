@@ -1,15 +1,15 @@
-import * as React from 'react';
 import SearchOutlined from '@ant-design/icons/SearchOutlined';
 import classNames from 'classnames';
 import { composeRef } from 'rc-util/lib/ref';
+import * as React from 'react';
 
 import { cloneElement } from '../_util/reactNode';
 import Button from '../button';
 import { ConfigContext } from '../config-provider';
 import useSize from '../config-provider/hooks/useSize';
 import { useCompactItemContext } from '../space/Compact';
-import type { InputProps, InputRef } from './Input';
 import Input from './Input';
+import type { InputProps, InputRef } from './Input';
 
 export interface SearchProps extends InputProps {
   inputPrefixCls?: string;

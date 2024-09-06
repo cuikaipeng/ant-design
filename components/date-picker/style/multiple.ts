@@ -1,5 +1,5 @@
-import type { CSSInterpolation } from '@ant-design/cssinjs';
 import { unit } from '@ant-design/cssinjs';
+import type { CSSInterpolation } from '@ant-design/cssinjs';
 
 import { genOverflowStyle, getMultipleSelectorUnit } from '../../select/style/multiple';
 import { mergeToken } from '../../theme/internal';

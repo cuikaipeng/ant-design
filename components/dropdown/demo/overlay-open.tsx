@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
 import { DownOutlined } from '@ant-design/icons';
-import type { DropdownProps, MenuProps } from 'antd';
 import { Dropdown, Space } from 'antd';
+import type { DropdownProps, MenuProps } from 'antd';
+import React, { useState } from 'react';
 
 const App: React.FC = () => {
   const [open, setOpen] = useState(false);

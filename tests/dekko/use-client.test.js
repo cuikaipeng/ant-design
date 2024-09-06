@@ -1,6 +1,6 @@
 const fs = require('node:fs');
-const $ = require('dekko');
 const chalk = require('chalk');
+const $ = require('dekko');
 
 const includeUseClient = (filename) =>
   fs.readFileSync(filename).toString().includes('"use client"');

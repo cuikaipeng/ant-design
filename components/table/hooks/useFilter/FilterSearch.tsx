@@ -1,5 +1,5 @@
-import * as React from 'react';
 import SearchOutlined from '@ant-design/icons/SearchOutlined';
+import * as React from 'react';
 
 import type { AnyObject } from '../../../_util/type';
 import Input from '../../../input';

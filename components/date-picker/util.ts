@@ -1,6 +1,6 @@
-import * as React from 'react';
 import type { AlignType } from '@rc-component/trigger';
 import type { PickerMode } from 'rc-picker/lib/interface';
+import * as React from 'react';
 
 import type { SelectCommonPlacement } from '../_util/motion';
 import type { DirectionType } from '../config-provider';

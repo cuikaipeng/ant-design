@@ -1,4 +1,3 @@
-import * as React from 'react';
 import CheckCircleFilled from '@ant-design/icons/CheckCircleFilled';
 import CheckOutlined from '@ant-design/icons/CheckOutlined';
 import CloseCircleFilled from '@ant-design/icons/CloseCircleFilled';
@@ -6,10 +5,11 @@ import CloseOutlined from '@ant-design/icons/CloseOutlined';
 import { TinyColor } from '@ctrl/tinycolor';
 import classNames from 'classnames';
 import omit from 'rc-util/lib/omit';
+import * as React from 'react';
 
 import { devUseWarning } from '../_util/warning';
-import type { ConfigConsumerProps } from '../config-provider';
 import { ConfigContext } from '../config-provider';
+import type { ConfigConsumerProps } from '../config-provider';
 import Circle from './Circle';
 import Line from './Line';
 import Steps from './Steps';

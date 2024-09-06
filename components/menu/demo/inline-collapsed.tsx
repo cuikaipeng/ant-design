@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import {
   AppstoreOutlined,
   ContainerOutlined,
@@ -8,8 +7,9 @@ import {
   MenuUnfoldOutlined,
   PieChartOutlined,
 } from '@ant-design/icons';
-import type { MenuProps } from 'antd';
 import { Button, Menu } from 'antd';
+import type { MenuProps } from 'antd';
+import React, { useState } from 'react';
 
 type MenuItem = Required<MenuProps>['items'][number];
 

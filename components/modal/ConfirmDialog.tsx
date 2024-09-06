@@ -1,23 +1,23 @@
-import * as React from 'react';
 import CheckCircleFilled from '@ant-design/icons/CheckCircleFilled';
 import CloseCircleFilled from '@ant-design/icons/CloseCircleFilled';
 import ExclamationCircleFilled from '@ant-design/icons/ExclamationCircleFilled';
 import InfoCircleFilled from '@ant-design/icons/InfoCircleFilled';
 import classNames from 'classnames';
+import * as React from 'react';
 
 import { CONTAINER_MAX_OFFSET } from '../_util/hooks/useZIndex';
 import { getTransitionName } from '../_util/motion';
 import { devUseWarning } from '../_util/warning';
-import type { ThemeConfig } from '../config-provider';
 import ConfigProvider from '../config-provider';
+import type { ThemeConfig } from '../config-provider';
 import { useLocale } from '../locale';
 import useToken from '../theme/useToken';
+import Modal from './Modal';
 import CancelBtn from './components/ConfirmCancelBtn';
 import OkBtn from './components/ConfirmOkBtn';
-import type { ModalContextProps } from './context';
 import { ModalContextProvider } from './context';
+import type { ModalContextProps } from './context';
 import type { ModalFuncProps, ModalLocale } from './interface';
-import Modal from './Modal';
 import Confirm from './style/confirm';
 
 export interface ConfirmDialogProps extends ModalFuncProps {

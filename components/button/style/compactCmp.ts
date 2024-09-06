@@ -3,10 +3,10 @@ import { unit } from '@ant-design/cssinjs';
 
 import { genCompactItemStyle } from '../../style/compact-item';
 import { genCompactItemVerticalStyle } from '../../style/compact-item-vertical';
-import type { GenerateStyle } from '../../theme/internal';
 import { genSubStyleComponent } from '../../theme/internal';
-import type { ButtonToken } from './token';
+import type { GenerateStyle } from '../../theme/internal';
 import { prepareComponentToken, prepareToken } from './token';
+import type { ButtonToken } from './token';
 
 const genButtonCompactStyle: GenerateStyle<ButtonToken> = (token) => {
   const { componentCls, calc } = token;

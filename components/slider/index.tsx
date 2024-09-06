@@ -1,18 +1,18 @@
-import React from 'react';
 import classNames from 'classnames';
-import type { SliderProps as RcSliderProps } from 'rc-slider';
 import RcSlider from 'rc-slider';
+import type { SliderProps as RcSliderProps } from 'rc-slider';
 import type { SliderProps, SliderRef } from 'rc-slider/lib/Slider';
 import raf from 'rc-util/lib/raf';
+import React from 'react';
 
 import type { GetProp } from '../_util/type';
 import { devUseWarning } from '../_util/warning';
 import { ConfigContext } from '../config-provider';
 import DisabledContext from '../config-provider/DisabledContext';
 import type { AbstractTooltipProps, TooltipPlacement } from '../tooltip';
+import SliderInternalContext from './Context';
 import SliderTooltip from './SliderTooltip';
 import useStyle from './style';
-import SliderInternalContext from './Context';
 import useRafLock from './useRafLock';
 
 export type SliderMarks = RcSliderProps['marks'];

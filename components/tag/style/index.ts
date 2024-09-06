@@ -1,11 +1,11 @@
-import type React from 'react';
 import { unit } from '@ant-design/cssinjs';
 import type { CSSInterpolation } from '@ant-design/cssinjs';
 import { TinyColor } from '@ctrl/tinycolor';
+import type React from 'react';
 
 import { resetComponent } from '../../style';
-import type { FullToken, GenStyleFn, GetDefaultToken } from '../../theme/internal';
 import { genStyleHooks, mergeToken } from '../../theme/internal';
+import type { FullToken, GenStyleFn, GetDefaultToken } from '../../theme/internal';
 
 export interface ComponentToken {
   /**

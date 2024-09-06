@@ -1,12 +1,4 @@
-import React, { useState } from 'react';
 import { EllipsisOutlined } from '@ant-design/icons';
-import type {
-  ConfigProviderProps,
-  RadioChangeEvent,
-  TableProps,
-  TourProps,
-  UploadFile,
-} from 'antd';
 import {
   Button,
   Calendar,
@@ -31,9 +23,17 @@ import {
   Upload,
   theme,
 } from 'antd';
+import type {
+  ConfigProviderProps,
+  RadioChangeEvent,
+  TableProps,
+  TourProps,
+  UploadFile,
+} from 'antd';
 import enUS from 'antd/locale/en_US';
 import zhCN from 'antd/locale/zh_CN';
 import dayjs from 'dayjs';
+import React, { useState } from 'react';
 
 import 'dayjs/locale/zh-cn';
 

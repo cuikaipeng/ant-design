@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Avatar, List, Space } from 'antd';
 import { LikeOutlined, MessageOutlined, StarOutlined } from '@ant-design/icons';
+import { Avatar, List, Space } from 'antd';
 import SemanticPreview from '../../../.dumi/components/SemanticPreview';
 import useLocale from '../../../.dumi/hooks/useLocale';
 

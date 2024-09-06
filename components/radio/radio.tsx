@@ -1,7 +1,7 @@
-import * as React from 'react';
 import classNames from 'classnames';
 import RcCheckbox from 'rc-checkbox';
 import { composeRef } from 'rc-util/lib/ref';
+import * as React from 'react';
 
 import { devUseWarning } from '../_util/warning';
 import Wave from '../_util/wave';

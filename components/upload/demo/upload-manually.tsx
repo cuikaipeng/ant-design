@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
 import { UploadOutlined } from '@ant-design/icons';
 import { Button, Upload, message } from 'antd';
 import type { GetProp, UploadFile, UploadProps } from 'antd';
+import React, { useState } from 'react';
 
 type FileType = Parameters<GetProp<UploadProps, 'beforeUpload'>>[0];
 

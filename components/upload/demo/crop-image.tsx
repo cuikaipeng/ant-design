@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
 import { Upload } from 'antd';
 import type { GetProp, UploadFile, UploadProps } from 'antd';
 import ImgCrop from 'antd-img-crop';
+import React, { useState } from 'react';
 
 type FileType = Parameters<GetProp<UploadProps, 'beforeUpload'>>[0];
 

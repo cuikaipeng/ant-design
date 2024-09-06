@@ -1,7 +1,7 @@
 import * as React from 'react';
 
-import type { BlockProps } from './Base';
 import Base from './Base';
+import type { BlockProps } from './Base';
 
 export interface ParagraphProps
   extends BlockProps<'div'>,

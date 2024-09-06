@@ -1,11 +1,11 @@
-import React from 'react';
 import { CheckCircleOutlined } from '@ant-design/icons';
+import React from 'react';
 
 import Tag from '..';
-import { resetWarned } from '../../_util/warning';
 import mountTest from '../../../tests/shared/mountTest';
 import rtlTest from '../../../tests/shared/rtlTest';
 import { act, fireEvent, render } from '../../../tests/utils';
+import { resetWarned } from '../../_util/warning';
 
 (globalThis as any).isVisible = true;
 

@@ -1,10 +1,10 @@
-import type { CSSObject } from '@ant-design/cssinjs';
 import { Keyframes, unit } from '@ant-design/cssinjs';
+import type { CSSObject } from '@ant-design/cssinjs';
 
 import { CONTAINER_MAX_OFFSET } from '../../_util/hooks/useZIndex';
 import { genFocusStyle, resetComponent } from '../../style';
-import type { AliasToken, FullToken, GenStyleFn, GenerateStyle } from '../../theme/internal';
 import { genStyleHooks, mergeToken } from '../../theme/internal';
+import type { AliasToken, FullToken, GenStyleFn, GenerateStyle } from '../../theme/internal';
 import genNotificationPlacementStyle from './placement';
 import genStackStyle from './stack';
 

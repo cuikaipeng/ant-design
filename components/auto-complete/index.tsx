@@ -1,15 +1,16 @@
-import * as React from 'react';
 import classNames from 'classnames';
 import type { BaseSelectRef } from 'rc-select';
 import toArray from 'rc-util/lib/Children/toArray';
 import omit from 'rc-util/lib/omit';
+import * as React from 'react';
 
-import { useZIndex } from '../_util/hooks/useZIndex';
 import genPurePanel from '../_util/PurePanel';
+import { useZIndex } from '../_util/hooks/useZIndex';
 import type { InputStatus } from '../_util/statusUtils';
 import { devUseWarning } from '../_util/warning';
-import type { ConfigConsumerProps } from '../config-provider';
 import { ConfigContext } from '../config-provider';
+import type { ConfigConsumerProps } from '../config-provider';
+import Select from '../select';
 import type {
   BaseOptionType,
   DefaultOptionType,
@@ -17,7 +18,6 @@ import type {
   RefSelectProps,
   SelectProps,
 } from '../select';
-import Select from '../select';
 
 const { Option } = Select;
 

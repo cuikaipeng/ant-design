@@ -1,8 +1,8 @@
 import * as React from 'react';
 
 import { devUseWarning } from '../_util/warning';
-import type { BlockProps } from './Base';
 import Base from './Base';
+import type { BlockProps } from './Base';
 
 const TITLE_ELE_LIST = [1, 2, 3, 4, 5] as const;
 

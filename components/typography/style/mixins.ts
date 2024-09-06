@@ -11,9 +11,9 @@ import { gold } from '@ant-design/colors';
 import { unit } from '@ant-design/cssinjs';
 import type { CSSObject } from '@ant-design/cssinjs';
 
+import type { TypographyToken } from '.';
 import { operationUnit } from '../../style';
 import type { GenerateStyle } from '../../theme/internal';
-import type { TypographyToken } from '.';
 
 const getTitleStyle = (
   fontSize: number,

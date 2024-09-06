@@ -25,6 +25,7 @@ import FloatButton from '../../float-button';
 import Form from '../../form';
 import Image from '../../image';
 import Input from '../../input';
+import InputNumber from '../../input-number';
 import Layout from '../../layout';
 import List from '../../list';
 import Mentions from '../../mentions';
@@ -55,10 +56,9 @@ import Timeline from '../../timeline';
 import Tour from '../../tour';
 import Transfer from '../../transfer';
 import Tree from '../../tree';
+import TreeSelect from '../../tree-select';
 import Typography from '../../typography';
 import Upload from '../../upload';
-import InputNumber from '../../input-number';
-import TreeSelect from '../../tree-select';
 
 describe('ConfigProvider support style and className props', () => {
   it('Should Space classNames works', () => {

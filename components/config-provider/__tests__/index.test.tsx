@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
 import { SmileOutlined } from '@ant-design/icons';
+import React, { useState } from 'react';
 
-import type { ConfigConsumerProps, RenderEmptyHandler } from '..';
 import ConfigProvider, { ConfigContext } from '..';
-import { resetWarned } from '../../_util/warning';
+import type { ConfigConsumerProps, RenderEmptyHandler } from '..';
 import mountTest from '../../../tests/shared/mountTest';
 import { fireEvent, render } from '../../../tests/utils';
+import { resetWarned } from '../../_util/warning';
 import Button from '../../button';
+import Form from '../../form';
 import Input from '../../input';
 import Select from '../../select';
 import Table from '../../table';
-import Form from '../../form';
 
 describe('ConfigProvider', () => {
   mountTest(() => (

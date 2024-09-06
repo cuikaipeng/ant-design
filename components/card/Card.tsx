@@ -1,14 +1,14 @@
-import * as React from 'react';
 import classNames from 'classnames';
 import type { Tab } from 'rc-tabs/lib/interface';
 import omit from 'rc-util/lib/omit';
+import * as React from 'react';
 
 import { devUseWarning } from '../_util/warning';
 import { ConfigContext } from '../config-provider';
 import useSize from '../config-provider/hooks/useSize';
 import Skeleton from '../skeleton';
-import type { TabsProps } from '../tabs';
 import Tabs from '../tabs';
+import type { TabsProps } from '../tabs';
 import Grid from './Grid';
 import useStyle from './style';
 

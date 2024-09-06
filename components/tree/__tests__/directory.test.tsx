@@ -1,13 +1,13 @@
-import React from 'react';
 import debounce from 'lodash/debounce';
 import type RcTree from 'rc-tree';
 import type { Key } from 'rc-tree/lib/interface';
+import React from 'react';
 
 import mountTest from '../../../tests/shared/mountTest';
 import rtlTest from '../../../tests/shared/rtlTest';
 import { act, fireEvent, render, waitFakeTimer } from '../../../tests/utils';
-import type { TreeProps } from '../index';
 import Tree from '../index';
+import type { TreeProps } from '../index';
 
 const { DirectoryTree, TreeNode } = Tree;
 

@@ -1,12 +1,12 @@
-import React from 'react';
 import CloseOutlined from '@ant-design/icons/CloseOutlined';
+import React from 'react';
 
 import { DisabledContextProvider } from '../config-provider/DisabledContext';
 import { useLocale } from '../locale';
 import NormalCancelBtn from './components/NormalCancelBtn';
 import NormalOkBtn from './components/NormalOkBtn';
-import type { ModalContextProps } from './context';
 import { ModalContextProvider } from './context';
+import type { ModalContextProps } from './context';
 import type { ModalProps } from './interface';
 import { getConfirmLocale } from './locale';
 

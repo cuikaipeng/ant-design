@@ -1,12 +1,12 @@
-import * as React from 'react';
 import CaretDownOutlined from '@ant-design/icons/CaretDownOutlined';
 import CaretUpOutlined from '@ant-design/icons/CaretUpOutlined';
 import classNames from 'classnames';
 import KeyCode from 'rc-util/lib/KeyCode';
+import * as React from 'react';
 
 import type { AnyObject } from '../../_util/type';
-import type { TooltipProps } from '../../tooltip';
 import Tooltip from '../../tooltip';
+import type { TooltipProps } from '../../tooltip';
 import type {
   ColumnGroupType,
   ColumnTitleProps,

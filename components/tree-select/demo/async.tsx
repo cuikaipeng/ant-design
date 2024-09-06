@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import type { GetProp, TreeSelectProps } from 'antd';
 import { TreeSelect } from 'antd';
+import type { GetProp, TreeSelectProps } from 'antd';
+import React, { useState } from 'react';
 
 type DefaultOptionType = GetProp<TreeSelectProps, 'treeData'>[number];
 

@@ -1,7 +1,7 @@
 import type { CSSProperties } from 'react';
 
-import type { FullToken, GenStyleFn, GetDefaultToken } from '../../theme/internal';
 import { getLineHeight, mergeToken } from '../../theme/internal';
+import type { FullToken, GenStyleFn, GetDefaultToken } from '../../theme/internal';
 
 /** Component only token. Which will handle additional calculation of alias token */
 export interface ComponentToken {

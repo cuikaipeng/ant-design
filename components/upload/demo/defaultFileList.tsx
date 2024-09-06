@@ -1,7 +1,7 @@
-import React from 'react';
 import { UploadOutlined } from '@ant-design/icons';
-import type { UploadProps } from 'antd';
 import { Button, Upload } from 'antd';
+import type { UploadProps } from 'antd';
+import React from 'react';
 
 const props: UploadProps = {
   action: 'https://660d2bd96ddfa2943b33731c.mockapi.io/api/upload',
