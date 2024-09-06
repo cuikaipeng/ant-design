@@ -46,6 +46,8 @@ export default antfu(
       'react/no-unstable-default-props': 'off',
       'perfectionist/sort-imports': 'off',
       'perfectionist/sort-named-imports': 'off',
+      'perfectionist/sort-named-exports': 'off',
+      'perfectionist/sort-exports': 'off',
     },
   },
   compat.configs['flat/recommended'],

@@ -1,5 +1,5 @@
-import * as React from 'react';
 import rcWarning, { resetWarned as rcResetWarned } from 'rc-util/lib/warning';
+import * as React from 'react';
 
 export function noop() {}
 
@@ -101,7 +101,6 @@ export const devUseWarning: (component: string) => TypeWarning =
         return typeWarning;
       }
     : () => {
-        // eslint-disable-next-line unicorn/consistent-function-scoping
         const noopWarning: TypeWarning = () => {};
         noopWarning.deprecated = noop;
         return noopWarning;
