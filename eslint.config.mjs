@@ -72,24 +72,6 @@ export default antfu(
           },
         },
       ],
-      'perfectionist/sort-named-imports': [
-        'error',
-        {
-          type: 'alphabetical',
-        },
-      ],
-      'perfectionist/sort-named-exports': [
-        'error',
-        {
-          type: 'alphabetical',
-        },
-      ],
-      'perfectionist/sort-exports': [
-        'error',
-        {
-          type: 'alphabetical',
-        },
-      ],
     },
   },
   compat.configs['flat/recommended'],
