@@ -47,7 +47,8 @@ const useLazyKVMap = <RecordType extends AnyObject = AnyObject>(
       };
     }
 
-    return mapCacheRef.current.kvMap?.get(key) || ({} as RecordType);
+    // eslint-disable-next-line ts/no-non-null-asserted-optional-chain
+    return mapCacheRef.current.kvMap?.get(key)!;
   }
 
   return [getRecordByKey] as const;
