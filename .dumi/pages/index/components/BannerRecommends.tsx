@@ -140,8 +140,10 @@ const BannerRecommends: React.FC = () => {
   const data = useSiteData();
   const extras = data?.extras?.[lang];
   const icons = data?.icons || [];
-  const first3 =
-    !extras || extras.length === 0 ? Array.from({ length: 3 }).fill(null) : extras.slice(0, 3);
+  const first3: Extra[] =
+    !extras || extras.length === 0
+      ? (Array.from({ length: 3 }).fill(null) as Extra[])
+      : extras.slice(0, 3);
 
   if (!data) {
     return <BannerRecommendsFallback />;

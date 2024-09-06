@@ -23,7 +23,7 @@ interface UploadListRef {
 }
 
 const defaultItems: UploadListProps['items'] = [];
-const defaultProgress = { size: [-1, 2], showInfo: false };
+const defaultProgress: UploadListProps['progress'] = { size: [-1, 2], showInfo: false };
 
 const InternalUploadList: React.ForwardRefRenderFunction<UploadListRef, UploadListProps> = (
   props,

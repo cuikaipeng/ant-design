@@ -153,7 +153,7 @@ const runPrePublish = async () => {
   showMessage(`远程分支 CI 状态(${check_runs.length})：`, 'succeed');
   check_runs.forEach((run) => {
     showMessage(`  ${run.name.padEnd(36)} ${emojify(run.status)} ${emojify(run.conclusion || '')}`);
-    if (blockStatus.includes(run.conclusion)) {
+    if ((blockStatus as unknown as (typeof run.conclusion)[]).includes(run.conclusion)) {
       failureUrlList.push(run.html_url!);
     }
   });

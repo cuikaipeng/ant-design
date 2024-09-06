@@ -83,6 +83,7 @@ describe('Alert', () => {
   it('should show error as ErrorBoundary when children have error', () => {
     const warnSpy = jest.spyOn(console, 'error').mockImplementation(() => {});
     expect(warnSpy).toHaveBeenCalledTimes(0);
+    // @ts-expect-error NotExisted is not defined
     const ThrowError = () => <NotExisted />;
     render(
       <ErrorBoundary>

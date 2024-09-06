@@ -19,13 +19,11 @@ export default function derivative(token: SeedToken): MapToken {
         token[colorKey as keyof PresetColorType] === presetPrimaryColors[colorKey]
           ? presetPalettes[colorKey]
           : generate(token[colorKey as keyof PresetColorType]);
-      return Array.from({ length: 10 })
-        .fill(1)
-        .reduce((prev, _, i) => {
-          prev[`${colorKey}-${i + 1}`] = colors[i];
-          prev[`${colorKey}${i + 1}`] = colors[i];
-          return prev;
-        }, {});
+      return (Array.from({ length: 10 }) as any[]).fill(1).reduce((prev, _, i) => {
+        prev[`${colorKey}-${i + 1}`] = colors[i];
+        prev[`${colorKey}${i + 1}`] = colors[i];
+        return prev;
+      }, {});
     })
     .reduce((prev, cur) => {
       // biome-ignore lint/style/noParameterAssign: it is a reduce
