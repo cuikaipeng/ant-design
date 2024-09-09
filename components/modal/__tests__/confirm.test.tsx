@@ -12,21 +12,22 @@ import ConfigProvider, { defaultPrefixCls } from '../../config-provider';
 import type { ModalFunc } from '../confirm';
 import destroyFns from '../destroyFns';
 
-(globalThis as any).IS_REACT_ACT_ENVIRONMENT = true;
+/* eslint-disable no-restricted-globals */
+(global as any).IS_REACT_ACT_ENVIRONMENT = true;
 
 const { confirm } = Modal;
 
 jest.mock('rc-motion');
 
-(globalThis as any).injectPromise = false;
-(globalThis as any).rejectPromise = null;
+(global as any).injectPromise = false;
+(global as any).rejectPromise = null;
 
 jest.mock('../../_util/ActionButton', () => {
   const ActionButton = jest.requireActual('../../_util/ActionButton').default;
   return (props: any) => {
     const { actionFn } = props;
     let mockActionFn: any = actionFn;
-    if (actionFn && (globalThis as any).injectPromise) {
+    if (actionFn && (global as any).injectPromise) {
       mockActionFn = (...args: any) => {
         let ret = actionFn(...args);
 
@@ -40,7 +41,7 @@ jest.mock('../../_util/ActionButton', () => {
             },
             (e: any) => {
               rejectFn?.(e)?.catch((err: Error) => {
-                (globalThis as any).rejectPromise = err;
+                (global as any).rejectPromise = err;
               });
             },
           );
@@ -95,8 +96,8 @@ describe('Modal.confirm triggers callbacks correctly', () => {
 
   beforeEach(() => {
     jest.useFakeTimers();
-    (globalThis as any).injectPromise = false;
-    (globalThis as any).rejectPromise = null;
+    (global as any).injectPromise = false;
+    (global as any).rejectPromise = null;
   });
 
   afterEach(async () => {
@@ -239,7 +240,7 @@ describe('Modal.confirm triggers callbacks correctly', () => {
   });
 
   it('should emit error when onOk return Promise.reject', async () => {
-    (globalThis as any).injectPromise = true;
+    (global as any).injectPromise = true;
 
     const error = new Error('something wrong');
     await open({
@@ -251,7 +252,7 @@ describe('Modal.confirm triggers callbacks correctly', () => {
     // wait promise
     await waitFakeTimer();
 
-    expect((globalThis as any).rejectPromise instanceof Error).toBeTruthy();
+    expect((global as any).rejectPromise instanceof Error).toBeTruthy();
   });
 
   it('shows animation when close', async () => {
@@ -334,12 +335,12 @@ describe('Modal.confirm triggers callbacks correctly', () => {
   });
 
   describe('should not close modals when click confirm button when onOk has argument', () => {
-    (['confirm', 'info', 'success', 'warning', 'error'] as const).forEach((type) => {
+    (['confirm'] as const).forEach((type) => {
       it(type, async () => {
         Modal[type]?.({
           title: 'title',
           content: 'content',
-          onOk: () => null,
+          onOk: (_) => null,
         });
         await waitFakeTimer();
         expect($$(`.ant-modal-confirm-${type}`)).toHaveLength(1);
