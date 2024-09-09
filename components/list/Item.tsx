@@ -1,5 +1,5 @@
-import React, { Children, useContext } from 'react';
 import type { CSSProperties, FC, HTMLAttributes, ReactElement, ReactNode } from 'react';
+import React, { Children, useContext } from 'react';
 import classNames from 'classnames';
 
 import { cloneElement } from '../_util/reactNode';

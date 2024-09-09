@@ -4,14 +4,7 @@
   "trailingComma": "all",
   "printWidth": 100,
   "proseWrap": "never",
-  "importOrder": [
-    "<BUILTIN_MODULES>",
-    "<TYPE>^(react|react-dom)$",
-    "^(react|react-dom)$",
-    "<THIRD_PARTY_MODULES>",
-    "",
-    "^[.]"
-  ],
+  "importOrder": ["<BUILTIN_MODULES>", "^(react|react-dom)$", "<THIRD_PARTY_MODULES>", "", "^[.]"],
   "plugins": ["@ianvs/prettier-plugin-sort-imports"],
   "overrides": [
     {

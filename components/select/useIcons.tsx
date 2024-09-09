@@ -1,5 +1,5 @@
-import * as React from 'react';
 import type { ReactNode } from 'react';
+import * as React from 'react';
 import CheckOutlined from '@ant-design/icons/CheckOutlined';
 import CloseCircleFilled from '@ant-design/icons/CloseCircleFilled';
 import CloseOutlined from '@ant-design/icons/CloseOutlined';
