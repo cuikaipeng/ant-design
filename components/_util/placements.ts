@@ -48,6 +48,9 @@ export function getOverflowOptions(
       baseOverflow.shiftX = true;
       baseOverflow.adjustX = true;
       break;
+
+    default:
+      break;
   }
 
   const mergedOverflow = {
@@ -193,6 +196,9 @@ export default function getPlacements(config: PlacementsConfig) {
       case 'rightBottom':
         placementInfo.offset[0] = halfArrowWidth + offset;
         break;
+
+      default:
+        break;
     }
 
     // Dynamic offset
@@ -221,6 +227,9 @@ export default function getPlacements(config: PlacementsConfig) {
         case 'leftBottom':
         case 'rightBottom':
           placementInfo.offset[1] = arrowOffset.arrowOffsetHorizontal * 2 - halfArrowWidth;
+          break;
+
+        default:
           break;
       }
     }

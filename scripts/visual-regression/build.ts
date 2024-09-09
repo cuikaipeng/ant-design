@@ -285,7 +285,7 @@ ${fullReport}
 
   let diffCount = 0;
 
-  for (const badCase of badCases) {
+  badCases.forEach((badCase) => {
     diffCount += 1;
     if (diffCount <= 10) {
       // 将图片下方增加文件名
@@ -293,7 +293,7 @@ ${fullReport}
     }
 
     fullVersionMd += generateLineReport(badCase, publicPath, currentRef, false);
-  }
+  });
 
   reportMdStr += `\n\nCheck <a href="${htmlReportLink}" target="_blank">Full Report</a> for details`;
 
