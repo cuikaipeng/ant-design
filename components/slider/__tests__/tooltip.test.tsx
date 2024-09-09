@@ -5,7 +5,7 @@ import { fireEvent, render, waitFakeTimer } from '../../../tests/utils';
 import type { TooltipProps, TooltipRef } from '../../tooltip';
 
 function tooltipProps(): TooltipProps {
-  return (globalThis as any).tooltipProps;
+  return (global as any).tooltipProps;
 }
 
 jest.mock('../../tooltip', () => {
@@ -13,7 +13,7 @@ jest.mock('../../tooltip', () => {
   const Tooltip = jest.requireActual('../../tooltip');
   const TooltipComponent = Tooltip.default;
   return ReactReal.forwardRef<TooltipRef, TooltipProps>((props, ref) => {
-    (globalThis as any).tooltipProps = props;
+    (global as any).tooltipProps = props;
     return <TooltipComponent {...props} ref={ref} />;
   });
 });

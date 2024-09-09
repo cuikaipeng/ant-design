@@ -16,7 +16,7 @@ jest.mock('../../_util/responsiveObserver', () => {
     if (!entity.unsubscribe.mocked) {
       const originUnsubscribe = entity.unsubscribe;
       entity.unsubscribe = (...uArgs: any[]) => {
-        const inst = globalThis as any;
+        const inst = global as any;
         inst.unsubscribeCnt = (inst.unsubscribeCnt || 0) + 1;
 
         originUnsubscribe.call(entity, ...uArgs);
@@ -42,7 +42,7 @@ describe('Grid', () => {
   rtlTest(Col);
 
   beforeEach(() => {
-    (globalThis as any).unsubscribeCnt = 0;
+    (global as any).unsubscribeCnt = 0;
   });
 
   it('should render Col', () => {
@@ -118,10 +118,10 @@ describe('Grid', () => {
 
   it('useResponsiveObserver.unsubscribe should be called when unmounted', () => {
     const { unmount } = render(<Row gutter={{ xs: 20 }} />);
-    const called: number = (globalThis as any).unsubscribeCnt;
+    const called: number = (global as any).unsubscribeCnt;
 
     unmount();
-    expect((globalThis as any).unsubscribeCnt).toEqual(called + 1);
+    expect((global as any).unsubscribeCnt).toEqual(called + 1);
   });
 
   it('should work correct when gutter is object', () => {

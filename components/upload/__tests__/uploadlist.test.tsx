@@ -270,7 +270,7 @@ describe('Upload List', () => {
   });
 
   it('In the case of listType=picture, the error status does not show the download.', () => {
-    (globalThis as any).testName =
+    (global as any).testName =
       'In the case of listType=picture, the error status does not show the download.';
     const file = { status: 'error', uid: 'file' };
     const { container: wrapper, unmount } = render(
@@ -292,7 +292,7 @@ describe('Upload List', () => {
   });
 
   it('In the case of listType=picture-card, the error status does not show the download.', () => {
-    (globalThis as any).testName =
+    (global as any).testName =
       'In the case of listType=picture-card, the error status does not show the download.';
     const file = { status: 'error', uid: 'file' };
     const { container: wrapper, unmount } = render(
@@ -1197,7 +1197,7 @@ describe('Upload List', () => {
     });
 
     it('should not render <img /> when upload non-image file without thumbUrl in onChange', async () => {
-      (globalThis as any).testName =
+      (global as any).testName =
         'should not render <img /> when upload non-image file without thumbUrl in onChange';
       // biome-ignore lint/style/useConst: test only
       let wrapper: ReturnType<typeof render>;

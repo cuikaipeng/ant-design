@@ -18,7 +18,7 @@ import { act, fireEvent, render } from '../../../tests/utils';
 import Layout from '../../layout';
 import OverrideContext from '../OverrideContext';
 
-Object.defineProperty(globalThis, 'IS_REACT_ACT_ENVIRONMENT', {
+Object.defineProperty(global, 'IS_REACT_ACT_ENVIRONMENT', {
   writable: true,
   value: true,
 });

@@ -17,7 +17,7 @@ type Writeable<T> = { -readonly [P in keyof T]: T[P] };
 
 // This function can not move to external file since jest setup not support
 export function fillWindowEnv(window: Window | DOMWindow) {
-  const win = window as Writeable<Window> & typeof globalThis;
+  const win = window as Writeable<Window> & typeof global;
 
   win.resizeTo = (width, height) => {
     win.innerWidth = width || win.innerWidth;
@@ -54,5 +54,5 @@ if (typeof window !== 'undefined') {
   fillWindowEnv(window);
 }
 
-globalThis.requestAnimationFrame = globalThis.requestAnimationFrame || globalThis.setTimeout;
-globalThis.cancelAnimationFrame = globalThis.cancelAnimationFrame || globalThis.clearTimeout;
+global.requestAnimationFrame = global.requestAnimationFrame || global.setTimeout;
+global.cancelAnimationFrame = global.cancelAnimationFrame || global.clearTimeout;

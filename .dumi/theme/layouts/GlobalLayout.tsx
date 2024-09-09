@@ -32,7 +32,7 @@ export const ANT_DESIGN_NOT_SHOW_BANNER = 'ANT_DESIGN_NOT_SHOW_BANNER';
 
 // const styleCache = createCache();
 // if (typeof global !== 'undefined') {
-//   (globalThis as any).styleCache = styleCache;
+//   (global as any).styleCache = styleCache;
 // }
 
 // Compatible with old anchors

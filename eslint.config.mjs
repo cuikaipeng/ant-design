@@ -69,6 +69,7 @@ export default antfu(
       'react/no-create-ref': 'off',
       'react/no-nested-components': 'off',
       'no-console': 'off',
+      'no-restricted-globals': 'off',
       'unicorn/consistent-function-scoping': 'off',
       'ts/no-non-null-asserted-optional-chain': 'off',
       'compat/compat': 'off',

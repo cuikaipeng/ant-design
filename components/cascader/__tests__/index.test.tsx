@@ -414,7 +414,7 @@ describe('Cascader', () => {
     toggleOpen(container);
 
     // Inject in tests/__mocks__/rc-trigger.js
-    expect((globalThis as any)?.triggerProps.popupPlacement).toEqual('topRight');
+    expect((global as any)?.triggerProps.popupPlacement).toEqual('topRight');
   });
 
   it('popup correctly with defaultValue RTL', () => {
@@ -532,14 +532,14 @@ describe('Cascader', () => {
     toggleOpen(container);
 
     // Inject in tests/__mocks__/rc-trigger.js
-    expect((globalThis as any).triggerProps.popupPlacement).toEqual('bottomRight');
+    expect((global as any).triggerProps.popupPlacement).toEqual('bottomRight');
   });
 
   describe('legacy props', () => {
     it('popupPlacement', () => {
       render(<Cascader open popupPlacement="bottomLeft" />);
       // Inject in tests/__mocks__/rc-trigger.js
-      expect((globalThis as any).triggerProps.popupPlacement).toEqual('bottomLeft');
+      expect((global as any).triggerProps.popupPlacement).toEqual('bottomLeft');
     });
 
     it('legacy dropdownClassName', () => {

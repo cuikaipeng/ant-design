@@ -48,7 +48,7 @@ export default function imageTest(
     const win = dom.window;
     doc = win.document;
 
-    (globalThis as any).window = win;
+    (global as any).window = win;
 
     // Fill env
     const keys = [
@@ -59,14 +59,14 @@ export default function imageTest(
       'Element',
       'File',
       'Blob',
-    ].filter((key) => !(globalThis as any)[key]);
+    ].filter((key) => !(global as any)[key]);
 
     keys.forEach((key) => {
-      (globalThis as any)[key] = win[key];
+      (global as any)[key] = win[key];
     });
 
     // Fake Resize Observer
-    globalThis.ResizeObserver = function FakeResizeObserver() {
+    global.ResizeObserver = function FakeResizeObserver() {
       return {
         observe() {},
         unobserve() {},
@@ -75,7 +75,7 @@ export default function imageTest(
     } as unknown as typeof ResizeObserver;
 
     // Fake promise not called
-    globalThis.fetch = function mockFetch() {
+    global.fetch = function mockFetch() {
       return {
         then() {
           return this;

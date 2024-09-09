@@ -41,14 +41,14 @@ describe('Avatar Render', () => {
   });
 
   it('should render fallback string correctly', () => {
-    const div = globalThis.document.createElement('div');
-    globalThis.document.body.appendChild(div);
+    const div = global.document.createElement('div');
+    global.document.body.appendChild(div);
     const { container } = render(<Avatar src="http://error.url">Fallback</Avatar>);
     fireEvent.error(container.querySelector('img')!);
     const children = container.querySelectorAll('.ant-avatar-string');
     expect(children.length).toBe(1);
     expect(children[0].innerHTML).toBe('Fallback');
-    globalThis.document.body.removeChild(div);
+    global.document.body.removeChild(div);
   });
 
   it('should handle onError correctly', () => {
@@ -77,8 +77,8 @@ describe('Avatar Render', () => {
     const LOAD_FAILURE_SRC = 'http://error.url';
     const LOAD_SUCCESS_SRC = 'https://api.dicebear.com/7.x/pixel-art/svg';
 
-    const div = globalThis.document.createElement('div');
-    globalThis.document.body.appendChild(div);
+    const div = global.document.createElement('div');
+    global.document.body.appendChild(div);
 
     // simulate error src url
     const { container, rerender } = render(<Avatar src={LOAD_FAILURE_SRC}>Fallback</Avatar>);
@@ -99,7 +99,7 @@ describe('Avatar Render', () => {
     expect(container.firstChild).toMatchSnapshot();
     expect(container.querySelectorAll('.ant-avatar-image').length).toBe(1);
 
-    globalThis.document.body.removeChild(div);
+    global.document.body.removeChild(div);
   });
 
   it('should calculate scale of avatar children correctly', () => {
@@ -154,8 +154,8 @@ describe('Avatar Render', () => {
   });
 
   it('fallback', () => {
-    const div = globalThis.document.createElement('div');
-    globalThis.document.body.appendChild(div);
+    const div = global.document.createElement('div');
+    global.document.body.appendChild(div);
     const { container } = render(
       <Avatar shape="circle" src="http://error.url">
         A
@@ -163,7 +163,7 @@ describe('Avatar Render', () => {
     );
     fireEvent.error(container.querySelector('img')!);
     expect(container.firstChild).toMatchSnapshot();
-    globalThis.document.body.removeChild(div);
+    global.document.body.removeChild(div);
   });
 
   it('should exist crossorigin attribute', () => {

@@ -12,7 +12,6 @@ import ConfigProvider, { defaultPrefixCls } from '../../config-provider';
 import type { ModalFunc } from '../confirm';
 import destroyFns from '../destroyFns';
 
-/* eslint-disable no-restricted-globals */
 (global as any).IS_REACT_ACT_ENVIRONMENT = true;
 
 const { confirm } = Modal;

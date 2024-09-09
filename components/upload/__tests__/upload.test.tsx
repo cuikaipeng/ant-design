@@ -13,7 +13,7 @@ import Form from '../../form';
 import { getFileItem, isImageUrl, removeFileItem } from '../utils';
 import { setup, teardown } from './mock';
 
-(globalThis as any).IS_REACT_ACT_ENVIRONMENT = true;
+(global as any).IS_REACT_ACT_ENVIRONMENT = true;
 
 describe('Upload', () => {
   mountTest(Upload);
@@ -944,7 +944,7 @@ describe('Upload', () => {
       throw new TypeError("Object doesn't support this action");
     };
 
-    const spyIE = jest.spyOn(globalThis, 'File').mockImplementationOnce(fileConstructor);
+    const spyIE = jest.spyOn(global, 'File').mockImplementationOnce(fileConstructor);
     fireEvent.change(container.querySelector('input')!, {
       target: { files: [{ file: 'foo.png' }] },
     });

@@ -11,7 +11,7 @@ const ForwardTrigger = React.forwardRef<TriggerRef, TriggerProps>((props, ref) =
   const context = React.useContext(TriggerMockContext);
 
   const mergedPopupVisible = context?.popupVisible ?? props.popupVisible;
-  (globalThis as any).triggerProps = props;
+  (global as any).triggerProps = props;
 
   const mergedProps: TriggerProps = {
     ...props,
