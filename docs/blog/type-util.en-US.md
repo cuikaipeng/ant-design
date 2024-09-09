@@ -8,7 +8,8 @@ The definition of TypeScript is very powerful, it can solve many problems, help 
 
 ```tsx
 import React from 'react';
-import { Table, type TableColumnsType } from 'antd';
+import type { TableColumnsType } from 'antd';
+import { Table } from 'antd';
 
 const columns: TableColumnsType = [
   {

@@ -2,8 +2,8 @@ import * as React from 'react';
 import type { FC, PropsWithChildren } from 'react';
 import CloseOutlined from '@ant-design/icons/CloseOutlined';
 import classNames from 'classnames';
-import { NotificationProvider, useNotification as useRcNotification } from 'rc-notification';
 import type { NotificationAPI, NotificationConfig as RcNotificationConfig } from 'rc-notification';
+import { NotificationProvider, useNotification as useRcNotification } from 'rc-notification';
 
 import { devUseWarning } from '../_util/warning';
 import { ConfigContext } from '../config-provider';

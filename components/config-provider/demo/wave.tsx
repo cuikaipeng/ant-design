@@ -1,7 +1,7 @@
 import React from 'react';
 import { HappyProvider } from '@ant-design/happy-work-theme';
-import { Button, ConfigProvider, Space } from 'antd';
 import type { ConfigProviderProps, GetProp } from 'antd';
+import { Button, ConfigProvider, Space } from 'antd';
 
 type WaveConfig = GetProp<ConfigProviderProps, 'wave'>;
 

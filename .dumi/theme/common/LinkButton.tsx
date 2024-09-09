@@ -1,9 +1,9 @@
 import React from 'react';
-import { Button } from 'antd';
 import type { ButtonProps } from 'antd';
+import { Button } from 'antd';
 
-import Link from './Link';
 import type { LinkProps } from './Link';
+import Link from './Link';
 
 type LinkButtonProps = LinkProps &
   Readonly<React.PropsWithChildren<Pick<ButtonProps, 'type' | 'size'>>>;

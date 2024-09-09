@@ -2,8 +2,8 @@ import * as React from 'react';
 import classNames from 'classnames';
 import toArray from 'rc-util/lib/Children/toArray';
 
-import { ConfigContext } from '../config-provider';
 import type { DirectionType } from '../config-provider';
+import { ConfigContext } from '../config-provider';
 import useSize from '../config-provider/hooks/useSize';
 import type { SizeType } from '../config-provider/SizeContext';
 import useStyle from './style';

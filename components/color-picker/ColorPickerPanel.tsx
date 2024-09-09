@@ -1,11 +1,11 @@
-import type { FC } from 'react';
 import React from 'react';
+import type { FC } from 'react';
 
 import Divider from '../divider';
 import PanelPicker from './components/PanelPicker';
 import PanelPresets from './components/PanelPresets';
-import { PanelPickerContext, PanelPresetsContext } from './context';
 import type { PanelPickerContextProps, PanelPresetsContextProps } from './context';
+import { PanelPickerContext, PanelPresetsContext } from './context';
 import type { ColorPickerProps } from './interface';
 
 export interface ColorPickerPanelProps

@@ -4,8 +4,8 @@ import type { FormRef } from 'rc-field-form/lib/interface';
 import Form from '..';
 import { fireEvent, render } from '../../../tests/utils';
 import Button from '../../button';
-import Input from '../../input';
 import type { InputRef } from '../../input';
+import Input from '../../input';
 
 interface TestProps {
   show?: boolean;

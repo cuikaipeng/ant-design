@@ -1,11 +1,11 @@
-import type { ChangeEventHandler, TextareaHTMLAttributes } from 'react';
 import React, { useState } from 'react';
+import type { ChangeEventHandler, TextareaHTMLAttributes } from 'react';
 import { spyElementPrototypes } from 'rc-util/lib/test/domHook';
 
 import Input from '..';
 import focusTest from '../../../tests/shared/focusTest';
-import { fireEvent, pureRender, render, triggerResize, waitFakeTimer } from '../../../tests/utils';
 import type { RenderOptions } from '../../../tests/utils';
+import { fireEvent, pureRender, render, triggerResize, waitFakeTimer } from '../../../tests/utils';
 import type { TextAreaRef } from '../TextArea';
 
 const { TextArea } = Input;

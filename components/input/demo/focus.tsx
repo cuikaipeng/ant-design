@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
-import { Button, Input, Space, Switch } from 'antd';
 import type { InputRef } from 'antd';
+import { Button, Input, Space, Switch } from 'antd';
 
 const App: React.FC = () => {
   const inputRef = useRef<InputRef>(null);

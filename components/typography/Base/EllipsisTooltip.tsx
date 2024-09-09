@@ -1,7 +1,7 @@
 import * as React from 'react';
 
-import Tooltip from '../../tooltip';
 import type { TooltipProps } from '../../tooltip';
+import Tooltip from '../../tooltip';
 
 export interface EllipsisTooltipProps {
   tooltipProps?: TooltipProps;

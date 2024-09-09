@@ -1,5 +1,5 @@
-import type { FC } from 'react';
 import React, { useEffect, useState } from 'react';
+import type { FC } from 'react';
 import type { HSB } from '@rc-component/color-picker';
 
 import type { AggregationColor } from '../color';

@@ -5,8 +5,8 @@ import classNames from 'classnames';
 import KeyCode from 'rc-util/lib/KeyCode';
 
 import type { AnyObject } from '../../_util/type';
-import Tooltip from '../../tooltip';
 import type { TooltipProps } from '../../tooltip';
+import Tooltip from '../../tooltip';
 import type {
   ColumnGroupType,
   ColumnsType,

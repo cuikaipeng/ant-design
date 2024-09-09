@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
-import { JSONEditor, Mode } from 'vanilla-jsoneditor';
 import type { JSONEditorPropsOptional } from 'vanilla-jsoneditor';
+import { JSONEditor, Mode } from 'vanilla-jsoneditor';
 
 const Editor: React.FC<JSONEditorPropsOptional> = (props) => {
   const editorRef = useRef<JSONEditor>(null);

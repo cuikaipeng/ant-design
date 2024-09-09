@@ -1,6 +1,6 @@
 import React from 'react';
-import { DatePicker, Space, theme } from 'antd';
 import type { DatePickerProps } from 'antd';
+import { DatePicker, Space, theme } from 'antd';
 import type { Dayjs } from 'dayjs';
 
 const App: React.FC = () => {

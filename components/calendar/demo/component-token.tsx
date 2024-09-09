@@ -1,6 +1,6 @@
 import React from 'react';
-import { Calendar, ConfigProvider } from 'antd';
 import type { CalendarProps } from 'antd';
+import { Calendar, ConfigProvider } from 'antd';
 import type { Dayjs } from 'dayjs';
 
 /** Test usage. Do not use in your production. */

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Flex, Input, Typography } from 'antd';
 import type { GetProps } from 'antd';
+import { Flex, Input, Typography } from 'antd';
 
 type OTPProps = GetProps<typeof Input.OTP>;
 

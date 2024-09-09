@@ -11,12 +11,12 @@ import {
   slideUpIn,
   slideUpOut,
 } from '../../style/motion';
-import getArrowStyle, { getArrowOffsetToken } from '../../style/placementArrow';
 import type { ArrowOffsetToken } from '../../style/placementArrow';
-import { getArrowToken } from '../../style/roundedArrow';
+import getArrowStyle, { getArrowOffsetToken } from '../../style/placementArrow';
 import type { ArrowToken } from '../../style/roundedArrow';
-import { genStyleHooks, mergeToken } from '../../theme/internal';
+import { getArrowToken } from '../../style/roundedArrow';
 import type { FullToken, GenerateStyle, GetDefaultToken } from '../../theme/internal';
+import { genStyleHooks, mergeToken } from '../../theme/internal';
 import genStatusStyle from './status';
 
 export interface ComponentToken extends ArrowToken, ArrowOffsetToken {

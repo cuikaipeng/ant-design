@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { ConfigProvider, Space, Switch, Table, Tag, Transfer } from 'antd';
 import type { GetProp, TableColumnsType, TableProps, TransferProps } from 'antd';
+import { ConfigProvider, Space, Switch, Table, Tag, Transfer } from 'antd';
 import difference from 'lodash/difference';
 
 type TableRowSelection<T> = TableProps<T>['rowSelection'];

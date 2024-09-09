@@ -1,9 +1,9 @@
-import { unit } from '@ant-design/cssinjs';
 import type { CSSInterpolation, CSSObject } from '@ant-design/cssinjs';
+import { unit } from '@ant-design/cssinjs';
 
 import type { AliasToken, TokenWithCommonCls } from '../theme/internal';
-import { genRoundedArrow } from './roundedArrow';
 import type { ArrowToken } from './roundedArrow';
+import { genRoundedArrow } from './roundedArrow';
 
 export const MAX_VERTICAL_CONTENT_RADIUS = 8;
 

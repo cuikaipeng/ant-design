@@ -3,8 +3,8 @@ import classNames from 'classnames';
 import pickAttrs from 'rc-util/lib/pickAttrs';
 
 import type { HTMLAriaDataAttributes } from '../_util/aria-data-attrs';
-import { ConfigContext } from '../config-provider';
 import type { ConfigConsumerProps } from '../config-provider';
+import { ConfigContext } from '../config-provider';
 import Skeleton from '../skeleton';
 import StatisticNumber from './Number';
 import useStyle from './style';

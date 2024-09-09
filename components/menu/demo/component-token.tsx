@@ -7,8 +7,8 @@ import {
   PieChartOutlined,
   SettingOutlined,
 } from '@ant-design/icons';
-import { ConfigProvider, Menu, Space, theme } from 'antd';
 import type { MenuProps } from 'antd';
+import { ConfigProvider, Menu, Space, theme } from 'antd';
 
 type MenuItem = Required<MenuProps>['items'][number];
 

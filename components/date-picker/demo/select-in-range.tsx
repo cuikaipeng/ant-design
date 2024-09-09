@@ -1,6 +1,6 @@
 import React from 'react';
-import { DatePicker, Space, Typography } from 'antd';
 import type { DatePickerProps } from 'antd';
+import { DatePicker, Space, Typography } from 'antd';
 import type { Dayjs } from 'dayjs';
 
 const { RangePicker } = DatePicker;

@@ -1,5 +1,5 @@
-import { genComponentStyleHook } from '../../theme/internal';
 import type { FullToken, GenerateStyle } from '../../theme/internal';
+import { genComponentStyleHook } from '../../theme/internal';
 
 // biome-ignore lint/suspicious/noEmptyInterface: ComponentToken need to be empty by default
 export interface ComponentToken {}

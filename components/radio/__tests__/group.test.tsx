@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Radio from '..';
 import type { RadioGroupProps } from '..';
+import Radio from '..';
 import { fireEvent, render } from '../../../tests/utils';
 
 describe('Radio Group', () => {

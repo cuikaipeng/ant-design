@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState } from 'react';
+import type { DragEndEvent, DragOverEvent, UniqueIdentifier } from '@dnd-kit/core';
 import {
   closestCenter,
   DndContext,
@@ -7,7 +8,6 @@ import {
   useSensor,
   useSensors,
 } from '@dnd-kit/core';
-import type { DragEndEvent, DragOverEvent, UniqueIdentifier } from '@dnd-kit/core';
 import { restrictToHorizontalAxis } from '@dnd-kit/modifiers';
 import {
   arrayMove,
@@ -15,8 +15,8 @@ import {
   SortableContext,
   useSortable,
 } from '@dnd-kit/sortable';
-import { Table } from 'antd';
 import type { TableColumnsType } from 'antd';
+import { Table } from 'antd';
 
 interface DataType {
   key: string;

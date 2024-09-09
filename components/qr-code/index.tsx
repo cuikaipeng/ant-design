@@ -3,8 +3,8 @@ import { QRCodeCanvas, QRCodeSVG } from '@rc-component/qrcode';
 import classNames from 'classnames';
 
 import { devUseWarning } from '../_util/warning';
-import { ConfigContext } from '../config-provider';
 import type { ConfigConsumerProps } from '../config-provider';
+import { ConfigContext } from '../config-provider';
 import { useLocale } from '../locale';
 import { useToken } from '../theme/internal';
 import type { QRCodeProps, QRProps } from './interface';

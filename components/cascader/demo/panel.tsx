@@ -1,6 +1,6 @@
 import React from 'react';
-import { Cascader, Flex } from 'antd';
 import type { CascaderProps } from 'antd';
+import { Cascader, Flex } from 'antd';
 
 interface Option {
   value: string | number;

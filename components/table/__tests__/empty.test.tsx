@@ -1,8 +1,8 @@
 import React from 'react';
 import { spyElementPrototypes } from 'rc-util/lib/test/domHook';
 
-import Table from '..';
 import type { ColumnsType } from '..';
+import Table from '..';
 import { render, triggerResize, waitFakeTimer } from '../../../tests/utils';
 
 const columns: ColumnsType<any> = [

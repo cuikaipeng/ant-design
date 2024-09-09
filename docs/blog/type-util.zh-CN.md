@@ -8,7 +8,8 @@ TypeScript 的类型定义是非常强大的帮手，它可以解决很多问题
 
 ```tsx
 import React from 'react';
-import { Table, type TableColumnsType } from 'antd';
+import type { TableColumnsType } from 'antd';
+import { Table } from 'antd';
 
 const columns: TableColumnsType = [
   {

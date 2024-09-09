@@ -1,7 +1,7 @@
 import React from 'react';
 
-import List from '..';
 import type { ListProps } from '..';
+import List from '..';
 import { noop } from '../../_util/warning';
 import { fireEvent, render } from '../../../tests/utils';
 

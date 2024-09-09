@@ -3,8 +3,9 @@ import dayjs from 'dayjs';
 import preParsePostFormat from 'dayjs/plugin/preParsePostFormat';
 import MockDate from 'mockdate';
 
-import LocaleProvider from '..';
 import type { Locale } from '..';
+import LocaleProvider from '..';
+import type { TableProps } from '../..';
 import {
   Calendar,
   DatePicker,
@@ -16,7 +17,6 @@ import {
   TimePicker,
   Transfer,
 } from '../..';
-import type { TableProps } from '../..';
 import mountTest from '../../../tests/shared/mountTest';
 import { render } from '../../../tests/utils';
 import arEG from '../../locale/ar_EG';

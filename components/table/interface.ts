@@ -1,12 +1,12 @@
 import type * as React from 'react';
 import type { Reference } from 'rc-table';
-import { ExpandableConfig, GetRowKey } from 'rc-table/lib/interface';
 import type {
   FixedType,
   GetComponentProps,
   ColumnType as RcColumnType,
   RenderedCell as RcRenderedCell,
 } from 'rc-table/lib/interface';
+import { ExpandableConfig, GetRowKey } from 'rc-table/lib/interface';
 
 import type { Breakpoint } from '../_util/responsiveObserver';
 import type { AnyObject } from '../_util/type';

@@ -1,12 +1,12 @@
-import type { ChangeEventHandler } from 'react';
 import React, { version as ReactVersion, useEffect, useRef, useState } from 'react';
+import type { ChangeEventHandler } from 'react';
 import { AlertFilled } from '@ant-design/icons';
 import type { ColProps } from 'antd/es/grid';
 import classNames from 'classnames';
 import scrollIntoView from 'scroll-into-view-if-needed';
 
-import Form from '..';
 import type { FormInstance } from '..';
+import Form from '..';
 import { resetWarned } from '../../_util/warning';
 import mountTest from '../../../tests/shared/mountTest';
 import rtlTest from '../../../tests/shared/rtlTest';

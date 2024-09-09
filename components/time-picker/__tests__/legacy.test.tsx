@@ -1,6 +1,6 @@
 import React from 'react';
-import dayjs from 'dayjs';
 import type { Dayjs } from 'dayjs';
+import dayjs from 'dayjs';
 import customParseFormat from 'dayjs/plugin/customParseFormat';
 
 import TimePicker from '..';

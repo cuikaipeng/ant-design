@@ -5,8 +5,8 @@ import omit from 'rc-util/lib/omit';
 
 import { useZIndex } from '../_util/hooks/useZIndex';
 import { cloneElement } from '../_util/reactNode';
-import MenuContext from './MenuContext';
 import type { MenuContextProps, MenuTheme } from './MenuContext';
+import MenuContext from './MenuContext';
 
 interface TitleEventEntity {
   key: string;

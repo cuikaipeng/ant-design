@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { EllipsisOutlined } from '@ant-design/icons';
-import { Button, Divider, Space, Tour } from 'antd';
 import type { GetRef, TourProps } from 'antd';
+import { Button, Divider, Space, Tour } from 'antd';
 
 const App: React.FC = () => {
   const ref1 = useRef<GetRef<typeof Button>>(null);

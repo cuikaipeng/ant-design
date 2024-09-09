@@ -1,6 +1,6 @@
 import React from 'react';
-import { Select, Typography } from 'antd';
 import type { SelectProps } from 'antd';
+import { Select, Typography } from 'antd';
 
 const { Title } = Typography;
 

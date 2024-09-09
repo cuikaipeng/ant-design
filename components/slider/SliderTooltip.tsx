@@ -4,8 +4,8 @@ import type { SliderRef } from 'rc-slider/lib/Slider';
 import raf from 'rc-util/lib/raf';
 import { composeRef } from 'rc-util/lib/ref';
 
-import Tooltip from '../tooltip';
 import type { TooltipProps } from '../tooltip';
+import Tooltip from '../tooltip';
 
 export type SliderTooltipProps = TooltipProps & {
   draggingDelete?: boolean;

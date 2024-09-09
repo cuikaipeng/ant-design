@@ -1,5 +1,5 @@
-import type { FC } from 'react';
 import React, { useEffect, useState } from 'react';
+import type { FC } from 'react';
 import type { RGB } from '@rc-component/color-picker';
 
 import type { AggregationColor } from '../color';

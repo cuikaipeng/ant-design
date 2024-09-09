@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import type { FormProps } from 'antd';
 import {
   Button,
   Cascader,
@@ -11,7 +12,6 @@ import {
   Select,
   TreeSelect,
 } from 'antd';
-import type { FormProps } from 'antd';
 
 const { RangePicker } = DatePicker;
 

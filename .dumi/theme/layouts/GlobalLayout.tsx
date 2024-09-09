@@ -9,8 +9,8 @@ import {
 } from '@ant-design/cssinjs';
 import { HappyProvider } from '@ant-design/happy-work-theme';
 import { getSandpackCssText } from '@codesandbox/sandpack-react';
-import { theme as antdTheme, App } from 'antd';
 import type { MappingAlgorithm } from 'antd';
+import { theme as antdTheme, App } from 'antd';
 import type { DirectionType, ThemeConfig } from 'antd/es/config-provider';
 import { createSearchParams, useOutlet, useSearchParams, useServerInsertedHTML } from 'dumi';
 
@@ -19,8 +19,8 @@ import useLayoutState from '../../hooks/useLayoutState';
 import useLocation from '../../hooks/useLocation';
 import type { ThemeName } from '../common/ThemeSwitch';
 import SiteThemeProvider from '../SiteThemeProvider';
-import SiteContext from '../slots/SiteContext';
 import type { SiteContextProps } from '../slots/SiteContext';
+import SiteContext from '../slots/SiteContext';
 
 const ThemeSwitch = React.lazy(() => import('../common/ThemeSwitch'));
 

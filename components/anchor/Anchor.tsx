@@ -6,13 +6,13 @@ import scrollIntoView from 'scroll-into-view-if-needed';
 import getScroll from '../_util/getScroll';
 import scrollTo from '../_util/scrollTo';
 import { devUseWarning } from '../_util/warning';
-import Affix from '../affix';
 import type { AffixProps } from '../affix';
-import { ConfigContext } from '../config-provider';
+import Affix from '../affix';
 import type { ConfigConsumerProps } from '../config-provider';
+import { ConfigContext } from '../config-provider';
 import useCSSVarCls from '../config-provider/hooks/useCSSVarCls';
-import AnchorLink from './AnchorLink';
 import type { AnchorLinkBaseProps } from './AnchorLink';
+import AnchorLink from './AnchorLink';
 import AnchorContext from './context';
 import useStyle from './style';
 

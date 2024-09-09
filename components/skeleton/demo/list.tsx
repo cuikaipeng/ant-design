@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { LikeOutlined, MessageOutlined, StarOutlined } from '@ant-design/icons';
 import type Icon from '@ant-design/icons';
+import { LikeOutlined, MessageOutlined, StarOutlined } from '@ant-design/icons';
 import { Avatar, List, Skeleton, Switch } from 'antd';
 
 interface IconTextProps {

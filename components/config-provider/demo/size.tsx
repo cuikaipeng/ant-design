@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import type { ConfigProviderProps } from 'antd';
 import {
   Button,
   Card,
@@ -12,7 +13,6 @@ import {
   Table,
   Tabs,
 } from 'antd';
-import type { ConfigProviderProps } from 'antd';
 
 type SizeType = ConfigProviderProps['componentSize'];
 

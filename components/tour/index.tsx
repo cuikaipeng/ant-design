@@ -1,13 +1,13 @@
 import React, { useContext } from 'react';
-import RCTour from '@rc-component/tour';
 import type { TourProps as RcTourProps } from '@rc-component/tour';
+import RCTour from '@rc-component/tour';
 import classNames from 'classnames';
 
 import { useZIndex } from '../_util/hooks/useZIndex';
 import getPlacements from '../_util/placements';
 import zIndexContext from '../_util/zindexContext';
-import { ConfigContext } from '../config-provider';
 import type { ConfigConsumerProps } from '../config-provider';
+import { ConfigContext } from '../config-provider';
 import { useToken } from '../theme/internal';
 import type { TourProps } from './interface';
 import TourPanel from './panelRender';

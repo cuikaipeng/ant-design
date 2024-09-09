@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
-import RcSlider from 'rc-slider';
 import type { SliderProps as RcSliderProps } from 'rc-slider';
+import RcSlider from 'rc-slider';
 import type { SliderProps, SliderRef } from 'rc-slider/lib/Slider';
 import raf from 'rc-util/lib/raf';
 

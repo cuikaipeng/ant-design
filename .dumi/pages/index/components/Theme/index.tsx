@@ -7,6 +7,7 @@ import {
   QuestionCircleOutlined,
 } from '@ant-design/icons';
 import { TinyColor } from '@ctrl/tinycolor';
+import type { ColorPickerProps, GetProp, MenuProps, ThemeConfig } from 'antd';
 import {
   Breadcrumb,
   Card,
@@ -19,7 +20,6 @@ import {
   theme,
   Typography,
 } from 'antd';
-import type { ColorPickerProps, GetProp, MenuProps, ThemeConfig } from 'antd';
 import { createStyles } from 'antd-style';
 import { generateColor } from 'antd/es/color-picker/util';
 import classNames from 'classnames';
@@ -37,8 +37,8 @@ import ColorPicker from './ColorPicker';
 import { DEFAULT_COLOR, getAvatarURL, getClosetColor, PINK_COLOR } from './colorUtil';
 import MobileCarousel from './MobileCarousel';
 import RadiusPicker from './RadiusPicker';
-import ThemePicker from './ThemePicker';
 import type { THEME } from './ThemePicker';
+import ThemePicker from './ThemePicker';
 
 type Color = Extract<GetProp<ColorPickerProps, 'value'>, string | { cleared: any }>;
 

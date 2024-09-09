@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Checkbox, Divider } from 'antd';
 import type { CheckboxProps } from 'antd';
+import { Checkbox, Divider } from 'antd';
 
 const CheckboxGroup = Checkbox.Group;
 

@@ -1,11 +1,11 @@
-import type { FC } from 'react';
 import React, { useMemo } from 'react';
+import type { FC } from 'react';
 import useMergedState from 'rc-util/lib/hooks/useMergedState';
 
 import Select from '../../select';
 import type { AggregationColor } from '../color';
-import { ColorFormat } from '../interface';
 import type { ColorFormatType } from '../interface';
+import { ColorFormat } from '../interface';
 import ColorAlphaInput from './ColorAlphaInput';
 import ColorHexInput from './ColorHexInput';
 import ColorHsbInput from './ColorHsbInput';

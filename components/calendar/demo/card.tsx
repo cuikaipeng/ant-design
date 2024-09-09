@@ -1,6 +1,6 @@
 import React from 'react';
-import { Calendar, theme } from 'antd';
 import type { CalendarProps } from 'antd';
+import { Calendar, theme } from 'antd';
 import type { Dayjs } from 'dayjs';
 
 const onPanelChange = (value: Dayjs, mode: CalendarProps<Dayjs>['mode']) => {

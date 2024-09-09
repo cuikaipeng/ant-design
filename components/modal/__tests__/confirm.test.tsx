@@ -5,8 +5,8 @@ import { genCSSMotion } from 'rc-motion/lib/CSSMotion';
 import KeyCode from 'rc-util/lib/KeyCode';
 import { resetWarned } from 'rc-util/lib/warning';
 
-import Modal from '..';
 import type { ModalFuncProps } from '..';
+import Modal from '..';
 import { act, fireEvent, waitFakeTimer } from '../../../tests/utils';
 import ConfigProvider, { defaultPrefixCls } from '../../config-provider';
 import type { ModalFunc } from '../confirm';

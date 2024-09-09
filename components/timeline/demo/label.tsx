@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Radio, Timeline } from 'antd';
 import type { RadioChangeEvent } from 'antd';
+import { Radio, Timeline } from 'antd';
 
 const App: React.FC = () => {
   const [mode, setMode] = useState<'left' | 'alternate' | 'right'>('left');

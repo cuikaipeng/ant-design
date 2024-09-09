@@ -9,8 +9,8 @@ import scrollIntoView from 'scroll-into-view-if-needed';
 
 import Link from '../../common/Link';
 import SiteContext from '../../slots/SiteContext';
-import proComponentsList from './ProComponentsList';
 import type { Component } from './ProComponentsList';
+import proComponentsList from './ProComponentsList';
 
 const useStyle = createStyles(({ token, css }) => ({
   componentsOverviewGroupTitle: css`

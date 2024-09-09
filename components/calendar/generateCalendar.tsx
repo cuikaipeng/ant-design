@@ -1,7 +1,7 @@
 import * as React from 'react';
 import classNames from 'classnames';
-import { PickerPanel as RCPickerPanel } from 'rc-picker';
 import type { BasePickerPanelProps as RcBasePickerPanelProps } from 'rc-picker';
+import { PickerPanel as RCPickerPanel } from 'rc-picker';
 import type { GenerateConfig } from 'rc-picker/lib/generate';
 import type { CellRenderInfo } from 'rc-picker/lib/interface';
 import useMergedState from 'rc-util/lib/hooks/useMergedState';

@@ -3,8 +3,8 @@ import classNames from 'classnames';
 import omit from 'rc-util/lib/omit';
 
 import { ConfigContext } from '../config-provider';
-import Element from './Element';
 import type { SkeletonElementProps } from './Element';
+import Element from './Element';
 import useStyle from './style';
 
 export interface SkeletonInputProps extends Omit<SkeletonElementProps, 'size' | 'shape'> {

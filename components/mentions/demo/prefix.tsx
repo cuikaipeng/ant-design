@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Mentions } from 'antd';
 import type { MentionsProps } from 'antd';
+import { Mentions } from 'antd';
 
 const MOCK_DATA = {
   '@': ['afc163', 'zombiej', 'yesmeck'],

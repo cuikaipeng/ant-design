@@ -9,8 +9,8 @@ import {
   waitFakeTimer,
   waitFor,
 } from '../../../tests/utils';
-import Base from '../Base';
 import type { EllipsisConfig } from '../Base';
+import Base from '../Base';
 
 jest.mock('copy-to-clipboard');
 

@@ -1,7 +1,7 @@
 import * as React from 'react';
 
-import { ConfigContext } from '../../config-provider';
 import type { DirectionType, RenderEmptyHandler } from '../../config-provider';
+import { ConfigContext } from '../../config-provider';
 
 function useBase(
   customizePrefixCls?: string,

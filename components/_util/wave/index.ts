@@ -3,8 +3,8 @@ import classNames from 'classnames';
 import isVisible from 'rc-util/lib/Dom/isVisible';
 import { composeRef, supportRef } from 'rc-util/lib/ref';
 
-import { ConfigContext } from '../../config-provider';
 import type { ConfigConsumerProps } from '../../config-provider';
+import { ConfigContext } from '../../config-provider';
 import { cloneElement } from '../reactNode';
 import type { WaveComponent } from './interface';
 import useStyle from './style';

@@ -6,11 +6,11 @@ import { cloneElement } from '../_util/reactNode';
 import { devUseWarning } from '../_util/warning';
 import { ConfigContext } from '../config-provider';
 import useCSSVarCls from '../config-provider/hooks/useCSSVarCls';
-import Popover from '../popover';
 import type { PopoverProps } from '../popover';
+import Popover from '../popover';
 import Avatar from './avatar';
-import AvatarContext from './AvatarContext';
 import type { AvatarContextType, AvatarSize } from './AvatarContext';
+import AvatarContext from './AvatarContext';
 import useStyle from './style';
 
 interface ContextProps {

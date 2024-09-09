@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 
-import { ConfigContext, Variants } from '../../config-provider';
 import type { ConfigProviderProps, Variant } from '../../config-provider';
+import { ConfigContext, Variants } from '../../config-provider';
 import { VariantContext } from '../context';
 
 type VariantComponents = keyof Pick<

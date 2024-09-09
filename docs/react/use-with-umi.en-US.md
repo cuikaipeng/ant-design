@@ -132,8 +132,8 @@ Create a new `src/components/ProductList.tsx` file with the following code.
 
 ```tsx
 import React from 'react';
-import { Button, Popconfirm, Table } from 'antd';
 import type { TableProps } from 'antd';
+import { Button, Popconfirm, Table } from 'antd';
 
 interface DataType {
   id: string;
@@ -228,11 +228,11 @@ Edit `src/pages/products.tsx` with the following code.
 
 ```tsx
 import React from 'react';
+import ProductList from '@/components/ProductList';
 import axios from 'axios';
 import { useMutation, useQuery, useQueryClient } from 'umi';
 
 import styles from './products.less';
-import ProductList from '@/components/ProductList';
 
 export default function Page() {
   const queryClient = useQueryClient();

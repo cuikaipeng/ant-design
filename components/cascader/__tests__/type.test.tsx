@@ -1,7 +1,7 @@
 import * as React from 'react';
 
-import Cascader from '..';
 import type { BaseOptionType, CascaderAutoProps, CascaderProps } from '..';
+import Cascader from '..';
 import { render } from '../../../tests/utils';
 import type { CascaderPanelAutoProps, CascaderPanelProps } from '../Panel';
 

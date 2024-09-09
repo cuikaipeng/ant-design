@@ -1,6 +1,6 @@
 import React from 'react';
-import { Col, Row, Statistic } from 'antd';
 import type { StatisticProps } from 'antd';
+import { Col, Row, Statistic } from 'antd';
 import CountUp from 'react-countup';
 
 const formatter: StatisticProps['formatter'] = (value) => (

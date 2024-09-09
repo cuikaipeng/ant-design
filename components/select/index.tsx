@@ -1,21 +1,21 @@
 // TODO: 4.0 - codemod should help to change `filterOption` to support node props.
 import * as React from 'react';
 import classNames from 'classnames';
-import RcSelect, { OptGroup, Option } from 'rc-select';
 import type { BaseSelectRef, SelectProps as RcSelectProps } from 'rc-select';
+import RcSelect, { OptGroup, Option } from 'rc-select';
 import type { OptionProps } from 'rc-select/lib/Option';
 import type { BaseOptionType, DefaultOptionType } from 'rc-select/lib/Select';
 import omit from 'rc-util/lib/omit';
 
 import { useZIndex } from '../_util/hooks/useZIndex';
-import { getTransitionName } from '../_util/motion';
 import type { SelectCommonPlacement } from '../_util/motion';
+import { getTransitionName } from '../_util/motion';
 import genPurePanel from '../_util/PurePanel';
-import { getMergedStatus, getStatusClassNames } from '../_util/statusUtils';
 import type { InputStatus } from '../_util/statusUtils';
+import { getMergedStatus, getStatusClassNames } from '../_util/statusUtils';
 import { devUseWarning } from '../_util/warning';
-import { ConfigContext } from '../config-provider';
 import type { Variant } from '../config-provider';
+import { ConfigContext } from '../config-provider';
 import DefaultRenderEmpty from '../config-provider/defaultRenderEmpty';
 import DisabledContext from '../config-provider/DisabledContext';
 import useCSSVarCls from '../config-provider/hooks/useCSSVarCls';

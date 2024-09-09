@@ -4,8 +4,8 @@ import raf from 'rc-util/lib/raf';
 
 import { ConfigContext } from '../../config-provider';
 import useToken from '../../theme/useToken';
-import { TARGET_CLS } from './interface';
 import type { ShowWave, WaveComponent } from './interface';
+import { TARGET_CLS } from './interface';
 import showWaveEffect from './WaveEffect';
 
 const useWave = (

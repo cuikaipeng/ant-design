@@ -1,5 +1,5 @@
-import type { FC } from 'react';
 import React, { Suspense } from 'react';
+import type { FC } from 'react';
 import { Skeleton } from 'antd';
 import { createStyles } from 'antd-style';
 

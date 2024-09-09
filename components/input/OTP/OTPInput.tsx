@@ -1,8 +1,8 @@
 import * as React from 'react';
 import raf from 'rc-util/lib/raf';
 
-import Input from '../Input';
 import type { InputProps, InputRef } from '../Input';
+import Input from '../Input';
 
 export interface OTPInputProps extends Omit<InputProps, 'onChange'> {
   index: number;

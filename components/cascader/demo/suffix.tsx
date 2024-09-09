@@ -1,7 +1,7 @@
 import React from 'react';
 import { SmileOutlined } from '@ant-design/icons';
-import { Cascader } from 'antd';
 import type { CascaderProps } from 'antd';
+import { Cascader } from 'antd';
 
 interface Option {
   value: string;

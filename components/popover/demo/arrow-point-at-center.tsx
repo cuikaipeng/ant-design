@@ -1,6 +1,6 @@
 import React from 'react';
-import { Flex, Popover } from 'antd';
 import type { GetProp } from 'antd';
+import { Flex, Popover } from 'antd';
 import { createStyles } from 'antd-style';
 
 const useStyle = createStyles(() => ({

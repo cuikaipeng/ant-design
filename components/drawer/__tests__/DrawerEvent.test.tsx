@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Drawer from '..';
 import type { DrawerProps } from '..';
+import Drawer from '..';
 import { act, fireEvent, render } from '../../../tests/utils';
 
 const DrawerTest: React.FC<DrawerProps> = (props) => (

@@ -1,4 +1,5 @@
 import React from 'react';
+import type { ColorPickerProps, GetProp } from 'antd';
 import {
   Button,
   ColorPicker,
@@ -10,7 +11,6 @@ import {
   Space,
   Switch,
 } from 'antd';
-import type { ColorPickerProps, GetProp } from 'antd';
 
 type Color = Extract<GetProp<ColorPickerProps, 'value'>, { cleared: any }>;
 

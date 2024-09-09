@@ -6,8 +6,8 @@ import KeyCode from 'rc-util/lib/KeyCode';
 
 import { cloneElement } from '../_util/reactNode';
 import type { DirectionType } from '../config-provider';
-import TextArea from '../input/TextArea';
 import type { TextAreaRef } from '../input/TextArea';
+import TextArea from '../input/TextArea';
 import useStyle from './style';
 
 interface EditableProps {

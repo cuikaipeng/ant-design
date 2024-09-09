@@ -1,9 +1,9 @@
-import { unit } from '@ant-design/cssinjs';
 import type { CSSObject } from '@ant-design/cssinjs';
+import { unit } from '@ant-design/cssinjs';
 
 import { genFocusStyle, resetComponent, textEllipsis } from '../../style';
-import { genStyleHooks, mergeToken } from '../../theme/internal';
 import type { FullToken, GenerateStyle, GetDefaultToken } from '../../theme/internal';
+import { genStyleHooks, mergeToken } from '../../theme/internal';
 import genMotionStyle from './motion';
 
 export interface ComponentToken {

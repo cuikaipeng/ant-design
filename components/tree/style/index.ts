@@ -1,11 +1,11 @@
-import { Keyframes, unit } from '@ant-design/cssinjs';
 import type { CSSInterpolation, CSSObject } from '@ant-design/cssinjs';
+import { Keyframes, unit } from '@ant-design/cssinjs';
 
 import { getStyle as getCheckboxStyle } from '../../checkbox/style';
 import { genFocusOutline, resetComponent } from '../../style';
 import { genCollapseMotion } from '../../style/motion';
-import { genStyleHooks, mergeToken } from '../../theme/internal';
 import type { AliasToken, CSSUtil, FullToken, GetDefaultToken } from '../../theme/internal';
+import { genStyleHooks, mergeToken } from '../../theme/internal';
 
 export interface TreeSharedToken {
   /**

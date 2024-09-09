@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Tooltip } from 'antd';
 
-import Progress from '..';
 import type { ProgressProps } from '..';
+import Progress from '..';
 import mountTest from '../../../tests/shared/mountTest';
 import rtlTest from '../../../tests/shared/rtlTest';
 import { fireEvent, render } from '../../../tests/utils';

@@ -1,5 +1,5 @@
-import { unit } from '@ant-design/cssinjs';
 import type { CSSObject } from '@ant-design/cssinjs';
+import { unit } from '@ant-design/cssinjs';
 
 import type { StepsToken } from '.';
 import { textEllipsis } from '../../style';

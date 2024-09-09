@@ -1,8 +1,8 @@
 // Style as status component
 import type { CSSInterpolation } from '@ant-design/cssinjs';
 
-import { prepareComponentToken, prepareToken } from '.';
 import type { TagToken } from '.';
+import { prepareComponentToken, prepareToken } from '.';
 import capitalize from '../../_util/capitalize';
 import { genSubStyleComponent } from '../../theme/internal';
 

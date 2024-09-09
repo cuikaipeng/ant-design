@@ -14,8 +14,8 @@ import ConfigProvider from '../../config-provider';
 import Group from '../../radio/group';
 import Button from '../../radio/radioButton';
 import Select from '../../select';
-import Header from '../Header';
 import type { CalendarHeaderProps } from '../Header';
+import Header from '../Header';
 
 import 'dayjs/locale/zh-cn';
 

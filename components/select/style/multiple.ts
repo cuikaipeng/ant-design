@@ -1,9 +1,9 @@
-import { unit } from '@ant-design/cssinjs';
 import type { CSSInterpolation, CSSObject } from '@ant-design/cssinjs';
+import { unit } from '@ant-design/cssinjs';
 
 import { resetIcon } from '../../style';
-import { mergeToken } from '../../theme/internal';
 import type { AliasToken, TokenWithCommonCls } from '../../theme/internal';
+import { mergeToken } from '../../theme/internal';
 import type { SelectToken } from './token';
 
 type SelectItemToken = Pick<

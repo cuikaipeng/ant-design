@@ -8,8 +8,8 @@ import Button from '../button';
 import { ConfigContext } from '../config-provider';
 import useSize from '../config-provider/hooks/useSize';
 import { useCompactItemContext } from '../space/Compact';
-import Input from './Input';
 import type { InputProps, InputRef } from './Input';
+import Input from './Input';
 
 export interface SearchProps extends InputProps {
   inputPrefixCls?: string;

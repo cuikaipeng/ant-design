@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { useMemo } from 'react';
 import classNames from 'classnames';
-import CSSMotion, { CSSMotionList } from 'rc-motion';
 import type { CSSMotionProps } from 'rc-motion';
+import CSSMotion, { CSSMotionList } from 'rc-motion';
 
 import initCollapseMotion from '../_util/motion';
 import useCSSVarCls from '../config-provider/hooks/useCSSVarCls';

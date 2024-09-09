@@ -1,5 +1,5 @@
-import type { FC } from 'react';
 import React, { useEffect, useState } from 'react';
+import type { FC } from 'react';
 
 import type { AggregationColor } from '../color';
 import { generateColor, getColorAlpha } from '../util';

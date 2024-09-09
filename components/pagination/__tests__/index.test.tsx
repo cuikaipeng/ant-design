@@ -1,8 +1,8 @@
 import React from 'react';
 import type { OptionFC } from 'rc-select/lib/Option';
 
-import Pagination from '..';
 import type { PaginationProps } from '..';
+import Pagination from '..';
 import mountTest from '../../../tests/shared/mountTest';
 import rtlTest from '../../../tests/shared/rtlTest';
 import { fireEvent, render } from '../../../tests/utils';

@@ -1,7 +1,7 @@
 import React from 'react';
 import { CarryOutOutlined } from '@ant-design/icons';
-import { Switch, Tree } from 'antd';
 import type { TreeDataNode, TreeProps } from 'antd';
+import { Switch, Tree } from 'antd';
 
 const x = 3;
 const y = 2;

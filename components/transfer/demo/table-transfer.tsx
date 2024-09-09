@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Flex, Switch, Table, Tag, Transfer } from 'antd';
 import type { GetProp, TableColumnsType, TableProps, TransferProps } from 'antd';
+import { Flex, Switch, Table, Tag, Transfer } from 'antd';
 
 type TransferItem = GetProp<TransferProps, 'dataSource'>[number];
 type TableRowSelection<T extends object> = TableProps<T>['rowSelection'];

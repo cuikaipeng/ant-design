@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { UploadOutlined } from '@ant-design/icons';
-import { Button, Form, message, Upload } from 'antd';
 import type { UploadFile, UploadProps } from 'antd';
+import { Button, Form, message, Upload } from 'antd';
 
 interface OSSDataType {
   dir: string;

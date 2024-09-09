@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Button, ConfigProvider, Empty, Table } from 'antd';
 import type { GetProp } from 'antd';
+import { Button, ConfigProvider, Empty, Table } from 'antd';
 
 const genFakeData = (count = 5) =>
   Array.from({ length: count }).map((_, index) => ({

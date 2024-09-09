@@ -7,8 +7,8 @@ import { composeRef } from 'rc-util/lib/ref';
 import getScroll from '../_util/getScroll';
 import scrollTo from '../_util/scrollTo';
 import throttleByAnimationFrame from '../_util/throttleByAnimationFrame';
-import { ConfigContext } from '../config-provider';
 import type { ConfigConsumerProps } from '../config-provider';
+import { ConfigContext } from '../config-provider';
 import FloatButtonGroupContext from './context';
 import FloatButton, { floatButtonPrefixCls } from './FloatButton';
 import type {

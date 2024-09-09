@@ -5,8 +5,8 @@ import dayjs from 'dayjs';
 import { FormattedMessage } from 'dumi';
 
 import useLocale from '../../../hooks/useLocale';
-import { useSiteData } from '../../../pages/index/components/util';
 import type { Article, Authors, SiteData } from '../../../pages/index/components/util';
+import { useSiteData } from '../../../pages/index/components/util';
 
 const useStyle = createStyles(({ token, css }) => {
   const { antCls } = token;

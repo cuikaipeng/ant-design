@@ -1,6 +1,6 @@
 import React from 'react';
-import { Modal } from 'antd';
 import type { ModalProps } from 'antd';
+import { Modal } from 'antd';
 
 import SemanticPreview from '../../../.dumi/components/SemanticPreview';
 import useLocale from '../../../.dumi/hooks/useLocale';

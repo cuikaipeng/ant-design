@@ -1,9 +1,9 @@
-import type { FC } from 'react';
 import React, { useEffect, useState } from 'react';
+import type { FC } from 'react';
 
 import Input from '../../input';
-import { toHexFormat } from '../color';
 import type { AggregationColor } from '../color';
+import { toHexFormat } from '../color';
 import { generateColor } from '../util';
 
 interface ColorHexInputProps {

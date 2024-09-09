@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Select } from 'antd';
 import type { SelectProps } from 'antd';
+import { Select } from 'antd';
 import jsonp from 'fetch-jsonp';
 import qs from 'qs';
 

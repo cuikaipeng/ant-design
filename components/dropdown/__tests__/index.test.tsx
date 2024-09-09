@@ -1,8 +1,8 @@
 import React from 'react';
 import type { TriggerProps } from '@rc-component/trigger';
 
-import Dropdown from '..';
 import type { DropDownProps } from '..';
+import Dropdown from '..';
 import { resetWarned } from '../../_util/warning';
 import mountTest from '../../../tests/shared/mountTest';
 import rtlTest from '../../../tests/shared/rtlTest';

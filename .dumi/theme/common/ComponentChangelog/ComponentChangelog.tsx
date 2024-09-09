@@ -1,7 +1,7 @@
 import React from 'react';
 import { BugOutlined, HistoryOutlined } from '@ant-design/icons';
-import { Button, Drawer, Grid, Popover, Timeline, Typography } from 'antd';
 import type { TimelineItemProps } from 'antd';
+import { Button, Drawer, Grid, Popover, Timeline, Typography } from 'antd';
 import { createStyles } from 'antd-style';
 import semver from 'semver';
 

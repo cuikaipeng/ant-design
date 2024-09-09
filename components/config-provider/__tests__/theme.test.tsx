@@ -7,8 +7,8 @@ import { Button, InputNumber, Select } from '../..';
 import { resetWarned } from '../../_util/warning';
 import { render } from '../../../tests/utils';
 import theme from '../../theme';
-import { useToken } from '../../theme/internal';
 import type { GlobalToken } from '../../theme/internal';
+import { useToken } from '../../theme/internal';
 
 const { defaultAlgorithm, darkAlgorithm, compactAlgorithm } = theme;
 

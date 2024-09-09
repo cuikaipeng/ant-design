@@ -4,8 +4,8 @@ import classNames from 'classnames';
 import { useEvent } from 'rc-util';
 
 import { useToken } from '../theme/internal';
-import WatermarkContext from './context';
 import type { WatermarkContextProps } from './context';
+import WatermarkContext from './context';
 import useClips, { FontGap } from './useClips';
 import useRafDebounce from './useRafDebounce';
 import useWatermark from './useWatermark';

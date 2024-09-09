@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { SmileOutlined } from '@ant-design/icons';
 
-import ConfigProvider, { ConfigContext } from '..';
 import type { ConfigConsumerProps, RenderEmptyHandler } from '..';
+import ConfigProvider, { ConfigContext } from '..';
 import { resetWarned } from '../../_util/warning';
 import mountTest from '../../../tests/shared/mountTest';
 import { fireEvent, render } from '../../../tests/utils';

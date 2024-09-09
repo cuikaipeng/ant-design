@@ -1,5 +1,5 @@
-import { unit } from '@ant-design/cssinjs';
 import type { CSSInterpolation, CSSObject } from '@ant-design/cssinjs';
+import { unit } from '@ant-design/cssinjs';
 
 import { resetComponent } from '../../style';
 import { mergeToken } from '../../theme/internal';

@@ -10,11 +10,11 @@ import { composeRef } from 'rc-util/lib/ref';
 
 import getAllowClear from '../_util/getAllowClear';
 import genPurePanel from '../_util/PurePanel';
-import { getMergedStatus, getStatusClassNames } from '../_util/statusUtils';
 import type { InputStatus } from '../_util/statusUtils';
+import { getMergedStatus, getStatusClassNames } from '../_util/statusUtils';
 import { devUseWarning } from '../_util/warning';
-import { ConfigContext } from '../config-provider';
 import type { Variant } from '../config-provider';
+import { ConfigContext } from '../config-provider';
 import DefaultRenderEmpty from '../config-provider/defaultRenderEmpty';
 import useCSSVarCls from '../config-provider/hooks/useCSSVarCls';
 import { FormItemInputContext } from '../form/context';

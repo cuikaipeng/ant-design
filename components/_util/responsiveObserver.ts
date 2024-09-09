@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { useToken } from '../theme/internal';
 import type { GlobalToken } from '../theme/internal';
+import { useToken } from '../theme/internal';
 
 export type Breakpoint = 'xxl' | 'xl' | 'lg' | 'md' | 'sm' | 'xs';
 export type BreakpointMap = Record<Breakpoint, string>;

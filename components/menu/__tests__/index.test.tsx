@@ -7,8 +7,8 @@ import {
   UserOutlined,
 } from '@ant-design/icons';
 
-import Menu from '..';
 import type { MenuProps, MenuRef } from '..';
+import Menu from '..';
 import initCollapseMotion from '../../_util/motion';
 import { noop } from '../../_util/warning';
 import { TriggerMockContext } from '../../../tests/shared/demoTestContext';

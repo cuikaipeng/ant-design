@@ -1,7 +1,7 @@
 import React from 'react';
 import { cyan, generate, green, presetPalettes, red } from '@ant-design/colors';
-import { Col, ColorPicker, Divider, Row, Space, theme } from 'antd';
 import type { ColorPickerProps } from 'antd';
+import { Col, ColorPicker, Divider, Row, Space, theme } from 'antd';
 
 type Presets = Required<ColorPickerProps>['presets'][number];
 

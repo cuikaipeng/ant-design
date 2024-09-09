@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Table from '..';
 import type { TableProps } from '..';
+import Table from '..';
 import { resetWarned } from '../../_util/warning';
 import { act, fireEvent, render } from '../../../tests/utils';
 import ConfigProvider from '../../config-provider';

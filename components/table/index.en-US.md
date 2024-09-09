@@ -304,8 +304,8 @@ Properties for row selection.
 
 ```tsx
 import React from 'react';
-import { Table } from 'antd';
 import type { TableColumnsType } from 'antd';
+import { Table } from 'antd';
 
 interface User {
   key: number;

@@ -1,8 +1,8 @@
 import React from 'react';
 import type { SingleValueType } from 'rc-cascader/lib/Cascader';
 
-import Cascader from '..';
 import type { DefaultOptionType } from '..';
+import Cascader from '..';
 import { resetWarned } from '../../_util/warning';
 import excludeAllWarning from '../../../tests/shared/excludeWarning';
 import focusTest from '../../../tests/shared/focusTest';

@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { TinyColor } from '@ctrl/tinycolor';
 import type { ColorInput } from '@ctrl/tinycolor';
+import { TinyColor } from '@ctrl/tinycolor';
 import { createStyles } from 'antd-style';
 
 const useStyle = createStyles(({ token, css }) => ({

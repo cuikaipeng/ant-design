@@ -2,8 +2,8 @@ import React from 'react';
 
 import type { KeyWiseTransferItem } from '..';
 import { fireEvent, render } from '../../../tests/utils';
-import List from '../list';
 import type { TransferListProps } from '../list';
+import List from '../list';
 
 const listCommonProps: TransferListProps<KeyWiseTransferItem> = {
   prefixCls: 'ant-transfer-list',

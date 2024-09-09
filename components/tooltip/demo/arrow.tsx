@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from 'react';
-import { Button, ConfigProvider, Flex, Segmented, Tooltip } from 'antd';
 import type { TooltipProps } from 'antd';
+import { Button, ConfigProvider, Flex, Segmented, Tooltip } from 'antd';
 
 const text = <span>prompt text</span>;
 

@@ -1,12 +1,12 @@
-import { unit } from '@ant-design/cssinjs';
 import type { CSSObject } from '@ant-design/cssinjs';
+import { unit } from '@ant-design/cssinjs';
 
 import { clearFix, resetComponent } from '../../style';
 import { genCompactItemStyle } from '../../style/compact-item';
-import { genStyleHooks, mergeToken } from '../../theme/internal';
 import type { GenerateStyle } from '../../theme/internal';
-import { initComponentToken, initInputToken } from './token';
+import { genStyleHooks, mergeToken } from '../../theme/internal';
 import type { ComponentToken, InputToken } from './token';
+import { initComponentToken, initInputToken } from './token';
 import {
   genBorderlessStyle,
   genFilledGroupStyle,

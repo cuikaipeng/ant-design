@@ -1,7 +1,7 @@
 import * as React from 'react';
 import classNames from 'classnames';
-import { Panel } from 'rc-cascader';
 import type { CascaderProps as RcCascaderProps } from 'rc-cascader';
+import { Panel } from 'rc-cascader';
 import type { PickType } from 'rc-cascader/lib/Panel';
 
 import type { CascaderProps, DefaultOptionType } from '.';

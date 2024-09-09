@@ -1,5 +1,5 @@
-import type { FC, ReactNode } from 'react';
 import React from 'react';
+import type { FC, ReactNode } from 'react';
 import { CodeOutlined, SkinOutlined } from '@ant-design/icons';
 import { Tabs } from 'antd';
 import { useRouteMeta } from 'dumi';

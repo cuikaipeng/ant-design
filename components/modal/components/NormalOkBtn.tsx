@@ -1,5 +1,5 @@
-import type { FC } from 'react';
 import React, { useContext } from 'react';
+import type { FC } from 'react';
 
 import Button from '../../button';
 import { convertLegacyProps } from '../../button/buttonHelpers';

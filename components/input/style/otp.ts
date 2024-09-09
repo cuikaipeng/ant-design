@@ -1,7 +1,7 @@
-import { genStyleHooks, mergeToken } from '../../theme/internal';
 import type { GenerateStyle } from '../../theme/internal';
-import { initComponentToken, initInputToken } from './token';
+import { genStyleHooks, mergeToken } from '../../theme/internal';
 import type { InputToken } from './token';
+import { initComponentToken, initInputToken } from './token';
 
 // =============================== OTP ================================
 const genOTPStyle: GenerateStyle<InputToken> = (token) => {

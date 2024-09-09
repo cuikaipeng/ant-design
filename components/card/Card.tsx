@@ -7,8 +7,8 @@ import { devUseWarning } from '../_util/warning';
 import { ConfigContext } from '../config-provider';
 import useSize from '../config-provider/hooks/useSize';
 import Skeleton from '../skeleton';
-import Tabs from '../tabs';
 import type { TabsProps } from '../tabs';
+import Tabs from '../tabs';
 import Grid from './Grid';
 import useStyle from './style';
 

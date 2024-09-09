@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { ColorPicker, Flex, Input } from 'antd';
 import type { ColorPickerProps, GetProp } from 'antd';
+import { ColorPicker, Flex, Input } from 'antd';
 import { createStyles } from 'antd-style';
 import { generateColor } from 'antd/es/color-picker/util';
 import classNames from 'classnames';

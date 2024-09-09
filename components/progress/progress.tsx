@@ -8,8 +8,8 @@ import classNames from 'classnames';
 import omit from 'rc-util/lib/omit';
 
 import { devUseWarning } from '../_util/warning';
-import { ConfigContext } from '../config-provider';
 import type { ConfigConsumerProps } from '../config-provider';
+import { ConfigContext } from '../config-provider';
 import Circle from './Circle';
 import Line from './Line';
 import Steps from './Steps';

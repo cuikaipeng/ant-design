@@ -1,5 +1,5 @@
-import { Keyframes } from '@ant-design/cssinjs';
 import type { CSSInterpolation } from '@ant-design/cssinjs';
+import { Keyframes } from '@ant-design/cssinjs';
 
 import type { AliasToken, TokenWithCommonCls } from '../../theme/internal';
 import { initMotion } from './motion';

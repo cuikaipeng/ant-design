@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Button, Flex, Table } from 'antd';
 import type { TableColumnsType, TableProps } from 'antd';
+import { Button, Flex, Table } from 'antd';
 
 type TableRowSelection<T extends object = object> = TableProps<T>['rowSelection'];
 

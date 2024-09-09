@@ -1,8 +1,8 @@
 import { unit } from '@ant-design/cssinjs';
 
 import { genFocusStyle } from '../../style';
-import { genStyleHooks, mergeToken } from '../../theme/internal';
 import type { FullToken, GenerateStyle, GetDefaultToken } from '../../theme/internal';
+import { genStyleHooks, mergeToken } from '../../theme/internal';
 import genMotionStyle from './motion';
 
 export interface ComponentToken {

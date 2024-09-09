@@ -1,6 +1,6 @@
 import React from 'react';
-import { Pagination } from 'antd';
 import type { PaginationProps } from 'antd';
+import { Pagination } from 'antd';
 
 const onChange: PaginationProps['onChange'] = (pageNumber) => {
   console.log('Page: ', pageNumber);

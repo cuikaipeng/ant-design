@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { Table } from 'antd';
 import type { GetProp, TableProps } from 'antd';
+import { Table } from 'antd';
 import type { SorterResult } from 'antd/es/table/interface';
 import qs from 'qs';
 

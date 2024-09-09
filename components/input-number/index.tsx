@@ -2,15 +2,15 @@ import * as React from 'react';
 import DownOutlined from '@ant-design/icons/DownOutlined';
 import UpOutlined from '@ant-design/icons/UpOutlined';
 import classNames from 'classnames';
-import RcInputNumber from 'rc-input-number';
 import type { InputNumberProps as RcInputNumberProps, ValueType } from 'rc-input-number';
+import RcInputNumber from 'rc-input-number';
 
 import ContextIsolator from '../_util/ContextIsolator';
-import { getMergedStatus, getStatusClassNames } from '../_util/statusUtils';
 import type { InputStatus } from '../_util/statusUtils';
+import { getMergedStatus, getStatusClassNames } from '../_util/statusUtils';
 import { devUseWarning } from '../_util/warning';
-import ConfigProvider, { ConfigContext } from '../config-provider';
 import type { Variant } from '../config-provider';
+import ConfigProvider, { ConfigContext } from '../config-provider';
 import DisabledContext from '../config-provider/DisabledContext';
 import useCSSVarCls from '../config-provider/hooks/useCSSVarCls';
 import useSize from '../config-provider/hooks/useSize';

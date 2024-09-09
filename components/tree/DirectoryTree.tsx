@@ -10,8 +10,8 @@ import { conductExpandParent } from 'rc-tree/lib/util';
 import { convertDataToEntities, convertTreeToData } from 'rc-tree/lib/utils/treeUtil';
 
 import { ConfigContext } from '../config-provider';
-import Tree from './Tree';
 import type { AntdTreeNodeAttribute, TreeProps } from './Tree';
+import Tree from './Tree';
 import { calcRangeKeys, convertDirectoryKeysToNodes } from './utils/dictUtil';
 
 export type ExpandAction = false | 'click' | 'doubleClick';

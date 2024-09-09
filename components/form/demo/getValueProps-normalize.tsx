@@ -1,6 +1,6 @@
 import React from 'react';
-import { Button, DatePicker, Form } from 'antd';
 import type { FormProps } from 'antd';
+import { Button, DatePicker, Form } from 'antd';
 import dayjs from 'dayjs';
 
 const dateTimestamp = dayjs('2024-01-01').valueOf();

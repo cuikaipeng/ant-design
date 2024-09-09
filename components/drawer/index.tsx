@@ -1,7 +1,7 @@
 import * as React from 'react';
 import classNames from 'classnames';
-import RcDrawer from 'rc-drawer';
 import type { DrawerProps as RcDrawerProps } from 'rc-drawer';
+import RcDrawer from 'rc-drawer';
 import type { Placement } from 'rc-drawer/lib/Drawer';
 import type { CSSMotionProps } from 'rc-motion';
 
@@ -12,8 +12,8 @@ import { devUseWarning } from '../_util/warning';
 import zIndexContext from '../_util/zindexContext';
 import { ConfigContext } from '../config-provider';
 import { usePanelRef } from '../watermark/context';
-import DrawerPanel from './DrawerPanel';
 import type { DrawerClassNames, DrawerPanelProps, DrawerStyles } from './DrawerPanel';
+import DrawerPanel from './DrawerPanel';
 import useStyle from './style';
 
 const _SizeTypes = ['default', 'large'] as const;

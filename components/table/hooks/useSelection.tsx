@@ -13,8 +13,8 @@ import useMergedState from 'rc-util/lib/hooks/useMergedState';
 import useMultipleSelect from '../../_util/hooks/useMultipleSelect';
 import type { AnyObject } from '../../_util/type';
 import { devUseWarning } from '../../_util/warning';
-import Checkbox from '../../checkbox';
 import type { CheckboxProps } from '../../checkbox';
+import Checkbox from '../../checkbox';
 import Dropdown from '../../dropdown';
 import Radio from '../../radio';
 import type {

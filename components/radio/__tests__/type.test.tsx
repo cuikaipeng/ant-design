@@ -1,7 +1,7 @@
 import * as React from 'react';
 
-import Radio from '..';
 import type { RadioRef } from '..';
+import Radio from '..';
 
 describe('Radio.typescript', () => {
   it('Radio', () => {

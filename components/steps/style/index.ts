@@ -1,10 +1,10 @@
 import type { CSSProperties } from 'react';
-import { unit } from '@ant-design/cssinjs';
 import type { CSSObject } from '@ant-design/cssinjs';
+import { unit } from '@ant-design/cssinjs';
 
 import { genFocusOutline, resetComponent } from '../../style';
-import { genStyleHooks, mergeToken } from '../../theme/internal';
 import type { FullToken, GenerateStyle, GetDefaultToken } from '../../theme/internal';
+import { genStyleHooks, mergeToken } from '../../theme/internal';
 import genStepsCustomIconStyle from './custom-icon';
 import genStepsHorizontalStyle from './horizontal';
 import genStepsInlineStyle from './inline';

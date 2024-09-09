@@ -5,8 +5,8 @@ import raf from 'rc-util/lib/raf';
 import { render, unmount } from 'rc-util/lib/React/render';
 import { composeRef } from 'rc-util/lib/ref';
 
-import { TARGET_CLS } from './interface';
 import type { ShowWaveEffect } from './interface';
+import { TARGET_CLS } from './interface';
 import { getTargetWaveColor } from './util';
 
 function validateNum(value: number) {

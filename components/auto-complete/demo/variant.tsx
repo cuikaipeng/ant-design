@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { AutoComplete, Flex } from 'antd';
 import type { AutoCompleteProps } from 'antd';
+import { AutoComplete, Flex } from 'antd';
 
 const mockVal = (str: string, repeat = 1) => ({
   value: str.repeat(repeat),

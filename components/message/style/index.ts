@@ -1,11 +1,11 @@
 import type { CSSProperties } from 'react';
-import { Keyframes } from '@ant-design/cssinjs';
 import type { CSSObject } from '@ant-design/cssinjs';
+import { Keyframes } from '@ant-design/cssinjs';
 
 import { CONTAINER_MAX_OFFSET } from '../../_util/hooks/useZIndex';
 import { resetComponent } from '../../style';
-import { genStyleHooks, mergeToken } from '../../theme/internal';
 import type { FullToken, GenerateStyle, GetDefaultToken } from '../../theme/internal';
+import { genStyleHooks, mergeToken } from '../../theme/internal';
 
 /** Component only token. Which will handle additional calculation of alias token */
 export interface ComponentToken {
