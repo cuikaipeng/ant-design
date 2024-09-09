@@ -334,7 +334,7 @@ describe('Modal.confirm triggers callbacks correctly', () => {
   });
 
   describe('should not close modals when click confirm button when onOk has argument', () => {
-    (['confirm'] as const).forEach((type) => {
+    (['confirm', 'info', 'success', 'warning', 'error'] as const).forEach((type) => {
       it(type, async () => {
         Modal[type]?.({
           title: 'title',
