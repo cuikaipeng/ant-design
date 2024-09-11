@@ -21,13 +21,15 @@ export function getStyle(globalPrefixCls: string, theme: Theme) {
     const baseColor = new TinyColor(colorVal);
     const colorPalettes = generate(baseColor.toRgbString());
 
+    const [deprecatedBg, disabled, deprecatedBorder, , hover, , active] = colorPalettes;
+
     variables[`${type}-color`] = formatColor(baseColor);
-    variables[`${type}-color-disabled`] = colorPalettes[1];
-    variables[`${type}-color-hover`] = colorPalettes[4];
-    variables[`${type}-color-active`] = colorPalettes[6];
+    variables[`${type}-color-deprecated-bg`] = deprecatedBg;
+    variables[`${type}-color-deprecated-border`] = deprecatedBorder;
+    variables[`${type}-color-disabled`] = disabled;
+    variables[`${type}-color-hover`] = hover;
+    variables[`${type}-color-active`] = active;
     variables[`${type}-color-outline`] = baseColor.clone().setAlpha(0.2).toRgbString();
-    variables[`${type}-color-deprecated-bg`] = colorPalettes[0];
-    variables[`${type}-color-deprecated-border`] = colorPalettes[2];
   };
 
   // ================ Primary Color ================
