@@ -34,23 +34,14 @@ export function getOverflowOptions(
 
   const baseOverflow: AlignType['overflow'] = {};
 
-  switch (placement) {
-    case 'top':
-    case 'bottom':
-      baseOverflow.shiftX = arrowOffset.arrowOffsetHorizontal * 2 + arrowWidth;
-      baseOverflow.shiftY = true;
-      baseOverflow.adjustY = true;
-      break;
-
-    case 'left':
-    case 'right':
-      baseOverflow.shiftY = arrowOffset.arrowOffsetVertical * 2 + arrowWidth;
-      baseOverflow.shiftX = true;
-      baseOverflow.adjustX = true;
-      break;
-
-    default:
-      break;
+  if (placement === 'top' || placement === 'bottom') {
+    baseOverflow.shiftX = arrowOffset.arrowOffsetHorizontal * 2 + arrowWidth;
+    baseOverflow.shiftY = true;
+    baseOverflow.adjustY = true;
+  } else if (placement === 'left' || placement === 'right') {
+    baseOverflow.shiftY = arrowOffset.arrowOffsetVertical * 2 + arrowWidth;
+    baseOverflow.shiftX = true;
+    baseOverflow.adjustX = true;
   }
 
   const mergedOverflow = {
@@ -171,34 +162,14 @@ export default function getPlacements(config: PlacementsConfig) {
       placementInfo.autoArrow = false;
     }
 
-    // Static offset
-    switch (key) {
-      case 'top':
-      case 'topLeft':
-      case 'topRight':
-        placementInfo.offset[1] = -halfArrowWidth - offset;
-        break;
-
-      case 'bottom':
-      case 'bottomLeft':
-      case 'bottomRight':
-        placementInfo.offset[1] = halfArrowWidth + offset;
-        break;
-
-      case 'left':
-      case 'leftTop':
-      case 'leftBottom':
-        placementInfo.offset[0] = -halfArrowWidth - offset;
-        break;
-
-      case 'right':
-      case 'rightTop':
-      case 'rightBottom':
-        placementInfo.offset[0] = halfArrowWidth + offset;
-        break;
-
-      default:
-        break;
+    if (key.startsWith('top')) {
+      placementInfo.offset = [0, -halfArrowWidth - offset];
+    } else if (key.startsWith('bottom')) {
+      placementInfo.offset = [0, halfArrowWidth + offset];
+    } else if (key.startsWith('left')) {
+      placementInfo.offset = [-halfArrowWidth - offset, 0];
+    } else if (key.startsWith('right')) {
+      placementInfo.offset = [halfArrowWidth + offset, 0];
     }
 
     // Dynamic offset
@@ -208,29 +179,14 @@ export default function getPlacements(config: PlacementsConfig) {
     });
 
     if (arrowPointAtCenter) {
-      switch (key) {
-        case 'topLeft':
-        case 'bottomLeft':
-          placementInfo.offset[0] = -arrowOffset.arrowOffsetHorizontal - halfArrowWidth;
-          break;
-
-        case 'topRight':
-        case 'bottomRight':
-          placementInfo.offset[0] = arrowOffset.arrowOffsetHorizontal + halfArrowWidth;
-          break;
-
-        case 'leftTop':
-        case 'rightTop':
-          placementInfo.offset[1] = -arrowOffset.arrowOffsetHorizontal * 2 + halfArrowWidth;
-          break;
-
-        case 'leftBottom':
-        case 'rightBottom':
-          placementInfo.offset[1] = arrowOffset.arrowOffsetHorizontal * 2 - halfArrowWidth;
-          break;
-
-        default:
-          break;
+      if (key === 'topLeft' || key === 'bottomLeft') {
+        placementInfo.offset[0] = -arrowOffset.arrowOffsetHorizontal - halfArrowWidth;
+      } else if (key === 'topRight' || key === 'bottomRight') {
+        placementInfo.offset[0] = arrowOffset.arrowOffsetHorizontal + halfArrowWidth;
+      } else if (key === 'leftTop' || key === 'rightTop') {
+        placementInfo.offset[1] = -arrowOffset.arrowOffsetHorizontal * 2 + halfArrowWidth;
+      } else if (key === 'leftBottom' || key === 'rightBottom') {
+        placementInfo.offset[1] = arrowOffset.arrowOffsetHorizontal * 2 - halfArrowWidth;
       }
     }
 
